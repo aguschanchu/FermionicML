@@ -1,0 +1,149 @@
+{
+ "schema": "v2-figLC-values-v1",
+ "figure": "v2_figLC_learning_curve",
+ "generator": "production_v2/regen/v2_figLC_regenerate.py",
+ "generator_sha256": "e6b05c06aad0225904ba3b49ba87b4722f1a2b55fdf4cc951a79bf47f23e3289",
+ "style": {
+  "rel": "manuscript/results/plots/regen/_style.py",
+  "sha256": "90ce2ee9b12b18cf63844761b698f14712a86ceac7e5943ba0b16b6cbf32eed1"
+ },
+ "source_date_epoch": 1788912000,
+ "convention": "exact64_cpu_highest HONEST median, n=4096 pinned seed-1007 rows",
+ "plotted_arrays": {
+  "n_train": [
+   250000.0,
+   500000.0,
+   1000000.0,
+   2000000.0,
+   5000000.0
+  ],
+  "median": [
+   0.0006562959630601622,
+   0.00046579096915064775,
+   0.0003482616507125973,
+   0.0002622208560396161,
+   0.00021029365937723685
+  ],
+  "ci95_lo": [
+   0.0006483685760679906,
+   0.0004606895880788366,
+   0.0003445168385628093,
+   0.0002596410964864254,
+   0.00020799526801788598
+  ],
+  "ci95_hi": [
+   0.0006638002917971925,
+   0.00047162650069227264,
+   0.00035171367988347875,
+   0.00026455387684203686,
+   0.00021270285234172568
+  ]
+ },
+ "rows": [
+  {
+   "lane": "v2lc_thermal_2p5e5_s42",
+   "n_train": 250000,
+   "median": 0.0006562959630601622,
+   "ci95": [
+    0.0006483685760679906,
+    0.0006638002917971925
+   ],
+   "p90": 0.0010644484908557562,
+   "mean": 0.0007231950789274022
+  },
+  {
+   "lane": "v2lc_thermal_5e5_s42",
+   "n_train": 500000,
+   "median": 0.00046579096915064775,
+   "ci95": [
+    0.0004606895880788366,
+    0.00047162650069227264
+   ],
+   "p90": 0.0007364495173711869,
+   "mean": 0.0005087122334757337
+  },
+  {
+   "lane": "v2lc_thermal_1e6_s42",
+   "n_train": 1000000,
+   "median": 0.0003482616507125973,
+   "ci95": [
+    0.0003445168385628093,
+    0.00035171367988347875
+   ],
+   "p90": 0.0005510753759520263,
+   "mean": 0.00038246854336753837
+  },
+  {
+   "lane": "v2lc_thermal_2e6_s42",
+   "n_train": 2000000,
+   "median": 0.0002622208560396161,
+   "ci95": [
+    0.0002596410964864254,
+    0.00026455387684203686
+   ],
+   "p90": 0.0003938448913817496,
+   "mean": 0.00028224285558229586
+  },
+  {
+   "lane": "v2std_thermal_random_s42",
+   "n_train": 5000000,
+   "median": 0.00021029365937723685,
+   "ci95": [
+    0.00020799526801788598,
+    0.00021270285234172568
+   ],
+   "p90": 0.00032084712687341355,
+   "mean": 0.00022608373784642423
+  }
+ ],
+ "published_reference": {
+  "n_train": 5000000,
+  "median": 0.0006279819992140686,
+  "source": "results_v2/tolerances.json identity_leg ID-1 target (A2-cpu64 / REPLOT-VALUES2)"
+ },
+ "loglog_slope": -0.38342006168917403,
+ "loglog_intercept": -1.138310209162333,
+ "sources": {
+  "v2lc_thermal_2p5e5_s42": {
+   "record": "V2-CLEAN-v2lc_thermal_2p5e5_s42",
+   "file": "v2_eval_cpu64_result.json",
+   "sha256": "032d62a9557267d05f4b632ecc228276d1485e400b09d60f2d66877d0739f5e3",
+   "pointer": "/per_model/v2lc_thermal_2p5e5_s42/{median_err_q,err_q_ci95}",
+   "convention": "exact64_cpu_highest",
+   "n": 4096
+  },
+  "v2lc_thermal_5e5_s42": {
+   "record": "V2-CLEAN-v2lc_thermal_5e5_s42",
+   "file": "v2_eval_cpu64_result.json",
+   "sha256": "56183a4fd5d7a6147b46c0555272aabe5fec4320b63679097f7af77338b35e27",
+   "pointer": "/per_model/v2lc_thermal_5e5_s42/{median_err_q,err_q_ci95}",
+   "convention": "exact64_cpu_highest",
+   "n": 4096
+  },
+  "v2lc_thermal_1e6_s42": {
+   "record": "V2-CLEAN-v2lc_thermal_1e6_s42",
+   "file": "v2_eval_cpu64_result.json",
+   "sha256": "24d32ff3b045ac9be1d7675fa1a417dbe3602face9c1c7ff22ab51f087a8465d",
+   "pointer": "/per_model/v2lc_thermal_1e6_s42/{median_err_q,err_q_ci95}",
+   "convention": "exact64_cpu_highest",
+   "n": 4096
+  },
+  "v2lc_thermal_2e6_s42": {
+   "record": "V2-CLEAN-v2lc_thermal_2e6_s42",
+   "file": "v2_eval_cpu64_result.json",
+   "sha256": "aaa33166dd3febf7e751f914ca10244eae2bcd8277004ec5052bde1bfb449bb4",
+   "pointer": "/per_model/v2lc_thermal_2e6_s42/{median_err_q,err_q_ci95}",
+   "convention": "exact64_cpu_highest",
+   "n": 4096
+  },
+  "v2std_thermal_random_s42": {
+   "record": "V2-CLEAN-v2std_thermal_random_s42",
+   "file": "v2_eval_cpu64_result.json",
+   "sha256": "10022af79497f856cad01bf844c494cdaaa83e76e86ad69874508da3f9117af6",
+   "pointer": "/per_model/v2std_thermal_random_s42/{median_err_q,err_q_ci95}",
+   "convention": "exact64_cpu_highest",
+   "n": 4096
+  }
+ },
+ "note": "new SM figure (no sealed parent); the four learning-curve lanes read the first N/2 rows of each production half and train 25 epochs; the 5e6 point is the flagship lane"
+}

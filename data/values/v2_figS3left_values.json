@@ -1,0 +1,1147 @@
+{
+  "schema": "expc2r2-figS3left-plotted-values-v1",
+  "provisional": true,
+  "generator": "experiments/experiment-campaign2-r2/regen/expc2r2_figS3left_regenerate.py",
+  "generator_sha256": "21408e7c718aadf56bd943dd00891e7ff5a359af50a44f3f92da32d16a0d95bb",
+  "parent_generator": "manuscript/results/plots/regen/expc2_figS3left_regenerate.py",
+  "parent_generator_sha256": "840c360ce079bad98965c3c5d653a9e7e8385d0235de1521f6c648f0a9dd048f",
+  "grandparent_generator": "manuscript/results/plots/fig3_scree_random_roundG.py",
+  "grandparent_generator_sha256": "3608060f7869f6eee58e64e89f30a9b0b8305c93fc22bd60e85e8726c9e41569",
+  "dispatch": {
+    "asset": "S3L",
+    "manifest_record": "experiments/experiment-campaign2-r2/results/C10-manifest/FIGURE_MANIFEST.json",
+    "manifest_sha256": "3180466968a59f21f5f9330cb74a3497d7e824ed17a8d0ac1cb06c6f259bf08a",
+    "one_line": "rerender --asset S3L --fork manuscript/results/plots/regen/expc2_figS3left_regenerate.py --from results/GEO-r2-v4-battery --contract FIGS3LEFT_FIELDS",
+    "field_contract": "FIGS3LEFT_FIELDS",
+    "field_contract_n": 10,
+    "field_contract_fields": [
+      "rows/SF-3/regen/<arm>/lambda_geo_mean",
+      "rows/SF-3/regen/<arm>/q_k_mean",
+      "rows/SF-3/regen/<arm>/q_k_std",
+      "rows/SF-3/regen/<arm>/n_modes",
+      "rows/SF-3/regen/<arm>/lam_pos_threshold",
+      "rows/SF-3/regen/<arm>/null_mode_count",
+      "rows/SF-3/regen/<arm>/sum_qk_max",
+      "disclosure/r12",
+      "npz:lam",
+      "npz:<arm>__qk"
+    ],
+    "field_contract_source": "experiments/experiment-campaign2-r2/stages/expc2r2_geo_battery.py",
+    "field_contract_source_sha256": "efc6e293697d65d4193b46d0e35532e108f7817c9693379f24b9d4ea0b5ce764",
+    "manifest_provisional_out": "experiments/experiment-campaign2-r2/results/C10-rerender/figS3left_out.PROVISIONAL",
+    "actual_out": "experiments/experiment-campaign2-r2/regen/figS3left_out.PROVISIONAL",
+    "out_path_note": "the execution lane assigned regen/ as the writable fork sandbox; the manifest's nominal provisional path is results/C10-rerender/.  Same PROVISIONAL semantics, different parent dir -- recorded, not silently changed"
+  },
+  "feeding_records": [
+    "experiments/experiment-campaign2-r2/results/GEO-r2-v4-battery",
+    "experiments/experiment-campaign2-r2/results/GEO-r2-v4-predict_stdgs_random",
+    "experiments/experiment-campaign2-r2/results/GEO-r2-v4-predict_stdgs_random_s43",
+    "experiments/experiment-campaign2-r2/results/GEO-r2-v4-predict_stdgs_random_s44"
+  ],
+  "disclosure": {
+    "stream_class": "AUTHOR RULINGS 2 (2026-08-03/04, binding; experiments/experiment-campaign2-r2/EXECUTION_LOG.md:143-150), verbatim: \"**Fig-4 panel**: COMMIT TO THE v4 DESIGN as primary (all six arms re-emitted on the v4-registered stream, fresh round-2 band, disclosed stream-class deviation from the [O M-9] pin). IN PARALLEL run the v5e leg on the newly provisioned spot v5e fleet; “ideally we’ll use both architectures [hardware generations], as long the physics match within reasonable bounds”.\"  THE DEVIATION, STATED: work order MAINEXPT_ROUND2_REQUEST.md C-2 item 7 [O M-9] required the registered val cache with the full registered pin set and the frozen expc2_geo_metrics.py (c29831778219bd4c) UNEDITED against GEO-band-r2, \"never a fresh band\".  On this leg the rows are the v4-built val stream, which is NOT the printed Fig-4 panel stream 18832d2846b09e00.. (g_stream_class measures that).  The band is therefore RE-DERIVED here from the three flagship arms on these rows, and the sealed GEO-band-r2 (56a26db6f8dd4d6948adb339cb788732b23895e0b5a903bdc4899d6bfb87e9f5) is carried as the HISTORICAL band reference in this record's header, sha-gated.  The frozen metrics file is NOT edited: it is byte-verified and reused BY IMPORT, statistic for statistic.  All six arms of this leg share one row stream -- which is what makes the paired contrast valid and is the scientific reason the ruling prefers this leg.",
+    "cohorts": "BOTH COHORTS are computed (work order C-2 item 8).  c4096 = the full common cohort, figure_eligible.  c2048 = rows 0..2047 in stream order, the REGISTERED anchor-subset rule (rk_kcov1.py:444-455 rows_2048 = np.arange(N_ANCHOR) on the shared 4096 geometry; campaign11/roundH/stages/rh_c12.py:471-474 \"registered anchor = FIRST N_ANCHOR rows\", :774-790 \"rows 0..2047 of the shared seed-1007 validation stream, stream order\").  c2048 is figure_eligible FALSE: rk_kcov1.py:447 records the 2048 lane as \"labeled historical anchors ONLY; never figure input\", and :513-515 as lane_discipline \"2048 eu-A lane consumed ONLY here (labeled anchors); all figure/new-quantity arrays use the 4096 us-A cohort\" (recon/dossier_c2.md E-3).  The F grid is frozen once on the 4096 rows and INHERITED by c2048 -- the registered construction: rk builds GRID at :347-349 from the shared 4096 geometry BEFORE any g_pred load and scores the 2048 lane on geometry SLICED from that same computation (VP[:N_ANCHOR], WT55[:N_ANCHOR], :449-455).  NOTE rk itself computes no F curve for the 2048 lane (anchor_stats returns R/f_err/eps_I/lam_eff/lam_bar/eps_S only, :420-444); the c2048 F curves here are a ROUND-2 EXTENSION on the inherited grid, with no registered precedent -- which is a further reason c2048 is never figure input.  c2048 is NOT the campaign-8 eu-A predictions_val_nearinit_random_2048.npz file: that is a prior-architecture near-init arm from another fleet, and no round-2 arm has a native 2048-row emission.",
+    "twin_control": "The stdgs_twin* arms are NEW CONTROLS (work order C-2 item 9), never reproductions of the historical near-init anchor.  Every contrast in this record is WITHIN the standardized flagship architecture and WITHIN one row stream: same architecture, same standardization statistics, same seed per pair, same rows.  That is what the prior-architecture D_p (0.853504961939995) is not, and why it is carried as a reference scale rather than a target.",
+    "descriptive": "DESCRIPTIVE: no adoption gate rides on any value in this record (R-12).  Numbers enter the manuscript only through the sealed record surface and the C-11 crosswalk.",
+    "r12": "R-12 (FIG-4 = REGENERATE). Fig. 4 is regenerated at C2-R under the final architecture (\"once the new architecture is defined, all the plots will be regenerated\"). Exploratory/interim geometry runs during the campaign are LICENSED as descriptive (no gate rides on them). Old values are cited as prior-architecture reference; the comparison is disclosed as UNPAIRED with a joint architecture-environment change (science R9); the G-GEO band is pre-registered from the three old GS checkpoints (prod_gs_random + reproA T-prod_gs_random_s43/s44) BEFORE any new-arch value is computed.",
+    "g_geo": "The comparison band = the spread of the THREE old GS checkpoints (prod_gs_random + reproA T-prod_gs_random_s43/s44), registered BEFORE any new-arch value is computed (R-12). New-arch metrics (ε_S, p_soft, λ_eff/λ̄, f_err, f_null, eps_I, R + soft-mode bias under both SM S4.9 equal-accuracy conventions) are reported per twin seed with the UNPAIRED + joint architecture-environment change disclosure (science R9); old values are cited as prior-architecture reference. Branches: signature-preserved / signature-shifted -- both registered findings; no gate rides on interim geometry runs (licensed descriptive, R-12); Fig. 4 itself is regenerated at C2-R.",
+    "prior_arch_tags": "NONE on this panel: the LEFT panel arm moves PRODGS3 -> STDGS3 in full (dispatch S3L prior_arch), so no retained prior-architecture reference arm is drawn and no 'prior arch.' legend tag is required.  SM-S3 CENTER (the near-init twin panel) is BLOCKED on BLK-R1 and is NOT rendered here."
+  },
+  "regeneration_round": "experiment-campaign2-r2 C-10.3 RE-RENDER (work order C-10-3 [O M-19; S-9], after C-2): SF-3 LEFT panel re-sourced onto the sealed round-2 v4 battery, cohort c4096",
+  "regeneration_date": "2026-09-10",
+  "environment": {
+    "python": "3.13.9",
+    "numpy": "2.3.5",
+    "matplotlib": "3.10.6",
+    "hostname": "nuc"
+  },
+  "artifact": "fig:scree_random (SM Fig. S3, LEFT panel only; center panel BLOCKED on BLK-R1, right panel D-ret; neither is touched here)",
+  "panel": "left",
+  "installed_in_manuscript_figures": false,
+  "superseded_installed_stem": "scree_random_trained_roundG",
+  "superseded_installed_sidecar_sha256": "2f53b5ebe77bc135df0d9c0e6bf0180e78bc25077cf7268e93918f0ea63549ed",
+  "audit_output_pdf": "experiments/experiment-campaign2-r2/regen/figS3left_out.PROVISIONAL/v2_figS3left_scree_random.pdf",
+  "audit_output_png": "experiments/experiment-campaign2-r2/regen/figS3left_out.PROVISIONAL/v2_figS3left_scree_random.png",
+  "convention": "s8 scree convention (sealed GEO-r2-v4-battery SF-3, cohort c4096): lambda_geo_mean = exp(mean(log(max(lambda, 1e-16)))) over the shared 4096 panel samples; q_k arithmetic mean of the raw-prediction spectral weights; null band = lambda <= 1e-12 (2 modes)",
+  "null_band": {
+    "n_null_plotted": 2,
+    "registered_null_mode_count": 2,
+    "lam_pos_threshold": 1e-12
+  },
+  "plotted_arrays": {
+    "lambda_geo_mean": {
+      "source_field": "experiments/experiment-campaign2-r2/results/GEO-r2-v4-battery/expc2r2_geo_persample.npz:npz:lam -> exp(mean(log(max(lam,1e-16))))",
+      "shape": [
+        55
+      ],
+      "n": 55,
+      "dtype_for_hash": "float64-c-contiguous",
+      "sha256_float64": "1bbae346dbf662b79fb45a186eeea07490da0ef6c2ef341104c0bb407eb9010c",
+      "values": [
+        1.0275027044652582e-16,
+        9.979101186301062e-16,
+        4.070952976849777e-05,
+        5.729322051672072e-05,
+        6.988156092975946e-05,
+        8.1376232580312e-05,
+        9.408694343496626e-05,
+        0.00010938769435843224,
+        0.00012955006160120827,
+        0.00015885215853884483,
+        0.0002093180332405356,
+        0.43642024203676405,
+        0.45100301991681535,
+        0.46156958594695824,
+        0.4701228558809599,
+        0.47773608551649926,
+        0.48484113393508316,
+        0.4915568289700639,
+        0.4983000516597042,
+        0.5050479463408726,
+        0.5118717472423625,
+        0.5186290955814479,
+        0.5254385617419497,
+        0.53237682542497,
+        0.5393472002889781,
+        0.5463559758306274,
+        0.5533826431946253,
+        0.5606222917177921,
+        0.5678881003666318,
+        0.5751024093486682,
+        0.5827337470473111,
+        0.5904160881870596,
+        0.5981903307761859,
+        0.6061205223583411,
+        0.6141815842587828,
+        0.6225829151161824,
+        0.631112872879006,
+        0.639999069599668,
+        0.6493076181195707,
+        0.6587997679776633,
+        0.6683083312552692,
+        0.6786998883385477,
+        0.6904150633692656,
+        0.7045275860341527,
+        0.7233900237029737,
+        0.7625829937801714,
+        0.9103975226804203,
+        0.9562777641837081,
+        0.9943550776598052,
+        1.0302218525819211,
+        1.0666938401270307,
+        1.1054946187059391,
+        1.1496470285030096,
+        1.2036761881629425,
+        1.3115243199093118
+      ],
+      "source_sha256": "5ba2a3264907064995302a01e91b90db83aaf1f4f9fa8136912c4a1b2c62df08",
+      "convention": "target-side panel geometry (built from g_true alone by expc2_geo_metrics _compute_geometry); arm-independent, NOT OGN-dependent; gated bit-exact against the published SF-3 row",
+      "derivation": {
+        "op": "geomean0",
+        "args": {
+          "file": "experiments/experiment-campaign2-r2/results/GEO-r2-v4-battery/expc2r2_geo_persample.npz",
+          "sha256": "5ba2a3264907064995302a01e91b90db83aaf1f4f9fa8136912c4a1b2c62df08",
+          "key": "lam",
+          "floor": 1e-16
+        }
+      }
+    },
+    "q_k_mean": {
+      "source_field": "V2-GEO-BATTERY-r2:npz:v2gs42__qk -> mean over samples",
+      "shape": [
+        55
+      ],
+      "n": 55,
+      "dtype_for_hash": "float64-c-contiguous",
+      "sha256_float64": "473970618d05e05a95c8b24d1357152fa298095410035c780afe3ffcea93a1a1",
+      "values": [
+        0.5112823207331149,
+        0.4783631615386595,
+        0.0009486950933593043,
+        0.0011115664088086374,
+        0.0011752217784688655,
+        0.0012272557633192162,
+        0.0011554813388224379,
+        0.0011813068524949458,
+        0.001219737191852763,
+        0.0011933284637435676,
+        0.0011382210575695997,
+        6.32721021597809e-08,
+        5.5614466194033e-08,
+        5.539597851164469e-08,
+        5.33672502338191e-08,
+        4.872650424657662e-08,
+        4.957806419385738e-08,
+        5.205040279042532e-08,
+        5.1019124909676005e-08,
+        4.589986722202266e-08,
+        5.098475442634599e-08,
+        4.921489745391117e-08,
+        4.71671991347858e-08,
+        4.748760421298558e-08,
+        4.8526365124924874e-08,
+        4.753425950243263e-08,
+        4.973286557293642e-08,
+        4.846056439069814e-08,
+        4.9042624290275257e-08,
+        4.688927860610195e-08,
+        4.6646436644687106e-08,
+        4.865570511161376e-08,
+        4.684560225741064e-08,
+        4.687447755984848e-08,
+        4.986907575415529e-08,
+        4.937486767473018e-08,
+        4.6150934880390395e-08,
+        5.442589024164364e-08,
+        5.0959876178323326e-08,
+        4.710133727716397e-08,
+        6.284227448870404e-08,
+        5.8539887093478464e-08,
+        5.937906461147518e-08,
+        6.840371470762958e-08,
+        1.02928448685634e-07,
+        2.8474627586669475e-07,
+        8.96054369845716e-08,
+        6.832415536079837e-08,
+        7.014824245917854e-08,
+        7.492862555628661e-08,
+        8.487154808796052e-08,
+        9.732906741429111e-08,
+        1.4280948497587569e-07,
+        2.035947326522131e-07,
+        7.888880919311347e-07
+      ],
+      "source_sha256": "65dc2ea9d21b5013a7ec48a1a2a621f45e30d4070078fdc349836b5cb80e85ad",
+      "convention": "OGN-dependent: arm stdgs_random -> v2gs42 under arm map 'v2'; arithmetic mean of the per-sample raw-prediction spectral weights q_k",
+      "derivation": {
+        "op": "mean0",
+        "args": {
+          "file": "/workspace/Insync/agusc@agusc.com.ar/Google Drive/UNLP/FermionicML-satelite2-max/results_v2/records/V2-GEO-BATTERY-r2/v2_geo_battery_persample.npz",
+          "sha256": "65dc2ea9d21b5013a7ec48a1a2a621f45e30d4070078fdc349836b5cb80e85ad",
+          "key": "v2gs42__qk"
+        }
+      }
+    }
+  },
+  "verified_unplotted_arrays": {
+    "q_k_std": {
+      "source_field": "V2-GEO-BATTERY-r2:npz:v2gs42__qk -> std over samples",
+      "shape": [
+        55
+      ],
+      "n": 55,
+      "dtype_for_hash": "float64-c-contiguous",
+      "sha256_float64": "170ec19c0e95b3f6226aef1cccb43ea117949b9e64f5274e04f33c46733e7174",
+      "values": [
+        0.268495852243637,
+        0.26848329165861684,
+        0.0016330667683465082,
+        0.0018306553912752226,
+        0.001946716694115248,
+        0.00194873552868559,
+        0.001817382505022546,
+        0.001928047320763634,
+        0.002133265441595455,
+        0.0020489028437928993,
+        0.0019757971615965188,
+        1.9085099104159158e-07,
+        2.0396650901430237e-07,
+        1.7376861853647675e-07,
+        1.4880842543178828e-07,
+        1.260797821291659e-07,
+        1.322491425136536e-07,
+        1.7200275220825476e-07,
+        1.9361931066607642e-07,
+        1.3286489450450143e-07,
+        1.8854072680737458e-07,
+        1.4559173502850733e-07,
+        2.663822578126105e-07,
+        1.7113838251426093e-07,
+        1.6388889566074323e-07,
+        1.803420806618443e-07,
+        1.8673451147749294e-07,
+        1.6475040927377687e-07,
+        1.7740874880874127e-07,
+        2.1564801897021048e-07,
+        1.626478373388577e-07,
+        1.8369799110926447e-07,
+        1.5691039205149803e-07,
+        1.96902254877464e-07,
+        1.8636779616521382e-07,
+        1.719016861181713e-07,
+        1.4283259201070594e-07,
+        2.093612748829936e-07,
+        1.7107056460446134e-07,
+        1.652099355800289e-07,
+        2.582877768577378e-07,
+        2.7157853471614383e-07,
+        2.3635207734874868e-07,
+        2.5910896212630483e-07,
+        4.610277566868252e-07,
+        1.0040371480080626e-06,
+        5.391265043367979e-07,
+        2.483938809108422e-07,
+        3.039547919465694e-07,
+        3.1098395167996314e-07,
+        3.869018973168049e-07,
+        4.1950891165097123e-07,
+        6.160244013828588e-07,
+        1.0160050960587442e-06,
+        3.159245144083955e-06
+      ],
+      "source_sha256": "65dc2ea9d21b5013a7ec48a1a2a621f45e30d4070078fdc349836b5cb80e85ad",
+      "convention": "parent plots mean bars only (no error bars); carried verified for the record",
+      "derivation": {
+        "op": "std0",
+        "args": {
+          "file": "/workspace/Insync/agusc@agusc.com.ar/Google Drive/UNLP/FermionicML-satelite2-max/results_v2/records/V2-GEO-BATTERY-r2/v2_geo_battery_persample.npz",
+          "sha256": "65dc2ea9d21b5013a7ec48a1a2a621f45e30d4070078fdc349836b5cb80e85ad",
+          "key": "v2gs42__qk"
+        }
+      }
+    }
+  },
+  "contracted_scalars": {
+    "source_field": "DERIVED from npz:lam + V2-GEO-BATTERY-r2:npz:v2gs42__qk",
+    "source_sha256": "65dc2ea9d21b5013a7ec48a1a2a621f45e30d4070078fdc349836b5cb80e85ad",
+    "n_modes": 55,
+    "lam_pos_threshold": 1e-12,
+    "null_mode_count": 2,
+    "sum_qk_max": 1.0000000007901948,
+    "R": 0.981823619477081,
+    "published_reference_row": {
+      "source_field": "experiments/experiment-campaign2-r2/results/GEO-r2-v4-battery/expc2r2_geo_paired_c4096.json:rows/SF-3/regen/stdgs_random",
+      "source_sha256": "648ca6ea94f11c9627b3323bb03c16582493c8049bb5a54d3fac87453a2147c9",
+      "n_modes": 55,
+      "lam_pos_threshold": 1e-12,
+      "null_mode_count": 2,
+      "sum_qk_max": 1.000000000868455,
+      "R": 0.9727962875208473
+    }
+  },
+  "printed_reference_deltas": {
+    "lambda_gated_max_rel": 2.247233424412733e-10,
+    "lambda_null_floor_log10_dev": [
+      0.002875234503063732,
+      0.019572417728664616
+    ],
+    "q_k_gated_max_rel": 0.9712820767593838,
+    "q_k_gated_max_abs": 4.298256098195902e-05,
+    "null_mode_qk_sum_printed": 0.9895344680563054,
+    "null_mode_qk_sum_new": 0.9896454822717744
+  },
+  "caption_notes": [
+    "V2 RE-BIND: the OGN-dependent input of this panel (the per-mode spectral weights npz:<arm>__qk) is read from the V2-GEO-BATTERY-r2 record under arm map 'v2' (stdgs_random -> v2gs42); the lambda_k geometric means are target-side panel geometry and are UNCHANGED, still read from the sealed published battery at its pin; q_k for the v2 arms is re-derived from the record's own per-arm prediction NPZ through the byte-frozen expc2_geo_metrics module (substrate, gate roster green)",
+    "trained `random`-panel scree re-sourced vs the printed SM Fig-S3-left: prod_gs flagship (PRODGS3) -> standardized GS twin (STDGS3, checkpoint stdgs_random, seed 42 primary display; seeds 43/44 q_k arrays live in the sealed GEO-r2-v4-battery record, never pooled)",
+    "ROUND-2 STREAM-CLASS DEVIATION, carried verbatim from the sealed record: AUTHOR RULINGS 2 (2026-08-03/04, binding; experiments/experiment-campaign2-r2/EXECUTION_LOG.md:143-150), verbatim: \"**Fig-4 panel**: COMMIT TO THE v4 DESIGN as primary (all six arms re-emitted on the v4-registered stream, fresh round-2 band, disclosed stream-class deviation from the [O M-9] pin). IN PARALLEL run the v5e leg on the newly provisioned spot v5e fleet; “ideally we’ll use both architectures [hardware generations], as long the physics match within reasonable bounds”.\"  THE DEVIATION, STATED: work order MAINEXPT_ROUND2_REQUEST.md C-2 item 7 [O M-9] required the registered val cache with the full registered pin set and the frozen expc2_geo_metrics.py (c29831778219bd4c) UNEDITED against GEO-band-r2, \"never a fresh band\".  On this leg the rows are the v4-built val stream, which is NOT the printed Fig-4 panel stream 18832d2846b09e00.. (g_stream_class measures that).  The band is therefore RE-DERIVED here from the three flagship arms on these rows, and the sealed GEO-band-r2 (56a26db6f8dd4d6948adb339cb788732b23895e0b5a903bdc4899d6bfb87e9f5) is carried as the HISTORICAL band reference in this record's header, sha-gated.  The frozen metrics file is NOT edited: it is byte-verified and reused BY IMPORT, statistic for statistic.  All six arms of this leg share one row stream -- which is what makes the paired contrast valid and is the scientific reason the ruling prefers this leg.",
+    "cohort: BOTH COHORTS are computed (work order C-2 item 8).  c4096 = the full common cohort, figure_eligible.  c2048 = rows 0..2047 in stream order, the REGISTERED anchor-subset rule (rk_kcov1.py:444-455 rows_2048 = np.arange(N_ANCHOR) on the shared 4096 geometry; campaign11/roundH/stages/rh_c12.py:471-474 \"registered anchor = FIRST N_ANCHOR rows\", :774-790 \"rows 0..2047 of the shared seed-1007 validation stream, stream order\").  c2048 is figure_eligible FALSE: rk_kcov1.py:447 records the 2048 lane as \"labeled historical anchors ONLY; never figure input\", and :513-515 as lane_discipline \"2048 eu-A lane consumed ONLY here (labeled anchors); all figure/new-quantity arrays use the 4096 us-A cohort\" (recon/dossier_c2.md E-3).  The F grid is frozen once on the 4096 rows and INHERITED by c2048 -- the registered construction: rk builds GRID at :347-349 from the shared 4096 geometry BEFORE any g_pred load and scores the 2048 lane on geometry SLICED from that same computation (VP[:N_ANCHOR], WT55[:N_ANCHOR], :449-455).  NOTE rk itself computes no F curve for the 2048 lane (anchor_stats returns R/f_err/eps_I/lam_eff/lam_bar/eps_S only, :420-444); the c2048 F curves here are a ROUND-2 EXTENSION on the inherited grid, with no registered precedent -- which is a further reason c2048 is never figure input.  c2048 is NOT the campaign-8 eu-A predictions_val_nearinit_random_2048.npz file: that is a prior-architecture near-init arm from another fleet, and no round-2 arm has a native 2048-row emission.",
+    "R-12 DESCRIPTIVE FRAMING: DESCRIPTIVE: no adoption gate rides on any value in this record (R-12).  Numbers enter the manuscript only through the sealed record surface and the C-11 crosswalk.",
+    "lambda_k geometric means are target-side panel geometry shared with the printed figure: gated positive modes agree with the printed roundG values to max rel 2.25e-10; the two null-floor entries are numerical noise floors (log10 dev 0.020 <= 1 decade)",
+    "q_k bars move slightly with the new prediction: null-mode (symmetry) weight sum 0.9895 -> 0.9896; gated-mode max abs change 4.30e-05 (max rel 9.71e-01); the visual structure (null modes carry ~0.99 of the raw-prediction weight, soft band ~1e-3, bulk ~1e-6) is unchanged at panel scale",
+    "same display conventions as the printed panel, including bulk q_k bars below the 1e-5 axis floor (44 bars there and here)",
+    "disclosure carried from the sealed record: R-12 (FIG-4 = REGENERATE). Fig. 4 is regenerated at C2-R under the final architecture (\"once the new architecture is defined, all the plots will be regenerated\"). Exploratory/interim geometry runs during the campaign are LICENSED as descriptive (no gate rides on them). Old values are cited as prior-architecture reference; the comparison is disclosed as UNPAIRED with a joint architecture-environment change (science R9); the G-GEO band is pre-registered from the three old GS checkpoints (prod_gs_random + reproA T-prod_gs_random_s43/s44) BEFORE any new-arch value is computed."
+  ],
+  "verification_rule": "Both plotted arrays are float64-exact against the sealed GEO-r2-v4-battery record AND against an independent recompute from the sealed battery per-sample NPZ under the pinned s8 scree convention. The printed roundG arrays are a quantified reference only (the arm is intentionally re-sourced). Any inexact array is a hard failure. Image-byte equality to the superseded asset is not expected for an intentional re-sourcing.",
+  "checks": [
+    {
+      "name": "input pinned: experiments/experiment-campaign2-r2/results/GEO-r2-v4-battery/expc2r2_geo_paired_c4096.json",
+      "ok": true,
+      "detail": {
+        "sha256": "648ca6ea94f11c9627b3323bb03c16582493c8049bb5a54d3fac87453a2147c9",
+        "expected": "648ca6ea94f11c9627b3323bb03c16582493c8049bb5a54d3fac87453a2147c9",
+        "path": "/workspace/Insync/agusc@agusc.com.ar/Google Drive/UNLP/FermionicML-satelite2-max/experiments/experiment-campaign2-r2/results/GEO-r2-v4-battery/expc2r2_geo_paired_c4096.json"
+      }
+    },
+    {
+      "name": "input pinned: experiments/experiment-campaign2-r2/results/GEO-r2-v4-battery/expc2r2_geo_persample.npz",
+      "ok": true,
+      "detail": {
+        "sha256": "5ba2a3264907064995302a01e91b90db83aaf1f4f9fa8136912c4a1b2c62df08",
+        "expected": "5ba2a3264907064995302a01e91b90db83aaf1f4f9fa8136912c4a1b2c62df08",
+        "path": "/workspace/Insync/agusc@agusc.com.ar/Google Drive/UNLP/FermionicML-satelite2-max/experiments/experiment-campaign2-r2/results/GEO-r2-v4-battery/expc2r2_geo_persample.npz"
+      }
+    },
+    {
+      "name": "input pinned: experiments/experiment-campaign2-r2/results/GEO-r2-v4-battery/expc2r2_geo_battery_result.json",
+      "ok": true,
+      "detail": {
+        "sha256": "c5085af978fb8dc00c1da5d23d93f0dd2c343a7c3ae24ed5be08ac577da2c91d",
+        "expected": "c5085af978fb8dc00c1da5d23d93f0dd2c343a7c3ae24ed5be08ac577da2c91d",
+        "path": "/workspace/Insync/agusc@agusc.com.ar/Google Drive/UNLP/FermionicML-satelite2-max/experiments/experiment-campaign2-r2/results/GEO-r2-v4-battery/expc2r2_geo_battery_result.json"
+      }
+    },
+    {
+      "name": "input pinned: manuscript/results/plots/covariance/scree_random_trained_roundG_values.json",
+      "ok": true,
+      "detail": {
+        "sha256": "2f53b5ebe77bc135df0d9c0e6bf0180e78bc25077cf7268e93918f0ea63549ed",
+        "expected": "2f53b5ebe77bc135df0d9c0e6bf0180e78bc25077cf7268e93918f0ea63549ed",
+        "path": "/workspace/Insync/agusc@agusc.com.ar/Google Drive/UNLP/FermionicML-satelite2-max/manuscript/results/plots/covariance/scree_random_trained_roundG_values.json"
+      }
+    },
+    {
+      "name": "input pinned: manuscript/results/plots/regen/expc2_figS3left_regenerate.py",
+      "ok": true,
+      "detail": {
+        "sha256": "840c360ce079bad98965c3c5d653a9e7e8385d0235de1521f6c648f0a9dd048f",
+        "expected": "840c360ce079bad98965c3c5d653a9e7e8385d0235de1521f6c648f0a9dd048f",
+        "path": "/workspace/Insync/agusc@agusc.com.ar/Google Drive/UNLP/FermionicML-satelite2-max/manuscript/results/plots/regen/expc2_figS3left_regenerate.py"
+      }
+    },
+    {
+      "name": "input pinned: manuscript/results/plots/fig3_scree_random_roundG.py",
+      "ok": true,
+      "detail": {
+        "sha256": "3608060f7869f6eee58e64e89f30a9b0b8305c93fc22bd60e85e8726c9e41569",
+        "expected": "3608060f7869f6eee58e64e89f30a9b0b8305c93fc22bd60e85e8726c9e41569",
+        "path": "/workspace/Insync/agusc@agusc.com.ar/Google Drive/UNLP/FermionicML-satelite2-max/manuscript/results/plots/fig3_scree_random_roundG.py"
+      }
+    },
+    {
+      "name": "input pinned: experiments/experiment-campaign2-r2/regen/expc2r2_figS3left_regenerate.py",
+      "ok": true,
+      "detail": {
+        "sha256": "4144b8321e8bba10b3a929773c457dfce29c0de961d287d0f81d9d1e187d5de4",
+        "expected": "4144b8321e8bba10b3a929773c457dfce29c0de961d287d0f81d9d1e187d5de4",
+        "path": "/workspace/Insync/agusc@agusc.com.ar/Google Drive/UNLP/FermionicML-satelite2-max/experiments/experiment-campaign2-r2/regen/expc2r2_figS3left_regenerate.py"
+      }
+    },
+    {
+      "name": "sealed GEO-r2-v4-battery MANIFEST.sha256 carries the payload digests read here (paired JSON + per-sample NPZ)",
+      "ok": true,
+      "detail": {
+        "manifest": "/workspace/Insync/agusc@agusc.com.ar/Google Drive/UNLP/FermionicML-satelite2-max/experiments/experiment-campaign2-r2/results/GEO-r2-v4-battery/MANIFEST.sha256"
+      }
+    },
+    {
+      "name": "sealed GEO-r2-v4-battery receipt green (all_gates_pass + g_paired_complete + g_kcov1_payload_complete + g_persample_npz_emitted + g_boot_digest_c4096 + g_not_smoke)",
+      "ok": true,
+      "detail": {
+        "all_gates_pass": true,
+        "record": "experiments/experiment-campaign2-r2/results/GEO-r2-v4-battery"
+      }
+    },
+    {
+      "name": "battery receipt pins the payload this fork reads, the loaded cohort is the figure-eligible cohort, and the FIGS3LEFT_FIELDS contract source sha matches the C-10 manifest pin",
+      "ok": true,
+      "detail": {
+        "cohort": "c4096",
+        "paired_sha256": "648ca6ea94f11c9627b3323bb03c16582493c8049bb5a54d3fac87453a2147c9",
+        "npz_sha256": "5ba2a3264907064995302a01e91b90db83aaf1f4f9fa8136912c4a1b2c62df08",
+        "contract_source_sha256": "efc6e293697d65d4193b46d0e35532e108f7817c9693379f24b9d4ea0b5ce764"
+      }
+    },
+    {
+      "name": "target-side panel geometry (npz:lam) is served by the SEALED PUBLISHED battery at its pin in BOTH arm-map modes: it is built from g_true ALONE (expc2_geo_metrics _compute_geometry), is arm-independent and is NOT OGN-dependent",
+      "ok": true,
+      "detail": {
+        "file": "experiments/experiment-campaign2-r2/results/GEO-r2-v4-battery/expc2r2_geo_persample.npz",
+        "sha256": "5ba2a3264907064995302a01e91b90db83aaf1f4f9fa8136912c4a1b2c62df08",
+        "expected": "5ba2a3264907064995302a01e91b90db83aaf1f4f9fa8136912c4a1b2c62df08"
+      }
+    },
+    {
+      "name": "v2 geometry-battery record: RESULT_MANIFEST.json verifies file-by-file BEFORE any read, and the mapped display arm is present in its stats block",
+      "ok": true,
+      "detail": {
+        "record_dir": "/workspace/Insync/agusc@agusc.com.ar/Google Drive/UNLP/FermionicML-satelite2-max/results_v2/records/V2-GEO-BATTERY-r2",
+        "record": "V2-GEO-BATTERY-r2",
+        "arm_map": "v2",
+        "published_arm": "stdgs_random",
+        "mapped_arm": "v2gs42",
+        "arms": [
+          "v2gs42",
+          "v2gs43",
+          "v2gs44",
+          "v2twin42",
+          "v2twin43",
+          "v2twin44",
+          "v2gram42",
+          "v2mlp42",
+          "trained42",
+          "trained43",
+          "trained44"
+        ],
+        "manifest_rows": [
+          {
+            "name": "stage_MANIFEST.sha256",
+            "declared_sha256": "2201d2232ebb222caabeb4e49aa5b43ee182f63a12da27c103d273dc5f23ad91",
+            "measured_sha256": "2201d2232ebb222caabeb4e49aa5b43ee182f63a12da27c103d273dc5f23ad91",
+            "matches": true
+          },
+          {
+            "name": "v2_geo_battery_persample.npz",
+            "declared_sha256": "65dc2ea9d21b5013a7ec48a1a2a621f45e30d4070078fdc349836b5cb80e85ad",
+            "measured_sha256": "65dc2ea9d21b5013a7ec48a1a2a621f45e30d4070078fdc349836b5cb80e85ad",
+            "matches": true
+          },
+          {
+            "name": "v2_geo_battery_result.json",
+            "declared_sha256": "b5a352ea337db5640a8b665c8b3f5417725f2c808497f698a8c342acaac81757",
+            "measured_sha256": "b5a352ea337db5640a8b665c8b3f5417725f2c808497f698a8c342acaac81757",
+            "matches": true
+          },
+          {
+            "name": "v2gram42_gs_predictions_val_first4096.npz",
+            "declared_sha256": "0ee8a629e898a4cb13b4e4c397f0719bae16ae7927e99b8ef60314070266cd18",
+            "measured_sha256": "0ee8a629e898a4cb13b4e4c397f0719bae16ae7927e99b8ef60314070266cd18",
+            "matches": true
+          },
+          {
+            "name": "v2gs42_gs_predictions_val_first4096.npz",
+            "declared_sha256": "43ddf7a873e094a02a2add8fc7d676f70c7882040aed385996f76343d2ee1e32",
+            "measured_sha256": "43ddf7a873e094a02a2add8fc7d676f70c7882040aed385996f76343d2ee1e32",
+            "matches": true
+          },
+          {
+            "name": "v2gs43_gs_predictions_val_first4096.npz",
+            "declared_sha256": "393d53e373bd1da041c8d23003cb83a37c2d74157194eebb41f401c04b028d28",
+            "measured_sha256": "393d53e373bd1da041c8d23003cb83a37c2d74157194eebb41f401c04b028d28",
+            "matches": true
+          },
+          {
+            "name": "v2gs44_gs_predictions_val_first4096.npz",
+            "declared_sha256": "f6ec9bdeb94a5d69169460630542447c854b57b0e588f57d6b34713b1d2ed199",
+            "measured_sha256": "f6ec9bdeb94a5d69169460630542447c854b57b0e588f57d6b34713b1d2ed199",
+            "matches": true
+          },
+          {
+            "name": "v2mlp42_gs_predictions_val_first4096.npz",
+            "declared_sha256": "d5164c2ff2724426de9178c22517441eb1c5f283144816d2a0c1a7c961bb3f1f",
+            "measured_sha256": "d5164c2ff2724426de9178c22517441eb1c5f283144816d2a0c1a7c961bb3f1f",
+            "matches": true
+          },
+          {
+            "name": "v2twin42_gs_predictions_val_first4096.npz",
+            "declared_sha256": "b45ebbbb6780a965c495f3d3cd0a96096827fceab0ccf71105633a4cfe018a4d",
+            "measured_sha256": "b45ebbbb6780a965c495f3d3cd0a96096827fceab0ccf71105633a4cfe018a4d",
+            "matches": true
+          },
+          {
+            "name": "v2twin43_gs_predictions_val_first4096.npz",
+            "declared_sha256": "b2f7aea2878bc93a4f4b3e558dfece888c570b256d0765587bf354ac67bcdc09",
+            "measured_sha256": "b2f7aea2878bc93a4f4b3e558dfece888c570b256d0765587bf354ac67bcdc09",
+            "matches": true
+          },
+          {
+            "name": "v2twin44_gs_predictions_val_first4096.npz",
+            "declared_sha256": "100342f7edb75b570d3624313ff46de4337d7fa480b8d3df868602c2093b5422",
+            "measured_sha256": "100342f7edb75b570d3624313ff46de4337d7fa480b8d3df868602c2093b5422",
+            "matches": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "provenance of the OGN-derived per-sample arrays: RECORD-NATIVE (the battery emits npz:<arm>__F / npz:<arm>__qk itself, its v2 gate roster is green and the degenerate-null-pair disclosure is in-record) or a DERIVED SUBSTRATE whose manifest verifies, whose gate roster is green and which was built from THIS record's own files",
+      "ok": true,
+      "detail": {
+        "source": "record",
+        "facts": {
+          "source": "record",
+          "record": "V2-GEO-BATTERY-r2",
+          "schema": "v2-geo-battery-v2",
+          "result_sha256": "b5a352ea337db5640a8b665c8b3f5417725f2c808497f698a8c342acaac81757",
+          "persample_sha256": "65dc2ea9d21b5013a7ec48a1a2a621f45e30d4070078fdc349836b5cb80e85ad",
+          "gates": {
+            "g_frozen_metrics_byte_frozen": true,
+            "g_layout_v2gs42": true,
+            "g_layout_v2gs43": true,
+            "g_layout_v2gs44": true,
+            "g_layout_v2twin42": true,
+            "g_layout_v2twin43": true,
+            "g_layout_v2twin44": true,
+            "g_layout_v2gram42": true,
+            "g_layout_v2mlp42": true,
+            "g_layout_trained42": true,
+            "g_layout_trained43": true,
+            "g_layout_trained44": true,
+            "g_panel_row_binding_1ulp": true,
+            "g_panel_is_release_stream": true,
+            "g_boot_digest_c4096": true,
+            "g_persample_F_and_qk_emitted": true,
+            "g_qk_sums_to_one": true,
+            "g_grid_is_61pt_registered": true,
+            "g_registered_reproduced": true,
+            "g_rows_blocks_emitted": true,
+            "g_null_subspace_disclosed": true
+          },
+          "all_gates_pass": true,
+          "diagnostics": {
+            "d_panel_rows_strict_bit_identical": false
+          },
+          "null_subspace_disclosure": {
+            "tau_pos": 1e-12,
+            "n_null_per_sample": [
+              2
+            ],
+            "finding": "every panel sample carries n_null GEVP modes at lambda <= TAU_POS.  Those eigenvalues are DEGENERATE, so the eigenvector basis inside the null subspace -- and hence the split of the spectral weight q_k between scree bar 0 and scree bar 1 -- is LAPACK-build dependent and is NOT a reproducible number.  The null subspace's TOTAL weight and every positive mode ARE reproducible.  This is a property of the published construction, exposed by re-running it; it is disclosed, not repaired.",
+            "affects": "SM Fig-S3 LEFT and CENTER scree bars k = 0, 1 only",
+            "null_total_per_arm": {
+              "v2gs42": 0.9914090555937368,
+              "v2gs43": 0.991268282739974,
+              "v2gs44": 0.9913843030960374,
+              "v2twin42": 0.9848407572812572,
+              "v2twin43": 0.9851289333682947,
+              "v2twin44": 0.9850295357954673,
+              "v2gram42": 0.9913176450813155,
+              "v2mlp42": 0.9910098351264562,
+              "trained42": 0.9911807094499283,
+              "trained43": 0.9914053786136472,
+              "trained44": 0.9914061164819132
+            }
+          },
+          "qk_transcription": {
+            "source": "experiments/experiment-campaign2-r2/stages/expc2r2_geo_battery.py",
+            "sha256": "efc6e293697d65d4193b46d0e35532e108f7817c9693379f24b9d4ea0b5ce764",
+            "lines": "_score_core_from_W55 :812-814",
+            "quote": "npred2 = einsum('ia,ab,ib->i', W55, S55, W55); c_pred = einsum('iak,ia->ik', VP, W55 @ S55); qk = c_pred**2 / maximum(npred2, 1e-16)[:, None]"
+          },
+          "frozen_metrics": {
+            "path": "experiments/experiment-campaign2/stages/expc2_geo_metrics.py",
+            "sha256": "c29831778219bd4cb5328e59203d1c9c5fd5f48216b14b024aa83e7c63ac0868",
+            "knobs": {
+              "RIDGE": 1e-09,
+              "CUTOFF": 1e-07,
+              "TAU_POS": 1e-12,
+              "BOOT_SEED": 20260703,
+              "BOOT_B": 1000
+            }
+          },
+          "panel_row_binding": {
+            "v2gs42": {
+              "pass_": true,
+              "strict_bit_identical": true,
+              "diagonal_max_abs_dev": 0.0,
+              "diagonal_max_abs_dev_in_ulp": 0.0,
+              "offdiagonal_bit_identical": true,
+              "columns_differing": []
+            },
+            "v2gs43": {
+              "pass_": true,
+              "strict_bit_identical": true,
+              "diagonal_max_abs_dev": 0.0,
+              "diagonal_max_abs_dev_in_ulp": 0.0,
+              "offdiagonal_bit_identical": true,
+              "columns_differing": []
+            },
+            "v2gs44": {
+              "pass_": true,
+              "strict_bit_identical": true,
+              "diagonal_max_abs_dev": 0.0,
+              "diagonal_max_abs_dev_in_ulp": 0.0,
+              "offdiagonal_bit_identical": true,
+              "columns_differing": []
+            },
+            "v2twin42": {
+              "pass_": true,
+              "strict_bit_identical": true,
+              "diagonal_max_abs_dev": 0.0,
+              "diagonal_max_abs_dev_in_ulp": 0.0,
+              "offdiagonal_bit_identical": true,
+              "columns_differing": []
+            },
+            "v2twin43": {
+              "pass_": true,
+              "strict_bit_identical": true,
+              "diagonal_max_abs_dev": 0.0,
+              "diagonal_max_abs_dev_in_ulp": 0.0,
+              "offdiagonal_bit_identical": true,
+              "columns_differing": []
+            },
+            "v2twin44": {
+              "pass_": true,
+              "strict_bit_identical": true,
+              "diagonal_max_abs_dev": 0.0,
+              "diagonal_max_abs_dev_in_ulp": 0.0,
+              "offdiagonal_bit_identical": true,
+              "columns_differing": []
+            },
+            "v2gram42": {
+              "pass_": true,
+              "strict_bit_identical": true,
+              "diagonal_max_abs_dev": 0.0,
+              "diagonal_max_abs_dev_in_ulp": 0.0,
+              "offdiagonal_bit_identical": true,
+              "columns_differing": []
+            },
+            "v2mlp42": {
+              "pass_": true,
+              "strict_bit_identical": false,
+              "diagonal_max_abs_dev": 1.1920928955078125e-07,
+              "diagonal_max_abs_dev_in_ulp": 1.0,
+              "offdiagonal_bit_identical": true,
+              "columns_differing": [
+                0,
+                10,
+                19,
+                27,
+                34,
+                40,
+                45,
+                49,
+                52,
+                54
+              ]
+            },
+            "trained42": {
+              "pass_": true,
+              "strict_bit_identical": true,
+              "diagonal_max_abs_dev": 0.0,
+              "diagonal_max_abs_dev_in_ulp": 0.0,
+              "offdiagonal_bit_identical": true,
+              "columns_differing": []
+            },
+            "trained43": {
+              "pass_": true,
+              "strict_bit_identical": true,
+              "diagonal_max_abs_dev": 0.0,
+              "diagonal_max_abs_dev_in_ulp": 0.0,
+              "offdiagonal_bit_identical": true,
+              "columns_differing": []
+            },
+            "trained44": {
+              "pass_": true,
+              "strict_bit_identical": true,
+              "diagonal_max_abs_dev": 0.0,
+              "diagonal_max_abs_dev_in_ulp": 0.0,
+              "offdiagonal_bit_identical": true,
+              "columns_differing": []
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "the two re-bound per-sample arrays have the panel shape (4096 x 55) and q_k sums to 1 on every sample",
+      "ok": true,
+      "detail": {
+        "lam_shape": [
+          4096,
+          55
+        ],
+        "qk_shape": [
+          4096,
+          55
+        ],
+        "sum_qk_max_dev": 7.901947984834123e-10,
+        "qk_source": {
+          "record": "V2-GEO-BATTERY-r2",
+          "file": "/workspace/Insync/agusc@agusc.com.ar/Google Drive/UNLP/FermionicML-satelite2-max/results_v2/records/V2-GEO-BATTERY-r2/v2_geo_battery_persample.npz",
+          "record_file": "v2_geo_battery_persample.npz",
+          "sha256": "65dc2ea9d21b5013a7ec48a1a2a621f45e30d4070078fdc349836b5cb80e85ad",
+          "pointer": "npz:v2gs42__qk",
+          "served_by": "record"
+        }
+      }
+    },
+    {
+      "name": "SF-3 lambda_geo_mean: sealed GEO-r2-v4-battery record == recompute from sealed battery NPZ (s8 convention, exp-mean-log with 1e-16 floor)",
+      "shape_observed": [
+        55
+      ],
+      "shape_expected": [
+        55
+      ],
+      "float64_exact": true,
+      "max_abs_diff": 0.0
+    },
+    {
+      "name": "q_k null-subspace DISCLOSURE: every panel sample has exactly two modes at lambda <= TAU_POS and those eigenvalues are DEGENERATE, so the split of q_k between scree bars k=0 and k=1 is LAPACK-build dependent; only their SUM and the positive modes are reproducible.  Carried in-record (the v2 battery's `null_subspace` block) or, for a derived substrate, validated against the sealed published battery.",
+      "ok": true,
+      "detail": {
+        "source": "record",
+        "disclosure": {
+          "tau_pos": 1e-12,
+          "n_null_per_sample": [
+            2
+          ],
+          "finding": "every panel sample carries n_null GEVP modes at lambda <= TAU_POS.  Those eigenvalues are DEGENERATE, so the eigenvector basis inside the null subspace -- and hence the split of the spectral weight q_k between scree bar 0 and scree bar 1 -- is LAPACK-build dependent and is NOT a reproducible number.  The null subspace's TOTAL weight and every positive mode ARE reproducible.  This is a property of the published construction, exposed by re-running it; it is disclosed, not repaired.",
+          "affects": "SM Fig-S3 LEFT and CENTER scree bars k = 0, 1 only",
+          "null_total_per_arm": {
+            "v2gs42": 0.9914090555937368,
+            "v2gs43": 0.991268282739974,
+            "v2gs44": 0.9913843030960374,
+            "v2twin42": 0.9848407572812572,
+            "v2twin43": 0.9851289333682947,
+            "v2twin44": 0.9850295357954673,
+            "v2gram42": 0.9913176450813155,
+            "v2mlp42": 0.9910098351264562,
+            "trained42": 0.9911807094499283,
+            "trained43": 0.9914053786136472,
+            "trained44": 0.9914061164819132
+          }
+        },
+        "validation_arms": null
+      }
+    },
+    {
+      "name": "n_modes==55",
+      "ok": true,
+      "detail": {
+        "len_lam": 55,
+        "len_qk": 55
+      }
+    },
+    {
+      "name": "q_k sums to ~1",
+      "ok": true,
+      "detail": 1.0000000004276413
+    },
+    {
+      "name": "SF-3 contracted headline scalars agree with the plotted arrays (n_modes, lam_pos_threshold, null_mode_count, sum_qk_max)",
+      "ok": true,
+      "detail": {
+        "n_modes": 55,
+        "lam_pos_threshold": 1e-12,
+        "null_mode_count": 2,
+        "sum_qk_max": 1.0000000007901948
+      }
+    },
+    {
+      "name": "null-band count == registered (2)",
+      "ok": true,
+      "detail": {
+        "from_array": 2,
+        "registered": 2
+      }
+    },
+    {
+      "name": "lambda_k sorted ascending",
+      "ok": true,
+      "detail": true
+    },
+    {
+      "name": "target-side lambda_k geometric means carry over (shared panel geometry): gated positive modes within 1e-6 of the printed roundG values; null floors are numerical noise, log10 dev <= 1",
+      "ok": true,
+      "detail": {
+        "lambda_gated_max_rel": 2.247233424412733e-10,
+        "null_floor_log10_dev": [
+          0.002875234503063732,
+          0.019572417728664616
+        ]
+      }
+    },
+    {
+      "name": "display conventions match the printed panel (q_k bars below the 1e-5 ylim floor: parity with roundG; lambda within (1e-17, 30))",
+      "ok": true,
+      "detail": {
+        "n_below_ylim_new": 44,
+        "n_below_ylim_roundG": 44,
+        "lam_range": [
+          1.0275027044652582e-16,
+          1.3115243199093118
+        ]
+      }
+    }
+  ],
+  "input_sha256": {
+    "/workspace/Insync/agusc@agusc.com.ar/Google Drive/UNLP/FermionicML-satelite2-max/results_v2/records/V2-GEO-BATTERY-r2/v2_geo_battery_persample.npz": "65dc2ea9d21b5013a7ec48a1a2a621f45e30d4070078fdc349836b5cb80e85ad",
+    "/workspace/Insync/agusc@agusc.com.ar/Google Drive/UNLP/FermionicML-satelite2-max/results_v2/records/V2-GEO-BATTERY-r2/v2_geo_battery_result.json": "b5a352ea337db5640a8b665c8b3f5417725f2c808497f698a8c342acaac81757",
+    "experiments/experiment-campaign2-r2/regen/expc2r2_figS3left_regenerate.py": "4144b8321e8bba10b3a929773c457dfce29c0de961d287d0f81d9d1e187d5de4",
+    "experiments/experiment-campaign2-r2/results/GEO-r2-v4-battery/MANIFEST.sha256": "aee25bf41da66f8a674a829cee471b631f75cbe0de54dbc15d383c8e56e378d1",
+    "experiments/experiment-campaign2-r2/results/GEO-r2-v4-battery/expc2r2_geo_battery_result.json": "c5085af978fb8dc00c1da5d23d93f0dd2c343a7c3ae24ed5be08ac577da2c91d",
+    "experiments/experiment-campaign2-r2/results/GEO-r2-v4-battery/expc2r2_geo_paired_c4096.json": "648ca6ea94f11c9627b3323bb03c16582493c8049bb5a54d3fac87453a2147c9",
+    "experiments/experiment-campaign2-r2/results/GEO-r2-v4-battery/expc2r2_geo_persample.npz": "5ba2a3264907064995302a01e91b90db83aaf1f4f9fa8136912c4a1b2c62df08",
+    "manuscript/results/plots/covariance/scree_random_trained_roundG_values.json": "2f53b5ebe77bc135df0d9c0e6bf0180e78bc25077cf7268e93918f0ea63549ed",
+    "manuscript/results/plots/fig3_scree_random_roundG.py": "3608060f7869f6eee58e64e89f30a9b0b8305c93fc22bd60e85e8726c9e41569",
+    "manuscript/results/plots/regen/expc2_figS3left_regenerate.py": "840c360ce079bad98965c3c5d653a9e7e8385d0235de1521f6c648f0a9dd048f"
+  },
+  "sources": {
+    "record_dir": "/workspace/Insync/agusc@agusc.com.ar/Google Drive/UNLP/FermionicML-satelite2-max/results_v2/records/V2-GEO-BATTERY-r2",
+    "record_id": "V2-GEO-BATTERY-r2",
+    "arm_map": "v2",
+    "arm_map_table": {
+      "stdgs_random": "v2gs42",
+      "stdgs_random_s43": "v2gs43",
+      "stdgs_random_s44": "v2gs44",
+      "stdgs_twin": "v2twin42",
+      "stdgs_twin_s43": "v2twin43",
+      "stdgs_twin_s44": "v2twin44",
+      "stdgs_mlp_random": "v2mlp42"
+    },
+    "unmapped_arms": {
+      "iso_stdgs_random": "S-isotropic reference constructed AT the published trained residual norm; the v2 battery record emits no iso arm.  Kept on the sealed published battery pin; the norm offset vs the v2 trained arm is measured and gated as data (see check `iso reference stays at the PUBLISHED trained norm`).",
+      "mlp42": "REMOVED prior-architecture matched-MLP companion (roundK K-COV1, checkpoint set MLP-PARAM / abl_mlp).  This is a DIFFERENT PUBLISHED OBJECT from the standardized capacity anchor stdgs_mlp_random: it is the prior-architecture matched MLP the FLAG-H call REMOVED, carried only as a verified_unplotted companion for the SM comparison figure. There is no v2 counterpart and none is implied; it keeps its sealed roundK pin (coordinator ruling 2026-09-10).",
+      "stdgs_mlp_random_s43": "the published capacity-anchor MLP seedmates; the v2 production run has an s42 MLP GS lane only, so s43/s44 stay PUBLISHED references and are labelled as such in the sidecar.",
+      "stdgs_mlp_random_s44": "the published capacity-anchor MLP seedmates; the v2 production run has an s42 MLP GS lane only, so s43/s44 stay PUBLISHED references and are labelled as such in the sidecar.",
+      "nearinit_random": "prior-architecture eu-A near-init anchor (campaign-8 sym_panels); quantified printed reference only.  Unchanged, keeps its pin."
+    },
+    "result_manifest_verified": true,
+    "result_manifest_kind": "RESULT_MANIFEST.json",
+    "substrate_dir": null,
+    "substrate_manifest_verified": null,
+    "arrays": {
+      "npz:lam": {
+        "record": "GEO-r2-v4-battery (sealed, published)",
+        "file": "experiments/experiment-campaign2-r2/results/GEO-r2-v4-battery/expc2r2_geo_persample.npz",
+        "sha256": "5ba2a3264907064995302a01e91b90db83aaf1f4f9fa8136912c4a1b2c62df08",
+        "pointer": "npz:lam",
+        "class": "target-side geometry: built from g_true alone, arm-independent, NOT OGN-dependent -- unchanged, keeps its sealed pin in both arm-map modes"
+      },
+      "npz:v2gs42__qk": {
+        "record": "V2-GEO-BATTERY-r2",
+        "file": "/workspace/Insync/agusc@agusc.com.ar/Google Drive/UNLP/FermionicML-satelite2-max/results_v2/records/V2-GEO-BATTERY-r2/v2_geo_battery_persample.npz",
+        "record_file": "v2_geo_battery_persample.npz",
+        "sha256": "65dc2ea9d21b5013a7ec48a1a2a621f45e30d4070078fdc349836b5cb80e85ad",
+        "pointer": "npz:v2gs42__qk",
+        "served_by": "record"
+      },
+      "npz:v2gs42__R": {
+        "record": "V2-GEO-BATTERY-r2",
+        "file": "/workspace/Insync/agusc@agusc.com.ar/Google Drive/UNLP/FermionicML-satelite2-max/results_v2/records/V2-GEO-BATTERY-r2/v2_geo_battery_persample.npz",
+        "record_file": "v2_geo_battery_persample.npz",
+        "sha256": "65dc2ea9d21b5013a7ec48a1a2a621f45e30d4070078fdc349836b5cb80e85ad",
+        "pointer": "npz:v2gs42__R",
+        "served_by": "record"
+      },
+      "experiments/experiment-campaign2-r2/results/GEO-r2-v4-battery/expc2r2_geo_paired_c4096.json": {
+        "record": "GEO-r2-v4-battery (sealed, published)",
+        "file": "experiments/experiment-campaign2-r2/results/GEO-r2-v4-battery/expc2r2_geo_paired_c4096.json",
+        "sha256": "648ca6ea94f11c9627b3323bb03c16582493c8049bb5a54d3fac87453a2147c9",
+        "pointer": "rows/SF-3/regen/stdgs_random",
+        "class": "printed reference row (frozen pin)"
+      },
+      "manuscript/results/plots/covariance/scree_random_trained_roundG_values.json": {
+        "record": "printed roundG sidecar",
+        "file": "manuscript/results/plots/covariance/scree_random_trained_roundG_values.json",
+        "sha256": "2f53b5ebe77bc135df0d9c0e6bf0180e78bc25077cf7268e93918f0ea63549ed",
+        "pointer": "plotted_arrays",
+        "class": "printed reference (frozen pin)"
+      }
+    },
+    "target_side_geometry": {
+      "npz:lam": {
+        "record": "GEO-r2-v4-battery (sealed, published)",
+        "file": "experiments/experiment-campaign2-r2/results/GEO-r2-v4-battery/expc2r2_geo_persample.npz",
+        "sha256": "5ba2a3264907064995302a01e91b90db83aaf1f4f9fa8136912c4a1b2c62df08",
+        "pointer": "npz:lam",
+        "class": "target-side geometry: built from g_true alone, arm-independent, NOT OGN-dependent -- unchanged, keeps its sealed pin in both arm-map modes"
+      }
+    },
+    "frozen_pins": {
+      "manuscript/results/plots/covariance/scree_random_trained_roundG_values.json": "2f53b5ebe77bc135df0d9c0e6bf0180e78bc25077cf7268e93918f0ea63549ed",
+      "manuscript/results/plots/regen/expc2_figS3left_regenerate.py": "840c360ce079bad98965c3c5d653a9e7e8385d0235de1521f6c648f0a9dd048f",
+      "manuscript/results/plots/fig3_scree_random_roundG.py": "3608060f7869f6eee58e64e89f30a9b0b8305c93fc22bd60e85e8726c9e41569",
+      "experiments/experiment-campaign2-r2/regen/expc2r2_figS3left_regenerate.py": "4144b8321e8bba10b3a929773c457dfce29c0de961d287d0f81d9d1e187d5de4",
+      "experiments/experiment-campaign2-r2/results/GEO-r2-v4-battery/expc2r2_geo_paired_c4096.json": "648ca6ea94f11c9627b3323bb03c16582493c8049bb5a54d3fac87453a2147c9",
+      "experiments/experiment-campaign2-r2/results/GEO-r2-v4-battery/expc2r2_geo_battery_result.json": "c5085af978fb8dc00c1da5d23d93f0dd2c343a7c3ae24ed5be08ac577da2c91d",
+      "experiments/experiment-campaign2-r2/results/GEO-r2-v4-battery/expc2r2_geo_persample.npz": "5ba2a3264907064995302a01e91b90db83aaf1f4f9fa8136912c4a1b2c62df08"
+    }
+  },
+  "retired_checks": [
+    {
+      "name": "SF-3 q_k_mean: sealed record == recompute",
+      "reason": "the v2 geometry-battery record emits no rows/SF-3 block (production_v2/stages/v2_geo_battery.py is reduced to the byte-frozen expc2_geo_metrics numerics, whose PERSAMPLE_KEYS do not include q_k).  The row is DERIVED here from npz:<arm>__qk under the parent's own expression; the derivation is recorded in the sidecar and replayed from disk by the gate emitter.  Emitting rows/SF-3 (or q_k) from the v2 stage is the author's call."
+    },
+    {
+      "name": "SF-3 q_k_std: sealed record == recompute",
+      "reason": "same: no rows/SF-3 block in the v2 record."
+    },
+    {
+      "name": "SF-3 sum_qk_max / R: sealed record == recompute",
+      "reason": "same: no rows/SF-3 block in the v2 record."
+    }
+  ],
+  "n_retired_checks": 3,
+  "v2_fork": {
+    "fork_parent": "experiments/experiment-campaign2-r2/regen/expc2r2_figS3left_regenerate.py",
+    "fork_parent_sha256": "4144b8321e8bba10b3a929773c457dfce29c0de961d287d0f81d9d1e187d5de4",
+    "arm_map": "v2",
+    "arm_map_table": {
+      "stdgs_random": "v2gs42",
+      "stdgs_random_s43": "v2gs43",
+      "stdgs_random_s44": "v2gs44",
+      "stdgs_twin": "v2twin42",
+      "stdgs_twin_s43": "v2twin43",
+      "stdgs_twin_s44": "v2twin44",
+      "stdgs_mlp_random": "v2mlp42"
+    },
+    "published_display_arm": "stdgs_random",
+    "mapped_display_arm": "v2gs42",
+    "battery_dir": "/workspace/Insync/agusc@agusc.com.ar/Google Drive/UNLP/FermionicML-satelite2-max/results_v2/records/V2-GEO-BATTERY-r2",
+    "battery_record": "V2-GEO-BATTERY-r2",
+    "substrate": {
+      "source": "record",
+      "record": "V2-GEO-BATTERY-r2",
+      "schema": "v2-geo-battery-v2",
+      "result_sha256": "b5a352ea337db5640a8b665c8b3f5417725f2c808497f698a8c342acaac81757",
+      "persample_sha256": "65dc2ea9d21b5013a7ec48a1a2a621f45e30d4070078fdc349836b5cb80e85ad",
+      "gates": {
+        "g_frozen_metrics_byte_frozen": true,
+        "g_layout_v2gs42": true,
+        "g_layout_v2gs43": true,
+        "g_layout_v2gs44": true,
+        "g_layout_v2twin42": true,
+        "g_layout_v2twin43": true,
+        "g_layout_v2twin44": true,
+        "g_layout_v2gram42": true,
+        "g_layout_v2mlp42": true,
+        "g_layout_trained42": true,
+        "g_layout_trained43": true,
+        "g_layout_trained44": true,
+        "g_panel_row_binding_1ulp": true,
+        "g_panel_is_release_stream": true,
+        "g_boot_digest_c4096": true,
+        "g_persample_F_and_qk_emitted": true,
+        "g_qk_sums_to_one": true,
+        "g_grid_is_61pt_registered": true,
+        "g_registered_reproduced": true,
+        "g_rows_blocks_emitted": true,
+        "g_null_subspace_disclosed": true
+      },
+      "all_gates_pass": true,
+      "diagnostics": {
+        "d_panel_rows_strict_bit_identical": false
+      },
+      "null_subspace_disclosure": {
+        "tau_pos": 1e-12,
+        "n_null_per_sample": [
+          2
+        ],
+        "finding": "every panel sample carries n_null GEVP modes at lambda <= TAU_POS.  Those eigenvalues are DEGENERATE, so the eigenvector basis inside the null subspace -- and hence the split of the spectral weight q_k between scree bar 0 and scree bar 1 -- is LAPACK-build dependent and is NOT a reproducible number.  The null subspace's TOTAL weight and every positive mode ARE reproducible.  This is a property of the published construction, exposed by re-running it; it is disclosed, not repaired.",
+        "affects": "SM Fig-S3 LEFT and CENTER scree bars k = 0, 1 only",
+        "null_total_per_arm": {
+          "v2gs42": 0.9914090555937368,
+          "v2gs43": 0.991268282739974,
+          "v2gs44": 0.9913843030960374,
+          "v2twin42": 0.9848407572812572,
+          "v2twin43": 0.9851289333682947,
+          "v2twin44": 0.9850295357954673,
+          "v2gram42": 0.9913176450813155,
+          "v2mlp42": 0.9910098351264562,
+          "trained42": 0.9911807094499283,
+          "trained43": 0.9914053786136472,
+          "trained44": 0.9914061164819132
+        }
+      },
+      "qk_transcription": {
+        "source": "experiments/experiment-campaign2-r2/stages/expc2r2_geo_battery.py",
+        "sha256": "efc6e293697d65d4193b46d0e35532e108f7817c9693379f24b9d4ea0b5ce764",
+        "lines": "_score_core_from_W55 :812-814",
+        "quote": "npred2 = einsum('ia,ab,ib->i', W55, S55, W55); c_pred = einsum('iak,ia->ik', VP, W55 @ S55); qk = c_pred**2 / maximum(npred2, 1e-16)[:, None]"
+      },
+      "frozen_metrics": {
+        "path": "experiments/experiment-campaign2/stages/expc2_geo_metrics.py",
+        "sha256": "c29831778219bd4cb5328e59203d1c9c5fd5f48216b14b024aa83e7c63ac0868",
+        "knobs": {
+          "RIDGE": 1e-09,
+          "CUTOFF": 1e-07,
+          "TAU_POS": 1e-12,
+          "BOOT_SEED": 20260703,
+          "BOOT_B": 1000
+        }
+      },
+      "panel_row_binding": {
+        "v2gs42": {
+          "pass_": true,
+          "strict_bit_identical": true,
+          "diagonal_max_abs_dev": 0.0,
+          "diagonal_max_abs_dev_in_ulp": 0.0,
+          "offdiagonal_bit_identical": true,
+          "columns_differing": []
+        },
+        "v2gs43": {
+          "pass_": true,
+          "strict_bit_identical": true,
+          "diagonal_max_abs_dev": 0.0,
+          "diagonal_max_abs_dev_in_ulp": 0.0,
+          "offdiagonal_bit_identical": true,
+          "columns_differing": []
+        },
+        "v2gs44": {
+          "pass_": true,
+          "strict_bit_identical": true,
+          "diagonal_max_abs_dev": 0.0,
+          "diagonal_max_abs_dev_in_ulp": 0.0,
+          "offdiagonal_bit_identical": true,
+          "columns_differing": []
+        },
+        "v2twin42": {
+          "pass_": true,
+          "strict_bit_identical": true,
+          "diagonal_max_abs_dev": 0.0,
+          "diagonal_max_abs_dev_in_ulp": 0.0,
+          "offdiagonal_bit_identical": true,
+          "columns_differing": []
+        },
+        "v2twin43": {
+          "pass_": true,
+          "strict_bit_identical": true,
+          "diagonal_max_abs_dev": 0.0,
+          "diagonal_max_abs_dev_in_ulp": 0.0,
+          "offdiagonal_bit_identical": true,
+          "columns_differing": []
+        },
+        "v2twin44": {
+          "pass_": true,
+          "strict_bit_identical": true,
+          "diagonal_max_abs_dev": 0.0,
+          "diagonal_max_abs_dev_in_ulp": 0.0,
+          "offdiagonal_bit_identical": true,
+          "columns_differing": []
+        },
+        "v2gram42": {
+          "pass_": true,
+          "strict_bit_identical": true,
+          "diagonal_max_abs_dev": 0.0,
+          "diagonal_max_abs_dev_in_ulp": 0.0,
+          "offdiagonal_bit_identical": true,
+          "columns_differing": []
+        },
+        "v2mlp42": {
+          "pass_": true,
+          "strict_bit_identical": false,
+          "diagonal_max_abs_dev": 1.1920928955078125e-07,
+          "diagonal_max_abs_dev_in_ulp": 1.0,
+          "offdiagonal_bit_identical": true,
+          "columns_differing": [
+            0,
+            10,
+            19,
+            27,
+            34,
+            40,
+            45,
+            49,
+            52,
+            54
+          ]
+        },
+        "trained42": {
+          "pass_": true,
+          "strict_bit_identical": true,
+          "diagonal_max_abs_dev": 0.0,
+          "diagonal_max_abs_dev_in_ulp": 0.0,
+          "offdiagonal_bit_identical": true,
+          "columns_differing": []
+        },
+        "trained43": {
+          "pass_": true,
+          "strict_bit_identical": true,
+          "diagonal_max_abs_dev": 0.0,
+          "diagonal_max_abs_dev_in_ulp": 0.0,
+          "offdiagonal_bit_identical": true,
+          "columns_differing": []
+        },
+        "trained44": {
+          "pass_": true,
+          "strict_bit_identical": true,
+          "diagonal_max_abs_dev": 0.0,
+          "diagonal_max_abs_dev_in_ulp": 0.0,
+          "offdiagonal_bit_identical": true,
+          "columns_differing": []
+        }
+      }
+    },
+    "source_date_epoch": "1786665600",
+    "not_rebound": {
+      "iso_stdgs_random": "S-isotropic reference constructed AT the published trained residual norm; the v2 battery record emits no iso arm.  Kept on the sealed published battery pin; the norm offset vs the v2 trained arm is measured and gated as data (see check `iso reference stays at the PUBLISHED trained norm`).",
+      "mlp42": "REMOVED prior-architecture matched-MLP companion (roundK K-COV1, checkpoint set MLP-PARAM / abl_mlp).  This is a DIFFERENT PUBLISHED OBJECT from the standardized capacity anchor stdgs_mlp_random: it is the prior-architecture matched MLP the FLAG-H call REMOVED, carried only as a verified_unplotted companion for the SM comparison figure. There is no v2 counterpart and none is implied; it keeps its sealed roundK pin (coordinator ruling 2026-09-10).",
+      "stdgs_mlp_random_s43": "the published capacity-anchor MLP seedmates; the v2 production run has an s42 MLP GS lane only, so s43/s44 stay PUBLISHED references and are labelled as such in the sidecar.",
+      "stdgs_mlp_random_s44": "the published capacity-anchor MLP seedmates; the v2 production run has an s42 MLP GS lane only, so s43/s44 stay PUBLISHED references and are labelled as such in the sidecar.",
+      "nearinit_random": "prior-architecture eu-A near-init anchor (campaign-8 sym_panels); quantified printed reference only.  Unchanged, keeps its pin."
+    }
+  },
+  "all_gates_pass": true
+}

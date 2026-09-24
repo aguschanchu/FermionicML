@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: >-
+  If you use this reproduction pack, please cite the article below.
+title: "FermionicML notebook reproduction pack"
+version: v1
+type: software
+license: MIT
+authors:
+  - family-names: Cianciulli
+    given-names: Agustin
+repository-code: "https://github.com/aguschanchu/FermionicML"
+preferred-citation:
+  type: article
+  title: >-
+    Reduced-density-matrix reconstruction of pairing Hamiltonians with
+    energy side information and an orbital graph network
+  authors:
+    - family-names: Cianciulli
+      given-names: Agustin
+    - family-names: Rossignoli
+      given-names: Raul

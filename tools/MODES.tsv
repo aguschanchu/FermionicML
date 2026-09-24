@@ -1,0 +1,6 @@
+copy_lists	0o775
+copy_lists/V2-CHECKPOINTS.snapshot.json	0o664
+copy_lists/checkpoints_v2.tsv	0o664
+copy_lists/dist_files.sha256	0o664
+expected_hashes_v2.py	0o664
+manifest_tools.py	0o664

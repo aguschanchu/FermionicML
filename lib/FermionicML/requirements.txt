@@ -1,0 +1,29 @@
+# FermionicML -- environment lock (round-E).
+#
+# EXACT PINS below are the versions verified first-hand by the round-E
+# cross-host forensics job (E1 `xhost_forensics`, step-0 hash-pin) on the
+# TPU worker serving stack that produced the released features:
+#   campaign9/results/xhost_forensics/step0_hashpin.json : versions.tpu_worker
+# The complete `pip freeze` of the reproduction environment is part of the
+# archival deposit (Data and Code Availability; SM Sec.S8).
+#
+# Python 3.10
+
+# --- exact pins (E1-verified) ---
+jax==0.6.2
+jaxlib==0.6.2
+libtpu==0.0.17   # TPU backend only
+flax==0.10.7
+optax==0.2.8
+ml_dtypes==0.5.4
+numpy==2.2.6
+scipy==1.15.3
+
+# --- additional required imports (declared by the shipped code;
+#     pin from the deposit pip freeze -- versions not invented here) ---
+fermionic-mbody   # sibling repo https://github.com/aguschanchu/fermionic-mbody
+numba
+openfermion
+sparse
+tqdm
+matplotlib

@@ -1,0 +1,1866 @@
+{
+ "built_utc": "2026-09-11T18:44:59Z",
+ "note": "Sealed v2 cross-evaluation of the std/thermal family (V2-CROSSEVAL).",
+ "provenance": [
+  {
+   "file": "v2_crosseval_result.json",
+   "file_sha256": "a4901cc70764eb1be08e839489939974ea9e97a2e7d19bbcae641b240f3fd64a",
+   "record": "V2-CROSSEVAL-std_thermal",
+   "record_manifest_sha256": "d0b52b0f6bf5eb661fb006f24d0e20ad95e2f23ddfc115d62df81dbcb8fa28c1",
+   "sealed_utc": "2026-09-10T15:22:59Z"
+  }
+ ],
+ "record": "V2-CROSSEVAL-std_thermal",
+ "result": {
+  "all_gates_pass": true,
+  "cell": "exact64_cpu_highest",
+  "convention": {
+   "backend": "cpu",
+   "jax_version": "0.6.2",
+   "matmul_precision": "highest",
+   "x64": true
+  },
+  "diagnostics": {
+   "arrays": {
+    "beta1_s42": {
+     "g_pred_rows_sha256": "7fe090bdf416d55a785cd79fa52cccb497fd39fcd52d11a39f0d94dc1b922466",
+     "g_pred_shape": [
+      4096,
+      55
+     ],
+     "g_true_shape": [
+      4096,
+      55
+     ],
+     "ok": true
+    },
+    "beta1_s43": {
+     "g_pred_rows_sha256": "1cc4898309306d58a89e72e8dad22f81beb86a485dcfcdee96de00190cf504c6",
+     "g_pred_shape": [
+      4096,
+      55
+     ],
+     "g_true_shape": [
+      4096,
+      55
+     ],
+     "ok": true
+    },
+    "beta1_s44": {
+     "g_pred_rows_sha256": "2d76f31e7d5d3c0469262fdfd67aef0f552f7f8e5f61803e443ff303c840c1d0",
+     "g_pred_shape": [
+      4096,
+      55
+     ],
+     "g_true_shape": [
+      4096,
+      55
+     ],
+     "ok": true
+    },
+    "geo_predict_npz": {
+     "g_pred_rows_sha256": "5ab87b7de003ef5f295a1035e76a56af2db9fefe78e714a310896b21c34a7391",
+     "g_pred_shape": [
+      4096,
+      55
+     ],
+     "g_true_shape": [
+      4096,
+      55
+     ],
+     "ok": true
+    },
+    "geo_predict_s43": {
+     "g_pred_rows_sha256": "7b07230df51dae39b9474a55ef651def200cc5ddc56e2af3f6d6f725f776aadf",
+     "g_pred_shape": [
+      4096,
+      55
+     ],
+     "g_true_shape": [
+      4096,
+      55
+     ],
+     "ok": true
+    },
+    "geo_predict_s44": {
+     "g_pred_rows_sha256": "cff768fe00e358f0d0304628dcb4d3676b60fa8f1c68662b1a47e9074eaeec5e",
+     "g_pred_shape": [
+      4096,
+      55
+     ],
+     "g_true_shape": [
+      4096,
+      55
+     ],
+     "ok": true
+    },
+    "old_npz_42": {
+     "g_pred_rows_sha256": "5db2304099b054d2e7b8bcd5cdcd06aff93443af7b1fecb95cfbd456ee4a386b",
+     "g_pred_shape": [
+      4096,
+      55
+     ],
+     "g_true_shape": [
+      4096,
+      55
+     ],
+     "ok": true
+    },
+    "old_npz_43": {
+     "g_pred_rows_sha256": "95f59f9cd9cdda7067867405b553acf1d4a8a486642697c9ed6a8a04c77d9742",
+     "g_pred_shape": [
+      4096,
+      55
+     ],
+     "g_true_shape": [
+      4096,
+      55
+     ],
+     "ok": true
+    },
+    "old_npz_44": {
+     "g_pred_rows_sha256": "298d839c0861444e155cca8ebea3ec8a3e5efff2ce60b73ecabe2e7c9a0dc0c9",
+     "g_pred_shape": [
+      4096,
+      55
+     ],
+     "g_true_shape": [
+      4096,
+      55
+     ],
+     "ok": true
+    }
+   },
+   "boot_digest_sha256": "024e7ae1f4e9a6dd93c69f03c23967b13ea02b4ab18d2b91e149370023057971",
+   "campaign_modules_imported": [
+    "campaign10/stages/c10_softmode_participation.py",
+    "campaign4/compute.py",
+    "campaign4/config.py",
+    "campaign4/engine.py",
+    "campaign5/stages/s_canonical_cond.py",
+    "campaign6/stages/s6_jacobian_energy.py",
+    "campaign8/stages/s8_sym_panels.py"
+   ],
+   "code_lineage_sha256": {
+    "campaign10/stages/c10_softmode_participation.py": {
+     "matches": true,
+     "pin_sha256": "ace4fb5057ee8d8b277ccc51666fb37383c1e5b53ddd5df707d3874571426674",
+     "sha256": "ace4fb5057ee8d8b277ccc51666fb37383c1e5b53ddd5df707d3874571426674"
+    },
+    "campaign3/tasks/t_gevp_ext.py": {
+     "matches": true,
+     "pin_sha256": "4e0fab6d7bb6278d90a0e2aa8e29be2108e381549b6d324b12083dda9a5af571",
+     "sha256": "4e0fab6d7bb6278d90a0e2aa8e29be2108e381549b6d324b12083dda9a5af571"
+    },
+    "campaign4/config.py": {
+     "matches": true,
+     "pin_sha256": "1e15971b36cc442a780c3461582f3a742279c300f935939ae0b997503cd4d63f",
+     "sha256": "1e15971b36cc442a780c3461582f3a742279c300f935939ae0b997503cd4d63f"
+    },
+    "campaign4/engine.py": {
+     "matches": true,
+     "pin_sha256": "4dcc9304f6256a9b8ed6aa779e349299c736072e8cc54be308bc1b4bfc60cfb0",
+     "sha256": "4dcc9304f6256a9b8ed6aa779e349299c736072e8cc54be308bc1b4bfc60cfb0"
+    },
+    "campaign4/engine_parts/p1_core.py": {
+     "matches": true,
+     "pin_sha256": "d2cbf9803a4e63d27f0bd24250d6764b99db6b3995a68c9b6804bd513622bfd4",
+     "sha256": "d2cbf9803a4e63d27f0bd24250d6764b99db6b3995a68c9b6804bd513622bfd4"
+    },
+    "campaign4/engine_parts/p4_gevp.py": {
+     "matches": true,
+     "pin_sha256": "229fd7139542e98e486c22117147f904271e1386f16814059cfbdeb9deacd2c0",
+     "sha256": "229fd7139542e98e486c22117147f904271e1386f16814059cfbdeb9deacd2c0"
+    },
+    "campaign6/evalpass/e6_equal_accuracy.py": {
+     "matches": true,
+     "pin_sha256": "005f2eac353c4f869d237ed62ead62fdf9e172dfeafe0d40c17a86ffdbade0a8",
+     "sha256": "005f2eac353c4f869d237ed62ead62fdf9e172dfeafe0d40c17a86ffdbade0a8"
+    },
+    "campaign8/stages/s8_sym_panels.py": {
+     "matches": true,
+     "pin_sha256": "6d0ecf9123185a504f56970c128519a9f839cf372b4548b352b4f851102f5e46",
+     "sha256": "6d0ecf9123185a504f56970c128519a9f839cf372b4548b352b4f851102f5e46"
+    },
+    "experiments/experiment-campaign2/stages/expc2_geo_metrics.py": {
+     "matches": true,
+     "pin_sha256": "c29831778219bd4cb5328e59203d1c9c5fd5f48216b14b024aa83e7c63ac0868",
+     "sha256": "c29831778219bd4cb5328e59203d1c9c5fd5f48216b14b024aa83e7c63ac0868"
+    }
+   },
+   "geometry": {
+    "band_size_median": 9.0,
+    "blocks_xchk_exact": true,
+    "engine_file": "/home/agus/v2f_repo/campaign4/engine.py",
+    "grid_pin": {
+     "dhi": 1,
+     "dlo": -5
+    },
+    "grid_spec": {
+     "dhi": 1,
+     "dlo": -5,
+     "n_points": 61
+    },
+    "lam_rows_sha256": "95c75351e4143bdf03d2f56c7df98399a73ac0f26599f007b0a3a68dd06d4c54",
+    "n_panel": 4096,
+    "pe_spread": 0.0,
+    "true_S_rows_sha256": "be7b63c83f16621e00dbb19e8dcbea11951723fa13b93e76670a3cb626b1130c",
+    "wall_s": 276.59795212745667
+   },
+   "geometry_worker": {
+    "cmd": [
+     "/home/agus/ognrepro-pinned/bin/python",
+     "-m",
+     "production_v2.stages.v2_crosseval",
+     "--root",
+     "/home/agus/v2f_repo",
+     "--geometry-worker",
+     "/home/agus/v2_store/eval/v2_crosseval_std/_v2_xeval_work.npz",
+     "/home/agus/v2_store/eval/v2_crosseval_std/_v2_xeval_geo.json",
+     "/home/agus/v2_store/eval/v2_crosseval_std/v2_crosseval_persample.npz",
+     "4096",
+     "0"
+    ],
+    "returncode": 0,
+    "wall_s": 318.0
+   },
+   "parent_function_sources": {
+    "_bgsplit_local": {
+     "matches": true,
+     "pin_sha256": "8c2b4e2f74bb94852eb384e53adf149cf561f7745e8a4f03819e71cde4277ff8",
+     "sha256": "8c2b4e2f74bb94852eb384e53adf149cf561f7745e8a4f03819e71cde4277ff8"
+    },
+    "_subspace_local": {
+     "matches": true,
+     "pin_sha256": "f2d7083642021fb90148090d13f3f7209f59f6119e1933a902f392bbc547dc1a",
+     "sha256": "f2d7083642021fb90148090d13f3f7209f59f6119e1933a902f392bbc547dc1a"
+    },
+    "_w_from_V_local": {
+     "matches": true,
+     "pin_sha256": "7cbf775115a7d2a6b00a8c201ef72735a4e594e1b0dc5d640ee38b92b65a55d4",
+     "sha256": "7cbf775115a7d2a6b00a8c201ef72735a4e594e1b0dc5d640ee38b92b65a55d4"
+    },
+    "arm_quantities": {
+     "matches": true,
+     "pin_sha256": "fd2f30c211205841f6eac93d21a533a7ded62cdb262618d8d7ba905b757b5974",
+     "sha256": "fd2f30c211205841f6eac93d21a533a7ded62cdb262618d8d7ba905b757b5974"
+    },
+    "band_indices_local": {
+     "matches": true,
+     "pin_sha256": "5c744cddc6bf7153428c76bf737f0d67503141272b74007fd57a6e284c155a6e",
+     "sha256": "5c744cddc6bf7153428c76bf737f0d67503141272b74007fd57a6e284c155a6e"
+    },
+    "blocks_for_local": {
+     "matches": true,
+     "pin_sha256": "ec9f39ae6b3db6e01435b4db5e19c06d24e31514928dae1641614dad924ba63d",
+     "sha256": "ec9f39ae6b3db6e01435b4db5e19c06d24e31514928dae1641614dad924ba63d"
+    },
+    "boot_indices": {
+     "matches": true,
+     "pin_sha256": "4b84baa79adeb00d732d6a282a7c34a8921342f75ed1c1dd74b7dffc0487a325",
+     "sha256": "4b84baa79adeb00d732d6a282a7c34a8921342f75ed1c1dd74b7dffc0487a325"
+    },
+    "build_iso_arm": {
+     "matches": true,
+     "pin_sha256": "0cb50e1ba5436640a8cf5986c91f74d9c7d3e28d7b050df19ae4d01b6d1cc409",
+     "sha256": "0cb50e1ba5436640a8cf5986c91f74d9c7d3e28d7b050df19ae4d01b6d1cc409"
+    },
+    "compute_geometry": {
+     "matches": true,
+     "pin_sha256": "9ee3e4b7f7336efc755b236c74d45c246589243ef301b5b1c4e81cc61343b177",
+     "sha256": "9ee3e4b7f7336efc755b236c74d45c246589243ef301b5b1c4e81cc61343b177"
+    },
+    "rel": {
+     "matches": true,
+     "pin_sha256": "fa3d35433dcdb16897a9e49e7999baef972b296568b5397301cf1c392f1c48e0",
+     "sha256": "fa3d35433dcdb16897a9e49e7999baef972b296568b5397301cf1c392f1c48e0"
+    },
+    "rounds_to": {
+     "matches": true,
+     "pin_sha256": "d00cfe533f7a720b402bd9f2608a074ce0172a555f7cd8183da4656283393f20",
+     "sha256": "d00cfe533f7a720b402bd9f2608a074ce0172a555f7cd8183da4656283393f20"
+    },
+    "score_core": {
+     "matches": true,
+     "pin_sha256": "fa73894e2261ce2605ab54ca1b585daab12458f65d046d9f5a98b4b7f5e28e3b",
+     "sha256": "fa73894e2261ce2605ab54ca1b585daab12458f65d046d9f5a98b4b7f5e28e3b"
+    },
+    "score_labels": {
+     "matches": true,
+     "pin_sha256": "7a7f65c60a2b22f939cc7950cb5e7d5c385b599dd0a51f001efacef1841042b6",
+     "sha256": "7a7f65c60a2b22f939cc7950cb5e7d5c385b599dd0a51f001efacef1841042b6"
+    },
+    "sub_bands_local": {
+     "matches": true,
+     "pin_sha256": "bb73aea31a225481740e76149fb595ccc819c8d23e89501bd21bc6e1a4479f6a",
+     "sha256": "bb73aea31a225481740e76149fb595ccc819c8d23e89501bd21bc6e1a4479f6a"
+    },
+    "within": {
+     "matches": true,
+     "pin_sha256": "3f8e1703577ccb5cdbdff03edba032fd3d77975b12e7b2b3abf97027e4874906",
+     "sha256": "3f8e1703577ccb5cdbdff03edba032fd3d77975b12e7b2b3abf97027e4874906"
+    }
+   },
+   "rom_formula": {
+    "extracted": "rom = {arm: (float(np.median(bundles[arm][\"lam_bar\"])) / max(float(np.median(bundles[arm][\"lam_eff\"])), 1e-300)) for arm in bundles}",
+    "matches": true,
+    "pinned": "rom = {arm: (float(np.median(bundles[arm][\"lam_bar\"])) / max(float(np.median(bundles[arm][\"lam_eff\"])), 1e-300)) for arm in bundles}",
+    "source_ref": "expc2_geo_spine.py:1689-1690 (SIV-1 block)"
+   },
+   "sealed_rom_by_arm": {
+    "iso": {
+     "hex": "0x1.ff619fd1c25c3p-1",
+     "repr": "0.9987916892579779",
+     "value": 0.9987916892579779
+    },
+    "iso_stdgs_random": {
+     "hex": "0x1.ff619fd1c25c3p-1",
+     "repr": "0.9987916892579779",
+     "value": 0.9987916892579779
+    },
+    "iso_stdgs_random_s43": {
+     "hex": "0x1.ff619fd1c25c3p-1",
+     "repr": "0.9987916892579779",
+     "value": 0.9987916892579779
+    },
+    "iso_stdgs_random_s44": {
+     "hex": "0x1.ff619fd1c25c7p-1",
+     "repr": "0.9987916892579783",
+     "value": 0.9987916892579783
+    },
+    "mlp42": {
+     "hex": "0x1.394b8336cc6dfp+5",
+     "repr": "39.16187136470193",
+     "value": 39.16187136470193
+    },
+    "mlp43": {
+     "hex": "0x1.400a876df5876p+5",
+     "repr": "40.005141123824544",
+     "value": 40.005141123824544
+    },
+    "mlp44": {
+     "hex": "0x1.346542e5199b8p+5",
+     "repr": "38.549443998187996",
+     "value": 38.549443998187996
+    },
+    "stdgs_random": {
+     "hex": "0x1.ec8edaf96ee2dp+6",
+     "repr": "123.13950719584746",
+     "value": 123.13950719584746
+    },
+    "stdgs_random_s43": {
+     "hex": "0x1.02766d4b3efb3p+7",
+     "repr": "129.23130259651006",
+     "value": 129.23130259651006
+    },
+    "stdgs_random_s44": {
+     "hex": "0x1.0c514e4aba1fbp+7",
+     "repr": "134.15880044481295",
+     "value": 134.15880044481295
+    },
+    "trained42": {
+     "hex": "0x1.531ceaf8ee4c4p+7",
+     "repr": "169.55648019703779",
+     "value": 169.55648019703779
+    },
+    "trained43": {
+     "hex": "0x1.6f025a154b2c0p+7",
+     "repr": "183.50459353010774",
+     "value": 183.50459353010774
+    },
+    "trained44": {
+     "hex": "0x1.4d6adfec92e29p+7",
+     "repr": "166.70873965542822",
+     "value": 166.70873965542822
+    }
+   }
+  },
+  "fatal": null,
+  "gates": {
+   "g_arrays_shape_dtype_finite": true,
+   "g_backend_cpu_f64": true,
+   "g_boot_digest": true,
+   "g_ckpt_digests_verified": true,
+   "g_code_lineage_pins": true,
+   "g_features_deterministic": true,
+   "g_forward_deterministic": true,
+   "g_full_protocol": true,
+   "g_geometry_built": true,
+   "g_inputs_sha_pinned": true,
+   "g_logits_match_clean_record": true,
+   "g_not_smoke": true,
+   "g_panel_gtrue_bit_identical": true,
+   "g_parent_fn_sources_pinned": true,
+   "g_parent_source_pinned": true,
+   "g_parent_unmutated": true,
+   "g_printed_rounding_control": true,
+   "g_published_beta1_reproduced": true,
+   "g_rom_formula_pinned": true,
+   "g_rom_recomputed_from_persample": true,
+   "g_spine_rom_reproduced": true,
+   "g_stream_file_pinned": true,
+   "g_xeval_finite": true,
+   "g_xeval_scored": true
+  },
+  "parent_run_id": "expc2r2-20260803",
+  "producer": {
+   "path": "production_v2/stages/v2_crosseval.py",
+   "sha256": "3277e35462fcd362d8b63142354b5462c30be229cbacb459b0075d9453fa30c5"
+  },
+  "results": {
+   "checkpoints": {
+    "v2std_thermal_random_s42": {
+     "beta_eff": 1.0,
+     "ckpt_dir": "/home/agus/v2_store/lanes/v2std_thermal_random_s42",
+     "clean_err_q_ci95": [
+      0.00020799604960763804,
+      0.00021270285233958855
+     ],
+     "clean_median_err_q": 0.0002102947540382111,
+     "config_final_state_sha256": "f5b7e4cc6d2f0bff6be996a9584310074784ef1405081ef65b6b560acc68c5ce",
+     "family": "cross_eval",
+     "final_state_sha256": "f5b7e4cc6d2f0bff6be996a9584310074784ef1405081ef65b6b560acc68c5ce",
+     "forward_deterministic": true,
+     "init_seed": 42,
+     "kind": "v2",
+     "lane": "v2std_thermal_random_s42",
+     "logits_rows_sha256": "3e7b8d6f798b3bd59ada9ff09f1b0f89bf5d5e3326ffb75e82f470f97fb42eb2",
+     "model": "StdPhysicsOrbitalGraphNet",
+     "n_params": 17756929,
+     "state_type": "thermal",
+     "v2config": {
+      "anneal_frac": 0.8,
+      "aux": "M",
+      "cfg_version": 2,
+      "data_precision": "highest",
+      "gauge_value": 0.55,
+      "lam0": 10.0,
+      "lam1": 0.01,
+      "loss": "metric",
+      "loss_precision": "highest",
+      "m_chunk": 32,
+      "m_dtype": "float16",
+      "net_precision": null,
+      "readout": "affine",
+      "resolved": true,
+      "shell": "euclid",
+      "sigma_floor": 1e-08,
+      "std_convention": "std1_entry",
+      "std_n_max": 300000,
+      "w_gauge": 0.0,
+      "w_ridge": 0.01
+     },
+     "wall_s": 89.1
+    },
+    "v2std_thermal_random_s43": {
+     "beta_eff": 1.0,
+     "ckpt_dir": "/home/agus/v2_store/lanes/v2std_thermal_random_s43",
+     "clean_err_q_ci95": [
+      0.0001871244098554014,
+      0.0001907089359324501
+     ],
+     "clean_median_err_q": 0.00018886324630771202,
+     "config_final_state_sha256": "64dbdb91bf87a445d80e098f0ef4b92debd13e06f470041ab9994cf4d128f0b0",
+     "family": "cross_eval",
+     "final_state_sha256": "64dbdb91bf87a445d80e098f0ef4b92debd13e06f470041ab9994cf4d128f0b0",
+     "forward_deterministic": true,
+     "init_seed": 43,
+     "kind": "v2",
+     "lane": "v2std_thermal_random_s43",
+     "logits_rows_sha256": "6243f999c7c455164b8aaa3a1d6a969302c7b78a32c53b2c387efb62872918ad",
+     "model": "StdPhysicsOrbitalGraphNet",
+     "n_params": 17756929,
+     "state_type": "thermal",
+     "v2config": {
+      "anneal_frac": 0.8,
+      "aux": "M",
+      "cfg_version": 2,
+      "data_precision": "highest",
+      "gauge_value": 0.55,
+      "lam0": 10.0,
+      "lam1": 0.01,
+      "loss": "metric",
+      "loss_precision": "highest",
+      "m_chunk": 32,
+      "m_dtype": "float16",
+      "net_precision": null,
+      "readout": "affine",
+      "resolved": true,
+      "shell": "euclid",
+      "sigma_floor": 1e-08,
+      "std_convention": "std1_entry",
+      "std_n_max": 300000,
+      "w_gauge": 0.0,
+      "w_ridge": 0.01
+     },
+     "wall_s": 29.1
+    },
+    "v2std_thermal_random_s44": {
+     "beta_eff": 1.0,
+     "ckpt_dir": "/home/agus/v2_store/lanes/v2std_thermal_random_s44",
+     "clean_err_q_ci95": [
+      0.00020361622621658078,
+      0.00020844496580887272
+     ],
+     "clean_median_err_q": 0.00020597183262352313,
+     "config_final_state_sha256": "75a4e760b1b0eafe721982353d809f9a45eed27a27e6e9e7a72901a4f080c8c7",
+     "family": "cross_eval",
+     "final_state_sha256": "75a4e760b1b0eafe721982353d809f9a45eed27a27e6e9e7a72901a4f080c8c7",
+     "forward_deterministic": true,
+     "init_seed": 44,
+     "kind": "v2",
+     "lane": "v2std_thermal_random_s44",
+     "logits_rows_sha256": "bdad25351013f584b1054654b26b7dcdd2ff9002de3f8f2a7a536298a9a2dede",
+     "model": "StdPhysicsOrbitalGraphNet",
+     "n_params": 17756929,
+     "state_type": "thermal",
+     "v2config": {
+      "anneal_frac": 0.8,
+      "aux": "M",
+      "cfg_version": 2,
+      "data_precision": "highest",
+      "gauge_value": 0.55,
+      "lam0": 10.0,
+      "lam1": 0.01,
+      "loss": "metric",
+      "loss_precision": "highest",
+      "m_chunk": 32,
+      "m_dtype": "float16",
+      "net_precision": null,
+      "readout": "affine",
+      "resolved": true,
+      "shell": "euclid",
+      "sigma_floor": 1e-08,
+      "std_convention": "std1_entry",
+      "std_n_max": 300000,
+      "w_gauge": 0.0,
+      "w_ridge": 0.01
+     },
+     "wall_s": 29.0
+    }
+   },
+   "clean_record_identity": {},
+   "control_rom_reproduction": {
+    "iso": {
+     "arm": "iso",
+     "measured": {
+      "hex": "0x1.ff619fd1c0ea0p-1",
+      "repr": "0.9987916892573203",
+      "value": 0.9987916892573203
+     },
+     "rel_dev": 6.583622536027178e-13,
+     "sealed": {
+      "hex": "0x1.ff619fd1c25c3p-1",
+      "repr": "0.9987916892579779",
+      "value": 0.9987916892579779
+     },
+     "sealed_json_path": "/results/rom_by_arm/iso",
+     "sealed_record": "experiments/experiment-campaign2/results/GEO-spine/expc2_geo_spine_result.json",
+     "tol": 1e-06,
+     "within_class": true
+    },
+    "stdgs_random": {
+     "arm": "stdgs_random",
+     "measured": {
+      "hex": "0x1.ec8edaf990333p+6",
+      "repr": "123.13950719778659",
+      "value": 123.13950719778659
+     },
+     "rel_dev": 1.574740338128322e-11,
+     "sealed": {
+      "hex": "0x1.ec8edaf96ee2dp+6",
+      "repr": "123.13950719584746",
+      "value": 123.13950719584746
+     },
+     "sealed_json_path": "/results/rom_by_arm/stdgs_random",
+     "sealed_record": "experiments/experiment-campaign2/results/GEO-spine/expc2_geo_spine_result.json",
+     "tol": 1e-06,
+     "within_class": true
+    },
+    "stdgs_random_s43": {
+     "arm": "stdgs_random_s43",
+     "measured": {
+      "hex": "0x1.02766d4b12dbbp+7",
+      "repr": "129.23130259137346",
+      "value": 129.23130259137346
+     },
+     "rel_dev": 3.9747316549210154e-11,
+     "sealed": {
+      "hex": "0x1.02766d4b3efb3p+7",
+      "repr": "129.23130259651006",
+      "value": 129.23130259651006
+     },
+     "sealed_json_path": "/results/rom_by_arm/stdgs_random_s43",
+     "sealed_record": "experiments/experiment-campaign2/results/GEO-spine/expc2_geo_spine_result.json",
+     "tol": 1e-06,
+     "within_class": true
+    },
+    "stdgs_random_s44": {
+     "arm": "stdgs_random_s44",
+     "measured": {
+      "hex": "0x1.0c514e4ab8abcp+7",
+      "repr": "134.15880044464382",
+      "value": 134.15880044464382
+     },
+     "rel_dev": 1.2607692667643278e-12,
+     "sealed": {
+      "hex": "0x1.0c514e4aba1fbp+7",
+      "repr": "134.15880044481295",
+      "value": 134.15880044481295
+     },
+     "sealed_json_path": "/results/rom_by_arm/stdgs_random_s44",
+     "sealed_record": "experiments/experiment-campaign2/results/GEO-spine/expc2_geo_spine_result.json",
+     "tol": 1e-06,
+     "within_class": true
+    },
+    "trained42": {
+     "arm": "trained42",
+     "measured": {
+      "hex": "0x1.531ceaf8fd09bp+7",
+      "repr": "169.55648019875375",
+      "value": 169.55648019875375
+     },
+     "rel_dev": 1.0120349003273077e-11,
+     "sealed": {
+      "hex": "0x1.531ceaf8ee4c4p+7",
+      "repr": "169.55648019703779",
+      "value": 169.55648019703779
+     },
+     "sealed_json_path": "/results/rom_by_arm/trained42",
+     "sealed_record": "experiments/experiment-campaign2/results/GEO-spine/expc2_geo_spine_result.json",
+     "tol": 1e-06,
+     "within_class": true
+    },
+    "trained43": {
+     "arm": "trained43",
+     "measured": {
+      "hex": "0x1.6f025a1543505p+7",
+      "repr": "183.50459352919293",
+      "value": 183.50459352919293
+     },
+     "rel_dev": 4.9852344474743404e-12,
+     "sealed": {
+      "hex": "0x1.6f025a154b2c0p+7",
+      "repr": "183.50459353010774",
+      "value": 183.50459353010774
+     },
+     "sealed_json_path": "/results/rom_by_arm/trained43",
+     "sealed_record": "experiments/experiment-campaign2/results/GEO-spine/expc2_geo_spine_result.json",
+     "tol": 1e-06,
+     "within_class": true
+    },
+    "trained44": {
+     "arm": "trained44",
+     "measured": {
+      "hex": "0x1.4d6adfec88082p+7",
+      "repr": "166.70873965416473",
+      "value": 166.70873965416473
+     },
+     "rel_dev": 7.579048499906094e-12,
+     "sealed": {
+      "hex": "0x1.4d6adfec92e29p+7",
+      "repr": "166.70873965542822",
+      "value": 166.70873965542822
+     },
+     "sealed_json_path": "/results/rom_by_arm/trained44",
+     "sealed_record": "experiments/experiment-campaign2/results/GEO-spine/expc2_geo_spine_result.json",
+     "tol": 1e-06,
+     "within_class": true
+    }
+   },
+   "convention": {
+    "bootstrap": {
+     "B": 1000,
+     "digest_pin": "024e7ae1f4e9a6dd93c69f03c23967b13ea02b4ab18d2b91e149370023057971",
+     "endpoints": "order statistics sorted[25]/sorted[975] (95) and sorted[160]/sorted[840] (68)",
+     "new_seed_registered": false,
+     "seed": 20260703,
+     "unit": "panel ROW (shared-row cluster bootstrap)"
+    },
+    "estimand": "rom = median(lam_bar) / median(lam_eff) over the panel rows -- the SIV soft-mode bias column (expc2_geo_spine.py:1689-1690)",
+    "eval_convention": {
+     "backend": "cpu",
+     "jax_version": "0.6.2",
+     "matmul_precision": "highest",
+     "x64": true
+    },
+    "forward": {
+     "cell": "exact64_cpu_highest",
+     "features": "exact-ED f64 (X.features_exact64; beta_eff 1.0 thermal / 100 gs)",
+     "params": "restore_v2 f64, matmul highest baked at trace, chunk 512"
+    },
+    "harness": {
+     "consumption": "IMPORTED after a byte check in a dedicated subprocess (campaign4 engine = the harness's CODE_LINEAGE) and executed unedited; per-function source shas gated",
+     "functions_executed": [
+      "_bgsplit_local",
+      "_subspace_local",
+      "_w_from_V_local",
+      "arm_quantities",
+      "band_indices_local",
+      "blocks_for_local",
+      "boot_indices",
+      "build_iso_arm",
+      "compute_geometry",
+      "rel",
+      "rounds_to",
+      "score_core",
+      "score_labels",
+      "sub_bands_local",
+      "within"
+     ],
+     "path": "experiments/experiment-campaign2/stages/expc2_geo_spine.py",
+     "sha256": "15d9466f2961defbc5811dfb0f4ecf4ef9ef927beeebb58e6904ac887665e02c"
+    },
+    "panel": {
+     "cohort": "4096-row COMMON panel (GS-4096) = release stream rows 0..4095",
+     "g_true_rows_sha256_f32": "18832d2846b09e00bc1698ba84e425396650af238a34f79b66808e7b8d0fc53a",
+     "g_true_rows_sha256_f64": "079e344faa5c21ca7f0659345760d5f8e1b12fda3e616093ae7ebbe52a45447f",
+     "label_dim": 55,
+     "n_panel": 4096
+    },
+    "reproduction_contract": {
+     "blas": {
+      "detection method": "pkgconfig",
+      "name": "scipy-openblas",
+      "openblas configuration": "OpenBLAS 0.3.29  USE64BITINT DYNAMIC_ARCH NO_AFFINITY Haswell MAX_THREADS=64",
+      "pc file directory": "/project/.openblas",
+      "version": "0.3.29"
+     },
+     "build_machine": {
+      "cpu": "x86_64",
+      "endian": "little",
+      "family": "x86_64",
+      "system": "linux"
+     },
+     "host_cpu_count": 240,
+     "host_cpu_model": "AMD EPYC 7B12",
+     "lapack": {
+      "detection method": "pkgconfig",
+      "name": "scipy-openblas",
+      "openblas configuration": "OpenBLAS 0.3.29  USE64BITINT DYNAMIC_ARCH NO_AFFINITY Haswell MAX_THREADS=64",
+      "pc file directory": "/project/.openblas",
+      "version": "0.3.29"
+     },
+     "machine": "x86_64",
+     "note": "rom reads lam_eff out of the panel's eigenVECTOR basis; a different BLAS/LAPACK build changes that basis in the clustered bulk and moves rom by the C_REL5 amount for well-fit arms.  Reproduce inside this contract, or read rom with its sensitivity class.",
+     "numpy": "2.2.6",
+     "openblas_dynamic_arch_env": {
+      "MKL_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_CORETYPE": null,
+      "OPENBLAS_NUM_THREADS": "1"
+     },
+     "python": "3.10.12",
+     "scipy": "1.15.3",
+     "simd_extensions": {
+      "baseline": [
+       "SSE",
+       "SSE2",
+       "SSE3"
+      ],
+      "found": [
+       "SSSE3",
+       "SSE41",
+       "POPCNT",
+       "SSE42",
+       "AVX",
+       "F16C",
+       "FMA3",
+       "AVX2"
+      ],
+      "not found": [
+       "AVX512F",
+       "AVX512CD",
+       "AVX512_KNL",
+       "AVX512_KNM",
+       "AVX512_SKX",
+       "AVX512_CLX",
+       "AVX512_CNL",
+       "AVX512_ICL"
+      ]
+     }
+    },
+    "rom_sensitivity_class": {
+     "classes": {
+      "eigenvalue_only": "lam_bar and any symmetric function of the spectrum reproduce at f64 round-off (~1e-15) across BLAS/LAPACK builds",
+      "eigenvector_projected": "lam_eff, and therefore rom, reproduce at ~1e-11 for arms whose residual sits on the well-separated small-lambda half, and only at ~1e-5 (C_REL5) for WELL-FIT arms whose residual spreads over the clustered bulk"
+     },
+     "v2_arms_read_as": "eigenvector_projected -- the v2 lane roms in results.cross_evaluation.per_seed carry this sensitivity class against any re-run under a different BLAS/LAPACK build; they are internally consistent within the contract recorded above (verified bit-identical across two host classes on 2026-09-10)"
+    },
+    "tolerance": {
+     "binding_class": "C-REL6",
+     "secondary_class": {
+      "applies_to": [
+       "g_published_beta1_reproduced"
+      ],
+      "does_not_apply_to": [
+       "g_spine_rom_reproduced",
+       "g_printed_rounding_control",
+       "g_panel_gtrue_bit_identical",
+       "g_boot_digest"
+      ],
+      "justification": "The BETA1 arms are the WELL-FIT arms of this panel: their residual S-norm is ~4.6e-6 (median dwS) against ~0.16 for the sealed control arms, and only 41-48% of their residual projection weight sits on the small-lambda half of the spectrum against 99.3-99.4% for the controls.  Their rom therefore reads lam_eff = (lambda . a^2)/sum(a^2) with a = VP^T S dw out of the CLUSTERED BULK of the panel spectrum, where the eigenVECTORS rotate by ~eps/gap under any change of the eigen-solver.  The eigen-basis is a LAPACK-BUILD-dependent quantity: re-running the pinned harness today reproduces the sealed C5 geometry's true_S_rows_sha256 BIT-IDENTICALLY but NOT its lam_rows_sha256, whereas C5 itself (Aug 2026) rebuilt the geometry and reproduced the GEO-spine control roms at rel_dev exactly 0.  lam_bar (a symmetric function of the eigenvalues, invariant under eigenvector rotation) still reproduces at f64 round-off, 7.9e-16 median / 4.5e-15 max per row.  Measured consequence on 2026-09-10 (ondemand-1, 112 vCPU x86, and reproduced bit-for-bit on a 4-core workstation): the seven control arms reproduce the sealed GEO-spine roms at <= 4.0e-11, five orders inside C-REL6, while the three BETA1 arms deviate from the sealed C5 roms at 2.73e-6 (s42) / 3.03e-6 (s43) / 6.84e-6 (s44).  C_REL5 = 1e-5 is one decade above the measured maximum and is applied ONLY to g_published_beta1_reproduced; it is NOT a relaxation of any geometry check.",
+      "name": "C_REL5",
+      "tolerance": 1e-05
+     },
+     "statement": "sealed geometry SCALARS (rom) are reproduced under the parent's own TOL_REL6 = 1e-6 (expc2_geo_spine.py:225); input FILE identity and panel ARRAY identity are byte-exact (C-BYTE) and gated separately; the v2 forwards are gated deterministic and, where a sealed V2-CLEAN panel record exists, bit-identical to its logits.",
+     "tolerance": 1e-06
+    }
+   },
+   "cross_evaluation": {
+    "per_family_summary": {
+     "cross_eval": {
+      "convention": "per-seed rom values are ratios of medians; the seed aggregate is a plain statistic OVER the seed values, never a pooled re-median",
+      "n_seeds": 3,
+      "rom_max": {
+       "hex": "0x1.55a0ff1bfd452p+1",
+       "repr": "2.6689757239023857",
+       "value": 2.6689757239023857
+      },
+      "rom_mean": {
+       "hex": "0x1.2ef54a2937aa9p+1",
+       "repr": "2.366860647321421",
+       "value": 2.366860647321421
+      },
+      "rom_median": {
+       "hex": "0x1.4c4037ce14a3fp+1",
+       "repr": "2.595709777474695",
+       "value": 2.595709777474695
+      },
+      "rom_min": {
+       "hex": "0x1.d5fd4f232a2d5p+0",
+       "repr": "1.835896440587182",
+       "value": 1.835896440587182
+      },
+      "rom_per_seed": {
+       "42": {
+        "hex": "0x1.55a0ff1bfd452p+1",
+        "repr": "2.6689757239023857",
+        "value": 2.6689757239023857
+       },
+       "43": {
+        "hex": "0x1.d5fd4f232a2d5p+0",
+        "repr": "1.835896440587182",
+        "value": 1.835896440587182
+       },
+       "44": {
+        "hex": "0x1.4c4037ce14a3fp+1",
+        "repr": "2.595709777474695",
+        "value": 2.595709777474695
+       }
+      },
+      "rom_spread_max_over_min": {
+       "hex": "0x1.742a6eef261f9p+0",
+       "repr": "1.453772481332747",
+       "value": 1.453772481332747
+      },
+      "rom_std_ddof1": {
+       "hex": "0x1.d85b32e3d3d08p-2",
+       "repr": "0.4612853957705316",
+       "value": 0.4612853957705316
+      },
+      "seeds": [
+       42,
+       43,
+       44
+      ]
+     },
+     "published_beta1": {
+      "convention": "per-seed rom values are ratios of medians; the seed aggregate is a plain statistic OVER the seed values, never a pooled re-median",
+      "n_seeds": 3,
+      "rom_max": {
+       "hex": "0x1.e380f56e76935p-1",
+       "repr": "0.9443432519285923",
+       "value": 0.9443432519285923
+      },
+      "rom_mean": {
+       "hex": "0x1.bf2965602e960p-1",
+       "repr": "0.8733627014073981",
+       "value": 0.8733627014073981
+      },
+      "rom_median": {
+       "hex": "0x1.cb554c8456463p-1",
+       "repr": "0.8971351539177131",
+       "value": 0.8971351539177131
+      },
+      "rom_min": {
+       "hex": "0x1.8ea5ee2dbee87p-1",
+       "repr": "0.7786096983758889",
+       "value": 0.7786096983758889
+      },
+      "rom_per_seed": {
+       "42": {
+        "hex": "0x1.cb554c8456463p-1",
+        "repr": "0.8971351539177131",
+        "value": 0.8971351539177131
+       },
+       "43": {
+        "hex": "0x1.8ea5ee2dbee87p-1",
+        "repr": "0.7786096983758889",
+        "value": 0.7786096983758889
+       },
+       "44": {
+        "hex": "0x1.e380f56e76935p-1",
+        "repr": "0.9443432519285923",
+        "value": 0.9443432519285923
+       }
+      },
+      "rom_spread_max_over_min": {
+       "hex": "0x1.367de209d0ae1p+0",
+       "repr": "1.2128583215678008",
+       "value": 1.2128583215678008
+      },
+      "rom_std_ddof1": {
+       "hex": "0x1.5dbd97b2e15a5p-4",
+       "repr": "0.08538588769268658",
+       "value": 0.08538588769268658
+      },
+      "seeds": [
+       42,
+       43,
+       44
+      ]
+     }
+    },
+    "per_seed": {
+     "beta1_std_thermal_random": {
+      "arm": "beta1_std_thermal_random",
+      "family": "published_beta1",
+      "medians": {
+       "R": 0.9165031756242566,
+       "dwS": 4.06703854001268e-06,
+       "eps_I": 0.001299071488557046,
+       "eps_S": 0.0004799767436218952,
+       "f_err": 2.0530952330966656e-07,
+       "f_null": 0.08349682432413655,
+       "lam_bar": 0.5631982050588116,
+       "lam_eff": 0.6277740902241683,
+       "p_bulk": 0.6687906752533186,
+       "p_soft": 0.3312093247466815,
+       "ratio": 1.1140025681879693,
+       "sq_rel_S_err": 2.303776775959382e-07
+      },
+      "payload": "experiments/experiment-campaign2/results/BETA1-panel/std_thermal_random_beta1_predictions_val_first4096.npz",
+      "payload_sha256": "842926e72956e46d53ad721997a57d2981474244bce37b534cd7d41b5d9407a7",
+      "rom": {
+       "hex": "0x1.cb554c8456463p-1",
+       "repr": "0.8971351539177131",
+       "value": 0.8971351539177131
+      },
+      "rom_ci68": [
+       {
+        "hex": "0x1.c91842a810b63p-1",
+        "repr": "0.8927632169874012",
+        "value": 0.8927632169874012
+       },
+       {
+        "hex": "0x1.cd39735864d33p-1",
+        "repr": "0.900828938045754",
+        "value": 0.900828938045754
+       }
+      ],
+      "rom_ci95": [
+       {
+        "hex": "0x1.c6e75b230d28ap-1",
+        "repr": "0.8884838562285762",
+        "value": 0.8884838562285762
+       },
+       {
+        "hex": "0x1.cf9e8bab75cc7p-1",
+        "repr": "0.905506481819338",
+        "value": 0.905506481819338
+       }
+      ],
+      "rom_ci_convention": "shared-row cluster bootstrap, B=1000, seed 20260703 (parent boot_indices, digest-gated), order statistics sorted[25]/sorted[975] and sorted[160]/sorted[840]",
+      "rom_estimand": "median(lam_bar) / median(lam_eff) -- ratio of medians over panel rows (expc2_geo_spine.py:1689-1690)",
+      "seed": 42
+     },
+     "beta1_std_thermal_random_s43": {
+      "arm": "beta1_std_thermal_random_s43",
+      "family": "published_beta1",
+      "medians": {
+       "R": 0.9203361113342978,
+       "dwS": 4.636883469561785e-06,
+       "eps_I": 0.001241086295806292,
+       "eps_S": 0.0005113395631105257,
+       "f_err": 2.3453335018587757e-07,
+       "f_null": 0.07966388865529639,
+       "lam_bar": 0.5631982050588116,
+       "lam_eff": 0.7233382864785698,
+       "p_bulk": 0.7090329447403976,
+       "p_soft": 0.2909670552596023,
+       "ratio": 1.281712032599279,
+       "sq_rel_S_err": 2.614681514377197e-07
+      },
+      "payload": "experiments/experiment-campaign2/results/BETA1-panel/std_thermal_random_s43_beta1_predictions_val_first4096.npz",
+      "payload_sha256": "2feb057b3b6e84be4e2f446c20b105120f597ccd9c30e425fbc3b5248ff3d7c3",
+      "rom": {
+       "hex": "0x1.8ea5ee2dbee87p-1",
+       "repr": "0.7786096983758889",
+       "value": 0.7786096983758889
+      },
+      "rom_ci68": [
+       {
+        "hex": "0x1.8d19bbf8287bep-1",
+        "repr": "0.7755869617869775",
+        "value": 0.7755869617869775
+       },
+       {
+        "hex": "0x1.90aa65ec2c2a9p-1",
+        "repr": "0.7825500345989741",
+        "value": 0.7825500345989741
+       }
+      ],
+      "rom_ci95": [
+       {
+        "hex": "0x1.8b35a1e421c53p-1",
+        "repr": "0.771893557642111",
+        "value": 0.771893557642111
+       },
+       {
+        "hex": "0x1.9345e84efddefp-1",
+        "repr": "0.7876427265572924",
+        "value": 0.7876427265572924
+       }
+      ],
+      "rom_ci_convention": "shared-row cluster bootstrap, B=1000, seed 20260703 (parent boot_indices, digest-gated), order statistics sorted[25]/sorted[975] and sorted[160]/sorted[840]",
+      "rom_estimand": "median(lam_bar) / median(lam_eff) -- ratio of medians over panel rows (expc2_geo_spine.py:1689-1690)",
+      "seed": 43
+     },
+     "beta1_std_thermal_random_s44": {
+      "arm": "beta1_std_thermal_random_s44",
+      "family": "published_beta1",
+      "medians": {
+       "R": 0.9435016636347273,
+       "dwS": 4.072633899318839e-06,
+       "eps_I": 0.0013244656561016922,
+       "eps_S": 0.00048032517502669033,
+       "f_err": 2.0921667673735748e-07,
+       "f_null": 0.05649833636529667,
+       "lam_bar": 0.5631982050588116,
+       "lam_eff": 0.5963914116065485,
+       "p_bulk": 0.6162497747751208,
+       "p_soft": 0.3837502252248792,
+       "ratio": 1.056905093105717,
+       "sq_rel_S_err": 2.3071227406214995e-07
+      },
+      "payload": "experiments/experiment-campaign2/results/BETA1-panel/std_thermal_random_s44_beta1_predictions_val_first4096.npz",
+      "payload_sha256": "10ffe66378a1881407f0ce59392fe0f933f86c325b632919b90c41f25de264c1",
+      "rom": {
+       "hex": "0x1.e380f56e76935p-1",
+       "repr": "0.9443432519285923",
+       "value": 0.9443432519285923
+      },
+      "rom_ci68": [
+       {
+        "hex": "0x1.dec9aa8b2f16ep-1",
+        "repr": "0.9351323408987307",
+        "value": 0.9351323408987307
+       },
+       {
+        "hex": "0x1.e5c235e5f3650p-1",
+        "repr": "0.9487473338319408",
+        "value": 0.9487473338319408
+       }
+      ],
+      "rom_ci95": [
+       {
+        "hex": "0x1.dad03a00f0b7dp-1",
+        "repr": "0.9273698927066644",
+        "value": 0.9273698927066644
+       },
+       {
+        "hex": "0x1.e944435351e40p-1",
+        "repr": "0.9555989302834362",
+        "value": 0.9555989302834362
+       }
+      ],
+      "rom_ci_convention": "shared-row cluster bootstrap, B=1000, seed 20260703 (parent boot_indices, digest-gated), order statistics sorted[25]/sorted[975] and sorted[160]/sorted[840]",
+      "rom_estimand": "median(lam_bar) / median(lam_eff) -- ratio of medians over panel rows (expc2_geo_spine.py:1689-1690)",
+      "seed": 44
+     },
+     "v2std_thermal_random_s42": {
+      "arm": "v2std_thermal_random_s42",
+      "family": "cross_eval",
+      "medians": {
+       "R": 0.9897370344467504,
+       "dwS": 4.482528641897243e-07,
+       "eps_I": 0.0004930264591203336,
+       "eps_S": 0.0001588968918841912,
+       "f_err": 2.4832764231930014e-08,
+       "f_null": 0.010262965548770028,
+       "lam_bar": 0.5631982050588116,
+       "lam_eff": 0.21101660836215602,
+       "p_bulk": 0.3046763832734386,
+       "p_soft": 0.6953236167265614,
+       "ratio": 0.37449554531998497,
+       "sq_rel_S_err": 2.524822503827255e-08
+      },
+      "payload": "/home/agus/v2_store/lanes/v2std_thermal_random_s42",
+      "payload_sha256": "f5b7e4cc6d2f0bff6be996a9584310074784ef1405081ef65b6b560acc68c5ce",
+      "rom": {
+       "hex": "0x1.55a0ff1bfd452p+1",
+       "repr": "2.6689757239023857",
+       "value": 2.6689757239023857
+      },
+      "rom_ci68": [
+       {
+        "hex": "0x1.5249f845f4b48p+1",
+        "repr": "2.6428823796826784",
+        "value": 2.6428823796826784
+       },
+       {
+        "hex": "0x1.593c63aab3a86p+1",
+        "repr": "2.69715543589638",
+        "value": 2.69715543589638
+       }
+      ],
+      "rom_ci95": [
+       {
+        "hex": "0x1.4f2f6ee878a02p+1",
+        "repr": "2.6186350474465607",
+        "value": 2.6186350474465607
+       },
+       {
+        "hex": "0x1.5d3c45a4798ebp+1",
+        "repr": "2.7284018567180417",
+        "value": 2.7284018567180417
+       }
+      ],
+      "rom_ci_convention": "shared-row cluster bootstrap, B=1000, seed 20260703 (parent boot_indices, digest-gated), order statistics sorted[25]/sorted[975] and sorted[160]/sorted[840]",
+      "rom_estimand": "median(lam_bar) / median(lam_eff) -- ratio of medians over panel rows (expc2_geo_spine.py:1689-1690)",
+      "seed": 42
+     },
+     "v2std_thermal_random_s43": {
+      "arm": "v2std_thermal_random_s43",
+      "family": "cross_eval",
+      "medians": {
+       "R": 0.9749270158811691,
+       "dwS": 3.6630729959582854e-07,
+       "eps_I": 0.00044813603110776493,
+       "eps_S": 0.00014290602748238832,
+       "f_err": 1.9758918199199576e-08,
+       "f_null": 0.025072984113857697,
+       "lam_bar": 0.5631982050588116,
+       "lam_eff": 0.30677013834107203,
+       "p_bulk": 0.4831393915935698,
+       "p_soft": 0.5168606084064302,
+       "ratio": 0.5450539293569863,
+       "sq_rel_S_err": 2.0422135123101117e-08
+      },
+      "payload": "/home/agus/v2_store/lanes/v2std_thermal_random_s43",
+      "payload_sha256": "64dbdb91bf87a445d80e098f0ef4b92debd13e06f470041ab9994cf4d128f0b0",
+      "rom": {
+       "hex": "0x1.d5fd4f232a2d5p+0",
+       "repr": "1.835896440587182",
+       "value": 1.835896440587182
+      },
+      "rom_ci68": [
+       {
+        "hex": "0x1.d31c9ee84137fp+0",
+        "repr": "1.8246554677036497",
+        "value": 1.8246554677036497
+       },
+       {
+        "hex": "0x1.d89ec880da451p+0",
+        "repr": "1.8461728396016677",
+        "value": 1.8461728396016677
+       }
+      ],
+      "rom_ci95": [
+       {
+        "hex": "0x1.d013b4201ffe7p+0",
+        "repr": "1.812800653307926",
+        "value": 1.812800653307926
+       },
+       {
+        "hex": "0x1.dbe665683472ap+0",
+        "repr": "1.8589843158155852",
+        "value": 1.8589843158155852
+       }
+      ],
+      "rom_ci_convention": "shared-row cluster bootstrap, B=1000, seed 20260703 (parent boot_indices, digest-gated), order statistics sorted[25]/sorted[975] and sorted[160]/sorted[840]",
+      "rom_estimand": "median(lam_bar) / median(lam_eff) -- ratio of medians over panel rows (expc2_geo_spine.py:1689-1690)",
+      "seed": 43
+     },
+     "v2std_thermal_random_s44": {
+      "arm": "v2std_thermal_random_s44",
+      "family": "cross_eval",
+      "medians": {
+       "R": 0.9882289078383117,
+       "dwS": 4.290297378095179e-07,
+       "eps_I": 0.00048495948507646275,
+       "eps_S": 0.00015562805933140128,
+       "f_err": 2.3822413149005254e-08,
+       "f_null": 0.011771092158587727,
+       "lam_bar": 0.5631982050588116,
+       "lam_eff": 0.21697271780774113,
+       "p_bulk": 0.31541350034318383,
+       "p_soft": 0.6845864996568163,
+       "ratio": 0.38458758949350064,
+       "sq_rel_S_err": 2.422009352762594e-08
+      },
+      "payload": "/home/agus/v2_store/lanes/v2std_thermal_random_s44",
+      "payload_sha256": "75a4e760b1b0eafe721982353d809f9a45eed27a27e6e9e7a72901a4f080c8c7",
+      "rom": {
+       "hex": "0x1.4c4037ce14a3fp+1",
+       "repr": "2.595709777474695",
+       "value": 2.595709777474695
+      },
+      "rom_ci68": [
+       {
+        "hex": "0x1.4912428337262p+1",
+        "repr": "2.5708697453213043",
+        "value": 2.5708697453213043
+       },
+       {
+        "hex": "0x1.4f8aff1fc5fbep+1",
+        "repr": "2.621429338945716",
+        "value": 2.621429338945716
+       }
+      ],
+      "rom_ci95": [
+       {
+        "hex": "0x1.4507244cab51ep+1",
+        "repr": "2.5392804502831856",
+        "value": 2.5392804502831856
+       },
+       {
+        "hex": "0x1.54d0378dca9adp+1",
+        "repr": "2.6626042787877027",
+        "value": 2.6626042787877027
+       }
+      ],
+      "rom_ci_convention": "shared-row cluster bootstrap, B=1000, seed 20260703 (parent boot_indices, digest-gated), order statistics sorted[25]/sorted[975] and sorted[160]/sorted[840]",
+      "rom_estimand": "median(lam_bar) / median(lam_eff) -- ratio of medians over panel rows (expc2_geo_spine.py:1689-1690)",
+      "seed": 44
+     }
+    },
+    "role": "SIV-3 offline cross-evaluation -- v2 lane label predictions (exact64 f64 forward on the release-stream panel; thermal lanes = the beta=1 payload convention, gs lanes = native GS arms) scored on the GS-4096 panel geometry"
+   },
+   "decision_support": {
+    "authored_conclusion": null,
+    "authored_conclusion_note": "decision-support numbers only (the parent's AU-24 framing); no retain/delete conclusion is authored",
+    "computed_rom_per_family": {
+     "cross_eval": {
+      "convention": "per-seed rom values are ratios of medians; the seed aggregate is a plain statistic OVER the seed values, never a pooled re-median",
+      "n_seeds": 3,
+      "rom_max": {
+       "hex": "0x1.55a0ff1bfd452p+1",
+       "repr": "2.6689757239023857",
+       "value": 2.6689757239023857
+      },
+      "rom_mean": {
+       "hex": "0x1.2ef54a2937aa9p+1",
+       "repr": "2.366860647321421",
+       "value": 2.366860647321421
+      },
+      "rom_median": {
+       "hex": "0x1.4c4037ce14a3fp+1",
+       "repr": "2.595709777474695",
+       "value": 2.595709777474695
+      },
+      "rom_min": {
+       "hex": "0x1.d5fd4f232a2d5p+0",
+       "repr": "1.835896440587182",
+       "value": 1.835896440587182
+      },
+      "rom_per_seed": {
+       "42": {
+        "hex": "0x1.55a0ff1bfd452p+1",
+        "repr": "2.6689757239023857",
+        "value": 2.6689757239023857
+       },
+       "43": {
+        "hex": "0x1.d5fd4f232a2d5p+0",
+        "repr": "1.835896440587182",
+        "value": 1.835896440587182
+       },
+       "44": {
+        "hex": "0x1.4c4037ce14a3fp+1",
+        "repr": "2.595709777474695",
+        "value": 2.595709777474695
+       }
+      },
+      "rom_spread_max_over_min": {
+       "hex": "0x1.742a6eef261f9p+0",
+       "repr": "1.453772481332747",
+       "value": 1.453772481332747
+      },
+      "rom_std_ddof1": {
+       "hex": "0x1.d85b32e3d3d08p-2",
+       "repr": "0.4612853957705316",
+       "value": 0.4612853957705316
+      },
+      "seeds": [
+       42,
+       43,
+       44
+      ]
+     },
+     "published_beta1": {
+      "convention": "per-seed rom values are ratios of medians; the seed aggregate is a plain statistic OVER the seed values, never a pooled re-median",
+      "n_seeds": 3,
+      "rom_max": {
+       "hex": "0x1.e380f56e76935p-1",
+       "repr": "0.9443432519285923",
+       "value": 0.9443432519285923
+      },
+      "rom_mean": {
+       "hex": "0x1.bf2965602e960p-1",
+       "repr": "0.8733627014073981",
+       "value": 0.8733627014073981
+      },
+      "rom_median": {
+       "hex": "0x1.cb554c8456463p-1",
+       "repr": "0.8971351539177131",
+       "value": 0.8971351539177131
+      },
+      "rom_min": {
+       "hex": "0x1.8ea5ee2dbee87p-1",
+       "repr": "0.7786096983758889",
+       "value": 0.7786096983758889
+      },
+      "rom_per_seed": {
+       "42": {
+        "hex": "0x1.cb554c8456463p-1",
+        "repr": "0.8971351539177131",
+        "value": 0.8971351539177131
+       },
+       "43": {
+        "hex": "0x1.8ea5ee2dbee87p-1",
+        "repr": "0.7786096983758889",
+        "value": 0.7786096983758889
+       },
+       "44": {
+        "hex": "0x1.e380f56e76935p-1",
+        "repr": "0.9443432519285923",
+        "value": 0.9443432519285923
+       }
+      },
+      "rom_spread_max_over_min": {
+       "hex": "0x1.367de209d0ae1p+0",
+       "repr": "1.2128583215678008",
+       "value": 1.2128583215678008
+      },
+      "rom_std_ddof1": {
+       "hex": "0x1.5dbd97b2e15a5p-4",
+       "repr": "0.08538588769268658",
+       "value": 0.08538588769268658
+      },
+      "seeds": [
+       42,
+       43,
+       44
+      ]
+     }
+    },
+    "contrast_ratios": {
+     "cross_eval__over_iso": {
+      "hex": "0x1.4ca71dddacb5dp+1",
+      "repr": "2.5988499958415745",
+      "value": 2.5988499958415745
+     },
+     "cross_eval__over_stdgs_random_median": {
+      "hex": "0x1.4915cfa217faep-6",
+      "repr": "0.02008576656987742",
+      "value": 0.02008576656987742
+     },
+     "cross_eval__over_trained_median": {
+      "hex": "0x1.f5a3b26c29678p-7",
+      "repr": "0.015308820839275969",
+      "value": 0.015308820839275969
+     },
+     "published_beta1__over_iso": {
+      "hex": "0x1.cbe38e21660a7p-1",
+      "repr": "0.8982204833764812",
+      "value": 0.8982204833764812
+     },
+     "published_beta1__over_stdgs_random_median": {
+      "hex": "0x1.c6f4eb8ca826cp-8",
+      "repr": "0.006942088610828106",
+      "value": 0.006942088610828106
+     },
+     "published_beta1__over_trained_median": {
+      "hex": "0x1.5ac16b4cbe093p-8",
+      "repr": "0.005291069694742262",
+      "value": 0.005291069694742262
+     }
+    },
+    "reading_aid": "the SIV column is a soft-mode BIAS: an arm that finds the soft mode has rom far above the S-isotropic reference (~1.0); an arm that does not sits near it",
+    "sealed_comparator_source": {
+     "json_path": "/results/rom_by_arm",
+     "record": "experiments/experiment-campaign2/results/GEO-spine/expc2_geo_spine_result.json",
+     "sha256": "f7bbfabb0cbfc93c7d661bde1a3db6200a5085fd6571348d7d127aca56ed3b8f"
+    },
+    "sealed_comparators_rom_by_arm": {
+     "iso": {
+      "hex": "0x1.ff619fd1c25c3p-1",
+      "repr": "0.9987916892579779",
+      "value": 0.9987916892579779
+     },
+     "iso_stdgs_random": {
+      "hex": "0x1.ff619fd1c25c3p-1",
+      "repr": "0.9987916892579779",
+      "value": 0.9987916892579779
+     },
+     "iso_stdgs_random_s43": {
+      "hex": "0x1.ff619fd1c25c3p-1",
+      "repr": "0.9987916892579779",
+      "value": 0.9987916892579779
+     },
+     "iso_stdgs_random_s44": {
+      "hex": "0x1.ff619fd1c25c7p-1",
+      "repr": "0.9987916892579783",
+      "value": 0.9987916892579783
+     },
+     "mlp42": {
+      "hex": "0x1.394b8336cc6dfp+5",
+      "repr": "39.16187136470193",
+      "value": 39.16187136470193
+     },
+     "mlp43": {
+      "hex": "0x1.400a876df5876p+5",
+      "repr": "40.005141123824544",
+      "value": 40.005141123824544
+     },
+     "mlp44": {
+      "hex": "0x1.346542e5199b8p+5",
+      "repr": "38.549443998187996",
+      "value": 38.549443998187996
+     },
+     "stdgs_random": {
+      "hex": "0x1.ec8edaf96ee2dp+6",
+      "repr": "123.13950719584746",
+      "value": 123.13950719584746
+     },
+     "stdgs_random_s43": {
+      "hex": "0x1.02766d4b3efb3p+7",
+      "repr": "129.23130259651006",
+      "value": 129.23130259651006
+     },
+     "stdgs_random_s44": {
+      "hex": "0x1.0c514e4aba1fbp+7",
+      "repr": "134.15880044481295",
+      "value": 134.15880044481295
+     },
+     "trained42": {
+      "hex": "0x1.531ceaf8ee4c4p+7",
+      "repr": "169.55648019703779",
+      "value": 169.55648019703779
+     },
+     "trained43": {
+      "hex": "0x1.6f025a154b2c0p+7",
+      "repr": "183.50459353010774",
+      "value": 183.50459353010774
+     },
+     "trained44": {
+      "hex": "0x1.4d6adfec92e29p+7",
+      "repr": "166.70873965542822",
+      "value": 166.70873965542822
+     }
+    }
+   },
+   "inputs": [
+    {
+     "bytes": 116713,
+     "exists": true,
+     "key": "spine_py",
+     "path": "/home/agus/v2f_repo/experiments/experiment-campaign2/stages/expc2_geo_spine.py",
+     "pin_sha256": "15d9466f2961defbc5811dfb0f4ecf4ef9ef927beeebb58e6904ac887665e02c",
+     "registered_path": "experiments/experiment-campaign2/stages/expc2_geo_spine.py",
+     "role": "THE R-7 HARNESS",
+     "sha256": "15d9466f2961defbc5811dfb0f4ecf4ef9ef927beeebb58e6904ac887665e02c",
+     "sha_matches_pin": true
+    },
+    {
+     "bytes": 93205,
+     "exists": true,
+     "key": "metrics_py",
+     "path": "/home/agus/v2f_repo/experiments/experiment-campaign2/stages/expc2_geo_metrics.py",
+     "pin_sha256": "c29831778219bd4cb5328e59203d1c9c5fd5f48216b14b024aa83e7c63ac0868",
+     "registered_path": "experiments/experiment-campaign2/stages/expc2_geo_metrics.py",
+     "role": "self-pin partner",
+     "sha256": "c29831778219bd4cb5328e59203d1c9c5fd5f48216b14b024aa83e7c63ac0868",
+     "sha_matches_pin": true
+    },
+    {
+     "bytes": 1831065,
+     "exists": true,
+     "key": "old_npz_42",
+     "path": "/home/agus/v2f_repo/campaign8/inputs/prod_gs_random_predictions_val_first4096.npz",
+     "pin_sha256": "b087d66409b7544405ebcce9e7bef6eac7cbdcdf45b5a7ed1f32087f2bada3cd",
+     "registered_path": "campaign8/inputs/prod_gs_random_predictions_val_first4096.npz",
+     "role": "panel g_true carrier + control arm trained42",
+     "sha256": "b087d66409b7544405ebcce9e7bef6eac7cbdcdf45b5a7ed1f32087f2bada3cd",
+     "sha_matches_pin": true
+    },
+    {
+     "bytes": 1831002,
+     "exists": true,
+     "key": "old_npz_43",
+     "path": "/home/agus/v2f_repo/campaign8/inputs/prod_gs_random_s43_predictions_val_first4096.npz",
+     "pin_sha256": "66adfa7f206b1e9c2b3db856470b0f5da3aa56cfa986a7953e4c35433160bb67",
+     "registered_path": "campaign8/inputs/prod_gs_random_s43_predictions_val_first4096.npz",
+     "role": "control arm trained43",
+     "sha256": "66adfa7f206b1e9c2b3db856470b0f5da3aa56cfa986a7953e4c35433160bb67",
+     "sha_matches_pin": true
+    },
+    {
+     "bytes": 1830953,
+     "exists": true,
+     "key": "old_npz_44",
+     "path": "/home/agus/v2f_repo/campaign8/inputs/prod_gs_random_s44_predictions_val_first4096.npz",
+     "pin_sha256": "1511c0916e5c343c727d471ae587ffc54f7b4a5f22370e58b8f0604c540f1993",
+     "registered_path": "campaign8/inputs/prod_gs_random_s44_predictions_val_first4096.npz",
+     "role": "control arm trained44",
+     "sha256": "1511c0916e5c343c727d471ae587ffc54f7b4a5f22370e58b8f0604c540f1993",
+     "sha_matches_pin": true
+    },
+    {
+     "bytes": 1830624,
+     "exists": true,
+     "key": "geo_predict_npz",
+     "path": "/home/agus/v2f_repo/experiments/experiment-campaign2/results/GEO-predict_s42/stdgs_random_gs_predictions_val_first4096.npz",
+     "pin_sha256": "50a0870cbf5d3d27f2c8b7b9f2a09e79b66de6bd88a261effea69ba5da6a2cc9",
+     "registered_path": "experiments/experiment-campaign2/results/GEO-predict_s42/stdgs_random_gs_predictions_val_first4096.npz",
+     "role": "control arm stdgs_random",
+     "sha256": "50a0870cbf5d3d27f2c8b7b9f2a09e79b66de6bd88a261effea69ba5da6a2cc9",
+     "sha_matches_pin": true
+    },
+    {
+     "bytes": 1830448,
+     "exists": true,
+     "key": "geo_predict_s43",
+     "path": "/home/agus/v2f_repo/experiments/experiment-campaign2/results/GEO-predict_s43/stdgs_random_s43_gs_predictions_val_first4096.npz",
+     "pin_sha256": "53adb8725d7ca985100a26fd8226c8cb89402f4662a7c7e7563b421fba5a6b3e",
+     "registered_path": "experiments/experiment-campaign2/results/GEO-predict_s43/stdgs_random_s43_gs_predictions_val_first4096.npz",
+     "role": "control arm stdgs_random_s43",
+     "sha256": "53adb8725d7ca985100a26fd8226c8cb89402f4662a7c7e7563b421fba5a6b3e",
+     "sha_matches_pin": true
+    },
+    {
+     "bytes": 1830559,
+     "exists": true,
+     "key": "geo_predict_s44",
+     "path": "/home/agus/v2f_repo/experiments/experiment-campaign2/results/GEO-predict_s44/stdgs_random_s44_gs_predictions_val_first4096.npz",
+     "pin_sha256": "442edcfcb41167b144583fa3500b7676c8b755bdd1d43214e049344fa3ab23c8",
+     "registered_path": "experiments/experiment-campaign2/results/GEO-predict_s44/stdgs_random_s44_gs_predictions_val_first4096.npz",
+     "role": "control arm stdgs_random_s44",
+     "sha256": "442edcfcb41167b144583fa3500b7676c8b755bdd1d43214e049344fa3ab23c8",
+     "sha_matches_pin": true
+    },
+    {
+     "bytes": 89657,
+     "exists": true,
+     "key": "spine_result",
+     "path": "/home/agus/v2f_repo/experiments/experiment-campaign2/results/GEO-spine/expc2_geo_spine_result.json",
+     "pin_sha256": "f7bbfabb0cbfc93c7d661bde1a3db6200a5085fd6571348d7d127aca56ed3b8f",
+     "registered_path": "experiments/experiment-campaign2/results/GEO-spine/expc2_geo_spine_result.json",
+     "role": "SEALED comparator authority (results.rom_by_arm)",
+     "sha256": "f7bbfabb0cbfc93c7d661bde1a3db6200a5085fd6571348d7d127aca56ed3b8f",
+     "sha_matches_pin": true
+    },
+    {
+     "bytes": 2615901,
+     "exists": true,
+     "key": "beta1_s42",
+     "path": "/home/agus/v2f_repo/experiments/experiment-campaign2/results/BETA1-panel/std_thermal_random_beta1_predictions_val_first4096.npz",
+     "pin_sha256": "842926e72956e46d53ad721997a57d2981474244bce37b534cd7d41b5d9407a7",
+     "registered_path": "experiments/experiment-campaign2/results/BETA1-panel/std_thermal_random_beta1_predictions_val_first4096.npz",
+     "role": "SEALED beta=1 predictions seed 42",
+     "sha256": "842926e72956e46d53ad721997a57d2981474244bce37b534cd7d41b5d9407a7",
+     "sha_matches_pin": true
+    },
+    {
+     "bytes": 2616084,
+     "exists": true,
+     "key": "beta1_s43",
+     "path": "/home/agus/v2f_repo/experiments/experiment-campaign2/results/BETA1-panel/std_thermal_random_s43_beta1_predictions_val_first4096.npz",
+     "pin_sha256": "2feb057b3b6e84be4e2f446c20b105120f597ccd9c30e425fbc3b5248ff3d7c3",
+     "registered_path": "experiments/experiment-campaign2/results/BETA1-panel/std_thermal_random_s43_beta1_predictions_val_first4096.npz",
+     "role": "SEALED beta=1 predictions seed 43",
+     "sha256": "2feb057b3b6e84be4e2f446c20b105120f597ccd9c30e425fbc3b5248ff3d7c3",
+     "sha_matches_pin": true
+    },
+    {
+     "bytes": 2616046,
+     "exists": true,
+     "key": "beta1_s44",
+     "path": "/home/agus/v2f_repo/experiments/experiment-campaign2/results/BETA1-panel/std_thermal_random_s44_beta1_predictions_val_first4096.npz",
+     "pin_sha256": "10ffe66378a1881407f0ce59392fe0f933f86c325b632919b90c41f25de264c1",
+     "registered_path": "experiments/experiment-campaign2/results/BETA1-panel/std_thermal_random_s44_beta1_predictions_val_first4096.npz",
+     "role": "SEALED beta=1 predictions seed 44",
+     "sha256": "10ffe66378a1881407f0ce59392fe0f933f86c325b632919b90c41f25de264c1",
+     "sha_matches_pin": true
+    }
+   ],
+   "panel": {
+    "file_sha256": "8efc009cda72603e6e2c56e1967e339a795077b123a6740c3e005c71d17a7ecc",
+    "labels_rows_sha256_f32": "18832d2846b09e00bc1698ba84e425396650af238a34f79b66808e7b8d0fc53a",
+    "labels_rows_sha256_f64": "079e344faa5c21ca7f0659345760d5f8e1b12fda3e616093ae7ebbe52a45447f",
+    "n_panel": 4096,
+    "n_rows_file": 250000,
+    "path": "/home/agus/v2_store/published/streams/stream_seed1007_val_gtrue.npy",
+    "pin_file": "8efc009cda72603e6e2c56e1967e339a795077b123a6740c3e005c71d17a7ecc"
+   },
+   "panel_gtrue_identity": {
+    "claim": "recon dossier E-3 / section 5.5: the beta=1 panel g_true and the GS-4096 panel g_true are the SAME float64 array -- VERIFIED HERE FROM THE BYTES against the v2 forward panel",
+    "panel_rows_sha256_f32": "18832d2846b09e00bc1698ba84e425396650af238a34f79b66808e7b8d0fc53a",
+    "panel_rows_sha256_f64": "079e344faa5c21ca7f0659345760d5f8e1b12fda3e616093ae7ebbe52a45447f",
+    "panels": {
+     "geo_predict_npz": {
+      "bit_identical_to_reference": true,
+      "max_abs_delta": 0.0,
+      "rows_sha256": "079e344faa5c21ca7f0659345760d5f8e1b12fda3e616093ae7ebbe52a45447f",
+      "shape": [
+       4096,
+       55
+      ]
+     },
+     "geo_predict_s43": {
+      "bit_identical_to_reference": true,
+      "max_abs_delta": 0.0,
+      "rows_sha256": "079e344faa5c21ca7f0659345760d5f8e1b12fda3e616093ae7ebbe52a45447f",
+      "shape": [
+       4096,
+       55
+      ]
+     },
+     "geo_predict_s44": {
+      "bit_identical_to_reference": true,
+      "max_abs_delta": 0.0,
+      "rows_sha256": "079e344faa5c21ca7f0659345760d5f8e1b12fda3e616093ae7ebbe52a45447f",
+      "shape": [
+       4096,
+       55
+      ]
+     },
+     "old_npz_42": {
+      "bit_identical_to_reference": true,
+      "max_abs_delta": 0.0,
+      "rows_sha256": "079e344faa5c21ca7f0659345760d5f8e1b12fda3e616093ae7ebbe52a45447f",
+      "shape": [
+       4096,
+       55
+      ]
+     },
+     "old_npz_43": {
+      "bit_identical_to_reference": true,
+      "max_abs_delta": 0.0,
+      "rows_sha256": "079e344faa5c21ca7f0659345760d5f8e1b12fda3e616093ae7ebbe52a45447f",
+      "shape": [
+       4096,
+       55
+      ]
+     },
+     "old_npz_44": {
+      "bit_identical_to_reference": true,
+      "max_abs_delta": 0.0,
+      "rows_sha256": "079e344faa5c21ca7f0659345760d5f8e1b12fda3e616093ae7ebbe52a45447f",
+      "shape": [
+       4096,
+       55
+      ]
+     }
+    },
+    "pin_f32": "18832d2846b09e00bc1698ba84e425396650af238a34f79b66808e7b8d0fc53a",
+    "pin_f64": "079e344faa5c21ca7f0659345760d5f8e1b12fda3e616093ae7ebbe52a45447f",
+    "pins_match": true,
+    "reference": "release stream rows 0..4096 (--labels-npy)"
+   },
+   "printed_rounding_control": {
+    "trained42": {
+     "measured": {
+      "hex": "0x1.531ceaf8fd09bp+7",
+      "repr": "169.55648019875375",
+      "value": 169.55648019875375
+     },
+     "printed": "169.6",
+     "rounds_to_printed": true
+    },
+    "trained43": {
+     "measured": {
+      "hex": "0x1.6f025a1543505p+7",
+      "repr": "183.50459352919293",
+      "value": 183.50459352919293
+     },
+     "printed": "183.5",
+     "rounds_to_printed": true
+    },
+    "trained44": {
+     "measured": {
+      "hex": "0x1.4d6adfec88082p+7",
+      "repr": "166.70873965416473",
+      "value": 166.70873965416473
+     },
+     "printed": "166.7",
+     "rounds_to_printed": true
+    }
+   },
+   "published_beta1_reproduction": {
+    "arms": {
+     "beta1_std_thermal_random": {
+      "measured": {
+       "hex": "0x1.cb554c8456463p-1",
+       "repr": "0.8971351539177131",
+       "value": 0.8971351539177131
+      },
+      "rel_dev": 2.731363917596319e-06,
+      "sealed_c5": {
+       "hex": "0x1.cb559ebd31452p-1",
+       "repr": "0.8971376043269947",
+       "value": 0.8971376043269947
+      },
+      "tol": 1e-05,
+      "tolerance_class": "C_REL5",
+      "within_c_rel6": false,
+      "within_class": true
+     },
+     "beta1_std_thermal_random_s43": {
+      "measured": {
+       "hex": "0x1.8ea5ee2dbee87p-1",
+       "repr": "0.7786096983758889",
+       "value": 0.7786096983758889
+      },
+      "rel_dev": 3.0252060241320322e-06,
+      "sealed_c5": {
+       "hex": "0x1.8ea59f249ace1p-1",
+       "repr": "0.7786073429282646",
+       "value": 0.7786073429282646
+      },
+      "tol": 1e-05,
+      "tolerance_class": "C_REL5",
+      "within_c_rel6": false,
+      "within_class": true
+     },
+     "beta1_std_thermal_random_s44": {
+      "measured": {
+       "hex": "0x1.e380f56e76935p-1",
+       "repr": "0.9443432519285923",
+       "value": 0.9443432519285923
+      },
+      "rel_dev": 6.843282633117731e-06,
+      "sealed_c5": {
+       "hex": "0x1.e381ce4680cfbp-1",
+       "repr": "0.9443497143805922",
+       "value": 0.9443497143805922
+      },
+      "tol": 1e-05,
+      "tolerance_class": "C_REL5",
+      "within_c_rel6": false,
+      "within_class": true
+     }
+    },
+    "control_arms_tolerance": 1e-06,
+    "control_arms_tolerance_class": "C-REL6",
+    "geometry_digests": {
+     "lam_bit_identical": false,
+     "measured": {
+      "lam_rows_sha256": "95c75351e4143bdf03d2f56c7df98399a73ac0f26599f007b0a3a68dd06d4c54",
+      "true_S_rows_sha256": "be7b63c83f16621e00dbb19e8dcbea11951723fa13b93e76670a3cb626b1130c"
+     },
+     "note": "everything built from the panel g_true alone is bit-reproducible; the eigen-solve is not",
+     "sealed_c5": {
+      "lam_rows_sha256": "ddc6a7ae6186a5c873a082060573aefa38f275f3f67e87072050a46fd0444c18",
+      "true_S_rows_sha256": "be7b63c83f16621e00dbb19e8dcbea11951723fa13b93e76670a3cb626b1130c"
+     },
+     "sealed_source": "experiments/experiment-campaign2-r2/results/C5-crosseval/expc2r2_c5_crosseval_result.json::/diagnostics/geometry",
+     "true_S_bit_identical": true
+    },
+    "justification": "The BETA1 arms are the WELL-FIT arms of this panel: their residual S-norm is ~4.6e-6 (median dwS) against ~0.16 for the sealed control arms, and only 41-48% of their residual projection weight sits on the small-lambda half of the spectrum against 99.3-99.4% for the controls.  Their rom therefore reads lam_eff = (lambda . a^2)/sum(a^2) with a = VP^T S dw out of the CLUSTERED BULK of the panel spectrum, where the eigenVECTORS rotate by ~eps/gap under any change of the eigen-solver.  The eigen-basis is a LAPACK-BUILD-dependent quantity: re-running the pinned harness today reproduces the sealed C5 geometry's true_S_rows_sha256 BIT-IDENTICALLY but NOT its lam_rows_sha256, whereas C5 itself (Aug 2026) rebuilt the geometry and reproduced the GEO-spine control roms at rel_dev exactly 0.  lam_bar (a symmetric function of the eigenvalues, invariant under eigenvector rotation) still reproduces at f64 round-off, 7.9e-16 median / 4.5e-15 max per row.  Measured consequence on 2026-09-10 (ondemand-1, 112 vCPU x86, and reproduced bit-for-bit on a 4-core workstation): the seven control arms reproduce the sealed GEO-spine roms at <= 4.0e-11, five orders inside C-REL6, while the three BETA1 arms deviate from the sealed C5 roms at 2.73e-6 (s42) / 3.03e-6 (s43) / 6.84e-6 (s44).  C_REL5 = 1e-5 is one decade above the measured maximum and is applied ONLY to g_published_beta1_reproduced; it is NOT a relaxation of any geometry check.",
+    "stated_cause": {
+     "control_experiment": {
+      "amplification": {
+       "beta1_s42": 383.3,
+       "beta1_s43": 98.3,
+       "beta1_s44": 69.0,
+       "stdgs_random": 53.1,
+       "trained42": 19.4
+      },
+      "note": "a relative 1e-11 perturbation of g_pred alone amplifies into median(lam_eff) by only ~1 order more for the BETA1 arms, so the remaining ~4 orders come from the eigen-basis, not from the arm payloads"
+     },
+     "lam_bar": {
+      "beta1_arms": {
+       "max_rel": 4.5e-15,
+       "median_rel": 7.86e-16
+      },
+      "control_arms": {
+       "max_rel": 4.5e-15,
+       "median_rel": 7.86e-16
+      },
+      "note": "eigenvalue-only, invariant under eigenvector rotation -- reproduces at f64 round-off in BOTH classes"
+     },
+     "lam_eff": {
+      "beta1_arms": {
+       "arms": [
+        "beta1_std_thermal_random",
+        "beta1_std_thermal_random_s43",
+        "beta1_std_thermal_random_s44"
+       ],
+       "max_rel_range": [
+        3.02e-05,
+        3.9e-05
+       ],
+       "median_rel_range": [
+        4.74e-06,
+        5.42e-06
+       ]
+      },
+      "control_arms": {
+       "arms": [
+        "trained42",
+        "trained43",
+        "trained44",
+        "stdgs_random",
+        "stdgs_random_s43",
+        "stdgs_random_s44",
+        "iso"
+       ],
+       "max_rel_range": [
+        3.7e-11,
+        2.24e-10
+       ],
+       "median_rel_range": [
+        3.92e-12,
+        4.27e-12
+       ]
+      },
+      "note": "eigenVECTOR-projection weighted -- carries the eigen-basis drift, and the exposure is arm-dependent"
+     },
+     "measured_utc": "2026-09-10",
+     "method": "per-row |mine - sealed| / |sealed| against the sealed persample arrays of the two records named below",
+     "n_rows": 4096,
+     "residual_geometry": {
+      "a2_fraction_on_smallest_lambda_half": {
+       "beta1_s42": 0.455575,
+       "beta1_s43": 0.411358,
+       "beta1_s44": 0.48412,
+       "stdgs_random": 0.992784,
+       "trained42": 0.994425
+      },
+      "median_dwS": {
+       "beta1_s42": 4.06703854001268e-06,
+       "beta1_s43": 4.636883469561785e-06,
+       "beta1_s44": 4.072633899318839e-06,
+       "stdgs_random": 0.160836,
+       "trained42": 0.159433
+      },
+      "note": "why the exposure differs: where each class's residual lives in the spectrum"
+     },
+     "sources": {
+      "beta1": "experiments/experiment-campaign2-r2/results/C5-crosseval/expc2r2_c5_crosseval_persample.npz",
+      "controls": "experiments/experiment-campaign2/results/GEO-spine/expc2_geo_spine_persample.npz"
+     }
+    },
+    "tolerance": 1e-05,
+    "tolerance_class": "C_REL5"
+   }
+  },
+  "schema": "v2-crosseval-v1",
+  "smoke": false,
+  "stage": "v2_crosseval",
+  "wall_s": 507.1
+ },
+ "schema": "fermionicml-notebooks-v2-values-1"
+}

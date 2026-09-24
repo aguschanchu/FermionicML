@@ -1,0 +1,1323 @@
+{
+  "schema": "v2-fig6-table1-sidecar-v1",
+  "parent_schema": "expc2r2-sgfig5-table1-sidecar-v2 (the sealed F5B-R3 sidecar): plain-WLS + input-matched-fit rows UNCHANGED (bit-equal, gated by the v2 emitter); OGN rows RE-BOUND to results_v2",
+  "provisional": true,
+  "generator": "production_v2/regen/v2_fig6_regenerate.py",
+  "generator_sha256": "0a7cd4d104be2eefd59b03a4dc7801b5e1097c39fa9615f409def50a00732268",
+  "purpose": "CR-28 Table-I recomposition data sidecar v2: the six primary rows (plain WLS, OGN, input-matched fit x both noise models), ascending N_s, full precision + printed 3-s.f. forms, UNCHANGED from the sealed v1 -- PLUS the R-A12 ACCESS column and the rule-separated full-channel secular reference row (S2; RO-2).  Data only -- no .tex is edited by this package.",
+  "rows": [
+    {
+      "row": "plain WLS (Gaussian)",
+      "order": "ascending N_s (matches the plot and SXVII)",
+      "budgets_N_s": [
+        100.0,
+        9102.981779915228,
+        1206792.6406393289,
+        16768329.3681101,
+        109854114.19875573,
+        10000000000.0
+      ],
+      "full_precision": [
+        "3.6117281025320427",
+        "3.934301663872408",
+        "0.9772786992164759",
+        "0.27135156751422285",
+        "0.0984591528005058",
+        "0.009781457804733218"
+      ],
+      "values_float64": [
+        3.6117281025320427,
+        3.934301663872408,
+        0.9772786992164759,
+        0.27135156751422285,
+        0.0984591528005058,
+        0.009781457804733218
+      ],
+      "printed_3sf": [
+        "3.61",
+        "3.93",
+        "0.977",
+        "0.271",
+        "0.0985",
+        "0.00978"
+      ],
+      "source": {
+        "file": "experiments/experiment-campaign2/results/REPLOT-VALUES/REPLOT_VALUES.json",
+        "sha256": "a74b3f8967418e795bff8d7e46d7f4debd574a154a5dae6435024ab2d260850a",
+        "row_id": "SV-4-wls",
+        "field": "value.gaussian[*].wls_median_sealed (reversed to ascending)",
+        "status": "DERIVED"
+      },
+      "lane": "classical sealed WLS lane (shots_master; float64)",
+      "access": "population only (diagonal channel; no energy)",
+      "access_ledger_id": "D1",
+      "access_basis": "VERBATIM canonical string (R-A12; sg-p3-triage-o.md R-T1-1 table), entailed by sg-access-ledger.md SS3 row D1 -- never a caption-author paraphrase (g_access_strings_from_ledger)"
+    },
+    {
+      "row": "OGN (Gaussian)",
+      "order": "ascending N_s (matches the plot and SXVII)",
+      "budgets_N_s": [
+        100.0,
+        9102.981779915228,
+        1206792.6406393289,
+        16768329.3681101,
+        109854114.19875573,
+        10000000000.0
+      ],
+      "full_precision": [
+        "0.11452490481644341",
+        "0.02324576229184358",
+        "0.002050410885987065",
+        "0.000591828025877508",
+        "0.00030807566069227747",
+        "0.00021770186929274293"
+      ],
+      "values_float64": [
+        0.11452490481644341,
+        0.02324576229184358,
+        0.002050410885987065,
+        0.000591828025877508,
+        0.00030807566069227747,
+        0.00021770186929274293
+      ],
+      "printed_3sf": [
+        "0.115",
+        "0.0232",
+        "0.00205",
+        "0.000592",
+        "0.000308",
+        "0.000218"
+      ],
+      "source": {
+        "file": "results_v2/records/V2-SHOTS-nodes6-v2std_thermal_random_s42/v2_shots_cpu64_percell.npz",
+        "sha256": "f0f0f4bc834c8ab1551491292f21ae7042da22eece5b9b8c8dbf7239be5630f4",
+        "record": "V2-SHOTS-nodes6-v2std_thermal_random_s42",
+        "field": "err[0] per-node medians (recomputed == results_v2/records/V2-SHOTS-nodes6-v2std_thermal_random_s42/v2_shots_cpu64_result.json results/gaussian/median == V2-CMP01 ogn_median, gated; reversed to ascending)",
+        "convention": "exact64_cpu_highest",
+        "seed": 42
+      },
+      "lane": "V2 six-node lane (exact64_cpu_highest; == the panel-b numerator lane, bitwise)",
+      "access": "pair block + energy",
+      "access_ledger_id": "L1",
+      "access_basis": "VERBATIM canonical string (R-A12; sg-p3-triage-o.md R-T1-1 table), entailed by sg-access-ledger.md SS3 row L1 -- never a caption-author paraphrase (g_access_strings_from_ledger)"
+    },
+    {
+      "row": "input-matched fit (Gaussian)",
+      "order": "ascending N_s (matches the plot and SXVII)",
+      "budgets_N_s": [
+        100.0,
+        9102.981779915228,
+        1206792.6406393289,
+        16768329.3681101,
+        109854114.19875573,
+        10000000000.0
+      ],
+      "full_precision": [
+        "0.19621656043467012",
+        "0.024241005624626773",
+        "0.0021081550012987792",
+        "0.0005643653936725455",
+        "0.00022024369295614482",
+        "2.401986502111049e-05"
+      ],
+      "values_float64": [
+        0.19621656043467012,
+        0.024241005624626773,
+        0.0021081550012987792,
+        0.0005643653936725455,
+        0.00022024369295614482,
+        2.401986502111049e-05
+      ],
+      "printed_3sf": [
+        "0.196",
+        "0.0242",
+        "0.00211",
+        "0.000564",
+        "0.00022",
+        "2.4e-05"
+      ],
+      "source": {
+        "file": "results_v2/records/V2-CMP01-v2std_thermal_random_s42/v2_cmp01_ogn_result.json",
+        "sha256": "cda9d46086b2db5eae48c5478f56b9009d844c2aebfd64f904aa11bd690f7833",
+        "json_path": "/columns/iii_paired_shared_index/v2std_thermal_random_s42/gaussian/*/fit_median",
+        "frozen_fit_side": {
+          "file": "experiments/experiment-campaign2-r2/results/C1-boot/expc2r2_c1_boot_result.json",
+          "sha256": "f6eec0e49688d91e2ff88e6e3e75a2fdf8f5e742f10d0f71e82dc45cc054c7a8",
+          "bit_identical": true
+        },
+        "cited_through": "C1PAIRED.cell.std_thermal_random.gaussian.node*.fit_median"
+      },
+      "lane": "V2 six-node lane -- results_v2 V2-CMP01-v2std_thermal_random_s42 paired shared-index column (iii), matched CPU-float64 scoring on identical serialized inputs, six tabulated budgets; FIT side = the frozen registered CMP-01 fit",
+      "cross_check": {
+        "exact6": "campaign11/results/roundM/EXACT6/rm_exact6_result.json",
+        "sha256": "f8a6f7d28b8d534bf8db6b0f68bd689610aafce56887216ab988bbb7eaea7848",
+        "field": "results.tabulated.gaussian[*].median_fit",
+        "bit_identical": true
+      },
+      "access": "pair block + energy",
+      "access_ledger_id": "L2",
+      "access_basis": "VERBATIM canonical string (R-A12; sg-p3-triage-o.md R-T1-1 table), entailed by sg-access-ledger.md SS3 row L2 -- never a caption-author paraphrase (g_access_strings_from_ledger)"
+    },
+    {
+      "row": "plain WLS (multinomial)",
+      "order": "ascending N_s (matches the plot and SXVII)",
+      "budgets_N_s": [
+        100.0,
+        9102.981779915228,
+        1206792.6406393289,
+        16768329.3681101,
+        109854114.19875573,
+        10000000000.0
+      ],
+      "full_precision": [
+        "1.1033317725857494",
+        "2.469836394223387",
+        "1.3090126148332422",
+        "0.2890773060795264",
+        "0.0988869848355036",
+        "0.0098315745084032"
+      ],
+      "values_float64": [
+        1.1033317725857494,
+        2.469836394223387,
+        1.3090126148332422,
+        0.2890773060795264,
+        0.0988869848355036,
+        0.0098315745084032
+      ],
+      "printed_3sf": [
+        "1.1",
+        "2.47",
+        "1.31",
+        "0.289",
+        "0.0989",
+        "0.00983"
+      ],
+      "source": {
+        "file": "experiments/experiment-campaign2/results/REPLOT-VALUES/REPLOT_VALUES.json",
+        "sha256": "a74b3f8967418e795bff8d7e46d7f4debd574a154a5dae6435024ab2d260850a",
+        "row_id": "SV-4-wls",
+        "field": "value.multinomial[*].wls_median_sealed (reversed to ascending)",
+        "status": "DERIVED"
+      },
+      "lane": "classical sealed WLS lane (shots_master; float64)",
+      "access": "population only (diagonal channel; no energy)",
+      "access_ledger_id": "D1",
+      "access_basis": "VERBATIM canonical string (R-A12; sg-p3-triage-o.md R-T1-1 table), entailed by sg-access-ledger.md SS3 row D1 -- never a caption-author paraphrase (g_access_strings_from_ledger)"
+    },
+    {
+      "row": "OGN (multinomial)",
+      "order": "ascending N_s (matches the plot and SXVII)",
+      "budgets_N_s": [
+        100.0,
+        9102.981779915228,
+        1206792.6406393289,
+        16768329.3681101,
+        109854114.19875573,
+        10000000000.0
+      ],
+      "full_precision": [
+        "0.18872897018596332",
+        "0.02343588586034691",
+        "0.002018894050459851",
+        "0.0005872715536649365",
+        "0.0003087437468044642",
+        "0.00021757784152681258"
+      ],
+      "values_float64": [
+        0.18872897018596332,
+        0.02343588586034691,
+        0.002018894050459851,
+        0.0005872715536649365,
+        0.0003087437468044642,
+        0.00021757784152681258
+      ],
+      "printed_3sf": [
+        "0.189",
+        "0.0234",
+        "0.00202",
+        "0.000587",
+        "0.000309",
+        "0.000218"
+      ],
+      "source": {
+        "file": "results_v2/records/V2-SHOTS-nodes6-v2std_thermal_random_s42/v2_shots_cpu64_percell.npz",
+        "sha256": "f0f0f4bc834c8ab1551491292f21ae7042da22eece5b9b8c8dbf7239be5630f4",
+        "record": "V2-SHOTS-nodes6-v2std_thermal_random_s42",
+        "field": "err[1] per-node medians (recomputed == results_v2/records/V2-SHOTS-nodes6-v2std_thermal_random_s42/v2_shots_cpu64_result.json results/multinomial/median == V2-CMP01 ogn_median, gated; reversed to ascending)",
+        "convention": "exact64_cpu_highest",
+        "seed": 42
+      },
+      "lane": "V2 six-node lane (exact64_cpu_highest; == the panel-b numerator lane, bitwise)",
+      "access": "pair block + energy",
+      "access_ledger_id": "L1",
+      "access_basis": "VERBATIM canonical string (R-A12; sg-p3-triage-o.md R-T1-1 table), entailed by sg-access-ledger.md SS3 row L1 -- never a caption-author paraphrase (g_access_strings_from_ledger)"
+    },
+    {
+      "row": "input-matched fit (multinomial)",
+      "order": "ascending N_s (matches the plot and SXVII)",
+      "budgets_N_s": [
+        100.0,
+        9102.981779915228,
+        1206792.6406393289,
+        16768329.3681101,
+        109854114.19875573,
+        10000000000.0
+      ],
+      "full_precision": [
+        "0.14949508778509635",
+        "0.022856447202180545",
+        "0.00210180137098954",
+        "0.000568297898575825",
+        "0.0002225015408002603",
+        "2.3855817375076112e-05"
+      ],
+      "values_float64": [
+        0.14949508778509635,
+        0.022856447202180545,
+        0.00210180137098954,
+        0.000568297898575825,
+        0.0002225015408002603,
+        2.3855817375076112e-05
+      ],
+      "printed_3sf": [
+        "0.149",
+        "0.0229",
+        "0.0021",
+        "0.000568",
+        "0.000223",
+        "2.39e-05"
+      ],
+      "source": {
+        "file": "results_v2/records/V2-CMP01-v2std_thermal_random_s42/v2_cmp01_ogn_result.json",
+        "sha256": "cda9d46086b2db5eae48c5478f56b9009d844c2aebfd64f904aa11bd690f7833",
+        "json_path": "/columns/iii_paired_shared_index/v2std_thermal_random_s42/multinomial/*/fit_median",
+        "frozen_fit_side": {
+          "file": "experiments/experiment-campaign2-r2/results/C1-boot/expc2r2_c1_boot_result.json",
+          "sha256": "f6eec0e49688d91e2ff88e6e3e75a2fdf8f5e742f10d0f71e82dc45cc054c7a8",
+          "bit_identical": true
+        },
+        "cited_through": "C1PAIRED.cell.std_thermal_random.multinomial.node*.fit_median"
+      },
+      "lane": "V2 six-node lane -- results_v2 V2-CMP01-v2std_thermal_random_s42 paired shared-index column (iii), matched CPU-float64 scoring on identical serialized inputs, six tabulated budgets; FIT side = the frozen registered CMP-01 fit",
+      "cross_check": {
+        "exact6": "campaign11/results/roundM/EXACT6/rm_exact6_result.json",
+        "sha256": "f8a6f7d28b8d534bf8db6b0f68bd689610aafce56887216ab988bbb7eaea7848",
+        "field": "results.tabulated.multinomial[*].median_fit",
+        "bit_identical": true
+      },
+      "access": "pair block + energy",
+      "access_ledger_id": "L2",
+      "access_basis": "VERBATIM canonical string (R-A12; sg-p3-triage-o.md R-T1-1 table), entailed by sg-access-ledger.md SS3 row L2 -- never a caption-author paraphrase (g_access_strings_from_ledger)"
+    }
+  ],
+  "access_column": {
+    "policy": "R-A12: FIVE ledger rows -> FOUR canonical strings; a LABEL column -- it prints NO numeral (digit gates passed trivially)",
+    "ledger": {
+      "path": "debate/artifacts/sg-access-ledger.md",
+      "sha256": "af5753e2ebb9e0e4fb116f9e170d36d5f28aa970a76424adecdb60e5030061ac",
+      "section": "SS3 (population-noise benchmark rows D1/L1/L2/S1/S2)"
+    },
+    "canonical_strings": {
+      "D1": "population only (diagonal channel; no energy)",
+      "L1": "pair block + energy",
+      "L2": "pair block + energy",
+      "S2": "full secular channel + energy (access-mismatched)",
+      "S1": "full secular channel, energy withheld"
+    },
+    "mapping": {
+      "plain WLS": "D1",
+      "OGN": "L1",
+      "input-matched fit": "L2",
+      "full-channel secular reference row (below)": "S2",
+      "SM-only contrast (never a row here)": "S1"
+    },
+    "s1_s2_not_collapsed": {
+      "statement": "S1 (energy-withheld full-channel secular control -- the Table-SV curve) and S2 (energy-matched full-channel secular reference -- THIS reference row) are DISTINCT ledger rows and are never merged: S1 is an SM-only contrast, carried here as a label note ONLY, printing no numeral; S2 is the reference row below (g_s1_s2_not_collapsed checks the LEDGER rows, not the string count)",
+      "s1_string": "full secular channel, energy withheld",
+      "s1_role": "SM-only contrast (Table SV / SM Sec. S5); NOT a row of this table",
+      "s2_string": "full secular channel + energy (access-mismatched)"
+    }
+  },
+  "secular_reference_row": {
+    "row": "energy-matched full-channel secular reference",
+    "access": "full secular channel + energy (access-mismatched)",
+    "access_ledger_id": "S2",
+    "rule_separated": true,
+    "spans_budget_columns": 6,
+    "form": "ONE reference row spanning the six budget columns (R-T1-2 recommended form; per-cell printing of 12 numerals REFUSED -- the content is that the floor does not vary)",
+    "string_options": {
+      "inward_exact": "~2.7x10^-8 (flat: 2.64-2.81x10^-8 across all 50 budgets, both noise models, envelope)",
+      "outward_record_licensed": "~2.7x10^-8 (flat: 2.6-2.9x10^-8 across all 50 budgets, both noise models, envelope)",
+      "choice": "PANEL DECISION (R-A5): both options are backed by the exact SECE rows below; the SEC-E record's own outward license ('quote ranges outward as 2.6-2.9e-8 and 1.1e-7') is RECOMMENDED"
+    },
+    "new_numerals": {
+      "count": 3,
+      "carriers": {
+        "2.64e-8 (or outward 2.6e-8)": "SECE.g6.E32_med_min",
+        "2.81e-8 (or outward 2.9e-8)": "SECE.g6.E32_med_max",
+        "~2.7e-8 (central, envelope)": "SECE.span.E32.envelope"
+      },
+      "basis": "g_digit_count_delta: exactly 3 new numerals enter the printed table under EITHER print option, each with a named SECE carrier row in the sealed C11-supplement-sece surface; the ACCESS column prints no numeral"
+    },
+    "backed_by": {
+      "record": "C11-supplement-sece",
+      "record_path": "experiments/experiment-campaign2-r2/results/C11-supplement-sece/C11_SUPPLEMENT_SECE.json",
+      "record_sha256": "cdf5b7b56bfddd90b9524c6cb8743eba1f7b069a2e29efa45254f5ac0e7b26a5",
+      "row_ids": {
+        "envelope": "SECE.span.E32.envelope",
+        "med_min": "SECE.g6.E32_med_min",
+        "med_max": "SECE.g6.E32_med_max",
+        "flatness": "SECE.g6.E32_flatness_ratio",
+        "worst_cell": "SECE.g6.E32_worst_cell",
+        "span_gaussian": "SECE.span.E32.gaussian",
+        "span_multinomial": "SECE.span.E32.multinomial"
+      },
+      "source_of_record": {
+        "path": "campaign11/results/roundM/SEC-E/rm_sece_result.json",
+        "sha256": "755b4994930ea9af53253680ae6e30ef642e3dd92c3fecc8b2989b8a5f55468d",
+        "weak_seal": "disclosed (R-A6; see the values sidecar)"
+      }
+    },
+    "envelope_disclosure": "R-A7: both envelope endpoints are Gaussian-leg; 'both noise models' is honest as an ENVELOPE statement (the per-model spans ride as SECE.span.E32.gaussian / .multinomial)",
+    "no_ratio": "g_no_new_ratio: NO secular-reference/OGN ratio is printed or carried; SEC-E's internal ogn_median is the PRIOR-PRODUCTION checkpoint (the ~2.2x clean-end trap, disclosed in the values sidecar)"
+  },
+  "budgets_note": {
+    "ascending_N_s": [
+      100.0,
+      9102.981779915228,
+      1206792.6406393289,
+      16768329.3681101,
+      109854114.19875573,
+      10000000000.0
+    ],
+    "node37_budget_label_reprs": {
+      "nodes6_ns_pin": {
+        "value": 9102.981779915228,
+        "repr": "9102.981779915228",
+        "hex": "0x1.1c77daaf6d9e3p+13"
+      },
+      "exact6_family_label": {
+        "value": 9102.981779915226,
+        "repr": "9102.981779915226",
+        "hex": "0x1.1c77daaf6d9e2p+13"
+      },
+      "ulps_apart": 1,
+      "scope": "budget LABEL only -- int(N_s) and sqrt(p(1-p)/N) differ at 1e-16 rel and no error array consumed here depends on it; node 37 IS a decision cell, so both labels are carried verbatim in the record"
+    }
+  },
+  "accelerator_companions": {
+    "rows": [
+      "T1-7.gaussian",
+      "T1-7.multinomial"
+    ],
+    "disposition": "OUT of the primary table -- SM-bound (LEGACY bf16-TPU convention rows of the same checkpoint); CR-28; the formerly flagged supp:705-class stale clause is CLOSED at the live pins (now supp:1110, repaired by the text waves -- see caption_recommendations)"
+  },
+  "t1_5_anchor": {
+    "role": "caption anchor (cleanest budget, net/fit); V2 seed 42; REPLACES the published 26.0/26.1; NOT asserted against TeX",
+    "gaussian_full": 9.063409353108767,
+    "multinomial_full": 9.120536014587863,
+    "printed": "9.06/9.12",
+    "published_superseded": "26.0/26.1"
+  },
+  "net_over_fit_rows": {
+    "seed": 42,
+    "order": "ascending N_s",
+    "budgets_N_s": [
+      100.0,
+      9102.981779915228,
+      1206792.6406393289,
+      16768329.3681101,
+      109854114.19875573,
+      10000000000.0
+    ],
+    "gaussian": {
+      "full_precision": [
+        "0.5836658463625155",
+        "0.9589438099972176",
+        "0.9726091699727298",
+        "1.048661084667599",
+        "1.398794474235509",
+        "9.063409353108767"
+      ],
+      "values_float64": [
+        0.5836658463625155,
+        0.9589438099972176,
+        0.9726091699727298,
+        1.048661084667599,
+        1.398794474235509,
+        9.063409353108767
+      ],
+      "printed_3sf": [
+        "0.584",
+        "0.959",
+        "0.973",
+        "1.05",
+        "1.4",
+        "9.06"
+      ],
+      "ci95": [
+        [
+          0.5656532583294113,
+          0.6040639526257227
+        ],
+        [
+          0.9415222699272667,
+          0.9750925396170322
+        ],
+        [
+          0.959889723170413,
+          0.9850671078208528
+        ],
+        [
+          1.0349321011358021,
+          1.0656788703043023
+        ],
+        [
+          1.3422311565265532,
+          1.4515867994855998
+        ],
+        [
+          8.422141446142682,
+          9.973228657722107
+        ]
+      ],
+      "ci95_printed_3sf": [
+        [
+          "0.566",
+          "0.604"
+        ],
+        [
+          "0.942",
+          "0.975"
+        ],
+        [
+          "0.96",
+          "0.985"
+        ],
+        [
+          "1.03",
+          "1.07"
+        ],
+        [
+          "1.34",
+          "1.45"
+        ],
+        [
+          "8.42",
+          "9.97"
+        ]
+      ]
+    },
+    "multinomial": {
+      "full_precision": [
+        "1.2624426192335285",
+        "1.0253512128565232",
+        "0.9605541600295676",
+        "1.0333868119812868",
+        "1.3876027361159875",
+        "9.120536014587863"
+      ],
+      "values_float64": [
+        1.2624426192335285,
+        1.0253512128565232,
+        0.9605541600295676,
+        1.0333868119812868,
+        1.3876027361159875,
+        9.120536014587863
+      ],
+      "printed_3sf": [
+        "1.26",
+        "1.03",
+        "0.961",
+        "1.03",
+        "1.39",
+        "9.12"
+      ],
+      "ci95": [
+        [
+          1.246268114220264,
+          1.2788923219633372
+        ],
+        [
+          1.0133374132111586,
+          1.0397736101829276
+        ],
+        [
+          0.9501630336198102,
+          0.9732435184875964
+        ],
+        [
+          1.017575593330023,
+          1.0477989036593172
+        ],
+        [
+          1.3396566558309972,
+          1.4445518655379133
+        ],
+        [
+          8.542769795784006,
+          9.971618037555185
+        ]
+      ],
+      "ci95_printed_3sf": [
+        [
+          "1.25",
+          "1.28"
+        ],
+        [
+          "1.01",
+          "1.04"
+        ],
+        [
+          "0.95",
+          "0.973"
+        ],
+        [
+          "1.02",
+          "1.05"
+        ],
+        [
+          "1.34",
+          "1.44"
+        ],
+        [
+          "8.54",
+          "9.97"
+        ]
+      ]
+    },
+    "source": {
+      "file": "results_v2/records/V2-CMP01-v2std_thermal_random_s42/v2_cmp01_ogn_result.json",
+      "sha256": "cda9d46086b2db5eae48c5478f56b9009d844c2aebfd64f904aa11bd690f7833"
+    }
+  },
+  "net_over_fit_seed_companions": {
+    "s42": {
+      "lane": "v2std_thermal_random_s42",
+      "record_file": "results_v2/records/V2-CMP01-v2std_thermal_random_s42/v2_cmp01_ogn_result.json",
+      "sha256": "cda9d46086b2db5eae48c5478f56b9009d844c2aebfd64f904aa11bd690f7833",
+      "role": "FLAGSHIP (tabulated above)",
+      "order": "ascending N_s",
+      "gaussian_net_over_fit": [
+        0.5836658463625155,
+        0.9589438099972176,
+        0.9726091699727298,
+        1.048661084667599,
+        1.398794474235509,
+        9.063409353108767
+      ],
+      "gaussian_ci95": [
+        [
+          0.5656532583294113,
+          0.6040639526257227
+        ],
+        [
+          0.9415222699272667,
+          0.9750925396170322
+        ],
+        [
+          0.959889723170413,
+          0.9850671078208528
+        ],
+        [
+          1.0349321011358021,
+          1.0656788703043023
+        ],
+        [
+          1.3422311565265532,
+          1.4515867994855998
+        ],
+        [
+          8.422141446142682,
+          9.973228657722107
+        ]
+      ],
+      "gaussian_ogn_median": [
+        0.11452490481644341,
+        0.02324576229184358,
+        0.002050410885987065,
+        0.000591828025877508,
+        0.00030807566069227747,
+        0.00021770186929274293
+      ],
+      "multinomial_net_over_fit": [
+        1.2624426192335285,
+        1.0253512128565232,
+        0.9605541600295676,
+        1.0333868119812868,
+        1.3876027361159875,
+        9.120536014587863
+      ],
+      "multinomial_ci95": [
+        [
+          1.246268114220264,
+          1.2788923219633372
+        ],
+        [
+          1.0133374132111586,
+          1.0397736101829276
+        ],
+        [
+          0.9501630336198102,
+          0.9732435184875964
+        ],
+        [
+          1.017575593330023,
+          1.0477989036593172
+        ],
+        [
+          1.3396566558309972,
+          1.4445518655379133
+        ],
+        [
+          8.542769795784006,
+          9.971618037555185
+        ]
+      ],
+      "multinomial_ogn_median": [
+        0.18872897018596332,
+        0.02343588586034691,
+        0.002018894050459851,
+        0.0005872715536649365,
+        0.0003087437468044642,
+        0.00021757784152681258
+      ],
+      "gaussian_ogn_printed_3sf": [
+        "0.115",
+        "0.0232",
+        "0.00205",
+        "0.000592",
+        "0.000308",
+        "0.000218"
+      ],
+      "multinomial_ogn_printed_3sf": [
+        "0.189",
+        "0.0234",
+        "0.00202",
+        "0.000587",
+        "0.000309",
+        "0.000218"
+      ],
+      "gaussian_net_over_fit_printed_3sf": [
+        "0.584",
+        "0.959",
+        "0.973",
+        "1.05",
+        "1.4",
+        "9.06"
+      ],
+      "multinomial_net_over_fit_printed_3sf": [
+        "1.26",
+        "1.03",
+        "0.961",
+        "1.03",
+        "1.39",
+        "9.12"
+      ]
+    },
+    "s43": {
+      "lane": "v2std_thermal_random_s43",
+      "record_file": "results_v2/records/V2-CMP01-v2std_thermal_random_s43/v2_cmp01_ogn_result.json",
+      "sha256": "aafdf426c107bd145bdbce967c6d5148702d509e1f4fa65be31a3b9ebaeba3b4",
+      "role": "companion (carried, not tabulated)",
+      "order": "ascending N_s",
+      "gaussian_net_over_fit": [
+        0.5830993233708902,
+        0.9560835491279595,
+        0.9680148561556967,
+        1.0312875643300332,
+        1.3255112509884266,
+        7.946322595633226
+      ],
+      "gaussian_ci95": [
+        [
+          0.5651189511577434,
+          0.6033848972412195
+        ],
+        [
+          0.9396216396082213,
+          0.9737129484963385
+        ],
+        [
+          0.9559064190114245,
+          0.9797239642595177
+        ],
+        [
+          1.0167145807378983,
+          1.0528703348466384
+        ],
+        [
+          1.2721799395917068,
+          1.3829559603776247
+        ],
+        [
+          7.349824080907282,
+          8.578799920685528
+        ]
+      ],
+      "gaussian_ogn_median": [
+        0.11441374362361953,
+        0.023176426692023994,
+        0.0020407253603361504,
+        0.0005820230122327197,
+        0.00029193549297261044,
+        0.00019086959616131045
+      ],
+      "multinomial_net_over_fit": [
+        1.1874646135968172,
+        1.0253419298367372,
+        0.9597716088774045,
+        1.020780406121561,
+        1.3159355494358587,
+        7.986068945329096
+      ],
+      "multinomial_ci95": [
+        [
+          1.1732141896111292,
+          1.2003542835403642
+        ],
+        [
+          1.012466113088299,
+          1.0407315391346592
+        ],
+        [
+          0.949939826811616,
+          0.9723944751466961
+        ],
+        [
+          1.003575747426049,
+          1.0391424406839935
+        ],
+        [
+          1.2703384718476016,
+          1.3713233426892242
+        ],
+        [
+          7.4086976802311355,
+          8.67007205025014
+        ]
+      ],
+      "multinomial_ogn_median": [
+        0.1775201266513517,
+        0.023435673683495292,
+        0.0020172492833753653,
+        0.0005801073597062604,
+        0.00029279768734331564,
+        0.00019051420230453762
+      ],
+      "gaussian_ogn_printed_3sf": [
+        "0.114",
+        "0.0232",
+        "0.00204",
+        "0.000582",
+        "0.000292",
+        "0.000191"
+      ],
+      "multinomial_ogn_printed_3sf": [
+        "0.178",
+        "0.0234",
+        "0.00202",
+        "0.00058",
+        "0.000293",
+        "0.000191"
+      ],
+      "gaussian_net_over_fit_printed_3sf": [
+        "0.583",
+        "0.956",
+        "0.968",
+        "1.03",
+        "1.33",
+        "7.95"
+      ],
+      "multinomial_net_over_fit_printed_3sf": [
+        "1.19",
+        "1.03",
+        "0.96",
+        "1.02",
+        "1.32",
+        "7.99"
+      ]
+    },
+    "s44": {
+      "lane": "v2std_thermal_random_s44",
+      "record_file": "results_v2/records/V2-CMP01-v2std_thermal_random_s44/v2_cmp01_ogn_result.json",
+      "sha256": "4fab96d86a09c30566a5813517d62710aeb564180625e732f91c169d32653b73",
+      "role": "companion (carried, not tabulated)",
+      "order": "ascending N_s",
+      "gaussian_net_over_fit": [
+        0.5842885605020681,
+        0.9604242876827854,
+        0.9727773359392672,
+        1.046969522177393,
+        1.3740583321196675,
+        8.356647341742779
+      ],
+      "gaussian_ci95": [
+        [
+          0.5661843316494976,
+          0.6052516144186273
+        ],
+        [
+          0.9428355607569594,
+          0.9775716949950777
+        ],
+        [
+          0.9607307052567486,
+          0.9844671959827013
+        ],
+        [
+          1.0322958054376772,
+          1.0671305397700332
+        ],
+        [
+          1.3169341142065996,
+          1.4349294000454251
+        ],
+        [
+          7.75515434846671,
+          9.307116106013366
+        ]
+      ],
+      "gaussian_ogn_median": [
+        0.11464709164304046,
+        0.023281650559746563,
+        0.002050765405910469,
+        0.0005908733665468012,
+        0.00030262768140319654,
+        0.00020072554117768335
+      ],
+      "multinomial_net_over_fit": [
+        1.20466217465852,
+        1.0279475835964924,
+        0.9641802848901113,
+        1.0295872078503507,
+        1.3599141441073619,
+        8.43616662750626
+      ],
+      "multinomial_ci95": [
+        [
+          1.1904084686630998,
+          1.2190396890193782
+        ],
+        [
+          1.0146237026880731,
+          1.0422427777770558
+        ],
+        [
+          0.9529403060154353,
+          0.9758104476690983
+        ],
+        [
+          1.0139889023591135,
+          1.0484280248563909
+        ],
+        [
+          1.3070472218321583,
+          1.418026179766813
+        ],
+        [
+          7.80083635313102,
+          9.41207160465078
+        ]
+      ],
+      "multinomial_ogn_median": [
+        0.18009107755196052,
+        0.0234952296710823,
+        0.002026515444663121,
+        0.0005851122466219055,
+        0.0003025829924199552,
+        0.00020125165041150108
+      ],
+      "gaussian_ogn_printed_3sf": [
+        "0.115",
+        "0.0233",
+        "0.00205",
+        "0.000591",
+        "0.000303",
+        "0.000201"
+      ],
+      "multinomial_ogn_printed_3sf": [
+        "0.18",
+        "0.0235",
+        "0.00203",
+        "0.000585",
+        "0.000303",
+        "0.000201"
+      ],
+      "gaussian_net_over_fit_printed_3sf": [
+        "0.584",
+        "0.96",
+        "0.973",
+        "1.05",
+        "1.37",
+        "8.36"
+      ],
+      "multinomial_net_over_fit_printed_3sf": [
+        "1.2",
+        "1.03",
+        "0.964",
+        "1.03",
+        "1.36",
+        "8.44"
+      ]
+    }
+  },
+  "ordering_agreement": {
+    "table_rows_ascending_N_s": true,
+    "plot_panel_b_ascending_N_s": true,
+    "record_order_descending_declared": true
+  },
+  "caption_recommendations": {
+    "policy": "CARRIED strings only -- NO .tex file is edited by this package (installation is a later manuscript wave)",
+    "line_reference_epoch": "LIVE pins (R-A9 re-resolution, 2026-08-12): main.tex 2083329c.. / supplement.tex 1de16bd5..; known drifts re-located: the spec's main:471 ratio clause -> main:446; the fig caption main:431-class -> main:418; the SM S5 energy-matched-reference paragraph -> supp:1170; tab:sm_log_comparators_full caption supp:705-class -> supp:1110; Table SXVII (tab:std_paired_intervals) -> supp:2025",
+    "main_418_fig_caption": {
+      "site": "manuscript/main.tex:418 (caption of fig:log_inversion_asymptotic at the LIVE pins; formerly the main:431-class site)",
+      "installed_state": "the installed caption already carries the RENDER-1 panel-(a)/(b) clauses AND the clause 'the energy-matched full-channel secular reference is reported separately in SM, Sec.~S5' -- that clause goes STALE when this revision installs (the reference floor is now IN panel (a)); flagged for the panel-side caption wave",
+      "recommended_new_panel_a_clauses": "(a) additionally shows the input-matched pair-block$+$energy fit at the six tabulated budgets (marker shapes as in (b); no interpolation between budgets; the markers are the same six values tabulated in Table~I; markers may coincide where the two noise models agree -- no display dodge on panel (a), the markers sit at the true budgets) and the energy-matched full-channel secular reference (richer access, access-mismatched in the reference's favor; SM Sec.~S5): a flat numerical floor across all 50 budgets under both noise models (envelope; endpoint print form per the panel's R-A5 choice)."
+    },
+    "main_446_ratio_clause": {
+      "site": "manuscript/main.tex:446 (the V.C secular-reference paragraph at the LIVE pins; R-A9 re-resolution of the spec's 'main:471')",
+      "status": "UNCHANGED and UN-RECOMPUTED by this package: the existing ${\\sim}3\\times10^{-8}$ floor and the ${\\sim}2\\times10^{-7}$-of-the-network-median ratio stand as printed; this package draws the floor and prints its envelope span only"
+    },
+    "supp_1170_sm_s5_floor": {
+      "site": "manuscript/supplement.tex:1170 (the SM S5 energy-matched-reference paragraph at the LIVE pins)",
+      "status": "the SM home of the printed floor '$2.6$--$2.9\\times10^{-8}$, flat across all $50$ budgets under both noise models, worst single cell $1.1\\times10^{-7}$' -- consistent with the SECE rows backing this package's Table-I v2 reference row; unchanged"
+    },
+    "supp_1110_comparators_caption": {
+      "site": "manuscript/supplement.tex:1110 (caption of tab:sm_log_comparators_full at the LIVE pins; the supp:705-class stale-clause flag of the sealed F5 record RE-RESOLVED)",
+      "status": "the formerly flagged clause was repaired by the author-authorized text waves (it now reads 'the standardized flagship's entries are those of main-text Table~I; its accelerator-companion rows are carried in Sec.~\\ref{ssec:sm_std_genealogy}') -- the inherited CR-28 flag is CLOSED at the live pins"
+    },
+    "sxvii_live_home": {
+      "site": "manuscript/supplement.tex:2025 (\\label{tab:std_paired_intervals} at the LIVE pins)",
+      "note": "the fork's SXVII cross-check window (supp:1341-1367) addresses the PINNED-BYTES SHADOW (commit d812db47) in which this fork runs; the live-pin home is re-resolved here and re-verified by the gate emitter"
+    }
+  },
+  "input_sha256": {
+    "experiments/experiment-campaign2/results/REPLOT-VALUES/REPLOT_VALUES.json": "a74b3f8967418e795bff8d7e46d7f4debd574a154a5dae6435024ab2d260850a",
+    "experiments/experiment-campaign2-r2/results/C1-boot/expc2r2_c1_boot_result.json": "f6eec0e49688d91e2ff88e6e3e75a2fdf8f5e742f10d0f71e82dc45cc054c7a8",
+    "experiments/experiment-campaign2-r2/results/C11-supplement-c1paired/C11_SUPPLEMENT_C1PAIRED.json": "1d283f449d5646d48e5da7560aaa51d5ad4ff78a617d4e68724000942f6c68a6",
+    "campaign11/results/roundM/EXACT6/rm_exact6_result.json": "f8a6f7d28b8d534bf8db6b0f68bd689610aafce56887216ab988bbb7eaea7848",
+    "campaign11/results/roundM/SEC-E/rm_sece_result.json": "755b4994930ea9af53253680ae6e30ef642e3dd92c3fecc8b2989b8a5f55468d",
+    "results_v2/records/V2-CLEAN-v2std_thermal_random_s42/v2_eval_cpu64_result.json": "10022af79497f856cad01bf844c494cdaaa83e76e86ad69874508da3f9117af6",
+    "results_v2/records/V2-CLEAN-v2std_thermal_random_s43/v2_eval_cpu64_result.json": "c619929ccc0bd495fe4fc81581392a7d11f651afdffed8306fa2fc4642e927e7",
+    "results_v2/records/V2-CLEAN-v2std_thermal_random_s44/v2_eval_cpu64_result.json": "c355feea2079f5fe32a5c1b8774622d8ab61efaf6f4241ccb46031b7fc172fd5",
+    "results_v2/records/V2-CMP01-v2std_thermal_random_s42/v2_cmp01_ogn_result.json": "cda9d46086b2db5eae48c5478f56b9009d844c2aebfd64f904aa11bd690f7833",
+    "results_v2/records/V2-CMP01-v2std_thermal_random_s43/v2_cmp01_ogn_result.json": "aafdf426c107bd145bdbce967c6d5148702d509e1f4fa65be31a3b9ebaeba3b4",
+    "results_v2/records/V2-CMP01-v2std_thermal_random_s44/v2_cmp01_ogn_result.json": "4fab96d86a09c30566a5813517d62710aeb564180625e732f91c169d32653b73",
+    "results_v2/records/V2-SHOTS-nodes6-v2std_thermal_random_s42/v2_shots_cpu64_percell.npz": "f0f0f4bc834c8ab1551491292f21ae7042da22eece5b9b8c8dbf7239be5630f4",
+    "results_v2/records/V2-SHOTS-nodes6-v2std_thermal_random_s42/v2_shots_cpu64_result.json": "7bb47266bc02fd6e8e16e615637aa6a0ef13c39aa19f0b2532194973320875d4",
+    "results_v2/records/V2-SHOTS-nodes6-v2std_thermal_random_s43/v2_shots_cpu64_percell.npz": "cbc3a27bb0ee25f3ec67e570b2bfdccf0bc5ac348edc8e238a1eff0dd77ac8e7",
+    "results_v2/records/V2-SHOTS-nodes6-v2std_thermal_random_s43/v2_shots_cpu64_result.json": "8b267c7a985062d6583453d158774db918fca01cd8563d446cd767bb5a36ca39",
+    "results_v2/records/V2-SHOTS-nodes6-v2std_thermal_random_s44/v2_shots_cpu64_percell.npz": "6d1ddc0637a33b706ac58ea8436a153b02f51c58002b161585ecb6c7a6731f83",
+    "results_v2/records/V2-SHOTS-nodes6-v2std_thermal_random_s44/v2_shots_cpu64_result.json": "97efd4a78784a63e56d1d8ee3c9918fe8b75f74f2cb9bf935247fad92c68ed9a",
+    "results_v2/records/V2-SHOTS-sweep50-v2std_thermal_random_s42/v2_shots_cpu64_percell.npz": "d664db7078bf4942f7dc1e6def01f88bfa0f3d72c19cb234061fb387f2d79bc6",
+    "results_v2/records/V2-SHOTS-sweep50-v2std_thermal_random_s42/v2_shots_cpu64_result.json": "aab5fd5b296c47b395817471e3a9ef6fc777f5a7f1b7ec955acfef2099f952b2",
+    "results_v2/records/V2-SHOTS-sweep50-v2std_thermal_random_s43/v2_shots_cpu64_percell.npz": "d875844d9ddaecb3985038ddc5eba19643684395751240c228708027f6215fef",
+    "results_v2/records/V2-SHOTS-sweep50-v2std_thermal_random_s43/v2_shots_cpu64_result.json": "8db94ea2aefb403058222397edae2ed86ec4a115b6eeabb110ad68fd40ca7e9c",
+    "results_v2/records/V2-SHOTS-sweep50-v2std_thermal_random_s44/v2_shots_cpu64_percell.npz": "51d07670518284b45ac8128767dea6cb819674ae7ae42592ffca0dd93f35cf00",
+    "results_v2/records/V2-SHOTS-sweep50-v2std_thermal_random_s44/v2_shots_cpu64_result.json": "6b91c971df7925beae017b355431cd7436652e6d3f9831b08496a721a647f22d",
+    "results_v2/records/V2-TRAIN-v2std_thermal_random_s42/config.json": "0f5d3c8815b0df4a434dbec7acd6cffa593baa3ecd9fcc51c16d055f3993b1fa",
+    "results_v2/records/V2-TRAIN-v2std_thermal_random_s42/v2std_thermal_random_s42_result.json": "f74a1e057d9ac502f1642bb6254c3ce2cc1d6c4a4b5a918b40a8856279b658ad",
+    "results_v2/records/V2-TRAIN-v2std_thermal_random_s43/config.json": "a490f16b6fd68e46e722670d4033134ce5e1ee82eae44948bd5a82619b639a93",
+    "results_v2/records/V2-TRAIN-v2std_thermal_random_s43/v2std_thermal_random_s43_result.json": "0e5eab5326787a39da0b830363fe570c2f4278462cec2c1b8f27324215bbf35c",
+    "results_v2/records/V2-TRAIN-v2std_thermal_random_s44/config.json": "f4aca5dba9e8bb391773e7be763c1ba0671647b6a2503a95c6c22b1151ea060c",
+    "results_v2/records/V2-TRAIN-v2std_thermal_random_s44/v2std_thermal_random_s44_result.json": "a8126e6c0ee81e2d9e9be5ad20da8d8b515e18ea972f1ce15a6b3d634e5f2b87"
+  },
+  "sources": {
+    "v2_records": {
+      "V2-SHOTS-sweep50-v2std_thermal_random_s42": {
+        "record_dir": "results_v2/records/V2-SHOTS-sweep50-v2std_thermal_random_s42",
+        "manifest_sha256": "8012a4c37923d6b9291506bfbd4cd72fdf8300919a1c0d0a81a0ae328e4678e1",
+        "result_manifest_sha256": "53449df6025d14026fa07cac8e0a53de81bd81288a936a33fb056c60660473e7",
+        "manifest_n_verified": 4,
+        "stage": "v2_shots_cpu64",
+        "files": {
+          "v2_shots_cpu64_percell.npz": {
+            "rel": "results_v2/records/V2-SHOTS-sweep50-v2std_thermal_random_s42/v2_shots_cpu64_percell.npz",
+            "sha256": "d664db7078bf4942f7dc1e6def01f88bfa0f3d72c19cb234061fb387f2d79bc6",
+            "basis": "RESULT_MANIFEST.json",
+            "bytes": 7539426
+          },
+          "v2_shots_cpu64_result.json": {
+            "rel": "results_v2/records/V2-SHOTS-sweep50-v2std_thermal_random_s42/v2_shots_cpu64_result.json",
+            "sha256": "aab5fd5b296c47b395817471e3a9ef6fc777f5a7f1b7ec955acfef2099f952b2",
+            "basis": "RESULT_MANIFEST.json",
+            "bytes": 66545
+          }
+        }
+      },
+      "V2-TRAIN-v2std_thermal_random_s42": {
+        "record_dir": "results_v2/records/V2-TRAIN-v2std_thermal_random_s42",
+        "manifest_sha256": "3a1a772d97a436290e5a7562c0ded3889ee58d6261667faab6794487672958ef",
+        "result_manifest_sha256": "9222a515e3739f8f6fbaa871c33bc508933ea5e42e3983cf5b32676f1fb4a41f",
+        "manifest_n_verified": 9,
+        "stage": "v2_train",
+        "files": {
+          "v2std_thermal_random_s42_result.json": {
+            "rel": "results_v2/records/V2-TRAIN-v2std_thermal_random_s42/v2std_thermal_random_s42_result.json",
+            "sha256": "f74a1e057d9ac502f1642bb6254c3ce2cc1d6c4a4b5a918b40a8856279b658ad",
+            "basis": "RESULT_MANIFEST.json",
+            "bytes": 11723
+          },
+          "config.json": {
+            "rel": "results_v2/records/V2-TRAIN-v2std_thermal_random_s42/config.json",
+            "sha256": "0f5d3c8815b0df4a434dbec7acd6cffa593baa3ecd9fcc51c16d055f3993b1fa",
+            "basis": "RESULT_MANIFEST.json",
+            "bytes": 10012
+          }
+        }
+      },
+      "V2-CLEAN-v2std_thermal_random_s42": {
+        "record_dir": "results_v2/records/V2-CLEAN-v2std_thermal_random_s42",
+        "manifest_sha256": "4305de06d98df5a5e7291a8595d365608d1b808741fd18fd82281bbd3dd09a50",
+        "result_manifest_sha256": "b1f78b6648d8d2ae1c9d57bc4deec225bd295238dc4b1cc2c83ad8ecd9da97f7",
+        "manifest_n_verified": 4,
+        "stage": "v2_eval_cpu64",
+        "files": {
+          "v2_eval_cpu64_result.json": {
+            "rel": "results_v2/records/V2-CLEAN-v2std_thermal_random_s42/v2_eval_cpu64_result.json",
+            "sha256": "10022af79497f856cad01bf844c494cdaaa83e76e86ad69874508da3f9117af6",
+            "basis": "RESULT_MANIFEST.json",
+            "bytes": 4187
+          }
+        }
+      },
+      "V2-SHOTS-sweep50-v2std_thermal_random_s43": {
+        "record_dir": "results_v2/records/V2-SHOTS-sweep50-v2std_thermal_random_s43",
+        "manifest_sha256": "85401c957d1dd54dd31687f2322e8b6992bf7bf286c3927f4c8592781d637f38",
+        "result_manifest_sha256": "c3a72df007608dca3450fae68563f9e4d90625e6b5867186f5fbcd29c42b784a",
+        "manifest_n_verified": 4,
+        "stage": "v2_shots_cpu64",
+        "files": {
+          "v2_shots_cpu64_percell.npz": {
+            "rel": "results_v2/records/V2-SHOTS-sweep50-v2std_thermal_random_s43/v2_shots_cpu64_percell.npz",
+            "sha256": "d875844d9ddaecb3985038ddc5eba19643684395751240c228708027f6215fef",
+            "basis": "RESULT_MANIFEST.json",
+            "bytes": 7537682
+          },
+          "v2_shots_cpu64_result.json": {
+            "rel": "results_v2/records/V2-SHOTS-sweep50-v2std_thermal_random_s43/v2_shots_cpu64_result.json",
+            "sha256": "8db94ea2aefb403058222397edae2ed86ec4a115b6eeabb110ad68fd40ca7e9c",
+            "basis": "RESULT_MANIFEST.json",
+            "bytes": 66570
+          }
+        }
+      },
+      "V2-TRAIN-v2std_thermal_random_s43": {
+        "record_dir": "results_v2/records/V2-TRAIN-v2std_thermal_random_s43",
+        "manifest_sha256": "8c3f8935e698b21386c4d96107ece7bac3105bd40d4557fd39e0c6de07658283",
+        "result_manifest_sha256": "f12ccd8893bcc2b1750d0f949c5706a4352b0d8d7d2316d9442a19a18ff69515",
+        "manifest_n_verified": 9,
+        "stage": "v2_train",
+        "files": {
+          "v2std_thermal_random_s43_result.json": {
+            "rel": "results_v2/records/V2-TRAIN-v2std_thermal_random_s43/v2std_thermal_random_s43_result.json",
+            "sha256": "0e5eab5326787a39da0b830363fe570c2f4278462cec2c1b8f27324215bbf35c",
+            "basis": "RESULT_MANIFEST.json",
+            "bytes": 11728
+          },
+          "config.json": {
+            "rel": "results_v2/records/V2-TRAIN-v2std_thermal_random_s43/config.json",
+            "sha256": "a490f16b6fd68e46e722670d4033134ce5e1ee82eae44948bd5a82619b639a93",
+            "basis": "RESULT_MANIFEST.json",
+            "bytes": 10017
+          }
+        }
+      },
+      "V2-CLEAN-v2std_thermal_random_s43": {
+        "record_dir": "results_v2/records/V2-CLEAN-v2std_thermal_random_s43",
+        "manifest_sha256": "35a67be2479913cd39b25231ffa0c7766d69d9a6c826e69c8c91835e32bf6313",
+        "result_manifest_sha256": "3a76b8c6f827c3e3957cde57e703bf96dc5e8e94912f264fb3b5b9fa71dee3e6",
+        "manifest_n_verified": 4,
+        "stage": "v2_eval_cpu64",
+        "files": {
+          "v2_eval_cpu64_result.json": {
+            "rel": "results_v2/records/V2-CLEAN-v2std_thermal_random_s43/v2_eval_cpu64_result.json",
+            "sha256": "c619929ccc0bd495fe4fc81581392a7d11f651afdffed8306fa2fc4642e927e7",
+            "basis": "RESULT_MANIFEST.json",
+            "bytes": 4185
+          }
+        }
+      },
+      "V2-SHOTS-sweep50-v2std_thermal_random_s44": {
+        "record_dir": "results_v2/records/V2-SHOTS-sweep50-v2std_thermal_random_s44",
+        "manifest_sha256": "634932c4df6d5f52e7b1fc349a4033f7cb06393ef11288559f1bbd02e82b0ef3",
+        "result_manifest_sha256": "300cb6d8b954c0e08d3bae2425ee362ec47da8d30a73d5d38fa943b11adbda46",
+        "manifest_n_verified": 4,
+        "stage": "v2_shots_cpu64",
+        "files": {
+          "v2_shots_cpu64_percell.npz": {
+            "rel": "results_v2/records/V2-SHOTS-sweep50-v2std_thermal_random_s44/v2_shots_cpu64_percell.npz",
+            "sha256": "51d07670518284b45ac8128767dea6cb819674ae7ae42592ffca0dd93f35cf00",
+            "basis": "RESULT_MANIFEST.json",
+            "bytes": 7538873
+          },
+          "v2_shots_cpu64_result.json": {
+            "rel": "results_v2/records/V2-SHOTS-sweep50-v2std_thermal_random_s44/v2_shots_cpu64_result.json",
+            "sha256": "6b91c971df7925beae017b355431cd7436652e6d3f9831b08496a721a647f22d",
+            "basis": "RESULT_MANIFEST.json",
+            "bytes": 66549
+          }
+        }
+      },
+      "V2-TRAIN-v2std_thermal_random_s44": {
+        "record_dir": "results_v2/records/V2-TRAIN-v2std_thermal_random_s44",
+        "manifest_sha256": "bfd7522e34abba0be56865dff61c56521b2c14a91cd67bff7e13f4ccd65b5aa1",
+        "result_manifest_sha256": "514d673050148ca2ee331c143847e2c143accfd178caad23f6a407251b5afda6",
+        "manifest_n_verified": 9,
+        "stage": "v2_train",
+        "files": {
+          "v2std_thermal_random_s44_result.json": {
+            "rel": "results_v2/records/V2-TRAIN-v2std_thermal_random_s44/v2std_thermal_random_s44_result.json",
+            "sha256": "a8126e6c0ee81e2d9e9be5ad20da8d8b515e18ea972f1ce15a6b3d634e5f2b87",
+            "basis": "RESULT_MANIFEST.json",
+            "bytes": 11734
+          },
+          "config.json": {
+            "rel": "results_v2/records/V2-TRAIN-v2std_thermal_random_s44/config.json",
+            "sha256": "f4aca5dba9e8bb391773e7be763c1ba0671647b6a2503a95c6c22b1151ea060c",
+            "basis": "RESULT_MANIFEST.json",
+            "bytes": 10022
+          }
+        }
+      },
+      "V2-CLEAN-v2std_thermal_random_s44": {
+        "record_dir": "results_v2/records/V2-CLEAN-v2std_thermal_random_s44",
+        "manifest_sha256": "862c41ae253a8a1c155b67548e42ea7a127285a121a7ea8271b2662fca85f1f3",
+        "result_manifest_sha256": "879895ad5f29dc946405d70270968316f0dcbcfeb95d5b5c10334790bd6088b9",
+        "manifest_n_verified": 4,
+        "stage": "v2_eval_cpu64",
+        "files": {
+          "v2_eval_cpu64_result.json": {
+            "rel": "results_v2/records/V2-CLEAN-v2std_thermal_random_s44/v2_eval_cpu64_result.json",
+            "sha256": "c355feea2079f5fe32a5c1b8774622d8ab61efaf6f4241ccb46031b7fc172fd5",
+            "basis": "RESULT_MANIFEST.json",
+            "bytes": 4185
+          }
+        }
+      },
+      "V2-CMP01-v2std_thermal_random_s42": {
+        "record_dir": "results_v2/records/V2-CMP01-v2std_thermal_random_s42",
+        "manifest_sha256": "09f76e67667b5b613fd7af3f9e5f6ade5436642bd5ec478d2c38cc32f76a5119",
+        "result_manifest_sha256": "d3bc1b56ec5a3698f93c7062ed3b0a231ac48e24fb6b838c38c94a658b83ea33",
+        "manifest_n_verified": 3,
+        "stage": "v2_cmp01_ogn",
+        "files": {
+          "v2_cmp01_ogn_result.json": {
+            "rel": "results_v2/records/V2-CMP01-v2std_thermal_random_s42/v2_cmp01_ogn_result.json",
+            "sha256": "cda9d46086b2db5eae48c5478f56b9009d844c2aebfd64f904aa11bd690f7833",
+            "basis": "RESULT_MANIFEST.json",
+            "bytes": 25677
+          }
+        }
+      },
+      "V2-SHOTS-nodes6-v2std_thermal_random_s42": {
+        "record_dir": "results_v2/records/V2-SHOTS-nodes6-v2std_thermal_random_s42",
+        "manifest_sha256": "74105256b3f1dd20170f171eb2f41b055ba4c678d87033d9627c6fbde4beb760",
+        "result_manifest_sha256": "c9892d3c74ce2405602aa04aebfbab6f7df0f55bd763fe66fc58edd42a76ec55",
+        "manifest_n_verified": 4,
+        "stage": "v2_shots_cpu64",
+        "files": {
+          "v2_shots_cpu64_percell.npz": {
+            "rel": "results_v2/records/V2-SHOTS-nodes6-v2std_thermal_random_s42/v2_shots_cpu64_percell.npz",
+            "sha256": "f0f0f4bc834c8ab1551491292f21ae7042da22eece5b9b8c8dbf7239be5630f4",
+            "basis": "RESULT_MANIFEST.json",
+            "bytes": 928598
+          },
+          "v2_shots_cpu64_result.json": {
+            "rel": "results_v2/records/V2-SHOTS-nodes6-v2std_thermal_random_s42/v2_shots_cpu64_result.json",
+            "sha256": "7bb47266bc02fd6e8e16e615637aa6a0ef13c39aa19f0b2532194973320875d4",
+            "basis": "RESULT_MANIFEST.json",
+            "bytes": 10438
+          }
+        }
+      },
+      "V2-CMP01-v2std_thermal_random_s43": {
+        "record_dir": "results_v2/records/V2-CMP01-v2std_thermal_random_s43",
+        "manifest_sha256": "c5f01c5f44605047313a4bc98579e18d6b3563ab260cc055ec608b9208b3f3c0",
+        "result_manifest_sha256": "a92256cdf8422302b3d04501ac42823356e9f32f3a11138353372ebd4b666dd5",
+        "manifest_n_verified": 3,
+        "stage": "v2_cmp01_ogn",
+        "files": {
+          "v2_cmp01_ogn_result.json": {
+            "rel": "results_v2/records/V2-CMP01-v2std_thermal_random_s43/v2_cmp01_ogn_result.json",
+            "sha256": "aafdf426c107bd145bdbce967c6d5148702d509e1f4fa65be31a3b9ebaeba3b4",
+            "basis": "RESULT_MANIFEST.json",
+            "bytes": 25689
+          }
+        }
+      },
+      "V2-SHOTS-nodes6-v2std_thermal_random_s43": {
+        "record_dir": "results_v2/records/V2-SHOTS-nodes6-v2std_thermal_random_s43",
+        "manifest_sha256": "8f2cc153d6985f5f3d06676ce391e348cbf7b0e141c8bbe4dcae0b6ce7ae49cc",
+        "result_manifest_sha256": "f7641f87383c989006ccc0b76b3354d9ef7ad437f4adc0c01cbb1043306591a8",
+        "manifest_n_verified": 4,
+        "stage": "v2_shots_cpu64",
+        "files": {
+          "v2_shots_cpu64_percell.npz": {
+            "rel": "results_v2/records/V2-SHOTS-nodes6-v2std_thermal_random_s43/v2_shots_cpu64_percell.npz",
+            "sha256": "cbc3a27bb0ee25f3ec67e570b2bfdccf0bc5ac348edc8e238a1eff0dd77ac8e7",
+            "basis": "RESULT_MANIFEST.json",
+            "bytes": 928415
+          },
+          "v2_shots_cpu64_result.json": {
+            "rel": "results_v2/records/V2-SHOTS-nodes6-v2std_thermal_random_s43/v2_shots_cpu64_result.json",
+            "sha256": "8b267c7a985062d6583453d158774db918fca01cd8563d446cd767bb5a36ca39",
+            "basis": "RESULT_MANIFEST.json",
+            "bytes": 10452
+          }
+        }
+      },
+      "V2-CMP01-v2std_thermal_random_s44": {
+        "record_dir": "results_v2/records/V2-CMP01-v2std_thermal_random_s44",
+        "manifest_sha256": "c9440c8a35dff3f93e47bb6f1b910fe919ce8b8992d08c0a8ad1fea9391be487",
+        "result_manifest_sha256": "cc89ba154157bc5b3e3c7cfa7c344e8d7f7867d130c405039c3cc6e1c45e0999",
+        "manifest_n_verified": 3,
+        "stage": "v2_cmp01_ogn",
+        "files": {
+          "v2_cmp01_ogn_result.json": {
+            "rel": "results_v2/records/V2-CMP01-v2std_thermal_random_s44/v2_cmp01_ogn_result.json",
+            "sha256": "4fab96d86a09c30566a5813517d62710aeb564180625e732f91c169d32653b73",
+            "basis": "RESULT_MANIFEST.json",
+            "bytes": 25670
+          }
+        }
+      },
+      "V2-SHOTS-nodes6-v2std_thermal_random_s44": {
+        "record_dir": "results_v2/records/V2-SHOTS-nodes6-v2std_thermal_random_s44",
+        "manifest_sha256": "4f1bdd8f55bf9ab7224b5129ec4c32a857e5f1239aeb0a75233b42b2f6fe6fc4",
+        "result_manifest_sha256": "b6c132d8d1a157731ec0d21fc7c6901af17821b64483e70a9268e5a04d1fcaac",
+        "manifest_n_verified": 4,
+        "stage": "v2_shots_cpu64",
+        "files": {
+          "v2_shots_cpu64_percell.npz": {
+            "rel": "results_v2/records/V2-SHOTS-nodes6-v2std_thermal_random_s44/v2_shots_cpu64_percell.npz",
+            "sha256": "6d1ddc0637a33b706ac58ea8436a153b02f51c58002b161585ecb6c7a6731f83",
+            "basis": "RESULT_MANIFEST.json",
+            "bytes": 928565
+          },
+          "v2_shots_cpu64_result.json": {
+            "rel": "results_v2/records/V2-SHOTS-nodes6-v2std_thermal_random_s44/v2_shots_cpu64_result.json",
+            "sha256": "97efd4a78784a63e56d1d8ee3c9918fe8b75f74f2cb9bf935247fad92c68ed9a",
+            "basis": "RESULT_MANIFEST.json",
+            "bytes": 10447
+          }
+        }
+      }
+    }
+  },
+  "seed_treatment": {
+    "seeds_consumed": [
+      42,
+      43,
+      44
+    ],
+    "flagship_seed": 42,
+    "panel_a": "main OGN curve + IQR band = seed 42 (the flagship, as published, consistent with Table I); a LIGHT envelope (elementwise min..max over the listed seeds of the per-node Gaussian medians, label 'seed spread (s42-s44)') is drawn BEHIND it; the sidecar carries every seed's per-node medians / q25 / q75 (both models) and both envelopes",
+    "panel_b_and_table1": "seed 42 (as the parent did); the other seeds' net/fit rows ride in verified_unplotted_arrays.seed_companions_panel_b and in the Table-I sidecar under net_over_fit_seed_companions",
+    "no_other_visual_change": true,
+    "seed_44_note": "when the s44 records land, re-run with --seeds 42 43 44 (a listed seed's missing record FAILS LOUDLY)"
+  },
+  "all_gates_pass": true
+}

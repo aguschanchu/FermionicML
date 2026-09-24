@@ -1,0 +1,40 @@
+{
+ "built_utc": "2026-09-11T18:44:59Z",
+ "note": "Sealed v2 cross-host reproducibility (V2-XFLEET-01).",
+ "provenance": [
+  {
+   "file": "xfleet01_result.json",
+   "file_sha256": "adcbdbd687b91f1c2b745ae45876e99499f1c87c266e5c3c2d21286f274a9db1",
+   "record": "V2-XFLEET-01",
+   "record_manifest_sha256": "85684d32da398ab6ae6fb02c94b916c94e765895715dda52e4e035b9f30c448d",
+   "sealed_utc": "2026-09-10T06:40:12Z"
+  }
+ ],
+ "record": "V2-XFLEET-01",
+ "result": {
+  "checkpoints_byte_identical": true,
+  "hold_threshold": 1.1,
+  "lane_a": {
+   "cache_key": "dsv2_d20_random_thermal__phi_aM_f16",
+   "final_state_sha256": "64dbdb91bf87a445d80e098f0ef4b92debd13e06f470041ab9994cf4d128f0b0",
+   "host": "t1v-n-cd7754cc-w-0",
+   "median": 0.00018886336250397895,
+   "name": "v2std_thermal_random_s43",
+   "wall_s": 15771.45336484909
+  },
+  "lane_b": {
+   "cache_key": "dsv2_d20_random_thermal__phi_aM_f16",
+   "cache_source": "PULL from GCS (certificate-verified)",
+   "final_state_sha256": "64dbdb91bf87a445d80e098f0ef4b92debd13e06f470041ab9994cf4d128f0b0",
+   "host": "t1v-n-b9b979b5-w-0",
+   "median": 0.00018886336250397895,
+   "name": "v2std_thermal_random_s43_xhost",
+   "wall_s": 14795.52001619339
+  },
+  "note": "identical spec, seed and cache bytes on two v4-8 hosts",
+  "pass_threshold": 1.0248,
+  "ratio": 1.0,
+  "verdict": "PASS"
+ },
+ "schema": "fermionicml-notebooks-v2-values-1"
+}

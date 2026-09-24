@@ -1,0 +1,5 @@
+build_cache.py	0o664
+d16prog_certs.py	0o664
+train_lane.py	0o664
+train_lane_v2.py	0o664
+verify_checkpoints.py	0o664
