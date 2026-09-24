@@ -1,0 +1,337 @@
+{
+ "all_gates_pass": true,
+ "argv": [
+  "expc2r2_d16prog_p1_classical.py",
+  "/root/d16prog/records/D16PROG-P1-REF",
+  "--leg",
+  "REF",
+  "--procs",
+  "80"
+ ],
+ "chair_rulings": {
+  "E-P1-1": {
+   "effect": "vectorial error recorded BOTH ways -- raw ||dG||_2 (vect_label_l2_error, the d12 mirror) and per-component RMS (vect_label_rms_error = L2/sqrt(3), the dimension-parity-safe quantity). NO cross-era (d12<->d16) ratio is formed.",
+   "verdict": "RATIFIED AS DECLARED"
+  },
+  "E-P1-2": {
+   "effect": "PBCS vectorial multistart runs the 41-per-axis grid (41^3 = 68,921 nodes) as PRIMARY and the equal-node-budget 12-per-axis grid (12^3 = 1,728 nodes) as a COMPANION. The two are distinguished by pairing metadata (grid_protocol), never merged into one row.",
+   "verdict": "BOTH"
+  },
+  "E-P1-3": {
+   "effect": "vectorial BCS runs BCS-V-MIRROR (beta=10.0, the d12-parity comparator, inheriting AND disclosing the d12 arm's beta=10-vs-T=0 defect) and BCS-V-T0 (beta=inf, the corrected companion). Named separately; neither promoted.",
+   "verdict": "BOTH ARMS"
+  },
+  "E-P1-5a": {
+   "effect": "P3 will include beta=100 GS-convention d16 lanes, so the uniform panel gets a neural counterpart in P4. P1 does NOT wait: the classical panel is produced now and the neural column is marked PENDING-P3 (a scheduled dependency, no longer an open ruling).",
+   "verdict": "DISSOLVED VIA THE P3 ROSTER"
+  },
+  "E-P1-5b": {
+   "effect": "P3 will include d16 VECTORIAL lanes (std/orig x >=3 seeds), so the vectorial panel also gets a neural counterpart in P4. Neural vect column marked PENDING-P3.",
+   "verdict": "DISSOLVED VIA THE P3 ROSTER"
+  },
+  "E-P1-6": {
+   "effect": "TS-U-64 (SeedSequence([0,4,0])) carries the cross-implementation-floor role; the d12 seed-20260629 demo stream is NOT mirrored (HOSTCLASS: no CPU-class d16 stream is declared).",
+   "verdict": "RATIFIED"
+  },
+  "E-P1-7": {
+   "effect": "classical-panel pair block is SYMMETRIZED (d12 mirror); the raw asymmetry is recorded as a diagnostic. Pilot measured it exactly 0.0, so the choice is numerically moot but stays declared.",
+   "verdict": "RATIFIED"
+  },
+  "E-P1-8": {
+   "effect": "uniform BCS runs BCS-U-{REG,UNREG} (the d12-parity mirror, fixed-mu / no Hartree self-energy, defect inherited AND disclosed) and BCS-U-HARTREE-{REG,UNREG} (the fully stationary companion: xi_k = eps_k - mu - G v_k^2 with mu solved from sum v_k^2 = M). Named separately; the mirror is the d12-parity comparator, the companion is not a replacement.",
+   "verdict": "BOTH ARMS"
+  },
+  "E-P1-9": {
+   "effect": "the d12 PRECD reproduction-class ladder is adopted unchanged; PBCS-vect rows carry C-ACC1E2 a priori.",
+   "verdict": "RATIFIED"
+  },
+  "author_review": "deferred to the P5 handoff",
+  "ruled_by": "chair (MAIN-EXPT coordinator), under recon/MAINEXPT_D16_FULL_PROGRAM_ORDER.md",
+  "ruled_utc": "2026-08-07"
+ },
+ "d12_receipt": {
+  "function_source_sha256": {
+   "FreeSetBlock": "6871b7d84c7a52e3c664af5442eaf3f4466583f40d66995ec99dec3bc5c1dcad",
+   "_arr_sha": "98acfcebd668727d2ab71da011e118db48550424a18ee89204ad977fb4240df0",
+   "blocked_solve": "c12e516c047d6cc5268c7ad76133fee22b5d4488f44aa248bad095aa54192c18",
+   "build_blocks": "7c28f872410f3d9661dbec520cd662dbc5b66c8fc3a901285225902ebbde65a6",
+   "energy_identity": "bbc6b1e5045189fe572f49904f29ef9cb7f8c0bf18ac8a6d575b2a4fa22febe4",
+   "ladder": "4814973a6e4f30575eb268456e1abb58b1a2eace4160a21c4f6df2be3b24feb1",
+   "number_identity": "8bca825e5d9289f0cf12767611ec070d702a815fe1af1b7422eb0687e4ccfaea",
+   "sector_table": "8456e711b97cb2eeb42647e23c3a6cb6c7ca7aa2281876e83e3e6dd8f0b8a350",
+   "v_matrix": "8b228ae2af6d329915d4e4d9411222f7c94b3dcf8c8b128c98377536928aaf16"
+  },
+  "path": "/root/repo/experiments/experiment-campaign2-r2/stages/expc2r2_d12_blocked_validation.py",
+  "sha256": "9a14f209b740e6e17607208e3aa7dcc057083e705f1a10c5e74b4e4d14552947"
+ },
+ "d16b_receipt": null,
+ "diagnostics": {
+  "chair_rulings": {
+   "E-P1-1": {
+    "effect": "vectorial error recorded BOTH ways -- raw ||dG||_2 (vect_label_l2_error, the d12 mirror) and per-component RMS (vect_label_rms_error = L2/sqrt(3), the dimension-parity-safe quantity). NO cross-era (d12<->d16) ratio is formed.",
+    "verdict": "RATIFIED AS DECLARED"
+   },
+   "E-P1-2": {
+    "effect": "PBCS vectorial multistart runs the 41-per-axis grid (41^3 = 68,921 nodes) as PRIMARY and the equal-node-budget 12-per-axis grid (12^3 = 1,728 nodes) as a COMPANION. The two are distinguished by pairing metadata (grid_protocol), never merged into one row.",
+    "verdict": "BOTH"
+   },
+   "E-P1-3": {
+    "effect": "vectorial BCS runs BCS-V-MIRROR (beta=10.0, the d12-parity comparator, inheriting AND disclosing the d12 arm's beta=10-vs-T=0 defect) and BCS-V-T0 (beta=inf, the corrected companion). Named separately; neither promoted.",
+    "verdict": "BOTH ARMS"
+   },
+   "E-P1-5a": {
+    "effect": "P3 will include beta=100 GS-convention d16 lanes, so the uniform panel gets a neural counterpart in P4. P1 does NOT wait: the classical panel is produced now and the neural column is marked PENDING-P3 (a scheduled dependency, no longer an open ruling).",
+    "verdict": "DISSOLVED VIA THE P3 ROSTER"
+   },
+   "E-P1-5b": {
+    "effect": "P3 will include d16 VECTORIAL lanes (std/orig x >=3 seeds), so the vectorial panel also gets a neural counterpart in P4. Neural vect column marked PENDING-P3.",
+    "verdict": "DISSOLVED VIA THE P3 ROSTER"
+   },
+   "E-P1-6": {
+    "effect": "TS-U-64 (SeedSequence([0,4,0])) carries the cross-implementation-floor role; the d12 seed-20260629 demo stream is NOT mirrored (HOSTCLASS: no CPU-class d16 stream is declared).",
+    "verdict": "RATIFIED"
+   },
+   "E-P1-7": {
+    "effect": "classical-panel pair block is SYMMETRIZED (d12 mirror); the raw asymmetry is recorded as a diagnostic. Pilot measured it exactly 0.0, so the choice is numerically moot but stays declared.",
+    "verdict": "RATIFIED"
+   },
+   "E-P1-8": {
+    "effect": "uniform BCS runs BCS-U-{REG,UNREG} (the d12-parity mirror, fixed-mu / no Hartree self-energy, defect inherited AND disclosed) and BCS-U-HARTREE-{REG,UNREG} (the fully stationary companion: xi_k = eps_k - mu - G v_k^2 with mu solved from sum v_k^2 = M). Named separately; the mirror is the d12-parity comparator, the companion is not a replacement.",
+    "verdict": "BOTH ARMS"
+   },
+   "E-P1-9": {
+    "effect": "the d12 PRECD reproduction-class ladder is adopted unchanged; PBCS-vect rows carry C-ACC1E2 a priori.",
+    "verdict": "RATIFIED"
+   },
+   "author_review": "deferred to the P5 handoff",
+   "ruled_by": "chair (MAIN-EXPT coordinator), under recon/MAINEXPT_D16_FULL_PROGRAM_ORDER.md",
+   "ruled_utc": "2026-08-07"
+  },
+  "predeclaration": {
+   "path": "experiments/experiment-campaign2-r2/recon/d16prog/P1_P2_PREDECLARATIONS.md",
+   "sha256": "f30bf0045a7cc5595fbceaa91b2b604b4d39c43bedb69b317802af083efaa371"
+  },
+  "ref_gs_seniority_v": 0,
+  "ref_gs_vs_large_beta_dE": 0.0
+ },
+ "estimators": {
+  "uniform": {
+   "central_tendency": "median",
+   "cohort": "d16prog-uniform-1024",
+   "estimand": "median over the panel of |G_hat - G_true|",
+   "name": "median_abs_coupling_error__uniform__paired_by_target_index",
+   "pairing": "paired-by-target-index",
+   "ratio_convention": "not-a-ratio",
+   "uncertainty": "none",
+   "uncertainty_companion": "boot-d16prog-target-cluster"
+  },
+  "vect": {
+   "central_tendency": "median",
+   "cohort": "d16prog-vect-512",
+   "coprimary": "median_vect_label_rms_error (= L2 / sqrt(label_size))",
+   "estimand": "median over the panel of ||g_hat - g_true||_2",
+   "name": "median_vect_label_l2_error__paired_by_target_index",
+   "pairing": "paired-by-target-index (POST-SORT: rows ordered by ascending ||G_true||_2, mirroring p6_bcs_rg.bcs_vect_inversions)",
+   "ratio_convention": "not-a-ratio",
+   "uncertainty": "none",
+   "uncertainty_companion": "boot-d16prog-target-cluster"
+  }
+ },
+ "gates": {
+  "g_p1_chair_rulings_recorded": true,
+  "g_p1_era_constants_derived": true,
+  "g_p1_no_era_bound_p6_driver_called": true,
+  "g_p1_no_neural_arm_scored": true,
+  "g_p1_predeclaration_bound": true,
+  "g_p1_ref_blocked_state_accounting_12870": true,
+  "g_p1_ref_gs_matches_blocked_large_beta": true,
+  "g_p1_ref_pairblock_symmetric": true,
+  "g_p1_target_sets_reproduce_declared_streams": true,
+  "g_p1_vect_reconstruction_agrees": true,
+  "g_source_tracked_clean": true
+ },
+ "host": {
+  "node": "1ec7571b47b7",
+  "numpy": "2.2.6",
+  "python": "3.12.3"
+ },
+ "leg": "REF",
+ "mandatory_gates": [
+  "g_p1_era_constants_derived",
+  "g_p1_target_sets_reproduce_declared_streams",
+  "g_p1_vect_reconstruction_agrees",
+  "g_p1_ref_blocked_state_accounting_12870",
+  "g_p1_ref_gs_matches_blocked_large_beta",
+  "g_p1_ref_pairblock_symmetric",
+  "g_p1_predeclaration_bound",
+  "g_p1_no_neural_arm_scored",
+  "g_p1_no_era_bound_p6_driver_called",
+  "g_p1_chair_rulings_recorded",
+  "g_source_tracked_clean"
+ ],
+ "mirror_arm_disclosure": {
+  "BCS-U-REG": "d12-parity mirror: fixed mu, Hartree self-energy DROPPED from the gap equation (supplement.tex:197,:210,:212). The fully stationary companion is BCS-U-HARTREE-REG. At d12 this defect is worth ~3.5x on the median and moves G_c from 0.326 to 0.424.",
+  "BCS-U-UNREG": "d12-parity mirror: as BCS-U-REG, unregularized objective. Companion: BCS-U-HARTREE-UNREG.",
+  "BCS-V-MIRROR": "d12-parity mirror: occupations evaluated at beta=10.0 against T=0 ED targets (supplement.tex:210). The corrected companion is BCS-V-T0."
+ },
+ "missing_gates": [],
+ "no_neural_declaration": "NO neural/OGN arm is computed, loaded or scored anywhere in this stage. The comparison estimator is declared in recon/d16prog/P1_P2_PREDECLARATIONS.md before any neural comparison exists, per MAINEXPT_D16_FULL_PROGRAM_ORDER.md P1.",
+ "no_replacement_declaration": "This record measures the d16 analogue of a d12 quantity. It does not replace, supersede, amend or correct any d12 record; the d12 satellite remains the published reference of record.",
+ "out_dir": "/root/d16prog/records/D16PROG-P1-REF",
+ "p6_receipt": {
+  "forbidden_not_called": [
+   "bcs_uniform_inversions",
+   "rg_canonical_inversion",
+   "bcs_vect_inversions",
+   "_rg_build_ctx",
+   "_d12_exact_target",
+   "_t3_rho_can",
+   "richardson_report",
+   "rg_richardson_inversion"
+  ],
+  "imported": [
+   "gap_eq_residual_t0",
+   "gap_eq_residual_finite_t",
+   "get_bcs_rho_t0",
+   "get_bcs_rho_finite_t",
+   "get_bcs_energy_exact",
+   "solve_gap_scipy",
+   "invert_bcs_direct",
+   "solve_gap_eq_stateless",
+   "calc_bcs_observables",
+   "bcs_variational_driver",
+   "reconstruct_vec",
+   "richardson_residual",
+   "richardson_jacobian",
+   "richardson_newton",
+   "richardson_solve_complexpath",
+   "richardson_observables"
+  ],
+  "path": "/root/repo/campaign4/engine_parts/p6_bcs_rg.py",
+  "pin": "b990d23420944b3891d4612815ca379dbfa1eb4168d3d1db3aa4a4068e179f83",
+  "pin_verified": true,
+  "sha256": "b990d23420944b3891d4612815ca379dbfa1eb4168d3d1db3aa4a4068e179f83",
+  "uncertified": false
+ },
+ "results": {
+  "per_target_set": {
+   "TS_U_1024": {
+    "energy_max": -16.42824458330558,
+    "energy_min": -25.513413760060438,
+    "energy_sha256": "0615b84a5942fa988fde44880428cbc918c191844e2a18afc747eee7a1aa2c59",
+    "htype": "const",
+    "labels_sha256": "9fb5c3f32484004510731272d0492da2d8d7baffbab933cc7b7f8c68c5eb240a",
+    "n": 1024,
+    "pair_trace_max": 4.000000000000003,
+    "pair_trace_min": 3.999999999999998,
+    "raw_asymmetry_max": 0.0,
+    "rho2_sha256": "87c16a2e2c90b6853ef83ca77d1b0ed010956d0ee5ca240e3895e19e9497ed9a"
+   },
+   "TS_U_25": {
+    "energy_max": -16.42824458330558,
+    "energy_min": -25.513413760060438,
+    "energy_sha256": "3cacf4f407aed61ef78d99e643aad12ab2e67f216510a9d82fc8b8b0b387e653",
+    "htype": "const",
+    "labels_sha256": "81becf6cb49dbefe3d8c334cfd42d873c8d6fab1c5307941118b7311fb9dddf1",
+    "n": 25,
+    "pair_trace_max": 4.000000000000002,
+    "pair_trace_min": 3.9999999999999987,
+    "raw_asymmetry_max": 0.0,
+    "rho2_sha256": "4f87dbfeadf2cd06c49610ee052ffbe21218bbc0c5dcb1ac9a02b3274ba617c2"
+   },
+   "TS_U_28": {
+    "energy_max": -16.42824458330558,
+    "energy_min": -25.513413760060438,
+    "energy_sha256": "dd5b712615639673636d255bb3a28d58db86bff55026a9cd20efec6869d07a48",
+    "htype": "const",
+    "labels_sha256": "71fa9566c54a2a9af05d0fc2d3891efdb18224fdaaf1fdd99de04e3c399f6f75",
+    "n": 28,
+    "pair_trace_max": 4.000000000000002,
+    "pair_trace_min": 3.999999999999999,
+    "raw_asymmetry_max": 0.0,
+    "rho2_sha256": "c8eef916e259e10ffdb7c02adc8a302027cdc0fa1adb620e0be460f2f01bd46a"
+   },
+   "TS_U_64": {
+    "energy_max": -16.435641493819308,
+    "energy_min": -24.71479155132058,
+    "energy_sha256": "2ebd95412490e30411726bcebc134a1e2aa29fa263faa07c2abde59ffeb24072",
+    "htype": "const",
+    "labels_sha256": "a6c6d170612e9341103393e560ebebf2954d14d216bfd992ce597cd6e81e262a",
+    "n": 64,
+    "pair_trace_max": 4.000000000000002,
+    "pair_trace_min": 3.9999999999999987,
+    "raw_asymmetry_max": 0.0,
+    "rho2_sha256": "503a7ae992c6d2cba5209098a05a744873bba2eaf3cb9cba912cd6ba34c8c36f"
+   },
+   "TS_U_96": {
+    "energy_max": -16.42824458330558,
+    "energy_min": -25.513413760060438,
+    "energy_sha256": "85c4e6cc02d4dbe0cd1bc56a90320b2d5522aef2576cd820396cbc797d023fb9",
+    "htype": "const",
+    "labels_sha256": "671d75ef80bb8006ea29c352d7f3b8eb58f887118411fc9f6d73d739193a7dfd",
+    "n": 96,
+    "pair_trace_max": 4.000000000000003,
+    "pair_trace_min": 3.9999999999999987,
+    "raw_asymmetry_max": 0.0,
+    "rho2_sha256": "ffe98afb85bf4adfc02b09e53dfed1c93cdbb80d89a6b09382da701f990cad46"
+   },
+   "TS_V_12": {
+    "energy_max": -16.42069783360251,
+    "energy_min": -18.640927524216426,
+    "energy_sha256": "0d267d929c6221ad6f84780362eb91143c59726ded0684c10c22b897c4618776",
+    "htype": "vect",
+    "labels_sha256": "95a7ee39b6711a110cee0fc6fe06b4318c21af5b67895d8600c5f24d77463131",
+    "n": 12,
+    "pair_trace_max": 4.000000000000002,
+    "pair_trace_min": 3.9999999999999996,
+    "raw_asymmetry_max": 0.0,
+    "rho2_sha256": "7b7a47e13883e42e48978bd9bf6aa852f74359f93f414526392115d849e830dc"
+   },
+   "TS_V_512": {
+    "energy_max": -16.06284251262043,
+    "energy_min": -18.77894290587321,
+    "energy_sha256": "d28856e9f06870ee1120beb37e7d01db9468ab9584ab9f553d4f3e75f06174f7",
+    "htype": "vect",
+    "labels_sha256": "171338df300b5d3ff9bedb6da151bcf2eb18eaa673b4820bf48de648f2387fb4",
+    "n": 512,
+    "pair_trace_max": 4.000000000000003,
+    "pair_trace_min": 3.999999999999998,
+    "raw_asymmetry_max": 0.0,
+    "rho2_sha256": "6d21ebbaa9fadb0a08e60550392454f0fba142192ec413957fb95a10bed16c2d"
+   }
+  },
+  "wall_s": 1.9305377006530762
+ },
+ "role": "d16 classical panel (DATA ONLY); run-grade; no printing claim; no sealed-tree write; NO neural arm is scored in this stage",
+ "run_id": "expc2r2-d16prog-20260807",
+ "sbh_receipt": null,
+ "schema": "expc2r2-d16prog-p1-classical-v1",
+ "smoke": false,
+ "smoke_disclosure": null,
+ "smoke_n": 0,
+ "source": {
+  "bundle_member": false,
+  "bundle_member_note": "this stage is NOT a member of SOURCE_BUNDLE_RECEIPT.json; its byte identity is carried by experiments/experiment-campaign2-r2/recon/d16prog/D16PROG_SOURCE_RECEIPT.json",
+  "bundle_receipt": {
+   "allow_dirty": false,
+   "certifying": true,
+   "file_sha256": "51c5a85a74b1b845e5c6993062ae1a4976dd20db9f7fb4685189de5efe5b5eac",
+   "head_commit": "8f0148781b1b63d0fa913cef01012a0a293e8887",
+   "n_files": 13,
+   "path": "experiments/experiment-campaign2-r2/recon/release/SOURCE_BUNDLE_RECEIPT.json",
+   "problems": []
+  },
+  "d16prog_receipt_verification": {
+   "entry_found": true,
+   "receipt": "/root/repo/experiments/experiment-campaign2-r2/recon/d16prog/D16PROG_SOURCE_RECEIPT.json",
+   "receipt_certifying": true,
+   "sha_matches": true
+  },
+  "git_unavailable": true,
+  "source_tracked_clean": true,
+  "stage_path": "/root/repo/experiments/experiment-campaign2-r2/stages/expc2r2_d16prog_p1_classical.py",
+  "stage_sha256": "dc64ca79944260fcef2b48c3b2b234ab4a902a12e9eda900c01978658e197792"
+ },
+ "stage": "expc2r2_d16prog_p1_classical",
+ "wall_s": 2.1741347312927246
+}

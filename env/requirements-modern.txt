@@ -1,0 +1,33 @@
+# FermionicML notebook release -- MODERN environment (floor pins).
+#
+# CAVEATS -- read before choosing this over requirements-pinned.txt:
+#   * Checkpoint restore + CPU-f64 forward verification are VERIFIED on
+#     this stack (validated on python 3.13 / jax 0.10.2 / flax 0.12.8 /
+#     numpy 2.3.5 / scipy 1.16.3).
+#   * The pmap-based TRAINING cells self-gate on modern stacks (they check
+#     the runtime and skip/downshift rather than train differently);
+#     full-scale retraining is supported ONLY on the pinned stack of
+#     requirements-pinned.txt.
+#   * Retrained numbers are never byte-compared across stacks anyway --
+#     equivalence is at the forward-pass/score level (RETRAIN.md).
+
+# Floor: Python >= 3.12 (pip cannot pin the interpreter from a
+# requirements file -- create the env at py>=3.12 yourself).
+
+jax>=0.10
+flax>=0.12
+numpy>=2.3
+scipy>=1.16
+optax>=0.2.8
+ml_dtypes>=0.5
+
+numba
+openfermion
+sparse
+tqdm
+matplotlib
+jupyter
+nbconvert
+
+# fermionic-mbody is NOT on PyPI -- install the vendored wheel:
+./wheels/fermionic_mbody-0.1.0-py3-none-any.whl

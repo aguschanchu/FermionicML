@@ -1,0 +1,2940 @@
+{
+ "schema": "expc2r2-d16fig-plotted-values-v1",
+ "provisional": true,
+ "install_ready": true,
+ "installed_in_manuscript_figures": false,
+ "generator": "production_v2/regen/v2_fig2_regenerate.py",
+ "generator_sha256": "1883219ec4678ca08b15ac388e54db0a3db7f652c89c6ca64ae6e6355487a852",
+ "v2_fork": {
+  "fork_of": "experiments/experiment-campaign2-r2/staging-m17-glyph/m17_fig2b_regenerate.py",
+  "parent_chain": [
+   {
+    "key": "fig2_m17",
+    "path": "experiments/experiment-campaign2-r2/staging-m17-glyph/m17_fig2b_regenerate.py",
+    "pin_sha256": "f7b0412b173c0c953d49d6a64d12aa681253695a371ea3bb896eb166a861a566",
+    "sha256_ondisk": "f7b0412b173c0c953d49d6a64d12aa681253695a371ea3bb896eb166a861a566",
+    "matches": true,
+    "what": "M17 pass-29 glyph-floor fork of fig2_fz1 (3 hunks) -- producer of the INSTALLED Fig 2b asset 1d550425... (commit 1441f155; staging copy, not a sealed record)"
+   },
+   {
+    "key": "fig2_fz1",
+    "path": "experiments/experiment-campaign2-r2/regen/expc2r2_d16fig2_fz1_regenerate.py",
+    "pin_sha256": "f2eb397f4cd7951d03f9845487ab2c19500273d294c1424a6bd77047c2314631",
+    "sha256_ondisk": "f2eb397f4cd7951d03f9845487ab2c19500273d294c1424a6bd77047c2314631",
+    "matches": true,
+    "what": "== D16FIG-F2-FZ1 as_run (sealed Fig 2b record of the freeze batch)"
+   },
+   {
+    "key": "d16fig_base_as_run",
+    "path": "experiments/experiment-campaign2-r2/regen/expc2r2_d16fig_render_step0_frozen.py",
+    "pin_sha256": "911c7807516ba676433de84801c4b8b8368e04d53091a4a8bf2186394a892444",
+    "sha256_ondisk": "911c7807516ba676433de84801c4b8b8368e04d53091a4a8bf2186394a892444",
+    "matches": true,
+    "what": "== D16FIG-F2 / D16FIG-F3 / D16FIG-S1 as_run (producer of the installed Fig 2a and Fig S1 assets)"
+   }
+  ],
+  "mode": "v2",
+  "model_map": {
+   "d16progstd_const_gs": "v2d16progstd_const_gs_s42",
+   "d16progstd_const_gs_s43": "v2d16progstd_const_gs_s43",
+   "d16progstd_const_gs_s44": "v2d16progstd_const_gs_s44",
+   "d16progstd_vect_gs": "v2d16progstd_vect_gs_s42",
+   "d16progstd_vect_gs_s43": "v2d16progstd_vect_gs_s43",
+   "d16progstd_vect_gs_s44": "v2d16progstd_vect_gs_s44",
+   "d16progorig_const_gs": "v2d16progorig_const_gs_s42",
+   "d16progorig_const_gs_s43": "v2d16progorig_const_gs_s43",
+   "d16progorig_const_gs_s44": "v2d16progorig_const_gs_s44",
+   "d16progorig_vect_gs": "v2d16progorig_vect_gs_s42",
+   "d16progorig_vect_gs_s43": "v2d16progorig_vect_gs_s43",
+   "d16progorig_vect_gs_s44": "v2d16progorig_vect_gs_s44"
+  },
+  "figaux_dir": "results_v2/records/V2-D16-FIGAUX",
+  "scores_root": "results_v2/records",
+  "epoch_policy": "parent",
+  "method": "byte-copy line-level fork of the sealed producer: the OGN-dependent inputs are re-bound through MODEL_MAP (ogn_src); classical arms, series recipes, axes, styles, selftest mutants and gates are carried verbatim; manuscript-TeX pins-at-load and TeX cross-checks of plotted numbers are retired (see retired_checks in the result JSON)"
+ },
+ "fork": {
+  "parent": "candidates/roundF_B/figures/regenerate_roundF_audit.py",
+  "parent_sha256": "4d383f635f0df6195702affab25c89ac52dd8940ddc12d1655d8ba8366e31bb5",
+  "method": "semantic fork: parent series semantics / axis conventions / artist styles carried verbatim with per-series parent line citations; data loading rewritten in full for the sealed d16 records (every parent input is a d12 record)",
+  "style_module": "manuscript/results/plots/regen/_style.py",
+  "style_module_sha256": "90ce2ee9b12b18cf63844761b698f14712a86ceac7e5943ba0b16b6cbf32eed1"
+ },
+ "run_id": "v2-d16fig2-20260910",
+ "authority": {
+  "orders": {
+   "experiments/experiment-campaign2-r2/recon/MAINEXPT_D16_PROMOTION_ORDER.md": "b5d176a321cd5ae03836e2cd4460f2dcde8adac0ea05678190d96ba77a1980c9",
+   "experiments/experiment-campaign2-r2/recon/MAINEXPT_D16_FIGURE_EMISSION_ORDER.md": "09c9331fb9b3185cd05ba770bf9c8ae2fb9e5e332605b975de5d038989510b0e",
+   "experiments/experiment-campaign2-r2/recon/MAINEXPT_D16_ORDERS_ADDENDUM1.md": "6585ef97e5ec8039f9c2d1e946428dea55ed9137720d1503142110dee4bc0e41",
+   "experiments/experiment-campaign2-r2/recon/D16PROMO_SPEC.md": "df3cfe4f113bf83927fdebb6874070718d09b2bedc7b43abedb22c9f77ca400d"
+  },
+  "leg": "LEG C (figure sidecars only; delivery note is the chair's; add-1 derived-row record is another agent's)"
+ },
+ "grid_decision": {
+  "choice": "TS-U-96",
+  "rule_branch": "96-class",
+  "read_from": "results/D16PROG-FIGAUX-M2 result (results/grid_decision)",
+  "generator_citation": {
+   "path": "candidates/roundF_B/figures/regenerate_roundF_audit.py",
+   "sha256": "4d383f635f0df6195702affab25c89ac52dd8940ddc12d1655d8ba8366e31bb5",
+   "sites": "x array: line 190 g = zu['g_true'] (96,); Fig-2a plot calls lines 327-341; Fig-2b non-PBCS artists lines 357-367 on the same 96-point g; PBCS layer line 370 on its own 1024 abscissae (line 266)"
+  }
+ },
+ "display_arm": {
+  "uniform": "v2d16progstd_const_gs_s42",
+  "vectorial": "v2d16progstd_vect_gs_s42",
+  "seed": 42,
+  "authority": "the manuscript's standardized-flagship seed-42 display convention (main.tex Fig-4/Fig-5 captions: 'standardized flagship checkpoint, seed 42'; EXECUTION_LOG std-flagship presentation); siblings sealed + enumerated as companions; the null std/orig uniform contrast row is cited so the choice hides nothing; CHAIR-REVIEW item",
+  "v2_note": "v2 re-binding: the seed-42 standardized-flagship display convention is kept; the display lanes are the MODEL_MAP images of the published display arms (d16progstd_const_gs -> v2d16progstd_const_gs_s42, d16progstd_vect_gs -> v2d16progstd_vect_gs_s42); sibling seeds s43/s44 map likewise"
+ },
+ "source_records": {
+  "experiments/experiment-campaign2-r2/results/D16PROG-FIGAUX-M1": {
+   "result_json_sha256": "8c44287f1201c7580d126fabb2e687522e679f5af6667225f2cd3ded95450b5e",
+   "manifest_verified": true,
+   "all_gates_pass": true,
+   "dir_mode": "0o555",
+   "seal_mode_disclosure": null
+  },
+  "experiments/experiment-campaign2-r2/results/D16PROG-FIGAUX-M2": {
+   "result_json_sha256": "7a508e5b93827d925fe024fe0aca9d9603c111c1340811d85abb2a10cecc61be",
+   "manifest_verified": true,
+   "all_gates_pass": true,
+   "dir_mode": "0o555",
+   "seal_mode_disclosure": null
+  },
+  "experiments/experiment-campaign2-r2/results/D16PROG-FIGAUX-M5": {
+   "result_json_sha256": "dd9d2ac2e9d9407fa7ae40ec3606bd0c654ba23849a225bf5749e2b72964f4bb",
+   "manifest_verified": true,
+   "all_gates_pass": true,
+   "dir_mode": "0o555",
+   "seal_mode_disclosure": null
+  },
+  "experiments/experiment-campaign2-r2/results/D16PROG-P1-REF": {
+   "result_json_sha256": "0be8bc6ff217335a6fa8046d83a8d1f22315b60a65ca745ac4e1f2a370936124",
+   "manifest_verified": true,
+   "all_gates_pass": true,
+   "dir_mode": "0o555",
+   "seal_mode_disclosure": null
+  },
+  "experiments/experiment-campaign2-r2/results/D16PROG-P4-SCORES": {
+   "result_json_sha256": "07c3b8c1b72958990224287ab4e4698db6f79c546a6c57bc04898763ba7d086d",
+   "manifest_verified": true,
+   "all_gates_pass": true,
+   "dir_mode": "0o555",
+   "seal_mode_disclosure": null
+  },
+  "experiments/experiment-campaign2-r2/results/C11-supplement-d16promo": {
+   "result_json_sha256": "f4c77dfb4376ef7a9a3c5ec176616d5dc524150a15c4fe6e88313c6c103d930a",
+   "manifest_verified": true,
+   "all_gates_pass": true,
+   "dir_mode": "0o555",
+   "seal_mode_disclosure": null
+  },
+  "experiments/experiment-campaign2-r2/results/C11-supplement-d16promo-add1": {
+   "result_json_sha256": "83775f9d3924e9ab6ccd9f24105e7c9418a3b45eb03b94e371540e3745ee6a31",
+   "manifest_verified": true,
+   "all_gates_pass": true,
+   "dir_mode": "0o555",
+   "seal_mode_disclosure": null
+  },
+  "results_v2/records/V2-D16-FIGAUX": {
+   "result_json_sha256": "56ab6384fce05d215fba430dfa5ffc630318a9e236ce7c67467cb38c5587e391",
+   "manifest_verified": true,
+   "all_gates_pass": true,
+   "dir_mode": "0o555",
+   "seal_mode_disclosure": null
+  },
+  "results_v2/records/V2-D16SCORE-v2d16progorig_const_gs_s42": {
+   "result_json_sha256": "a93dc85a5412c0a106c288987de77b6e49f1887efe84219e9c9926e5747f0b42",
+   "manifest_verified": true,
+   "all_gates_pass": true,
+   "dir_mode": "0o555",
+   "seal_mode_disclosure": null
+  },
+  "results_v2/records/V2-D16SCORE-v2d16progorig_const_gs_s43": {
+   "result_json_sha256": "f5043d32e5e44f5cdc3fb60918a100cbf67160b8c47e5ade5a736cf468025df3",
+   "manifest_verified": true,
+   "all_gates_pass": true,
+   "dir_mode": "0o555",
+   "seal_mode_disclosure": null
+  },
+  "results_v2/records/V2-D16SCORE-v2d16progorig_const_gs_s44": {
+   "result_json_sha256": "7ae097ae66f0c03c8fd428fd14cfd01b82032abe14be81994fc9c3df6da03850",
+   "manifest_verified": true,
+   "all_gates_pass": true,
+   "dir_mode": "0o555",
+   "seal_mode_disclosure": null
+  },
+  "results_v2/records/V2-D16SCORE-v2d16progorig_vect_gs_s42": {
+   "result_json_sha256": "e485b475e015b59d507a67afd9af15e6b431f40dde32a01db962a22b97b2bc3e",
+   "manifest_verified": true,
+   "all_gates_pass": true,
+   "dir_mode": "0o555",
+   "seal_mode_disclosure": null
+  },
+  "results_v2/records/V2-D16SCORE-v2d16progorig_vect_gs_s43": {
+   "result_json_sha256": "f881b16424393a5d3e225674965b477366dffa9e18520b249c7b07201d5d4e21",
+   "manifest_verified": true,
+   "all_gates_pass": true,
+   "dir_mode": "0o555",
+   "seal_mode_disclosure": null
+  },
+  "results_v2/records/V2-D16SCORE-v2d16progorig_vect_gs_s44": {
+   "result_json_sha256": "c9d78b7b0365b7992685ef22a6b2f0f02eaa9c640c2491c6fc4dd47437cf5932",
+   "manifest_verified": true,
+   "all_gates_pass": true,
+   "dir_mode": "0o555",
+   "seal_mode_disclosure": null
+  },
+  "results_v2/records/V2-D16SCORE-v2d16progstd_const_gs_s42": {
+   "result_json_sha256": "8359101fc41091efe00ff44c3ab9f182d2ea36091e021574719acaa36149f389",
+   "manifest_verified": true,
+   "all_gates_pass": true,
+   "dir_mode": "0o555",
+   "seal_mode_disclosure": null
+  },
+  "results_v2/records/V2-D16SCORE-v2d16progstd_const_gs_s43": {
+   "result_json_sha256": "d8289cf746417d9dfd3585b75c33544e71ef325873f93485d077a466b0926ed8",
+   "manifest_verified": true,
+   "all_gates_pass": true,
+   "dir_mode": "0o555",
+   "seal_mode_disclosure": null
+  },
+  "results_v2/records/V2-D16SCORE-v2d16progstd_const_gs_s44": {
+   "result_json_sha256": "19b27591db775b03f8de6cc5e7a80ea298f92ac2f3c74b6c49f49632cf6275a9",
+   "manifest_verified": true,
+   "all_gates_pass": true,
+   "dir_mode": "0o555",
+   "seal_mode_disclosure": null
+  },
+  "results_v2/records/V2-D16SCORE-v2d16progstd_vect_gs_s42": {
+   "result_json_sha256": "4ef37344bc43e0d996eda725ea6e3929b70825a01db3540dc7a2810f501ba41f",
+   "manifest_verified": true,
+   "all_gates_pass": true,
+   "dir_mode": "0o555",
+   "seal_mode_disclosure": null
+  },
+  "results_v2/records/V2-D16SCORE-v2d16progstd_vect_gs_s43": {
+   "result_json_sha256": "f5a77e1c6966c0991eed8799d0f0a8e2b05ec49f5187e08dd5ed462e0579c168",
+   "manifest_verified": true,
+   "all_gates_pass": true,
+   "dir_mode": "0o555",
+   "seal_mode_disclosure": null
+  },
+  "results_v2/records/V2-D16SCORE-v2d16progstd_vect_gs_s44": {
+   "result_json_sha256": "a07eae1b1edbdfa37af3f22ee5e88171885ad49ba14b3e2ba8d5da551a27684b",
+   "manifest_verified": true,
+   "all_gates_pass": true,
+   "dir_mode": "0o555",
+   "seal_mode_disclosure": null
+  }
+ },
+ "source_file_sha256": {
+  "experiments/experiment-campaign2-r2/results/C11-supplement-d16promo-add1/C11_SUPPLEMENT_D16PROMO_ADD1.json": "3840bc1f84d713a20e9ca7b986446bf55d2f1ad66fbf96e96d81f9f7cb6e73b5",
+  "experiments/experiment-campaign2-r2/results/C11-supplement-d16promo-add1/expc2r2_d16promo_add1_supplement_result.json": "83775f9d3924e9ab6ccd9f24105e7c9418a3b45eb03b94e371540e3745ee6a31",
+  "experiments/experiment-campaign2-r2/results/C11-supplement-d16promo/C11_SUPPLEMENT_D16PROMO.json": "1f925f27d060b0e4c1410c892b5213f0ac85f89fe4d866e74b4ebb4ef48c6ed1",
+  "experiments/experiment-campaign2-r2/results/C11-supplement-d16promo/expc2r2_d16promo_supplement_result.json": "f4c77dfb4376ef7a9a3c5ec176616d5dc524150a15c4fe6e88313c6c103d930a",
+  "experiments/experiment-campaign2-r2/results/D16PROG-FIGAUX-M1/expc2r2_d16prog_figaux_percell.npz": "19ced1042c9f8a46f6263443dfa9a8ce8c5f495f3f3523b05f7c2a1933c150a7",
+  "experiments/experiment-campaign2-r2/results/D16PROG-FIGAUX-M1/expc2r2_d16prog_figaux_result.json": "8c44287f1201c7580d126fabb2e687522e679f5af6667225f2cd3ded95450b5e",
+  "experiments/experiment-campaign2-r2/results/D16PROG-FIGAUX-M2/expc2r2_d16prog_figaux_percell.npz": "1b598bdd2c895f48f06e9b78f077d493fbed1c8c686d431f3d78c564d89f3223",
+  "experiments/experiment-campaign2-r2/results/D16PROG-FIGAUX-M2/expc2r2_d16prog_figaux_result.json": "7a508e5b93827d925fe024fe0aca9d9603c111c1340811d85abb2a10cecc61be",
+  "experiments/experiment-campaign2-r2/results/D16PROG-FIGAUX-M5/expc2r2_d16prog_figaux_percell.npz": "e6e9aa649d5514b4caf11131d7485824026625fe9a49ada075984f7d75b1a913",
+  "experiments/experiment-campaign2-r2/results/D16PROG-FIGAUX-M5/expc2r2_d16prog_figaux_result.json": "dd9d2ac2e9d9407fa7ae40ec3606bd0c654ba23849a225bf5749e2b72964f4bb",
+  "experiments/experiment-campaign2-r2/results/D16PROG-P1-REF/expc2r2_d16prog_p1_classical_percell.npz": "dbcb4bf77aa521715b26376c7cf49cb5caef106cb21718914196f220359a8d88",
+  "experiments/experiment-campaign2-r2/results/D16PROG-P1-REF/expc2r2_d16prog_p1_classical_result.json": "0be8bc6ff217335a6fa8046d83a8d1f22315b60a65ca745ac4e1f2a370936124",
+  "experiments/experiment-campaign2-r2/results/D16PROG-P4-SCORES/expc2r2_d16prog_p4_eval_percell.npz": "55794ee2e04e5f3855ed016be94e8e233c602946f480733224cee16eccba3064",
+  "experiments/experiment-campaign2-r2/results/D16PROG-P4-SCORES/expc2r2_d16prog_p4_eval_result.json": "07c3b8c1b72958990224287ab4e4698db6f79c546a6c57bc04898763ba7d086d",
+  "results_v2/records/V2-D16-FIGAUX/v2_d16prog_figaux_M1_percell.npz": "5d9d7f3d28f47b992e90249760a13db55e34a08dcad597aacf00039c72971023",
+  "results_v2/records/V2-D16-FIGAUX/v2_d16prog_figaux_M2_percell.npz": "fc78e021df7e17ef6ce5253a3929ef354205ad02baddbde2addb27f76c2bb54e",
+  "results_v2/records/V2-D16-FIGAUX/v2_d16prog_figaux_result.json": "56ab6384fce05d215fba430dfa5ffc630318a9e236ce7c67467cb38c5587e391",
+  "results_v2/records/V2-D16SCORE-v2d16progorig_const_gs_s42/v2_d16prog_p4_persample.npz": "664097cd9da2fd2aaec9c8f286b9af3ad1a4b315fff2a1132e09ada1f71d0dfd",
+  "results_v2/records/V2-D16SCORE-v2d16progorig_const_gs_s42/v2_d16prog_p4_result.json": "a93dc85a5412c0a106c288987de77b6e49f1887efe84219e9c9926e5747f0b42",
+  "results_v2/records/V2-D16SCORE-v2d16progorig_const_gs_s43/v2_d16prog_p4_persample.npz": "44394ecac2870b4e76d6f3e3330475ba5551b6b2f1c75e9dbe2ca1dc106511cc",
+  "results_v2/records/V2-D16SCORE-v2d16progorig_const_gs_s43/v2_d16prog_p4_result.json": "f5043d32e5e44f5cdc3fb60918a100cbf67160b8c47e5ade5a736cf468025df3",
+  "results_v2/records/V2-D16SCORE-v2d16progorig_const_gs_s44/v2_d16prog_p4_persample.npz": "4617468defd4817ccc14392dde5298b8c3a9b5c45fc09e06124e70d775d4522b",
+  "results_v2/records/V2-D16SCORE-v2d16progorig_const_gs_s44/v2_d16prog_p4_result.json": "7ae097ae66f0c03c8fd428fd14cfd01b82032abe14be81994fc9c3df6da03850",
+  "results_v2/records/V2-D16SCORE-v2d16progorig_vect_gs_s42/v2_d16prog_p4_persample.npz": "f7f0019af03f2d1f4233bc1e0b0b2fd61236af92b32ce2648fb3dde42824a83f",
+  "results_v2/records/V2-D16SCORE-v2d16progorig_vect_gs_s42/v2_d16prog_p4_result.json": "e485b475e015b59d507a67afd9af15e6b431f40dde32a01db962a22b97b2bc3e",
+  "results_v2/records/V2-D16SCORE-v2d16progorig_vect_gs_s43/v2_d16prog_p4_persample.npz": "458d11b158f94ceaa953ad2a33d9142165d64c347d6b55807bc2449ffeb449d0",
+  "results_v2/records/V2-D16SCORE-v2d16progorig_vect_gs_s43/v2_d16prog_p4_result.json": "f881b16424393a5d3e225674965b477366dffa9e18520b249c7b07201d5d4e21",
+  "results_v2/records/V2-D16SCORE-v2d16progorig_vect_gs_s44/v2_d16prog_p4_persample.npz": "a7b0b3a1d7cccc238564a6ac726e9a18a8c4ce3fcfae36fd6ff68f0e37c9c55e",
+  "results_v2/records/V2-D16SCORE-v2d16progorig_vect_gs_s44/v2_d16prog_p4_result.json": "c9d78b7b0365b7992685ef22a6b2f0f02eaa9c640c2491c6fc4dd47437cf5932",
+  "results_v2/records/V2-D16SCORE-v2d16progstd_const_gs_s42/v2_d16prog_p4_persample.npz": "0bfecab9e7c60e0198739c93175f910066fe9b9abb6e1e0eed6005dc16c7e34e",
+  "results_v2/records/V2-D16SCORE-v2d16progstd_const_gs_s42/v2_d16prog_p4_result.json": "8359101fc41091efe00ff44c3ab9f182d2ea36091e021574719acaa36149f389",
+  "results_v2/records/V2-D16SCORE-v2d16progstd_const_gs_s43/v2_d16prog_p4_persample.npz": "7d27cad1d707c85f9662390e2ebdce0831c9da3c80d736571f64a702d0c1f8b7",
+  "results_v2/records/V2-D16SCORE-v2d16progstd_const_gs_s43/v2_d16prog_p4_result.json": "d8289cf746417d9dfd3585b75c33544e71ef325873f93485d077a466b0926ed8",
+  "results_v2/records/V2-D16SCORE-v2d16progstd_const_gs_s44/v2_d16prog_p4_persample.npz": "f5a97ec4bcf133d0f03709b8751c42344ba5a1dc775add8d250a4d205aee77f7",
+  "results_v2/records/V2-D16SCORE-v2d16progstd_const_gs_s44/v2_d16prog_p4_result.json": "19b27591db775b03f8de6cc5e7a80ea298f92ac2f3c74b6c49f49632cf6275a9",
+  "results_v2/records/V2-D16SCORE-v2d16progstd_vect_gs_s42/v2_d16prog_p4_persample.npz": "2ea70c809b2940c94a9558d093d90c272474c341d59ae014822e5f71b1f37cf3",
+  "results_v2/records/V2-D16SCORE-v2d16progstd_vect_gs_s42/v2_d16prog_p4_result.json": "4ef37344bc43e0d996eda725ea6e3929b70825a01db3540dc7a2810f501ba41f",
+  "results_v2/records/V2-D16SCORE-v2d16progstd_vect_gs_s43/v2_d16prog_p4_persample.npz": "205cb0281c76c710873116f354bdb2a1eddeef6b378a7bdf52b2bd6c15c1d1fd",
+  "results_v2/records/V2-D16SCORE-v2d16progstd_vect_gs_s43/v2_d16prog_p4_result.json": "f5a77e1c6966c0991eed8799d0f0a8e2b05ec49f5187e08dd5ed462e0579c168",
+  "results_v2/records/V2-D16SCORE-v2d16progstd_vect_gs_s44/v2_d16prog_p4_persample.npz": "cff3b270d7abe6c27309ca5131106e7df2f75bd633d9aa5b740149e0ca168eac",
+  "results_v2/records/V2-D16SCORE-v2d16progstd_vect_gs_s44/v2_d16prog_p4_result.json": "a07eae1b1edbdfa37af3f22ee5e88171885ad49ba14b3e2ba8d5da551a27684b"
+ },
+ "promo_cross_pins": {
+  "experiments/experiment-campaign2-r2/results/D16PROG-P1-REF/expc2r2_d16prog_p1_classical_result.json": "0be8bc6ff217335a6fa8046d83a8d1f22315b60a65ca745ac4e1f2a370936124",
+  "experiments/experiment-campaign2-r2/results/D16PROG-P4-SCORES/expc2r2_d16prog_p4_eval_result.json": "07c3b8c1b72958990224287ab4e4698db6f79c546a6c57bc04898763ba7d086d"
+ },
+ "add1_pin": {
+  "file": "experiments/experiment-campaign2-r2/results/C11-supplement-d16promo-add1/C11_SUPPLEMENT_D16PROMO_ADD1.json",
+  "sha256": "3840bc1f84d713a20e9ca7b986446bf55d2f1ad66fbf96e96d81f9f7cb6e73b5"
+ },
+ "disclosures": {
+  "no_replacement": "These figures are INSTALL-READY d16 REPLACEMENT CANDIDATES rendered under the author's d16-primary ruling (MAINEXPT_D16_PROMOTION_ORDER). Until the author-gated install step runs, the d12 panels remain the installed figures of record; no in-figure or in-record d12<->d16 value comparison is formed here.",
+  "quotability": "The figure arrays are D-ROUND2-DATAONLY figure data.  Every digit quoted about them enters the manuscript ONLY through the cited quotable D16PROMO rows (C11-supplement-d16promo / -add1); this record mints no new quotable number.",
+  "mirror_arms": {
+   "BCS-U-REG": "d12-parity mirror: fixed mu, Hartree self-energy DROPPED from the gap equation (supplement.tex:197,:210,:212). The fully stationary companion is BCS-U-HARTREE-REG. At d12 this defect is worth ~3.5x on the median and moves G_c from 0.326 to 0.424.",
+   "BCS-U-UNREG": "d12-parity mirror: as BCS-U-REG, unregularized objective. Companion: BCS-U-HARTREE-UNREG.",
+   "BCS-V-MIRROR": "d12-parity mirror: occupations evaluated at beta=10.0 against T=0 ED targets (supplement.tex:210). The corrected companion is BCS-V-T0."
+  },
+  "vrms_binding": "V-RMS binding rider (ADDENDUM-1(b)(2), sealed add-1): the sealed d16promo pooled V rungs bind RMS points to raw-L2 endpoints.  Every error series and every cited median in the vectorial panels here is RAW-L2 end to end (metric raw_l2); no RMS point is displayed beside an L2 interval and no interval is displayed at all in these per-target panels."
+ },
+ "verification_rule": "Every plotted number re-reads bit-exactly (np.array_equal on float64) from the named sealed source bytes under the declared derivation; every cited quotable row re-reads from its sealed supplement and its declared relation reproduces the row value bit-exactly.  Image bytes are not the gate; the plotted-array surface is.",
+ "environment": {
+  "python": "3.13.9",
+  "numpy": "2.3.5",
+  "matplotlib": "3.10.6",
+  "hostname": "nuc"
+ },
+ "figure": "Fig 2 (d16 replacement candidate)",
+ "artifact": "fig:bcs_uniform",
+ "panels": "a+b",
+ "family": "uniform (d=16, N=8; G_kk'=G; 96 targets, abscissa G; declared figure grid TS-U-96)",
+ "plotted_arrays": {
+  "fig2a:g_true": {
+   "plotted": true,
+   "series": "fig2a:g_true",
+   "parent_series": {
+    "parent_sidecar": "fig1a_pair_coherence_accessibility_audit_values.json",
+    "key": "g_true",
+    "parent_lines": "190,328-355"
+   },
+   "sources": [
+    {
+     "file": "experiments/experiment-campaign2-r2/results/D16PROG-FIGAUX-M2/expc2r2_d16prog_figaux_percell.npz",
+     "pointer": "figaux96_g_true",
+     "sha256": "1b598bdd2c895f48f06e9b78f077d493fbed1c8c686d431f3d78c564d89f3223"
+    }
+   ],
+   "derivation_op": "raw",
+   "shape": [
+    96
+   ],
+   "n": 96,
+   "dtype_for_hash": "float64-c-contiguous",
+   "sha256_float64": "671d75ef80bb8006ea29c352d7f3b8eb58f887118411fc9f6d73d739193a7dfd",
+   "values": [
+    0.1,
+    0.10947368421052632,
+    0.11894736842105263,
+    0.12842105263157896,
+    0.13789473684210526,
+    0.1473684210526316,
+    0.1568421052631579,
+    0.16631578947368422,
+    0.17578947368421055,
+    0.18526315789473685,
+    0.19473684210526315,
+    0.20421052631578948,
+    0.2136842105263158,
+    0.2231578947368421,
+    0.23263157894736844,
+    0.24210526315789474,
+    0.25157894736842107,
+    0.2610526315789474,
+    0.2705263157894737,
+    0.28,
+    0.2894736842105263,
+    0.29894736842105263,
+    0.30842105263157893,
+    0.3178947368421053,
+    0.32736842105263164,
+    0.33684210526315794,
+    0.34631578947368424,
+    0.35578947368421054,
+    0.36526315789473685,
+    0.37473684210526315,
+    0.38421052631578945,
+    0.39368421052631586,
+    0.40315789473684216,
+    0.41263157894736846,
+    0.42210526315789476,
+    0.43157894736842106,
+    0.44105263157894736,
+    0.45052631578947366,
+    0.4600000000000001,
+    0.4694736842105264,
+    0.4789473684210527,
+    0.488421052631579,
+    0.4978947368421053,
+    0.5073684210526316,
+    0.5168421052631579,
+    0.5263157894736843,
+    0.5357894736842106,
+    0.5452631578947369,
+    0.5547368421052632,
+    0.5642105263157895,
+    0.5736842105263158,
+    0.5831578947368421,
+    0.5926315789473685,
+    0.6021052631578947,
+    0.6115789473684211,
+    0.6210526315789474,
+    0.6305263157894737,
+    0.64,
+    0.6494736842105263,
+    0.6589473684210526,
+    0.6684210526315789,
+    0.6778947368421053,
+    0.6873684210526316,
+    0.6968421052631579,
+    0.7063157894736842,
+    0.7157894736842105,
+    0.7252631578947368,
+    0.7347368421052631,
+    0.7442105263157895,
+    0.7536842105263158,
+    0.7631578947368421,
+    0.7726315789473684,
+    0.7821052631578947,
+    0.791578947368421,
+    0.8010526315789473,
+    0.8105263157894738,
+    0.8200000000000001,
+    0.8294736842105264,
+    0.8389473684210527,
+    0.848421052631579,
+    0.8578947368421053,
+    0.8673684210526316,
+    0.876842105263158,
+    0.8863157894736843,
+    0.8957894736842106,
+    0.9052631578947369,
+    0.9147368421052632,
+    0.9242105263157895,
+    0.9336842105263158,
+    0.9431578947368422,
+    0.9526315789473685,
+    0.9621052631578948,
+    0.9715789473684211,
+    0.9810526315789474,
+    0.9905263157894737,
+    1.0
+   ]
+  },
+  "fig2a:coherence_exact": {
+   "plotted": true,
+   "series": "fig2a:coherence_exact",
+   "parent_series": {
+    "key": "coherence_exact",
+    "parent_lines": "191,328,349"
+   },
+   "sources": [
+    {
+     "file": "experiments/experiment-campaign2-r2/results/D16PROG-FIGAUX-M2/expc2r2_d16prog_figaux_percell.npz",
+     "pointer": "figaux96_REF-ED_coh",
+     "sha256": "1b598bdd2c895f48f06e9b78f077d493fbed1c8c686d431f3d78c564d89f3223"
+    }
+   ],
+   "derivation_op": "raw",
+   "shape": [
+    96
+   ],
+   "n": 96,
+   "dtype_for_hash": "float64-c-contiguous",
+   "sha256_float64": "8986dbe78ddf0e3dce9ec6a8a42f862854a64aba01628a57ca5b04411987bc90",
+   "note": "division-free coh == the parent's psi_exact/|g| after cancellation (sealed M1/M2 OGN-convention note)",
+   "values": [
+    0.7722507239233584,
+    0.8144929948505315,
+    0.8558679960511621,
+    0.8965312703525752,
+    0.9366091979823727,
+    0.9762057297865355,
+    1.0154071596733734,
+    1.0542855831113946,
+    1.0929014511823094,
+    1.1313054876654398,
+    1.1695401487661512,
+    1.20764074914446,
+    1.2456363413398581,
+    1.283550411247865,
+    1.3214014356206314,
+    1.3592033359509328,
+    1.3969658548599928,
+    1.4346948751490143,
+    1.4723926972715942,
+    1.5100582876556579,
+    1.5476875077204706,
+    1.585273331371592,
+    1.622806057058553,
+    1.6602735190402254,
+    1.6976613012498871,
+    1.7349529560395422,
+    1.7721302290838854,
+    1.8091732908244373,
+    1.8460609740302507,
+    1.882771016345747,
+    1.9192803060952577,
+    1.9555651291265277,
+    1.9916014141086487,
+    2.0273649734601116,
+    2.062831736971052,
+    2.0979779751985137,
+    2.132780509847578,
+    2.1672169085922683,
+    2.201265662122973,
+    2.234906341611884,
+    2.2681197352435896,
+    2.300887962941859,
+    2.333194568913892,
+    2.3650245921092696,
+    2.3963646151347646,
+    2.427202792562915,
+    2.457528859911443,
+    2.487334124844743,
+    2.5166114423545847,
+    2.545355175815384,
+    2.5735611458827523,
+    2.601226569218228,
+    2.6283499889856285,
+    2.6549311989832334,
+    2.6809711631603412,
+    2.7064719321250403,
+    2.7314365580907096,
+    2.7558690095397136,
+    2.7797740867099026,
+    2.803157338839246,
+    2.8260249839398535,
+    2.8483838317188526,
+    2.8702412101217885,
+    2.891604895846599,
+    2.912483049062933,
+    2.9328841524731626,
+    2.9528169547673144,
+    2.9722904184538312,
+    2.9913136719903153,
+    3.009895966092309,
+    3.02804663406234,
+    3.0457750559549006,
+    3.0630906263741067,
+    3.080002725688729,
+    3.096520694442923,
+    3.112653810738982,
+    3.128411270370487,
+    3.1438021694889833,
+    3.158835489594481,
+    3.1735200846488896,
+    3.187864670121453,
+    3.2018778137860764,
+    3.2155679281015765,
+    3.2289432640173605,
+    3.242011906058252,
+    3.2547817685533467,
+    3.2672605928845315,
+    3.279455945640529,
+    3.2913752175722455,
+    3.30302562325432,
+    3.3144142013665174,
+    3.3255478155166824,
+    3.3364331555344684,
+    3.3470767391719694,
+    3.357484914153879,
+    3.3676638605255302
+   ]
+  },
+  "fig2a:coherence_bcs_regularized": {
+   "plotted": true,
+   "series": "fig2a:coherence_bcs_regularized",
+   "parent_series": {
+    "key": "coherence_bcs_regularized",
+    "parent_lines": "192,332,350"
+   },
+   "sources": [
+    {
+     "file": "experiments/experiment-campaign2-r2/results/D16PROG-FIGAUX-M2/expc2r2_d16prog_figaux_percell.npz",
+     "pointer": "figaux96_BCS-U-REG_coh",
+     "sha256": "1b598bdd2c895f48f06e9b78f077d493fbed1c8c686d431f3d78c564d89f3223"
+    }
+   ],
+   "derivation_op": "raw",
+   "shape": [
+    96
+   ],
+   "n": 96,
+   "dtype_for_hash": "float64-c-contiguous",
+   "sha256_float64": "4387eb82206c5eabff2cc784856c9eed522d0815c955f10b0afce0e0c7c757fe",
+   "values": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0773966748618289,
+    1.113284145898317,
+    1.1497145410918217,
+    1.1867313416335445,
+    1.2243392950774719,
+    1.2734786949290637,
+    1.3130371846578237,
+    1.3532370572705816,
+    1.394077941307902,
+    1.4355115412063795,
+    1.477494125810211,
+    1.519971684864609,
+    1.5628479835571343,
+    1.6060506459473765,
+    1.649469934884796,
+    1.6930010262462079,
+    1.736508038553417,
+    1.7799065811381587,
+    1.8230439909194691,
+    1.8658550495374377,
+    1.908217473821667,
+    1.950055325011318,
+    1.9912827697144844,
+    2.0318482918026817,
+    2.0716966782524966,
+    2.110788144227002,
+    2.1490870822353783,
+    2.1865891356667264,
+    2.2232661022046285,
+    2.259108863897412,
+    2.2941211942391164,
+    2.328312230231707,
+    2.361662130179155,
+    2.3942042400246635,
+    2.425940810028487,
+    2.4568760223444843,
+    2.4870304368343374,
+    2.516416300025822,
+    2.545048603542517,
+    2.5729431224862362,
+    2.600115360981762,
+    2.6265828878046977,
+    2.65236195990249,
+    2.677469374650862,
+    2.701925705041982,
+    2.7257370061674866,
+    2.7489288708769437,
+    2.7715165788535217,
+    2.7935159095908686,
+    2.814941973418072,
+    2.8358134331585965,
+    2.8561451378027445,
+    2.8759498379921786,
+    2.895241708287483,
+    2.914039252804355,
+    2.9323566306405455,
+    2.950207187893143,
+    2.9676045507078417,
+    2.984564518509606,
+    3.001091431814306,
+    3.0172098051077114,
+    3.032926121493637,
+    3.048252004131765,
+    3.0632040139876624,
+    3.077787736432739,
+    3.0920166839687466,
+    3.105904427714051,
+    3.119455832725605,
+    3.13268486911602,
+    3.1456009473200637,
+    3.158209984418692,
+    3.1705286023175354,
+    3.1825620626717916,
+    3.194318845527776,
+    3.205807936935548,
+    3.2170404753131727,
+    3.228019809483515,
+    3.238754909554735,
+    3.2492555935974083,
+    3.259528346767834,
+    3.2695799845530265
+   ]
+  },
+  "fig2a:coherence_bcs_unregularized": {
+   "plotted": true,
+   "series": "fig2a:coherence_bcs_unregularized",
+   "parent_series": {
+    "key": "coherence_bcs_unregularized",
+    "parent_lines": "193-195,330,351"
+   },
+   "sources": [
+    {
+     "file": "experiments/experiment-campaign2-r2/results/D16PROG-FIGAUX-M2/expc2r2_d16prog_figaux_percell.npz",
+     "pointer": "figaux96_BCS-U-UNREG_coh",
+     "sha256": "1b598bdd2c895f48f06e9b78f077d493fbed1c8c686d431f3d78c564d89f3223"
+    }
+   ],
+   "derivation_op": "raw",
+   "shape": [
+    96
+   ],
+   "n": 96,
+   "dtype_for_hash": "float64-c-contiguous",
+   "sha256_float64": "edd3adfa459c74c50db49babfd57b77e1383f09ff8bc0b654a24017a85489f12",
+   "values": [
+    0.5771701905683649,
+    0.610690057811115,
+    0.6438986783444189,
+    0.6768260670945189,
+    0.7096132106773715,
+    0.7423397622484045,
+    0.7751435426226455,
+    0.8079955356060831,
+    0.841013543228782,
+    0.8742625055624621,
+    0.9077867157241255,
+    0.9416496349001974,
+    0.9759028974596521,
+    1.0105540132459803,
+    1.0456683195657466,
+    1.0812757199565335,
+    1.1174471444389944,
+    1.154168162551024,
+    1.1914859039907748,
+    1.2294233225373257,
+    1.267985282451279,
+    1.3071802174173897,
+    1.3470054823614765,
+    1.387439581708431,
+    1.428444069757533,
+    1.469999036285829,
+    1.5120426530480193,
+    1.5544705949817306,
+    1.5972356862684622,
+    1.6402203647053537,
+    1.683323590894379,
+    1.7264218758980445,
+    1.7694189051657416,
+    1.8122052063197451,
+    1.8546508091280631,
+    1.8966817918943677,
+    1.9382043233895674,
+    1.9791480212284585,
+    2.019437868184369,
+    2.0590309736917893,
+    2.0978822844761935,
+    2.1359600044864555,
+    2.1732322424150627,
+    2.209710715032291,
+    2.2453556832734693,
+    2.2801739615078205,
+    2.3141678166381507,
+    2.347346644424878,
+    2.3797058279809233,
+    2.4112579655138093,
+    2.4420256951835366,
+    2.4719998276710378,
+    2.5012077480699944,
+    2.5296610061835536,
+    2.5573747841083065,
+    2.584364693836045,
+    2.6106463421657957,
+    2.6362366990465085,
+    2.6611517875554083,
+    2.6854068647573404,
+    2.709024212641175,
+    2.7320103583891204,
+    2.7543872521418584,
+    2.776169765205642,
+    2.7973782007516563,
+    2.8180172265987475,
+    2.838111661267606,
+    2.857677119096186,
+    2.8767248642377443,
+    2.895265048390966,
+    2.9133214995161887,
+    2.9309020631726153,
+    2.948021144990852,
+    2.964692606052373,
+    2.9809279573710574,
+    2.9967415258790076,
+    3.0121476182445264,
+    3.0271491757465867,
+    3.041771491166639,
+    3.056011339552758,
+    3.069890772020162,
+    3.0834154643740512,
+    3.0965954661587145,
+    3.1094422428521145,
+    3.121965012702845,
+    3.1341732814875987,
+    3.1460761133993103,
+    3.1576813881161603,
+    3.1689988218905474,
+    3.1800362586022004,
+    3.190801721478136,
+    3.2013049260361544,
+    3.2115503591823744,
+    3.221546616135508,
+    3.2313007800017264,
+    3.240821168265826
+   ]
+  },
+  "fig2b:g_true": {
+   "plotted": true,
+   "series": "fig2b:g_true",
+   "parent_series": {
+    "key": "g_true",
+    "parent_lines": "190,357-379"
+   },
+   "sources": [
+    {
+     "file": "experiments/experiment-campaign2-r2/results/D16PROG-FIGAUX-M2/expc2r2_d16prog_figaux_percell.npz",
+     "pointer": "figaux96_g_true",
+     "sha256": "1b598bdd2c895f48f06e9b78f077d493fbed1c8c686d431f3d78c564d89f3223"
+    }
+   ],
+   "derivation_op": "raw",
+   "shape": [
+    96
+   ],
+   "n": 96,
+   "dtype_for_hash": "float64-c-contiguous",
+   "sha256_float64": "671d75ef80bb8006ea29c352d7f3b8eb58f887118411fc9f6d73d739193a7dfd",
+   "values": [
+    0.1,
+    0.10947368421052632,
+    0.11894736842105263,
+    0.12842105263157896,
+    0.13789473684210526,
+    0.1473684210526316,
+    0.1568421052631579,
+    0.16631578947368422,
+    0.17578947368421055,
+    0.18526315789473685,
+    0.19473684210526315,
+    0.20421052631578948,
+    0.2136842105263158,
+    0.2231578947368421,
+    0.23263157894736844,
+    0.24210526315789474,
+    0.25157894736842107,
+    0.2610526315789474,
+    0.2705263157894737,
+    0.28,
+    0.2894736842105263,
+    0.29894736842105263,
+    0.30842105263157893,
+    0.3178947368421053,
+    0.32736842105263164,
+    0.33684210526315794,
+    0.34631578947368424,
+    0.35578947368421054,
+    0.36526315789473685,
+    0.37473684210526315,
+    0.38421052631578945,
+    0.39368421052631586,
+    0.40315789473684216,
+    0.41263157894736846,
+    0.42210526315789476,
+    0.43157894736842106,
+    0.44105263157894736,
+    0.45052631578947366,
+    0.4600000000000001,
+    0.4694736842105264,
+    0.4789473684210527,
+    0.488421052631579,
+    0.4978947368421053,
+    0.5073684210526316,
+    0.5168421052631579,
+    0.5263157894736843,
+    0.5357894736842106,
+    0.5452631578947369,
+    0.5547368421052632,
+    0.5642105263157895,
+    0.5736842105263158,
+    0.5831578947368421,
+    0.5926315789473685,
+    0.6021052631578947,
+    0.6115789473684211,
+    0.6210526315789474,
+    0.6305263157894737,
+    0.64,
+    0.6494736842105263,
+    0.6589473684210526,
+    0.6684210526315789,
+    0.6778947368421053,
+    0.6873684210526316,
+    0.6968421052631579,
+    0.7063157894736842,
+    0.7157894736842105,
+    0.7252631578947368,
+    0.7347368421052631,
+    0.7442105263157895,
+    0.7536842105263158,
+    0.7631578947368421,
+    0.7726315789473684,
+    0.7821052631578947,
+    0.791578947368421,
+    0.8010526315789473,
+    0.8105263157894738,
+    0.8200000000000001,
+    0.8294736842105264,
+    0.8389473684210527,
+    0.848421052631579,
+    0.8578947368421053,
+    0.8673684210526316,
+    0.876842105263158,
+    0.8863157894736843,
+    0.8957894736842106,
+    0.9052631578947369,
+    0.9147368421052632,
+    0.9242105263157895,
+    0.9336842105263158,
+    0.9431578947368422,
+    0.9526315789473685,
+    0.9621052631578948,
+    0.9715789473684211,
+    0.9810526315789474,
+    0.9905263157894737,
+    1.0
+   ]
+  },
+  "fig2b:ogn": {
+   "plotted": true,
+   "series": "fig2b:ogn",
+   "parent_series": {
+    "key": "ogn",
+    "parent_lines": "363"
+   },
+   "sources": [
+    {
+     "file": "results_v2/records/V2-D16-FIGAUX/v2_d16prog_figaux_M2_percell.npz",
+     "pointer": "figaux96_OGN_v2d16progstd_const_gs_s42_pred",
+     "sha256": "fc78e021df7e17ef6ce5253a3929ef354205ad02baddbde2addb27f76c2bb54e"
+    }
+   ],
+   "derivation_op": "col0",
+   "shape": [
+    96
+   ],
+   "n": 96,
+   "dtype_for_hash": "float64-c-contiguous",
+   "sha256_float64": "15576cfab4cd990e3d6ac260d4bd5c0c25d341c41090ad56328b6be02785d0b7",
+   "note": "display arm d16progstd_const_gs (standardized flagship, s42)",
+   "values": [
+    0.1004244153980613,
+    0.1097892402206761,
+    0.11922896893629514,
+    0.12870317822794575,
+    0.13818272950658295,
+    0.14765031744313784,
+    0.1570891052049238,
+    0.16649693385031983,
+    0.17588474302018076,
+    0.18528226250416419,
+    0.19471766678191638,
+    0.20420015606108782,
+    0.21372032844253314,
+    0.22323108224089738,
+    0.23270518829427944,
+    0.24215061358556178,
+    0.25161469536905856,
+    0.2610723770363779,
+    0.2704968787526135,
+    0.27995987696548796,
+    0.28945468292961285,
+    0.29895529127339404,
+    0.3084448618466106,
+    0.3179121604097158,
+    0.327360321731604,
+    0.336810878677194,
+    0.34628753722792127,
+    0.3557868532810247,
+    0.3652781164763842,
+    0.3747490599819734,
+    0.3842219985186136,
+    0.3937206611555373,
+    0.40320308349244727,
+    0.4126451127539981,
+    0.42211037575659205,
+    0.4315902669170609,
+    0.44106491884816346,
+    0.4505351960191839,
+    0.4600174601582874,
+    0.4695047188851609,
+    0.47897626022567263,
+    0.48843707468539715,
+    0.4979174271983295,
+    0.5073913763025397,
+    0.5168571056762806,
+    0.5263271782738981,
+    0.5358099581742584,
+    0.54527403981226,
+    0.5547531535122021,
+    0.5642337159439996,
+    0.5737095367112522,
+    0.5831933002469885,
+    0.5926645024075077,
+    0.6021421065010607,
+    0.6116197851625683,
+    0.6210968565654258,
+    0.6305884770971371,
+    0.6400698688096889,
+    0.6495449537131227,
+    0.6590216871032011,
+    0.6684985096132461,
+    0.6779735443137673,
+    0.6874479472202812,
+    0.696925240536101,
+    0.7064029974696462,
+    0.7158775780395943,
+    0.7253568491466319,
+    0.7348391051297596,
+    0.7443164108224621,
+    0.7537890094379915,
+    0.7632596447303116,
+    0.7727290537088809,
+    0.7821999084195788,
+    0.7916730513560393,
+    0.8011499662725812,
+    0.8106298800910714,
+    0.8201089393087204,
+    0.8295832541064496,
+    0.8390565042298527,
+    0.848532818890934,
+    0.8580103184951849,
+    0.86748518732137,
+    0.8769577971684328,
+    0.8864293377067145,
+    0.8959025173110616,
+    0.9053777524803475,
+    0.9148537929648751,
+    0.9243302800686556,
+    0.9338065758513616,
+    0.9432826153670664,
+    0.9527593652012012,
+    0.9622360312842897,
+    0.9717133632993356,
+    0.9811900829808707,
+    0.9906625083296745,
+    1.000125924025398
+   ]
+  },
+  "fig2b:bcs_regularized": {
+   "plotted": true,
+   "series": "fig2b:bcs_regularized",
+   "parent_series": {
+    "key": "bcs_regularized",
+    "parent_lines": "367"
+   },
+   "sources": [
+    {
+     "file": "experiments/experiment-campaign2-r2/results/D16PROG-FIGAUX-M2/expc2r2_d16prog_figaux_percell.npz",
+     "pointer": "figaux96_BCS-U-REG_g",
+     "sha256": "1b598bdd2c895f48f06e9b78f077d493fbed1c8c686d431f3d78c564d89f3223"
+    }
+   ],
+   "derivation_op": "raw",
+   "shape": [
+    96
+   ],
+   "n": 96,
+   "dtype_for_hash": "float64-c-contiguous",
+   "sha256_float64": "c36fc77f74ad10af9038325c0192f6a45127bfeb311f20aaf6489a45326ea48f",
+   "values": [
+    0.10706055302710296,
+    0.11802629448524977,
+    0.12915208152931326,
+    0.14044469138664048,
+    0.1519089341735744,
+    0.16355046794137623,
+    0.1753728690178472,
+    0.18738378482627924,
+    0.19958852444715486,
+    0.21199161048053977,
+    0.2245994238890096,
+    0.23741949356609807,
+    0.2504538804215092,
+    0.26371857396254744,
+    0.2772081412547406,
+    0.3502393703655445,
+    0.35394078664889156,
+    0.35784003942103254,
+    0.3619490168012,
+    0.36627584520014184,
+    0.3721613747060813,
+    0.37709093352746964,
+    0.3822760006985097,
+    0.3877255662582379,
+    0.3934421924169593,
+    0.39942859485983545,
+    0.4056855995055454,
+    0.41220705990463785,
+    0.41898943237973224,
+    0.4260223885967037,
+    0.43329510013619277,
+    0.44079011204880597,
+    0.4484973732416759,
+    0.45639338614968245,
+    0.46446900086125276,
+    0.47270328855964344,
+    0.4810827580684461,
+    0.48959077813645296,
+    0.49821663434980445,
+    0.5069479412387367,
+    0.515774784149293,
+    0.5246873327701373,
+    0.5336824574466343,
+    0.5427508831923333,
+    0.5518872821872431,
+    0.5610892345903227,
+    0.5703555886827484,
+    0.5796768878028618,
+    0.5890580921768099,
+    0.5984954148392967,
+    0.6079852346346969,
+    0.6175287267721434,
+    0.6271244857824396,
+    0.6367718819996169,
+    0.6464705061725656,
+    0.656219829644436,
+    0.6660200729842425,
+    0.6758710269529005,
+    0.6857727308284872,
+    0.6957268600048708,
+    0.705729188971642,
+    0.715783635607262,
+    0.7258900491671885,
+    0.736048596928517,
+    0.7462592577663124,
+    0.7565239061341154,
+    0.7668428229925361,
+    0.7772153396254886,
+    0.7876416221459683,
+    0.7981244619543794,
+    0.808664624621276,
+    0.8192626317155982,
+    0.8299193973069268,
+    0.840637502667133,
+    0.8514124263121632,
+    0.8622530057438734,
+    0.8731566544767495,
+    0.8841243698500327,
+    0.8951610979402521,
+    0.9062640891831492,
+    0.9174367033979471,
+    0.9286829252530628,
+    0.9399999951418478,
+    0.9513928944419149,
+    0.9628632592253211,
+    0.9744098016960331,
+    0.9860414547854556,
+    0.9977571612692431,
+    1.0095590915466541,
+    1.021450332974866,
+    1.033436738439192,
+    1.0455162943056375,
+    1.0576932482215256,
+    1.069973448699768,
+    1.0823594377631314,
+    1.0948545113145198
+   ]
+  },
+  "fig2b:bcs_unregularized": {
+   "plotted": true,
+   "series": "fig2b:bcs_unregularized",
+   "parent_series": {
+    "key": "bcs_unregularized",
+    "parent_lines": "365"
+   },
+   "sources": [
+    {
+     "file": "experiments/experiment-campaign2-r2/results/D16PROG-FIGAUX-M2/expc2r2_d16prog_figaux_percell.npz",
+     "pointer": "figaux96_BCS-U-UNREG_g",
+     "sha256": "1b598bdd2c895f48f06e9b78f077d493fbed1c8c686d431f3d78c564d89f3223"
+    }
+   ],
+   "derivation_op": "raw",
+   "shape": [
+    96
+   ],
+   "n": 96,
+   "dtype_for_hash": "float64-c-contiguous",
+   "sha256_float64": "65d53deb9c990d195a1f47db3fd47d2d309199247d9833850cce9d58cd44bca9",
+   "values": [
+    0.3125736880431479,
+    0.314319425731715,
+    0.31615443274366933,
+    0.3180786795614004,
+    0.32009950336903825,
+    0.32222194663881476,
+    0.3244560998027719,
+    0.3268016592018262,
+    0.3292691346617585,
+    0.33186638802143004,
+    0.33460045068950367,
+    0.3374806377356839,
+    0.34051612782746726,
+    0.34371269304266616,
+    0.34708191657266274,
+    0.35063278718583846,
+    0.3543791213134137,
+    0.3583265550568682,
+    0.3624875502504644,
+    0.3668725665994284,
+    0.37149034148781496,
+    0.37635027355690065,
+    0.38146062545981074,
+    0.3868272834137401,
+    0.39245365912591706,
+    0.3983454797038546,
+    0.40450229990257686,
+    0.4109165229992067,
+    0.4175882239684139,
+    0.4245057941916663,
+    0.43165889294794335,
+    0.4390321257367763,
+    0.44661336664896784,
+    0.45438696873859874,
+    0.4623319983036222,
+    0.4704364992106337,
+    0.47868364993631324,
+    0.48706003068783216,
+    0.4955501476618173,
+    0.504144213647715,
+    0.5128311770748063,
+    0.5216021329624895,
+    0.5304473732594913,
+    0.5393670814583711,
+    0.548348509861009,
+    0.5573897537966299,
+    0.5664875711090533,
+    0.57564041378193,
+    0.5848425630811549,
+    0.594092776208816,
+    0.6033927631523839,
+    0.6127344567499385,
+    0.6221207339430681,
+    0.6315495749418573,
+    0.6410200216390949,
+    0.6505312172042937,
+    0.6600822728633394,
+    0.6696727956533488,
+    0.679302072411523,
+    0.6889691016781113,
+    0.6986758125287681,
+    0.7084177321272703,
+    0.7181968101585726,
+    0.7280121705529012,
+    0.7378655581386975,
+    0.7477515095640934,
+    0.7576741668474473,
+    0.7676336433033686,
+    0.7776279473056856,
+    0.7876544363587331,
+    0.7977181051996012,
+    0.8078154820785252,
+    0.8179468315046172,
+    0.8281123557375649,
+    0.8383110278229072,
+    0.8485437935234564,
+    0.8588119578040654,
+    0.8691092970059547,
+    0.8794451670858102,
+    0.8898092214163638,
+    0.9002093542458353,
+    0.9106418658641349,
+    0.921106395139571,
+    0.9316039836480123,
+    0.9421341502737575,
+    0.9526968780713452,
+    0.9632920195934902,
+    0.9739185804087479,
+    0.9845774772782037,
+    0.9952681671055984,
+    1.0059904933895436,
+    1.0167463245422548,
+    1.027532397239319,
+    1.0383498818174268,
+    1.0491986374255455,
+    1.0600802062338217
+   ]
+  },
+  "fig2b:richardson_g_true": {
+   "plotted": true,
+   "series": "fig2b:richardson_g_true",
+   "parent_series": {
+    "key": "richardson_g_true",
+    "parent_lines": "361"
+   },
+   "sources": [
+    {
+     "file": "experiments/experiment-campaign2-r2/results/D16PROG-FIGAUX-M2/expc2r2_d16prog_figaux_percell.npz",
+     "pointer": "figaux96_g_true",
+     "sha256": "1b598bdd2c895f48f06e9b78f077d493fbed1c8c686d431f3d78c564d89f3223"
+    }
+   ],
+   "derivation_op": "raw",
+   "shape": [
+    96
+   ],
+   "n": 96,
+   "dtype_for_hash": "float64-c-contiguous",
+   "sha256_float64": "671d75ef80bb8006ea29c352d7f3b8eb58f887118411fc9f6d73d739193a7dfd",
+   "note": "on the declared 96 figure grid the RG curve shares the g_true abscissae (sealed M2 emission)",
+   "values": [
+    0.1,
+    0.10947368421052632,
+    0.11894736842105263,
+    0.12842105263157896,
+    0.13789473684210526,
+    0.1473684210526316,
+    0.1568421052631579,
+    0.16631578947368422,
+    0.17578947368421055,
+    0.18526315789473685,
+    0.19473684210526315,
+    0.20421052631578948,
+    0.2136842105263158,
+    0.2231578947368421,
+    0.23263157894736844,
+    0.24210526315789474,
+    0.25157894736842107,
+    0.2610526315789474,
+    0.2705263157894737,
+    0.28,
+    0.2894736842105263,
+    0.29894736842105263,
+    0.30842105263157893,
+    0.3178947368421053,
+    0.32736842105263164,
+    0.33684210526315794,
+    0.34631578947368424,
+    0.35578947368421054,
+    0.36526315789473685,
+    0.37473684210526315,
+    0.38421052631578945,
+    0.39368421052631586,
+    0.40315789473684216,
+    0.41263157894736846,
+    0.42210526315789476,
+    0.43157894736842106,
+    0.44105263157894736,
+    0.45052631578947366,
+    0.4600000000000001,
+    0.4694736842105264,
+    0.4789473684210527,
+    0.488421052631579,
+    0.4978947368421053,
+    0.5073684210526316,
+    0.5168421052631579,
+    0.5263157894736843,
+    0.5357894736842106,
+    0.5452631578947369,
+    0.5547368421052632,
+    0.5642105263157895,
+    0.5736842105263158,
+    0.5831578947368421,
+    0.5926315789473685,
+    0.6021052631578947,
+    0.6115789473684211,
+    0.6210526315789474,
+    0.6305263157894737,
+    0.64,
+    0.6494736842105263,
+    0.6589473684210526,
+    0.6684210526315789,
+    0.6778947368421053,
+    0.6873684210526316,
+    0.6968421052631579,
+    0.7063157894736842,
+    0.7157894736842105,
+    0.7252631578947368,
+    0.7347368421052631,
+    0.7442105263157895,
+    0.7536842105263158,
+    0.7631578947368421,
+    0.7726315789473684,
+    0.7821052631578947,
+    0.791578947368421,
+    0.8010526315789473,
+    0.8105263157894738,
+    0.8200000000000001,
+    0.8294736842105264,
+    0.8389473684210527,
+    0.848421052631579,
+    0.8578947368421053,
+    0.8673684210526316,
+    0.876842105263158,
+    0.8863157894736843,
+    0.8957894736842106,
+    0.9052631578947369,
+    0.9147368421052632,
+    0.9242105263157895,
+    0.9336842105263158,
+    0.9431578947368422,
+    0.9526315789473685,
+    0.9621052631578948,
+    0.9715789473684211,
+    0.9810526315789474,
+    0.9905263157894737,
+    1.0
+   ]
+  },
+  "fig2b:richardson_inverse": {
+   "plotted": true,
+   "series": "fig2b:richardson_inverse",
+   "parent_series": {
+    "key": "richardson_inverse",
+    "parent_lines": "361"
+   },
+   "sources": [
+    {
+     "file": "experiments/experiment-campaign2-r2/results/D16PROG-FIGAUX-M2/expc2r2_d16prog_figaux_percell.npz",
+     "pointer": "figaux96_RG-96-POLISH_ghat",
+     "sha256": "1b598bdd2c895f48f06e9b78f077d493fbed1c8c686d431f3d78c564d89f3223"
+    }
+   ],
+   "derivation_op": "raw",
+   "shape": [
+    96
+   ],
+   "n": 96,
+   "dtype_for_hash": "float64-c-contiguous",
+   "sha256_float64": "1cae5a6fbb444132f2edb81ecd64c43c0c644589ed6d6b8f72415b53c6bfdbd7",
+   "note": "RG LEG CHOICE: RG-96-POLISH (polish ON) -- the installed d12 96-target panel's plotted convention per the sealed M2 in-record note (findings_final.json:1789-1791); RG-96-CURVE carried as companion",
+   "values": [
+    0.1,
+    0.10947368421048277,
+    0.1189473684209955,
+    0.1284210526315051,
+    0.13789473684201034,
+    0.14736842105251358,
+    0.1568421052630128,
+    0.1663157894735061,
+    0.1757894736839959,
+    0.18526315789473638,
+    0.19473684210526193,
+    0.204210526315788,
+    0.21368421052631484,
+    0.22315789473684114,
+    0.23263157894736855,
+    0.24210526315789482,
+    0.2515789473684206,
+    0.26105263157894726,
+    0.2705263157894742,
+    0.2800000000000003,
+    0.2894736842105258,
+    0.2989473684210522,
+    0.3084210526315786,
+    0.3178947368421059,
+    0.3273684210526327,
+    0.33684210526315816,
+    0.3463157894736844,
+    0.35578947368421115,
+    0.36526315789473734,
+    0.37473684210526376,
+    0.38421052631578884,
+    0.3936842105263156,
+    0.4031578947368429,
+    0.41263157894737,
+    0.4221052631578951,
+    0.4315789473684224,
+    0.44105263157895286,
+    0.45052631579005553,
+    0.45999999999994545,
+    0.46947368421074154,
+    0.4789473684209661,
+    0.4884210526315777,
+    0.49789473684213115,
+    0.5073684210528123,
+    0.5168421052631592,
+    0.526315789473686,
+    0.5357894736842118,
+    0.5452631578947369,
+    0.554736842105265,
+    0.5642105263157908,
+    0.5736842105263169,
+    0.5831578947368417,
+    0.5926315789473685,
+    0.602105263157895,
+    0.6115789473684202,
+    0.6210526315789489,
+    0.630526315789474,
+    0.6399999999999996,
+    0.6494736842105279,
+    0.6589473684210542,
+    0.6684210526315789,
+    0.6778947368421042,
+    0.6873684210526316,
+    0.6968421052631569,
+    0.7063157894736853,
+    0.7157894736842106,
+    0.7252631578947366,
+    0.7347368421052641,
+    0.7442105263157893,
+    0.7536842105263193,
+    0.7631578947368465,
+    0.7726315789473691,
+    0.7821052631579073,
+    0.7915789473686509,
+    0.8010526315931947,
+    0.8105263157892525,
+    0.8200000000016141,
+    0.8294736842105315,
+    0.8389473684173822,
+    0.8484210526314857,
+    0.8578947368420936,
+    0.8673684210526362,
+    0.87684210526316,
+    0.886315789473684,
+    0.8957894736842096,
+    0.905263157894734,
+    0.9147368421052671,
+    0.924210526315791,
+    0.933684210526317,
+    0.9431578947368437,
+    0.9526315789473708,
+    0.9621052631578965,
+    0.9715789473684214,
+    0.9810526315789485,
+    0.9905263157894731,
+    1.0
+   ]
+  },
+  "fig2b:pbcs_reg_layer_x": {
+   "plotted": true,
+   "series": "fig2b:pbcs_reg_layer_x",
+   "parent_series": {
+    "key": "pbcs_reg_NEW_LAYER_x",
+    "parent_lines": "370-373,392"
+   },
+   "sources": [
+    {
+     "file": "experiments/experiment-campaign2-r2/results/D16PROG-FIGAUX-M2/expc2r2_d16prog_figaux_percell.npz",
+     "pointer": "figaux96_g_true",
+     "sha256": "1b598bdd2c895f48f06e9b78f077d493fbed1c8c686d431f3d78c564d89f3223"
+    }
+   ],
+   "derivation_op": "raw",
+   "shape": [
+    96
+   ],
+   "n": 96,
+   "dtype_for_hash": "float64-c-contiguous",
+   "sha256_float64": "671d75ef80bb8006ea29c352d7f3b8eb58f887118411fc9f6d73d739193a7dfd",
+   "note": "PBCS LAYER CHOICE: consistent 96-grid arms sealed in M2 (sealed M2 pbcs_1024_layer disclosure: LEG C / author choice, both options sealed; the 1024-grid alternative record D16PROG-P1-PBCS is outside this record's authorized source set)",
+   "values": [
+    0.1,
+    0.10947368421052632,
+    0.11894736842105263,
+    0.12842105263157896,
+    0.13789473684210526,
+    0.1473684210526316,
+    0.1568421052631579,
+    0.16631578947368422,
+    0.17578947368421055,
+    0.18526315789473685,
+    0.19473684210526315,
+    0.20421052631578948,
+    0.2136842105263158,
+    0.2231578947368421,
+    0.23263157894736844,
+    0.24210526315789474,
+    0.25157894736842107,
+    0.2610526315789474,
+    0.2705263157894737,
+    0.28,
+    0.2894736842105263,
+    0.29894736842105263,
+    0.30842105263157893,
+    0.3178947368421053,
+    0.32736842105263164,
+    0.33684210526315794,
+    0.34631578947368424,
+    0.35578947368421054,
+    0.36526315789473685,
+    0.37473684210526315,
+    0.38421052631578945,
+    0.39368421052631586,
+    0.40315789473684216,
+    0.41263157894736846,
+    0.42210526315789476,
+    0.43157894736842106,
+    0.44105263157894736,
+    0.45052631578947366,
+    0.4600000000000001,
+    0.4694736842105264,
+    0.4789473684210527,
+    0.488421052631579,
+    0.4978947368421053,
+    0.5073684210526316,
+    0.5168421052631579,
+    0.5263157894736843,
+    0.5357894736842106,
+    0.5452631578947369,
+    0.5547368421052632,
+    0.5642105263157895,
+    0.5736842105263158,
+    0.5831578947368421,
+    0.5926315789473685,
+    0.6021052631578947,
+    0.6115789473684211,
+    0.6210526315789474,
+    0.6305263157894737,
+    0.64,
+    0.6494736842105263,
+    0.6589473684210526,
+    0.6684210526315789,
+    0.6778947368421053,
+    0.6873684210526316,
+    0.6968421052631579,
+    0.7063157894736842,
+    0.7157894736842105,
+    0.7252631578947368,
+    0.7347368421052631,
+    0.7442105263157895,
+    0.7536842105263158,
+    0.7631578947368421,
+    0.7726315789473684,
+    0.7821052631578947,
+    0.791578947368421,
+    0.8010526315789473,
+    0.8105263157894738,
+    0.8200000000000001,
+    0.8294736842105264,
+    0.8389473684210527,
+    0.848421052631579,
+    0.8578947368421053,
+    0.8673684210526316,
+    0.876842105263158,
+    0.8863157894736843,
+    0.8957894736842106,
+    0.9052631578947369,
+    0.9147368421052632,
+    0.9242105263157895,
+    0.9336842105263158,
+    0.9431578947368422,
+    0.9526315789473685,
+    0.9621052631578948,
+    0.9715789473684211,
+    0.9810526315789474,
+    0.9905263157894737,
+    1.0
+   ]
+  },
+  "fig2b:pbcs_reg_layer_y": {
+   "plotted": true,
+   "series": "fig2b:pbcs_reg_layer_y",
+   "parent_series": {
+    "key": "pbcs_reg_NEW_LAYER_y",
+    "parent_lines": "370-373,393"
+   },
+   "sources": [
+    {
+     "file": "experiments/experiment-campaign2-r2/results/D16PROG-FIGAUX-M2/expc2r2_d16prog_figaux_percell.npz",
+     "pointer": "figaux96_PBCS-U-REG_g",
+     "sha256": "1b598bdd2c895f48f06e9b78f077d493fbed1c8c686d431f3d78c564d89f3223"
+    }
+   ],
+   "derivation_op": "raw",
+   "shape": [
+    96
+   ],
+   "n": 96,
+   "dtype_for_hash": "float64-c-contiguous",
+   "sha256_float64": "c6af2b23b254989483bdc0eb86f71038d3851534901c69b68bfa01ee78e60e80",
+   "values": [
+    0.10265590393555417,
+    0.1123489757863529,
+    0.12204805050324008,
+    0.13172616607935642,
+    0.1414281508587793,
+    0.15110836785013593,
+    0.1607780469443289,
+    0.17045984972681524,
+    0.18014482554488934,
+    0.1898199687924827,
+    0.1994984789450769,
+    0.20917398226529532,
+    0.21884424382509943,
+    0.22852231122965405,
+    0.23818344113911155,
+    0.2478432762272436,
+    0.25750242233102716,
+    0.26715663099927667,
+    0.2768030479722431,
+    0.28643895711448925,
+    0.296062250728698,
+    0.30568169522695576,
+    0.31527487681653565,
+    0.3248688413870764,
+    0.3344425676095238,
+    0.3439982443484879,
+    0.3535343488620234,
+    0.36305032381041397,
+    0.3725413681223252,
+    0.38201190278220604,
+    0.3914602972917332,
+    0.4008797729895504,
+    0.4102732349625823,
+    0.4196353127731692,
+    0.4289744694824152,
+    0.43828293802319357,
+    0.44756113611509896,
+    0.4568006656817102,
+    0.46602812981756914,
+    0.47522163511104415,
+    0.4843849471094929,
+    0.49352210138980335,
+    0.5026377375084036,
+    0.5117241133520487,
+    0.5207927884051614,
+    0.5298415278311834,
+    0.5389067720158642,
+    0.5484139974536805,
+    0.5579194864305576,
+    0.5673768089415662,
+    0.5763970273469179,
+    0.5854138829397137,
+    0.5944270229289049,
+    0.6034400472885106,
+    0.6124552146478587,
+    0.621472701710991,
+    0.6304983965540472,
+    0.6395323031577377,
+    0.6485809436965748,
+    0.6576394655491256,
+    0.666707032835372,
+    0.675797322620316,
+    0.6848960872423747,
+    0.6940070882284379,
+    0.7031452210732961,
+    0.7122942864946165,
+    0.7214664359871105,
+    0.7306534058490726,
+    0.7398552770255516,
+    0.7490863279013008,
+    0.7583285619904926,
+    0.7675885649450674,
+    0.776864384863477,
+    0.7861601386711379,
+    0.7954672589812702,
+    0.8047996464871366,
+    0.8141438766197187,
+    0.8235052612586247,
+    0.8328710344014035,
+    0.8422627337835566,
+    0.8516588694441273,
+    0.861071877148728,
+    0.8704920847842433,
+    0.8799290110426553,
+    0.8893703979162038,
+    0.8988263205839166,
+    0.9082933359199746,
+    0.9177649635905181,
+    0.9272477381005215,
+    0.9367342714023711,
+    0.9462265991032273,
+    0.9557268623315023,
+    0.9652385278829828,
+    0.9747543776677726,
+    0.9842762380919007,
+    0.9938034503793974
+   ]
+  },
+  "fig2b_inset:absdiff_ogn_rg": {
+   "plotted": true,
+   "series": "fig2b_inset:absdiff_ogn_rg",
+   "parent_series": {
+    "key": "FZ1 inset: |ogn - richardson_inverse| on the shared 96-grid",
+    "parent_lines": "363,361"
+   },
+   "sources": [
+    {
+     "file": "results_v2/records/V2-D16-FIGAUX/v2_d16prog_figaux_M2_percell.npz",
+     "pointer": "figaux96_OGN_v2d16progstd_const_gs_s42_pred",
+     "sha256": "fc78e021df7e17ef6ce5253a3929ef354205ad02baddbde2addb27f76c2bb54e"
+    },
+    {
+     "file": "experiments/experiment-campaign2-r2/results/D16PROG-FIGAUX-M2/expc2r2_d16prog_figaux_percell.npz",
+     "pointer": "figaux96_RG-96-POLISH_ghat",
+     "sha256": "1b598bdd2c895f48f06e9b78f077d493fbed1c8c686d431f3d78c564d89f3223"
+    }
+   ],
+   "derivation_op": "col0_minus_raw_abs",
+   "shape": [
+    96
+   ],
+   "n": 96,
+   "dtype_for_hash": "float64-c-contiguous",
+   "sha256_float64": "088db8a50afeaffaeab92621a4d97a674db42b2ba4d7e493f2ac2b75f27a5f09",
+   "note": "FZ1 (freeze order SS1.3 / RO-5C item 2): pure elementwise subtraction of the two plotted panel-(b) series fig2b:ogn and fig2b:richardson_inverse from their sealed M2 source arrays; zero re-evaluation; log-scale inset; NO numeric annotation (D2.2)",
+   "values": [
+    0.0004244153980612897,
+    0.0003155560101933269,
+    0.00028160051529964314,
+    0.00028212559644064106,
+    0.0002879926645726061,
+    0.00028189639062425886,
+    0.00024699994191101915,
+    0.00018114437681374107,
+    9.526933618486666e-05,
+    1.9104609427805785e-05,
+    1.917532334555494e-05,
+    1.0370254700187154e-05,
+    3.611791621829785e-05,
+    7.318750405624352e-05,
+    7.360934691089116e-05,
+    4.535042766695696e-05,
+    3.574800063793626e-05,
+    1.974545743066436e-05,
+    2.9437036860702204e-05,
+    4.012303451234045e-05,
+    1.9001280912922525e-05,
+    7.9228523418573e-06,
+    2.380921503197797e-05,
+    1.742356760991992e-05,
+    8.099321028687267e-06,
+    3.122658596416139e-05,
+    2.825224576313845e-05,
+    2.6204031864374144e-06,
+    1.4958581646851155e-05,
+    1.2217876709630371e-05,
+    1.147220282476935e-05,
+    3.645062922169595e-05,
+    4.518875560438618e-05,
+    1.3533806628107659e-05,
+    5.112598696954684e-06,
+    1.1319548638533128e-05,
+    1.2287269210597973e-05,
+    8.88022912837183e-06,
+    1.746015834191983e-05,
+    3.103467441933905e-05,
+    2.8891804706554503e-05,
+    1.602205381945332e-05,
+    2.2690356198340478e-05,
+    2.2955249727396598e-05,
+    1.5000413121413203e-05,
+    1.1388800212119854e-05,
+    2.0484490046546178e-05,
+    1.0881917523075657e-05,
+    1.6311406937141726e-05,
+    2.318962820879733e-05,
+    2.5326184935337004e-05,
+    3.5405510146802044e-05,
+    3.292346013916703e-05,
+    3.684334316567117e-05,
+    4.083779414809641e-05,
+    4.422498647693729e-05,
+    6.21613076630112e-05,
+    6.986880968928855e-05,
+    7.126950259483955e-05,
+    7.431868214691217e-05,
+    7.745698166716775e-05,
+    7.880747166311153e-05,
+    7.952616764961284e-05,
+    8.31352729441237e-05,
+    8.720799596084738e-05,
+    8.81043553836447e-05,
+    9.369125189528926e-05,
+    0.00010226302449545255,
+    0.00010588450667281535,
+    0.00010479891167225475,
+    0.00010174999346512781,
+    9.747476151178436e-05,
+    9.464526167146659e-05,
+    9.410398738840531e-05,
+    9.733467938644047e-05,
+    0.00010356430181890364,
+    0.00010893930710631494,
+    0.00010956989591814903,
+    0.00010913581247051773,
+    0.00011176625944830931,
+    0.0001155816530913345,
+    0.00011676626873380336,
+    0.00011569190527283002,
+    0.00011354823303055817,
+    0.0001130436268520496,
+    0.00011459458561347002,
+    0.00011695085960805596,
+    0.0001197537528645487,
+    0.0001223653250446155,
+    0.00012472063022261892,
+    0.00012778625383036424,
+    0.00013076812639323254,
+    0.0001344159309141224,
+    0.00013745140192222838,
+    0.00013619254020136307,
+    0.00012592402539790548
+   ]
+  }
+ },
+ "companion_arrays": {
+  "companion:ogn_96:d16progstd_const_gs_s43": {
+   "plotted": false,
+   "series": "companion:ogn_96:d16progstd_const_gs_s43",
+   "parent_series": null,
+   "sources": [
+    {
+     "file": "results_v2/records/V2-D16-FIGAUX/v2_d16prog_figaux_M2_percell.npz",
+     "pointer": "figaux96_OGN_v2d16progstd_const_gs_s43_pred",
+     "sha256": "fc78e021df7e17ef6ce5253a3929ef354205ad02baddbde2addb27f76c2bb54e"
+    }
+   ],
+   "derivation_op": "col0",
+   "shape": [
+    96
+   ],
+   "n": 96,
+   "dtype_for_hash": "float64-c-contiguous",
+   "sha256_float64": "1f926b7b5fd596339835f5328c1fc923de5c7ed319688c2fb08bc98d50405099",
+   "note": "sibling OGN arm, sealed, not plotted (seed-42 standardized-flagship display convention)"
+  },
+  "companion:ogn_96:d16progstd_const_gs_s44": {
+   "plotted": false,
+   "series": "companion:ogn_96:d16progstd_const_gs_s44",
+   "parent_series": null,
+   "sources": [
+    {
+     "file": "results_v2/records/V2-D16-FIGAUX/v2_d16prog_figaux_M2_percell.npz",
+     "pointer": "figaux96_OGN_v2d16progstd_const_gs_s44_pred",
+     "sha256": "fc78e021df7e17ef6ce5253a3929ef354205ad02baddbde2addb27f76c2bb54e"
+    }
+   ],
+   "derivation_op": "col0",
+   "shape": [
+    96
+   ],
+   "n": 96,
+   "dtype_for_hash": "float64-c-contiguous",
+   "sha256_float64": "a3fb51afdf3a5b2c6980ddd1357afbf2a999b7f3a1646e7b9594164e274d45fb",
+   "note": "sibling OGN arm, sealed, not plotted (seed-42 standardized-flagship display convention)"
+  },
+  "companion:ogn_96:d16progorig_const_gs": {
+   "plotted": false,
+   "series": "companion:ogn_96:d16progorig_const_gs",
+   "parent_series": null,
+   "sources": [
+    {
+     "file": "results_v2/records/V2-D16-FIGAUX/v2_d16prog_figaux_M2_percell.npz",
+     "pointer": "figaux96_OGN_v2d16progorig_const_gs_s42_pred",
+     "sha256": "fc78e021df7e17ef6ce5253a3929ef354205ad02baddbde2addb27f76c2bb54e"
+    }
+   ],
+   "derivation_op": "col0",
+   "shape": [
+    96
+   ],
+   "n": 96,
+   "dtype_for_hash": "float64-c-contiguous",
+   "sha256_float64": "6dcb84f9e5f9522c2415333cf96ccb33793a3cc2c2a389cd1cfc1d66bb2f4d34",
+   "note": "sibling OGN arm, sealed, not plotted (seed-42 standardized-flagship display convention)"
+  },
+  "companion:ogn_96:d16progorig_const_gs_s43": {
+   "plotted": false,
+   "series": "companion:ogn_96:d16progorig_const_gs_s43",
+   "parent_series": null,
+   "sources": [
+    {
+     "file": "results_v2/records/V2-D16-FIGAUX/v2_d16prog_figaux_M2_percell.npz",
+     "pointer": "figaux96_OGN_v2d16progorig_const_gs_s43_pred",
+     "sha256": "fc78e021df7e17ef6ce5253a3929ef354205ad02baddbde2addb27f76c2bb54e"
+    }
+   ],
+   "derivation_op": "col0",
+   "shape": [
+    96
+   ],
+   "n": 96,
+   "dtype_for_hash": "float64-c-contiguous",
+   "sha256_float64": "b890515d45b71445df357df28efae0708620bf7b7e8f5d46d43dbc970c619bb4",
+   "note": "sibling OGN arm, sealed, not plotted (seed-42 standardized-flagship display convention)"
+  },
+  "companion:ogn_96:d16progorig_const_gs_s44": {
+   "plotted": false,
+   "series": "companion:ogn_96:d16progorig_const_gs_s44",
+   "parent_series": null,
+   "sources": [
+    {
+     "file": "results_v2/records/V2-D16-FIGAUX/v2_d16prog_figaux_M2_percell.npz",
+     "pointer": "figaux96_OGN_v2d16progorig_const_gs_s44_pred",
+     "sha256": "fc78e021df7e17ef6ce5253a3929ef354205ad02baddbde2addb27f76c2bb54e"
+    }
+   ],
+   "derivation_op": "col0",
+   "shape": [
+    96
+   ],
+   "n": 96,
+   "dtype_for_hash": "float64-c-contiguous",
+   "sha256_float64": "4b3cf05d1660a1d1a4ce60917f46d17ab40fa9ca2490b92124bb53eaf05a7493",
+   "note": "sibling OGN arm, sealed, not plotted (seed-42 standardized-flagship display convention)"
+  },
+  "companion:rg_96_curve": {
+   "plotted": false,
+   "series": "companion:rg_96_curve",
+   "parent_series": null,
+   "sources": [
+    {
+     "file": "experiments/experiment-campaign2-r2/results/D16PROG-FIGAUX-M2/expc2r2_d16prog_figaux_percell.npz",
+     "pointer": "figaux96_RG-96-CURVE_ghat",
+     "sha256": "1b598bdd2c895f48f06e9b78f077d493fbed1c8c686d431f3d78c564d89f3223"
+    }
+   ],
+   "derivation_op": "raw",
+   "shape": [
+    96
+   ],
+   "n": 96,
+   "dtype_for_hash": "float64-c-contiguous",
+   "sha256_float64": "faf9c18ca90fbbf5429f21ab92f5d76a6a06828766f92692a43f17fa07f11f80",
+   "note": "RG-96-CURVE (polish OFF) companion leg; never conflated with the plotted RG-96-POLISH (sealed M2 D-13 note)"
+  },
+  "companion:pbcs_unreg_96": {
+   "plotted": false,
+   "series": "companion:pbcs_unreg_96",
+   "parent_series": null,
+   "sources": [
+    {
+     "file": "experiments/experiment-campaign2-r2/results/D16PROG-FIGAUX-M2/expc2r2_d16prog_figaux_percell.npz",
+     "pointer": "figaux96_PBCS-U-UNREG_g",
+     "sha256": "1b598bdd2c895f48f06e9b78f077d493fbed1c8c686d431f3d78c564d89f3223"
+    }
+   ],
+   "derivation_op": "raw",
+   "shape": [
+    96
+   ],
+   "n": 96,
+   "dtype_for_hash": "float64-c-contiguous",
+   "sha256_float64": "5d6800d7266faaf1daac75951ebf35e7087229f30497e4a8388f74c9ac66e7cd"
+  }
+ },
+ "quotable_citations": [
+  {
+   "row_id": "D16PROMO.p1.arm.BCS-U-REG.abs_coupling_error.median",
+   "record": "experiments/experiment-campaign2-r2/results/C11-supplement-d16promo",
+   "record_file": "experiments/experiment-campaign2-r2/results/C11-supplement-d16promo/C11_SUPPLEMENT_D16PROMO.json",
+   "record_file_sha256": "1f925f27d060b0e4c1410c892b5213f0ac85f89fe4d866e74b4ebb4ef48c6ed1",
+   "quotable": true,
+   "value": 0.04291976768107664,
+   "relation": {
+    "op": "median_of_derivation",
+    "derivation": {
+     "op": "abs_err",
+     "args": [
+      {
+       "file": "experiments/experiment-campaign2-r2/results/D16PROG-FIGAUX-M1/expc2r2_d16prog_figaux_percell.npz",
+       "pointer": "figaux_U_BCS-U-REG_gfit",
+       "sha256": "19ced1042c9f8a46f6263443dfa9a8ce8c5f495f3f3523b05f7c2a1933c150a7"
+      },
+      {
+       "file": "experiments/experiment-campaign2-r2/results/D16PROG-FIGAUX-M1/expc2r2_d16prog_figaux_percell.npz",
+       "pointer": "figaux_U_g_true",
+       "sha256": "19ced1042c9f8a46f6263443dfa9a8ce8c5f495f3f3523b05f7c2a1933c150a7"
+      }
+     ]
+    },
+    "what": "BCS mirror-arm median (1024)"
+   },
+   "e_p3a": null
+  },
+  {
+   "row_id": "D16PROMO.p1.arm.PBCS-U-REG.abs_coupling_error.median",
+   "record": "experiments/experiment-campaign2-r2/results/C11-supplement-d16promo",
+   "record_file": "experiments/experiment-campaign2-r2/results/C11-supplement-d16promo/C11_SUPPLEMENT_D16PROMO.json",
+   "record_file_sha256": "1f925f27d060b0e4c1410c892b5213f0ac85f89fe4d866e74b4ebb4ef48c6ed1",
+   "quotable": true,
+   "value": 0.005505306184203723,
+   "relation": {
+    "op": "median_of_derivation",
+    "derivation": {
+     "op": "abs_err",
+     "args": [
+      {
+       "file": "experiments/experiment-campaign2-r2/results/D16PROG-FIGAUX-M1/expc2r2_d16prog_figaux_percell.npz",
+       "pointer": "figaux_U_PBCS-U-REG_gfit",
+       "sha256": "19ced1042c9f8a46f6263443dfa9a8ce8c5f495f3f3523b05f7c2a1933c150a7"
+      },
+      {
+       "file": "experiments/experiment-campaign2-r2/results/D16PROG-FIGAUX-M1/expc2r2_d16prog_figaux_percell.npz",
+       "pointer": "figaux_U_g_true",
+       "sha256": "19ced1042c9f8a46f6263443dfa9a8ce8c5f495f3f3523b05f7c2a1933c150a7"
+      }
+     ]
+    },
+    "what": "PBCS reference median (1024)"
+   },
+   "e_p3a": null
+  },
+  {
+   "row_id": "D16PROMO.p1.arm.RG-CURVE.abs_coupling_error.median",
+   "record": "experiments/experiment-campaign2-r2/results/C11-supplement-d16promo",
+   "record_file": "experiments/experiment-campaign2-r2/results/C11-supplement-d16promo/C11_SUPPLEMENT_D16PROMO.json",
+   "record_file_sha256": "1f925f27d060b0e4c1410c892b5213f0ac85f89fe4d866e74b4ebb4ef48c6ed1",
+   "quotable": true,
+   "value": 7.91584120812816e-06,
+   "relation": {
+    "op": "median_of_derivation",
+    "derivation": {
+     "op": "abs_err",
+     "args": [
+      {
+       "file": "experiments/experiment-campaign2-r2/results/D16PROG-FIGAUX-M1/expc2r2_d16prog_figaux_percell.npz",
+       "pointer": "figaux_U_RG-CURVE_ghat",
+       "sha256": "19ced1042c9f8a46f6263443dfa9a8ce8c5f495f3f3523b05f7c2a1933c150a7"
+      },
+      {
+       "file": "experiments/experiment-campaign2-r2/results/D16PROG-FIGAUX-M1/expc2r2_d16prog_figaux_percell.npz",
+       "pointer": "figaux_U_g_true",
+       "sha256": "19ced1042c9f8a46f6263443dfa9a8ce8c5f495f3f3523b05f7c2a1933c150a7"
+      }
+     ]
+    },
+    "what": "RG interpolated-curve floor (1024)"
+   },
+   "e_p3a": null
+  }
+ ],
+ "pbcs_1024_layer_disclosure": "the d12 F2b PBCS series is plotted on its own 1024 abscissae ('registered PBCS layer added at its own 1024 abscissae; no interpolation', regenerate_roundF_audit.py:396; recorded finding findings_final.json:1902).  The d16 PBCS 1024-grid analogue ALREADY EXISTS sealed in D16PROG-P1-PBCS (TS-U-1024 arms), so the figure leg may mirror the d12 layer verbatim or plot the consistent 96-grid PBCS arms emitted here -- a LEG C / author choice, both data sealed",
+ "axes": {
+  "xlabel": "$G_{true}$",
+  "ylabel_a": "root summed pair coherence",
+  "ylabel_b": "predicted G",
+  "xscale": "linear",
+  "yscale": "linear"
+ },
+ "visual_changes_only": [
+  "PBCS layer plotted on the consistent 96-grid (named choice) instead of the parent's own-1024-abscissae layer; markevery 85 -> 8 preserves the parent's ~12-marker density"
+ ],
+ "sm_analogue_verdicts": [
+  {
+   "figure": "Fig S1 (fig1d_renormalization_audit; renormalization class)",
+   "d12_satellite_panel": true,
+   "verdict": "RENDERED",
+   "record": "results/D16FIG-S1",
+   "why": "1:1 d16 analogue: zeta = ||G_BCS||/||G_true|| exists sealed per-target in D16PROG-FIGAUX-M1 (figaux_V_BCS-V-MIRROR_Z)."
+  },
+  {
+   "figure": "Fig S3 left/center/right (scree class: expc2r2_figS3left/-center, figS2_scree_const_audit)",
+   "d12_satellite_panel": false,
+   "verdict": "FLAG-NO-D16-ANALOGUE",
+   "record": null,
+   "why": "the scree panels plot d20-flagship covariance GEVP spectra (campaign8 sym_panels, 55-mode c055 pullback), not d12 satellite data; no sealed d16 scree/GEVP source exists in the d16 program records.  Per the order, FLAGGED, not improvised."
+  },
+  {
+   "figure": "Fig S2 (cond_contrast_roundG; covariance class)",
+   "d12_satellite_panel": false,
+   "verdict": "FLAG-NO-D16-ANALOGUE",
+   "record": null,
+   "why": "d20-flagship covariance contrast; no d16 satellite analogue is due and no sealed d16 source exists."
+  },
+  {
+   "figure": "Fig 1 / Fig 4 / Fig 5 / Fig S4 / Fig S5",
+   "d12_satellite_panel": false,
+   "verdict": "OUT-OF-SCOPE",
+   "record": null,
+   "why": "architecture schematic and d20-flagship figures; not part of the d12->d16 satellite replacement."
+  }
+ ],
+ "v2_score_crosschecks": [
+  {
+   "name": "v2_median_crosscheck:v2d16progstd_const_gs_s42/abs_coupling_error",
+   "lane": "v2d16progstd_const_gs_s42",
+   "published_model": "d16progstd_const_gs",
+   "metric": "abs_coupling_error",
+   "relation": {
+    "op": "median_of_derivation",
+    "derivation": {
+     "op": "raw",
+     "args": [
+      {
+       "file": "results_v2/records/V2-D16SCORE-v2d16progstd_const_gs_s42/v2_d16prog_p4_persample.npz",
+       "pointer": "err__abs_coupling_error__v2d16progstd_const_gs_s42",
+       "sha256": "0bfecab9e7c60e0198739c93175f910066fe9b9abb6e1e0eed6005dc16c7e34e"
+      }
+     ]
+    }
+   },
+   "record_file": "results_v2/records/V2-D16SCORE-v2d16progstd_const_gs_s42/v2_d16prog_p4_result.json",
+   "record_file_sha256": "8359101fc41091efe00ff44c3ab9f182d2ea36091e021574719acaa36149f389",
+   "declared_median": 7.008928060220354e-05,
+   "declared_n": 1024,
+   "boot_ci_median": [
+    5.476889160431486e-05,
+    7.594667939425648e-05
+   ],
+   "criterion": "median of the plotted/companion v2 array == the v2 score record's per_model.<lane>.metrics.<metric>.stats.median, bit-exact (float64), and n agrees",
+   "replaces_row_id": "D16PROMO.est_p1.arm.d16progstd_const_gs.abs_coupling_error.median"
+  },
+  {
+   "name": "v2_median_crosscheck:v2d16progstd_const_gs_s42/abs_coupling_error",
+   "lane": "v2d16progstd_const_gs_s42",
+   "published_model": "d16progstd_const_gs",
+   "metric": "abs_coupling_error",
+   "relation": {
+    "op": "median_of_derivation",
+    "derivation": {
+     "op": "raw",
+     "args": [
+      {
+       "file": "results_v2/records/V2-D16SCORE-v2d16progstd_const_gs_s42/v2_d16prog_p4_persample.npz",
+       "pointer": "err__abs_coupling_error__v2d16progstd_const_gs_s42",
+       "sha256": "0bfecab9e7c60e0198739c93175f910066fe9b9abb6e1e0eed6005dc16c7e34e"
+      }
+     ]
+    }
+   },
+   "record_file": "results_v2/records/V2-D16SCORE-v2d16progstd_const_gs_s42/v2_d16prog_p4_result.json",
+   "record_file_sha256": "8359101fc41091efe00ff44c3ab9f182d2ea36091e021574719acaa36149f389",
+   "declared_median": 7.008928060220354e-05,
+   "declared_n": 1024,
+   "boot_ci_median": [
+    5.476889160431486e-05,
+    7.594667939425648e-05
+   ],
+   "criterion": "median of the plotted/companion v2 array == the v2 score record's per_model.<lane>.metrics.<metric>.stats.median, bit-exact (float64), and n agrees",
+   "replaces_row_id": "D16PROMO.est_p1.pooled.d16prog_const_gs_std"
+  },
+  {
+   "name": "v2_median_crosscheck:v2d16progstd_const_gs_s43/abs_coupling_error",
+   "lane": "v2d16progstd_const_gs_s43",
+   "published_model": "d16progstd_const_gs_s43",
+   "metric": "abs_coupling_error",
+   "relation": {
+    "op": "median_of_derivation",
+    "derivation": {
+     "op": "raw",
+     "args": [
+      {
+       "file": "results_v2/records/V2-D16SCORE-v2d16progstd_const_gs_s43/v2_d16prog_p4_persample.npz",
+       "pointer": "err__abs_coupling_error__v2d16progstd_const_gs_s43",
+       "sha256": "7d27cad1d707c85f9662390e2ebdce0831c9da3c80d736571f64a702d0c1f8b7"
+      }
+     ]
+    }
+   },
+   "record_file": "results_v2/records/V2-D16SCORE-v2d16progstd_const_gs_s43/v2_d16prog_p4_result.json",
+   "record_file_sha256": "d8289cf746417d9dfd3585b75c33544e71ef325873f93485d077a466b0926ed8",
+   "declared_median": 6.444869594349201e-05,
+   "declared_n": 1024,
+   "boot_ci_median": [
+    6.129582370004161e-05,
+    6.704163559201337e-05
+   ],
+   "criterion": "median of the plotted/companion v2 array == the v2 score record's per_model.<lane>.metrics.<metric>.stats.median, bit-exact (float64), and n agrees",
+   "replaces_row_id": "D16PROMO.est_p1.pooled.d16prog_const_gs_std"
+  },
+  {
+   "name": "v2_median_crosscheck:v2d16progstd_const_gs_s44/abs_coupling_error",
+   "lane": "v2d16progstd_const_gs_s44",
+   "published_model": "d16progstd_const_gs_s44",
+   "metric": "abs_coupling_error",
+   "relation": {
+    "op": "median_of_derivation",
+    "derivation": {
+     "op": "raw",
+     "args": [
+      {
+       "file": "results_v2/records/V2-D16SCORE-v2d16progstd_const_gs_s44/v2_d16prog_p4_persample.npz",
+       "pointer": "err__abs_coupling_error__v2d16progstd_const_gs_s44",
+       "sha256": "f5a97ec4bcf133d0f03709b8751c42344ba5a1dc775add8d250a4d205aee77f7"
+      }
+     ]
+    }
+   },
+   "record_file": "results_v2/records/V2-D16SCORE-v2d16progstd_const_gs_s44/v2_d16prog_p4_result.json",
+   "record_file_sha256": "19b27591db775b03f8de6cc5e7a80ea298f92ac2f3c74b6c49f49632cf6275a9",
+   "declared_median": 9.777890245410426e-05,
+   "declared_n": 1024,
+   "boot_ci_median": [
+    9.419874543289963e-05,
+    0.00010072042897085742
+   ],
+   "criterion": "median of the plotted/companion v2 array == the v2 score record's per_model.<lane>.metrics.<metric>.stats.median, bit-exact (float64), and n agrees",
+   "replaces_row_id": "D16PROMO.est_p1.pooled.d16prog_const_gs_std"
+  }
+ ],
+ "retired_quotable_citations": [
+  {
+   "row_id": "D16PROMO.est_p1.arm.d16progstd_const_gs.abs_coupling_error.median",
+   "record": "experiments/experiment-campaign2-r2/results/C11-supplement-d16promo",
+   "sealed_value": 0.00010885871386029367,
+   "relation_op": "median_of_derivation",
+   "reason": "bound to a PUBLISHED OGN number (sealed C11 promo/add1 quotable row); the v2 arrays cannot reproduce it by construction -- replaced by v2_score_crosschecks / v2_derived_context"
+  },
+  {
+   "row_id": "D16PROMO.est_p1.pooled.d16prog_const_gs_std",
+   "record": "experiments/experiment-campaign2-r2/results/C11-supplement-d16promo",
+   "sealed_value": 6.826191291162131e-05,
+   "relation_op": "median_of_medians",
+   "reason": "bound to a PUBLISHED OGN number (sealed C11 promo/add1 quotable row); the v2 arrays cannot reproduce it by construction -- replaced by v2_score_crosschecks / v2_derived_context"
+  },
+  {
+   "row_id": "D16PROMO.est_p1.derived.std_over_orig__const_gs__pooled__abs_coupling_error",
+   "record": "experiments/experiment-campaign2-r2/results/C11-supplement-d16promo",
+   "sealed_value": 1.007444294833058,
+   "relation_op": "ratio_of_row_values",
+   "reason": "bound to a PUBLISHED OGN number (sealed C11 promo/add1 quotable row); the v2 arrays cannot reproduce it by construction -- replaced by v2_score_crosschecks / v2_derived_context"
+  },
+  {
+   "row_id": "D16PROMO.classical_over_ogn.pbcs_u_reg__over__ogn_u_pooled_std",
+   "record": "experiments/experiment-campaign2-r2/results/C11-supplement-d16promo-add1",
+   "sealed_value": 80.64974960973395,
+   "relation_op": "ratio_of_row_values",
+   "reason": "bound to a PUBLISHED OGN number (sealed C11 promo/add1 quotable row); the v2 arrays cannot reproduce it by construction -- replaced by v2_score_crosschecks / v2_derived_context"
+  },
+  {
+   "row_id": "D16PROMO.classical_over_ogn.bcs_u_reg__over__ogn_u_pooled_std",
+   "record": "experiments/experiment-campaign2-r2/results/C11-supplement-d16promo-add1",
+   "sealed_value": 628.751317541377,
+   "relation_op": "ratio_of_row_values",
+   "reason": "bound to a PUBLISHED OGN number (sealed C11 promo/add1 quotable row); the v2 arrays cannot reproduce it by construction -- replaced by v2_score_crosschecks / v2_derived_context"
+  },
+  {
+   "row_id": "D16PROMO.classical_over_ogn.ogn_u_pooled_std__over__rg_curve_floor",
+   "record": "experiments/experiment-campaign2-r2/results/C11-supplement-d16promo-add1",
+   "sealed_value": 8.623456574839889,
+   "relation_op": "ratio_of_row_values",
+   "reason": "bound to a PUBLISHED OGN number (sealed C11 promo/add1 quotable row); the v2 arrays cannot reproduce it by construction -- replaced by v2_score_crosschecks / v2_derived_context"
+  }
+ ],
+ "v2_derived_context": [
+  {
+   "sector": "const_gs",
+   "kind": "std",
+   "metric": "abs_coupling_error",
+   "lanes": [
+    "v2d16progstd_const_gs_s42",
+    "v2d16progstd_const_gs_s43",
+    "v2d16progstd_const_gs_s44"
+   ],
+   "per_lane_medians": [
+    7.008928060220354e-05,
+    6.444869594349201e-05,
+    9.777890245410426e-05
+   ],
+   "value": 7.008928060220354e-05,
+   "statistic": "seed-median pooled (median across the 3 per-lane medians) -- the sealed pooled rule applied to the v2 records; NOT quotable",
+   "name": "v2_pooled:const_gs_std",
+   "replaces_row_id": "D16PROMO.est_p1.pooled.d16prog_const_gs_std",
+   "quotable": false
+  },
+  {
+   "name": "v2_ratio:D16PROMO.est_p1.derived.std_over_orig__const_gs__pooled__abs_coupling_error",
+   "numerator": {
+    "row_id": "D16PROMO.est_p1.pooled.d16prog_const_gs_std",
+    "class": "OGN (v2 pooled)",
+    "value": 7.008928060220354e-05,
+    "lanes": [
+     "v2d16progstd_const_gs_s42",
+     "v2d16progstd_const_gs_s43",
+     "v2d16progstd_const_gs_s44"
+    ]
+   },
+   "denominator": {
+    "row_id": "D16PROMO.est_p1.pooled.d16prog_const_gs_orig",
+    "class": "OGN (v2 pooled)",
+    "value": 0.00010668825013401828,
+    "lanes": [
+     "v2d16progorig_const_gs_s42",
+     "v2d16progorig_const_gs_s43",
+     "v2d16progorig_const_gs_s44"
+    ]
+   },
+   "value": 0.6569540742692817,
+   "sealed_row_value": 1.007444294833058,
+   "replaces_row_id": "D16PROMO.est_p1.derived.std_over_orig__const_gs__pooled__abs_coupling_error",
+   "quotable": false
+  },
+  {
+   "name": "v2_ratio:D16PROMO.classical_over_ogn.pbcs_u_reg__over__ogn_u_pooled_std",
+   "numerator": {
+    "row_id": "D16PROMO.p1.arm.PBCS-U-REG.abs_coupling_error.median",
+    "class": "classical (sealed row)",
+    "value": 0.005505306184203723
+   },
+   "denominator": {
+    "row_id": "D16PROMO.est_p1.pooled.d16prog_const_gs_std",
+    "class": "OGN (v2 pooled)",
+    "value": 7.008928060220354e-05,
+    "lanes": [
+     "v2d16progstd_const_gs_s42",
+     "v2d16progstd_const_gs_s43",
+     "v2d16progstd_const_gs_s44"
+    ]
+   },
+   "value": 78.5470493762015,
+   "sealed_row_value": 80.64974960973395,
+   "replaces_row_id": "D16PROMO.classical_over_ogn.pbcs_u_reg__over__ogn_u_pooled_std",
+   "quotable": false
+  },
+  {
+   "name": "v2_ratio:D16PROMO.classical_over_ogn.bcs_u_reg__over__ogn_u_pooled_std",
+   "numerator": {
+    "row_id": "D16PROMO.p1.arm.BCS-U-REG.abs_coupling_error.median",
+    "class": "classical (sealed row)",
+    "value": 0.04291976768107664
+   },
+   "denominator": {
+    "row_id": "D16PROMO.est_p1.pooled.d16prog_const_gs_std",
+    "class": "OGN (v2 pooled)",
+    "value": 7.008928060220354e-05,
+    "lanes": [
+     "v2d16progstd_const_gs_s42",
+     "v2d16progstd_const_gs_s43",
+     "v2d16progstd_const_gs_s44"
+    ]
+   },
+   "value": 612.3585134889697,
+   "sealed_row_value": 628.751317541377,
+   "replaces_row_id": "D16PROMO.classical_over_ogn.bcs_u_reg__over__ogn_u_pooled_std",
+   "quotable": false
+  },
+  {
+   "name": "v2_ratio:D16PROMO.classical_over_ogn.ogn_u_pooled_std__over__rg_curve_floor",
+   "numerator": {
+    "row_id": "D16PROMO.est_p1.pooled.d16prog_const_gs_std",
+    "class": "OGN (v2 pooled)",
+    "value": 7.008928060220354e-05,
+    "lanes": [
+     "v2d16progstd_const_gs_s42",
+     "v2d16progstd_const_gs_s43",
+     "v2d16progstd_const_gs_s44"
+    ]
+   },
+   "denominator": {
+    "row_id": "D16PROMO.p1.arm.RG-CURVE.abs_coupling_error.median",
+    "class": "classical (sealed row)",
+    "value": 7.91584120812816e-06
+   },
+   "value": 8.854306037649456,
+   "sealed_row_value": 8.623456574839889,
+   "replaces_row_id": "D16PROMO.classical_over_ogn.ogn_u_pooled_std__over__rg_curve_floor",
+   "quotable": false
+  }
+ ],
+ "supersession": {
+  "supersedes": "D16FIG-F2 (fig2b asset class ONLY: the expc2r2_d16fig2b_interaction_pbcs.{pdf,png} assets; the fig2a asset class and every plotted value are UNCHANGED)",
+  "for": "install purposes",
+  "authority": "MAINEXPT_FREEZE_ORDER.md v2.2 SS1 item 3 (D2.2) + RO-5C item 2 (sg-fr-synth-o.md SS3 :399-413) via the freeze-batch SS1 dispatch (chair enactment rules); block pattern per the sealed F3B-supersedes-F3-T0 precedent",
+  "note": "the sealed D16FIG-F2 remains sealed evidence, read-only and untouched; its values surface is carried forward bit-identical with ONE declared addition (the inset series, a subtraction of two of its own plotted arrays)",
+  "sealed_predecessor": {
+   "record": "results/D16FIG-F2",
+   "values_json_sha256": "3d5e8c03a8189ee9a357afa8a21bd8ef42c1d3b290f123f2f4174a480510e157",
+   "result_json_sha256": "5be575982169b943d1ec8f0646e4b1e76eea811f0647e7da157c7e56f5ed95a5",
+   "fig2b_pdf_sha256": "690149d8d3606c30d02d9871704d1850547b744f6a27020563270ae327358993",
+   "fig2b_png_sha256": "254778d2e6825663d50ac49c6f66d99163381e0a431bf57e6c2dc44091ba1824"
+  }
+ },
+ "fz1_caption_clause_sidecar": {
+  "status": "PROPOSED (numeral-free; the rider carries it; house caption-sidecar pattern -- NOT installed by this record)",
+  "clause": "An inset shows the absolute difference between the \\netname{} and Richardson--Gaudin reconstructions across the figure grid on a logarithmic scale."
+ },
+ "v2_relation": {
+  "relation": "V2 REGENERATION of the installed Fig 2 assets (2a classical, unchanged recipe; 2b with the OGN arm re-bound to the v2 display lane)",
+  "carries_recipe_of": "D16FIG-F2-FZ1 (+ the M17 pass-29 glyph-floor lettering of the installed 2b)",
+  "supersession_block_note": "the inherited $.supersession block documents the SEALED predecessor chain whose recipe this fork carries; the v2 asset supersedes nothing until the author rules"
+ },
+ "sources": {
+  "mode": "v2",
+  "model_map": {
+   "d16progstd_const_gs": "v2d16progstd_const_gs_s42",
+   "d16progstd_const_gs_s43": "v2d16progstd_const_gs_s43",
+   "d16progstd_const_gs_s44": "v2d16progstd_const_gs_s44",
+   "d16progstd_vect_gs": "v2d16progstd_vect_gs_s42",
+   "d16progstd_vect_gs_s43": "v2d16progstd_vect_gs_s43",
+   "d16progstd_vect_gs_s44": "v2d16progstd_vect_gs_s44",
+   "d16progorig_const_gs": "v2d16progorig_const_gs_s42",
+   "d16progorig_const_gs_s43": "v2d16progorig_const_gs_s43",
+   "d16progorig_const_gs_s44": "v2d16progorig_const_gs_s44",
+   "d16progorig_vect_gs": "v2d16progorig_vect_gs_s42",
+   "d16progorig_vect_gs_s43": "v2d16progorig_vect_gs_s43",
+   "d16progorig_vect_gs_s44": "v2d16progorig_vect_gs_s44"
+  },
+  "display_arms": {
+   "uniform": "v2d16progstd_const_gs_s42",
+   "vectorial": "v2d16progstd_vect_gs_s42"
+  },
+  "v2_figaux": {
+   "dir": "results_v2/records/V2-D16-FIGAUX",
+   "record_id": "v2_d16prog_figaux",
+   "files": {
+    "v2_d16prog_figaux_M1_percell.npz": "5d9d7f3d28f47b992e90249760a13db55e34a08dcad597aacf00039c72971023",
+    "v2_d16prog_figaux_M2_percell.npz": "fc78e021df7e17ef6ce5253a3929ef354205ad02baddbde2addb27f76c2bb54e",
+    "v2_d16prog_figaux_result.json": "56ab6384fce05d215fba430dfa5ffc630318a9e236ce7c67467cb38c5587e391"
+   },
+   "manifest_verified": true
+  },
+  "v2_scores": {
+   "v2d16progorig_const_gs_s42": {
+    "dir": "results_v2/records/V2-D16SCORE-v2d16progorig_const_gs_s42",
+    "files": {
+     "v2_d16prog_p4_persample.npz": "664097cd9da2fd2aaec9c8f286b9af3ad1a4b315fff2a1132e09ada1f71d0dfd",
+     "v2_d16prog_p4_result.json": "a93dc85a5412c0a106c288987de77b6e49f1887efe84219e9c9926e5747f0b42"
+    },
+    "manifests_verified": true
+   },
+   "v2d16progorig_const_gs_s43": {
+    "dir": "results_v2/records/V2-D16SCORE-v2d16progorig_const_gs_s43",
+    "files": {
+     "v2_d16prog_p4_persample.npz": "44394ecac2870b4e76d6f3e3330475ba5551b6b2f1c75e9dbe2ca1dc106511cc",
+     "v2_d16prog_p4_result.json": "f5043d32e5e44f5cdc3fb60918a100cbf67160b8c47e5ade5a736cf468025df3"
+    },
+    "manifests_verified": true
+   },
+   "v2d16progorig_const_gs_s44": {
+    "dir": "results_v2/records/V2-D16SCORE-v2d16progorig_const_gs_s44",
+    "files": {
+     "v2_d16prog_p4_persample.npz": "4617468defd4817ccc14392dde5298b8c3a9b5c45fc09e06124e70d775d4522b",
+     "v2_d16prog_p4_result.json": "7ae097ae66f0c03c8fd428fd14cfd01b82032abe14be81994fc9c3df6da03850"
+    },
+    "manifests_verified": true
+   },
+   "v2d16progorig_vect_gs_s42": {
+    "dir": "results_v2/records/V2-D16SCORE-v2d16progorig_vect_gs_s42",
+    "files": {
+     "v2_d16prog_p4_persample.npz": "f7f0019af03f2d1f4233bc1e0b0b2fd61236af92b32ce2648fb3dde42824a83f",
+     "v2_d16prog_p4_result.json": "e485b475e015b59d507a67afd9af15e6b431f40dde32a01db962a22b97b2bc3e"
+    },
+    "manifests_verified": true
+   },
+   "v2d16progorig_vect_gs_s43": {
+    "dir": "results_v2/records/V2-D16SCORE-v2d16progorig_vect_gs_s43",
+    "files": {
+     "v2_d16prog_p4_persample.npz": "458d11b158f94ceaa953ad2a33d9142165d64c347d6b55807bc2449ffeb449d0",
+     "v2_d16prog_p4_result.json": "f881b16424393a5d3e225674965b477366dffa9e18520b249c7b07201d5d4e21"
+    },
+    "manifests_verified": true
+   },
+   "v2d16progorig_vect_gs_s44": {
+    "dir": "results_v2/records/V2-D16SCORE-v2d16progorig_vect_gs_s44",
+    "files": {
+     "v2_d16prog_p4_persample.npz": "a7b0b3a1d7cccc238564a6ac726e9a18a8c4ce3fcfae36fd6ff68f0e37c9c55e",
+     "v2_d16prog_p4_result.json": "c9d78b7b0365b7992685ef22a6b2f0f02eaa9c640c2491c6fc4dd47437cf5932"
+    },
+    "manifests_verified": true
+   },
+   "v2d16progstd_const_gs_s42": {
+    "dir": "results_v2/records/V2-D16SCORE-v2d16progstd_const_gs_s42",
+    "files": {
+     "v2_d16prog_p4_persample.npz": "0bfecab9e7c60e0198739c93175f910066fe9b9abb6e1e0eed6005dc16c7e34e",
+     "v2_d16prog_p4_result.json": "8359101fc41091efe00ff44c3ab9f182d2ea36091e021574719acaa36149f389"
+    },
+    "manifests_verified": true
+   },
+   "v2d16progstd_const_gs_s43": {
+    "dir": "results_v2/records/V2-D16SCORE-v2d16progstd_const_gs_s43",
+    "files": {
+     "v2_d16prog_p4_persample.npz": "7d27cad1d707c85f9662390e2ebdce0831c9da3c80d736571f64a702d0c1f8b7",
+     "v2_d16prog_p4_result.json": "d8289cf746417d9dfd3585b75c33544e71ef325873f93485d077a466b0926ed8"
+    },
+    "manifests_verified": true
+   },
+   "v2d16progstd_const_gs_s44": {
+    "dir": "results_v2/records/V2-D16SCORE-v2d16progstd_const_gs_s44",
+    "files": {
+     "v2_d16prog_p4_persample.npz": "f5a97ec4bcf133d0f03709b8751c42344ba5a1dc775add8d250a4d205aee77f7",
+     "v2_d16prog_p4_result.json": "19b27591db775b03f8de6cc5e7a80ea298f92ac2f3c74b6c49f49632cf6275a9"
+    },
+    "manifests_verified": true
+   },
+   "v2d16progstd_vect_gs_s42": {
+    "dir": "results_v2/records/V2-D16SCORE-v2d16progstd_vect_gs_s42",
+    "files": {
+     "v2_d16prog_p4_persample.npz": "2ea70c809b2940c94a9558d093d90c272474c341d59ae014822e5f71b1f37cf3",
+     "v2_d16prog_p4_result.json": "4ef37344bc43e0d996eda725ea6e3929b70825a01db3540dc7a2810f501ba41f"
+    },
+    "manifests_verified": true
+   },
+   "v2d16progstd_vect_gs_s43": {
+    "dir": "results_v2/records/V2-D16SCORE-v2d16progstd_vect_gs_s43",
+    "files": {
+     "v2_d16prog_p4_persample.npz": "205cb0281c76c710873116f354bdb2a1eddeef6b378a7bdf52b2bd6c15c1d1fd",
+     "v2_d16prog_p4_result.json": "f5a77e1c6966c0991eed8799d0f0a8e2b05ec49f5187e08dd5ed462e0579c168"
+    },
+    "manifests_verified": true
+   },
+   "v2d16progstd_vect_gs_s44": {
+    "dir": "results_v2/records/V2-D16SCORE-v2d16progstd_vect_gs_s44",
+    "files": {
+     "v2_d16prog_p4_persample.npz": "cff3b270d7abe6c27309ca5131106e7df2f75bd633d9aa5b740149e0ca168eac",
+     "v2_d16prog_p4_result.json": "a07eae1b1edbdfa37af3f22ee5e88171885ad49ba14b3e2ba8d5da551a27684b"
+    },
+    "manifests_verified": true
+   }
+  },
+  "frozen_classical_pins": {
+   "experiments/experiment-campaign2-r2/results/C11-supplement-d16promo-add1/C11_SUPPLEMENT_D16PROMO_ADD1.json": "3840bc1f84d713a20e9ca7b986446bf55d2f1ad66fbf96e96d81f9f7cb6e73b5",
+   "experiments/experiment-campaign2-r2/results/C11-supplement-d16promo-add1/expc2r2_d16promo_add1_supplement_result.json": "83775f9d3924e9ab6ccd9f24105e7c9418a3b45eb03b94e371540e3745ee6a31",
+   "experiments/experiment-campaign2-r2/results/C11-supplement-d16promo/C11_SUPPLEMENT_D16PROMO.json": "1f925f27d060b0e4c1410c892b5213f0ac85f89fe4d866e74b4ebb4ef48c6ed1",
+   "experiments/experiment-campaign2-r2/results/C11-supplement-d16promo/expc2r2_d16promo_supplement_result.json": "f4c77dfb4376ef7a9a3c5ec176616d5dc524150a15c4fe6e88313c6c103d930a",
+   "experiments/experiment-campaign2-r2/results/D16PROG-FIGAUX-M1/expc2r2_d16prog_figaux_percell.npz": "19ced1042c9f8a46f6263443dfa9a8ce8c5f495f3f3523b05f7c2a1933c150a7",
+   "experiments/experiment-campaign2-r2/results/D16PROG-FIGAUX-M1/expc2r2_d16prog_figaux_result.json": "8c44287f1201c7580d126fabb2e687522e679f5af6667225f2cd3ded95450b5e",
+   "experiments/experiment-campaign2-r2/results/D16PROG-FIGAUX-M2/expc2r2_d16prog_figaux_percell.npz": "1b598bdd2c895f48f06e9b78f077d493fbed1c8c686d431f3d78c564d89f3223",
+   "experiments/experiment-campaign2-r2/results/D16PROG-FIGAUX-M2/expc2r2_d16prog_figaux_result.json": "7a508e5b93827d925fe024fe0aca9d9603c111c1340811d85abb2a10cecc61be",
+   "experiments/experiment-campaign2-r2/results/D16PROG-FIGAUX-M5/expc2r2_d16prog_figaux_percell.npz": "e6e9aa649d5514b4caf11131d7485824026625fe9a49ada075984f7d75b1a913",
+   "experiments/experiment-campaign2-r2/results/D16PROG-FIGAUX-M5/expc2r2_d16prog_figaux_result.json": "dd9d2ac2e9d9407fa7ae40ec3606bd0c654ba23849a225bf5749e2b72964f4bb",
+   "experiments/experiment-campaign2-r2/results/D16PROG-P1-REF/expc2r2_d16prog_p1_classical_percell.npz": "dbcb4bf77aa521715b26376c7cf49cb5caef106cb21718914196f220359a8d88",
+   "experiments/experiment-campaign2-r2/results/D16PROG-P1-REF/expc2r2_d16prog_p1_classical_result.json": "0be8bc6ff217335a6fa8046d83a8d1f22315b60a65ca745ac4e1f2a370936124",
+   "experiments/experiment-campaign2-r2/results/D16PROG-P4-SCORES/expc2r2_d16prog_p4_eval_percell.npz": "55794ee2e04e5f3855ed016be94e8e233c602946f480733224cee16eccba3064",
+   "experiments/experiment-campaign2-r2/results/D16PROG-P4-SCORES/expc2r2_d16prog_p4_eval_result.json": "07c3b8c1b72958990224287ab4e4698db6f79c546a6c57bc04898763ba7d086d"
+  },
+  "ogn_series_expected": [
+   "companion:ogn_96:d16progorig_const_gs",
+   "companion:ogn_96:d16progorig_const_gs_s43",
+   "companion:ogn_96:d16progorig_const_gs_s44",
+   "companion:ogn_96:d16progstd_const_gs_s43",
+   "companion:ogn_96:d16progstd_const_gs_s44",
+   "fig2b:ogn",
+   "fig2b_inset:absdiff_ogn_rg"
+  ],
+  "arrays": [
+   {
+    "section": "fig2",
+    "series": "fig2a:g_true",
+    "group": "plotted_arrays",
+    "plotted": true,
+    "class": "classical",
+    "record": "D16PROG-FIGAUX-M2",
+    "file": "experiments/experiment-campaign2-r2/results/D16PROG-FIGAUX-M2/expc2r2_d16prog_figaux_percell.npz",
+    "pointer": "figaux96_g_true",
+    "sha256": "1b598bdd2c895f48f06e9b78f077d493fbed1c8c686d431f3d78c564d89f3223",
+    "derivation_op": "raw",
+    "frozen_pin_sha256": "1b598bdd2c895f48f06e9b78f077d493fbed1c8c686d431f3d78c564d89f3223",
+    "pin_matches": true
+   },
+   {
+    "section": "fig2",
+    "series": "fig2a:coherence_exact",
+    "group": "plotted_arrays",
+    "plotted": true,
+    "class": "classical",
+    "record": "D16PROG-FIGAUX-M2",
+    "file": "experiments/experiment-campaign2-r2/results/D16PROG-FIGAUX-M2/expc2r2_d16prog_figaux_percell.npz",
+    "pointer": "figaux96_REF-ED_coh",
+    "sha256": "1b598bdd2c895f48f06e9b78f077d493fbed1c8c686d431f3d78c564d89f3223",
+    "derivation_op": "raw",
+    "frozen_pin_sha256": "1b598bdd2c895f48f06e9b78f077d493fbed1c8c686d431f3d78c564d89f3223",
+    "pin_matches": true
+   },
+   {
+    "section": "fig2",
+    "series": "fig2a:coherence_bcs_regularized",
+    "group": "plotted_arrays",
+    "plotted": true,
+    "class": "classical",
+    "record": "D16PROG-FIGAUX-M2",
+    "file": "experiments/experiment-campaign2-r2/results/D16PROG-FIGAUX-M2/expc2r2_d16prog_figaux_percell.npz",
+    "pointer": "figaux96_BCS-U-REG_coh",
+    "sha256": "1b598bdd2c895f48f06e9b78f077d493fbed1c8c686d431f3d78c564d89f3223",
+    "derivation_op": "raw",
+    "frozen_pin_sha256": "1b598bdd2c895f48f06e9b78f077d493fbed1c8c686d431f3d78c564d89f3223",
+    "pin_matches": true
+   },
+   {
+    "section": "fig2",
+    "series": "fig2a:coherence_bcs_unregularized",
+    "group": "plotted_arrays",
+    "plotted": true,
+    "class": "classical",
+    "record": "D16PROG-FIGAUX-M2",
+    "file": "experiments/experiment-campaign2-r2/results/D16PROG-FIGAUX-M2/expc2r2_d16prog_figaux_percell.npz",
+    "pointer": "figaux96_BCS-U-UNREG_coh",
+    "sha256": "1b598bdd2c895f48f06e9b78f077d493fbed1c8c686d431f3d78c564d89f3223",
+    "derivation_op": "raw",
+    "frozen_pin_sha256": "1b598bdd2c895f48f06e9b78f077d493fbed1c8c686d431f3d78c564d89f3223",
+    "pin_matches": true
+   },
+   {
+    "section": "fig2",
+    "series": "fig2b:g_true",
+    "group": "plotted_arrays",
+    "plotted": true,
+    "class": "classical",
+    "record": "D16PROG-FIGAUX-M2",
+    "file": "experiments/experiment-campaign2-r2/results/D16PROG-FIGAUX-M2/expc2r2_d16prog_figaux_percell.npz",
+    "pointer": "figaux96_g_true",
+    "sha256": "1b598bdd2c895f48f06e9b78f077d493fbed1c8c686d431f3d78c564d89f3223",
+    "derivation_op": "raw",
+    "frozen_pin_sha256": "1b598bdd2c895f48f06e9b78f077d493fbed1c8c686d431f3d78c564d89f3223",
+    "pin_matches": true
+   },
+   {
+    "section": "fig2",
+    "series": "fig2b:ogn",
+    "group": "plotted_arrays",
+    "plotted": true,
+    "class": "OGN",
+    "record": "V2-FIGAUX:v2_d16prog_figaux",
+    "file": "results_v2/records/V2-D16-FIGAUX/v2_d16prog_figaux_M2_percell.npz",
+    "pointer": "figaux96_OGN_v2d16progstd_const_gs_s42_pred",
+    "sha256": "fc78e021df7e17ef6ce5253a3929ef354205ad02baddbde2addb27f76c2bb54e",
+    "derivation_op": "col0",
+    "lane": "v2d16progstd_const_gs_s42",
+    "published_model": "d16progstd_const_gs"
+   },
+   {
+    "section": "fig2",
+    "series": "fig2b:bcs_regularized",
+    "group": "plotted_arrays",
+    "plotted": true,
+    "class": "classical",
+    "record": "D16PROG-FIGAUX-M2",
+    "file": "experiments/experiment-campaign2-r2/results/D16PROG-FIGAUX-M2/expc2r2_d16prog_figaux_percell.npz",
+    "pointer": "figaux96_BCS-U-REG_g",
+    "sha256": "1b598bdd2c895f48f06e9b78f077d493fbed1c8c686d431f3d78c564d89f3223",
+    "derivation_op": "raw",
+    "frozen_pin_sha256": "1b598bdd2c895f48f06e9b78f077d493fbed1c8c686d431f3d78c564d89f3223",
+    "pin_matches": true
+   },
+   {
+    "section": "fig2",
+    "series": "fig2b:bcs_unregularized",
+    "group": "plotted_arrays",
+    "plotted": true,
+    "class": "classical",
+    "record": "D16PROG-FIGAUX-M2",
+    "file": "experiments/experiment-campaign2-r2/results/D16PROG-FIGAUX-M2/expc2r2_d16prog_figaux_percell.npz",
+    "pointer": "figaux96_BCS-U-UNREG_g",
+    "sha256": "1b598bdd2c895f48f06e9b78f077d493fbed1c8c686d431f3d78c564d89f3223",
+    "derivation_op": "raw",
+    "frozen_pin_sha256": "1b598bdd2c895f48f06e9b78f077d493fbed1c8c686d431f3d78c564d89f3223",
+    "pin_matches": true
+   },
+   {
+    "section": "fig2",
+    "series": "fig2b:richardson_g_true",
+    "group": "plotted_arrays",
+    "plotted": true,
+    "class": "classical",
+    "record": "D16PROG-FIGAUX-M2",
+    "file": "experiments/experiment-campaign2-r2/results/D16PROG-FIGAUX-M2/expc2r2_d16prog_figaux_percell.npz",
+    "pointer": "figaux96_g_true",
+    "sha256": "1b598bdd2c895f48f06e9b78f077d493fbed1c8c686d431f3d78c564d89f3223",
+    "derivation_op": "raw",
+    "frozen_pin_sha256": "1b598bdd2c895f48f06e9b78f077d493fbed1c8c686d431f3d78c564d89f3223",
+    "pin_matches": true
+   },
+   {
+    "section": "fig2",
+    "series": "fig2b:richardson_inverse",
+    "group": "plotted_arrays",
+    "plotted": true,
+    "class": "classical",
+    "record": "D16PROG-FIGAUX-M2",
+    "file": "experiments/experiment-campaign2-r2/results/D16PROG-FIGAUX-M2/expc2r2_d16prog_figaux_percell.npz",
+    "pointer": "figaux96_RG-96-POLISH_ghat",
+    "sha256": "1b598bdd2c895f48f06e9b78f077d493fbed1c8c686d431f3d78c564d89f3223",
+    "derivation_op": "raw",
+    "frozen_pin_sha256": "1b598bdd2c895f48f06e9b78f077d493fbed1c8c686d431f3d78c564d89f3223",
+    "pin_matches": true
+   },
+   {
+    "section": "fig2",
+    "series": "fig2b:pbcs_reg_layer_x",
+    "group": "plotted_arrays",
+    "plotted": true,
+    "class": "classical",
+    "record": "D16PROG-FIGAUX-M2",
+    "file": "experiments/experiment-campaign2-r2/results/D16PROG-FIGAUX-M2/expc2r2_d16prog_figaux_percell.npz",
+    "pointer": "figaux96_g_true",
+    "sha256": "1b598bdd2c895f48f06e9b78f077d493fbed1c8c686d431f3d78c564d89f3223",
+    "derivation_op": "raw",
+    "frozen_pin_sha256": "1b598bdd2c895f48f06e9b78f077d493fbed1c8c686d431f3d78c564d89f3223",
+    "pin_matches": true
+   },
+   {
+    "section": "fig2",
+    "series": "fig2b:pbcs_reg_layer_y",
+    "group": "plotted_arrays",
+    "plotted": true,
+    "class": "classical",
+    "record": "D16PROG-FIGAUX-M2",
+    "file": "experiments/experiment-campaign2-r2/results/D16PROG-FIGAUX-M2/expc2r2_d16prog_figaux_percell.npz",
+    "pointer": "figaux96_PBCS-U-REG_g",
+    "sha256": "1b598bdd2c895f48f06e9b78f077d493fbed1c8c686d431f3d78c564d89f3223",
+    "derivation_op": "raw",
+    "frozen_pin_sha256": "1b598bdd2c895f48f06e9b78f077d493fbed1c8c686d431f3d78c564d89f3223",
+    "pin_matches": true
+   },
+   {
+    "section": "fig2",
+    "series": "fig2b_inset:absdiff_ogn_rg",
+    "group": "plotted_arrays",
+    "plotted": true,
+    "class": "OGN",
+    "record": "V2-FIGAUX:v2_d16prog_figaux",
+    "file": "results_v2/records/V2-D16-FIGAUX/v2_d16prog_figaux_M2_percell.npz",
+    "pointer": "figaux96_OGN_v2d16progstd_const_gs_s42_pred",
+    "sha256": "fc78e021df7e17ef6ce5253a3929ef354205ad02baddbde2addb27f76c2bb54e",
+    "derivation_op": "col0_minus_raw_abs",
+    "lane": "v2d16progstd_const_gs_s42",
+    "published_model": "d16progstd_const_gs"
+   },
+   {
+    "section": "fig2",
+    "series": "fig2b_inset:absdiff_ogn_rg",
+    "group": "plotted_arrays",
+    "plotted": true,
+    "class": "classical",
+    "record": "D16PROG-FIGAUX-M2",
+    "file": "experiments/experiment-campaign2-r2/results/D16PROG-FIGAUX-M2/expc2r2_d16prog_figaux_percell.npz",
+    "pointer": "figaux96_RG-96-POLISH_ghat",
+    "sha256": "1b598bdd2c895f48f06e9b78f077d493fbed1c8c686d431f3d78c564d89f3223",
+    "derivation_op": "col0_minus_raw_abs",
+    "frozen_pin_sha256": "1b598bdd2c895f48f06e9b78f077d493fbed1c8c686d431f3d78c564d89f3223",
+    "pin_matches": true
+   },
+   {
+    "section": "fig2",
+    "series": "companion:ogn_96:d16progstd_const_gs_s43",
+    "group": "companion_arrays",
+    "plotted": false,
+    "class": "OGN",
+    "record": "V2-FIGAUX:v2_d16prog_figaux",
+    "file": "results_v2/records/V2-D16-FIGAUX/v2_d16prog_figaux_M2_percell.npz",
+    "pointer": "figaux96_OGN_v2d16progstd_const_gs_s43_pred",
+    "sha256": "fc78e021df7e17ef6ce5253a3929ef354205ad02baddbde2addb27f76c2bb54e",
+    "derivation_op": "col0",
+    "lane": "v2d16progstd_const_gs_s43",
+    "published_model": "d16progstd_const_gs_s43"
+   },
+   {
+    "section": "fig2",
+    "series": "companion:ogn_96:d16progstd_const_gs_s44",
+    "group": "companion_arrays",
+    "plotted": false,
+    "class": "OGN",
+    "record": "V2-FIGAUX:v2_d16prog_figaux",
+    "file": "results_v2/records/V2-D16-FIGAUX/v2_d16prog_figaux_M2_percell.npz",
+    "pointer": "figaux96_OGN_v2d16progstd_const_gs_s44_pred",
+    "sha256": "fc78e021df7e17ef6ce5253a3929ef354205ad02baddbde2addb27f76c2bb54e",
+    "derivation_op": "col0",
+    "lane": "v2d16progstd_const_gs_s44",
+    "published_model": "d16progstd_const_gs_s44"
+   },
+   {
+    "section": "fig2",
+    "series": "companion:ogn_96:d16progorig_const_gs",
+    "group": "companion_arrays",
+    "plotted": false,
+    "class": "OGN",
+    "record": "V2-FIGAUX:v2_d16prog_figaux",
+    "file": "results_v2/records/V2-D16-FIGAUX/v2_d16prog_figaux_M2_percell.npz",
+    "pointer": "figaux96_OGN_v2d16progorig_const_gs_s42_pred",
+    "sha256": "fc78e021df7e17ef6ce5253a3929ef354205ad02baddbde2addb27f76c2bb54e",
+    "derivation_op": "col0",
+    "lane": "v2d16progorig_const_gs_s42",
+    "published_model": "d16progorig_const_gs"
+   },
+   {
+    "section": "fig2",
+    "series": "companion:ogn_96:d16progorig_const_gs_s43",
+    "group": "companion_arrays",
+    "plotted": false,
+    "class": "OGN",
+    "record": "V2-FIGAUX:v2_d16prog_figaux",
+    "file": "results_v2/records/V2-D16-FIGAUX/v2_d16prog_figaux_M2_percell.npz",
+    "pointer": "figaux96_OGN_v2d16progorig_const_gs_s43_pred",
+    "sha256": "fc78e021df7e17ef6ce5253a3929ef354205ad02baddbde2addb27f76c2bb54e",
+    "derivation_op": "col0",
+    "lane": "v2d16progorig_const_gs_s43",
+    "published_model": "d16progorig_const_gs_s43"
+   },
+   {
+    "section": "fig2",
+    "series": "companion:ogn_96:d16progorig_const_gs_s44",
+    "group": "companion_arrays",
+    "plotted": false,
+    "class": "OGN",
+    "record": "V2-FIGAUX:v2_d16prog_figaux",
+    "file": "results_v2/records/V2-D16-FIGAUX/v2_d16prog_figaux_M2_percell.npz",
+    "pointer": "figaux96_OGN_v2d16progorig_const_gs_s44_pred",
+    "sha256": "fc78e021df7e17ef6ce5253a3929ef354205ad02baddbde2addb27f76c2bb54e",
+    "derivation_op": "col0",
+    "lane": "v2d16progorig_const_gs_s44",
+    "published_model": "d16progorig_const_gs_s44"
+   },
+   {
+    "section": "fig2",
+    "series": "companion:rg_96_curve",
+    "group": "companion_arrays",
+    "plotted": false,
+    "class": "classical",
+    "record": "D16PROG-FIGAUX-M2",
+    "file": "experiments/experiment-campaign2-r2/results/D16PROG-FIGAUX-M2/expc2r2_d16prog_figaux_percell.npz",
+    "pointer": "figaux96_RG-96-CURVE_ghat",
+    "sha256": "1b598bdd2c895f48f06e9b78f077d493fbed1c8c686d431f3d78c564d89f3223",
+    "derivation_op": "raw",
+    "frozen_pin_sha256": "1b598bdd2c895f48f06e9b78f077d493fbed1c8c686d431f3d78c564d89f3223",
+    "pin_matches": true
+   },
+   {
+    "section": "fig2",
+    "series": "companion:pbcs_unreg_96",
+    "group": "companion_arrays",
+    "plotted": false,
+    "class": "classical",
+    "record": "D16PROG-FIGAUX-M2",
+    "file": "experiments/experiment-campaign2-r2/results/D16PROG-FIGAUX-M2/expc2r2_d16prog_figaux_percell.npz",
+    "pointer": "figaux96_PBCS-U-UNREG_g",
+    "sha256": "1b598bdd2c895f48f06e9b78f077d493fbed1c8c686d431f3d78c564d89f3223",
+    "derivation_op": "raw",
+    "frozen_pin_sha256": "1b598bdd2c895f48f06e9b78f077d493fbed1c8c686d431f3d78c564d89f3223",
+    "pin_matches": true
+   }
+  ],
+  "n_arrays": 21,
+  "n_ogn": 7,
+  "n_classical": 14
+ },
+ "v2_rendered_assets": {
+  "fig2a": "v2_fig2a_pair_coherence",
+  "fig2b": "v2_fig2b_interaction_pbcs",
+  "note": "fig2a is classical (no OGN input); fig2b carries the re-bound OGN prediction + the FZ1 |G_OGN-G_RG| inset (M17 lettering)"
+ },
+ "figaux_key_census": {
+  "experiments/experiment-campaign2-r2/results/D16PROG-FIGAUX-M1/expc2r2_d16prog_figaux_percell.npz": [
+   "figaux_U_BCS-U-REG_gfit",
+   "figaux_U_PBCS-U-REG_gfit",
+   "figaux_U_RG-CURVE_ghat",
+   "figaux_U_g_true"
+  ],
+  "experiments/experiment-campaign2-r2/results/D16PROG-FIGAUX-M2/expc2r2_d16prog_figaux_percell.npz": [
+   "figaux96_BCS-U-REG_coh",
+   "figaux96_BCS-U-REG_g",
+   "figaux96_BCS-U-UNREG_coh",
+   "figaux96_BCS-U-UNREG_g",
+   "figaux96_PBCS-U-REG_g",
+   "figaux96_PBCS-U-UNREG_g",
+   "figaux96_REF-ED_coh",
+   "figaux96_RG-96-CURVE_ghat",
+   "figaux96_RG-96-POLISH_ghat",
+   "figaux96_g_true"
+  ],
+  "results_v2/records/V2-D16-FIGAUX/v2_d16prog_figaux_M2_percell.npz": [
+   "figaux96_OGN_v2d16progorig_const_gs_s42_pred",
+   "figaux96_OGN_v2d16progorig_const_gs_s43_pred",
+   "figaux96_OGN_v2d16progorig_const_gs_s44_pred",
+   "figaux96_OGN_v2d16progstd_const_gs_s42_pred",
+   "figaux96_OGN_v2d16progstd_const_gs_s43_pred",
+   "figaux96_OGN_v2d16progstd_const_gs_s44_pred"
+  ],
+  "results_v2/records/V2-D16SCORE-v2d16progstd_const_gs_s42/v2_d16prog_p4_persample.npz": [
+   "err__abs_coupling_error__v2d16progstd_const_gs_s42"
+  ],
+  "results_v2/records/V2-D16SCORE-v2d16progstd_const_gs_s43/v2_d16prog_p4_persample.npz": [
+   "err__abs_coupling_error__v2d16progstd_const_gs_s43"
+  ],
+  "results_v2/records/V2-D16SCORE-v2d16progstd_const_gs_s44/v2_d16prog_p4_persample.npz": [
+   "err__abs_coupling_error__v2d16progstd_const_gs_s44"
+  ]
+ }
+}

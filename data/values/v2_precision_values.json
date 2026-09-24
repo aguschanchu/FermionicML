@@ -1,0 +1,1061 @@
+{
+ "built_utc": "2026-09-11T18:44:59Z",
+ "note": "Sealed data-precision study (V2-PRECISION-WAVE2): the exploration-branch wave-2 ladder that decided HIGHEST-precision generation for v2.",
+ "provenance": [
+  {
+   "file": "v2_precision_wave2_result.json",
+   "file_sha256": "2524a91e59c423c4dc252afeb34a88213929c7c07165986330874339f5c67373",
+   "record": "V2-PRECISION-WAVE2",
+   "record_manifest_sha256": "a7e2aaa8009f89dc1bee6046d77e3aed61ff2402b213290d83550c8fd97c5596",
+   "sealed_utc": "2026-09-10T11:16:26Z"
+  }
+ ],
+ "record": "V2-PRECISION-WAVE2",
+ "result": {
+  "all_gates_pass": true,
+  "copies": {
+   "base_gram__gs_random__s42__reduced": {
+    "primary": {
+     "Merr_median": 0.015227223852104028,
+     "config_copy": "base_gram__gs_random__s42__reduced@tpu-v4-spot-1.config.json",
+     "config_sha256": "68b2ce83d8bacb865bcd7d03b40a13f79538cad7d172e1397c2d92318cd1e3cd",
+     "config_source": "/workspace/explore_v2f_store/harvest/tpu-v4-spot-1/lanes/base_gram__gs_random__s42__reduced/config.json",
+     "copy": "base_gram__gs_random__s42__reduced@tpu-v4-spot-1.eval.json",
+     "deterministic": true,
+     "eval_sha256": "3e771f1908083289c36282773b6d394489a566c0853e7cad3b277f7446f76bb8",
+     "lane_field": "base_gram__gs_random__s42__reduced",
+     "n": 4096,
+     "n_params": 17756929,
+     "relS_median": 0.09521214286520543,
+     "rel_median": 0.12269318980896625,
+     "source": "/workspace/explore_v2f_store/harvest/tpu-v4-spot-1/eval/base_gram__gs_random__s42__reduced/eval.json",
+     "val_dir": "/home/agus/v2f_store/datasets/ds_v2f2_random_gs_psi0/val",
+     "val_precision": "highest",
+     "vm": "tpu-v4-spot-1"
+    },
+    "twins": [
+     {
+      "Merr_median": 0.015227223852104028,
+      "config_copy": "base_gram__gs_random__s42__reduced@tpu-v4-spot-2.config.json",
+      "config_sha256": "124b5d325b753766cf0105a3fb2ed14aa228252f4100eb46be7c972c46bca91a",
+      "config_source": "/workspace/explore_v2f_store/harvest/tpu-v4-spot-2/lanes/base_gram__gs_random__s42__reduced/config.json",
+      "copy": "base_gram__gs_random__s42__reduced@tpu-v4-spot-2.eval.json",
+      "deterministic": true,
+      "eval_sha256": "ae3320e4ea6be699e1a69c4df8f2842ea626ab7328f7d605bccd12729377b622",
+      "lane_field": "base_gram__gs_random__s42__reduced",
+      "n": 4096,
+      "n_params": 17756929,
+      "relS_median": 0.09521214286520543,
+      "rel_median": 0.12269318980896625,
+      "source": "/workspace/explore_v2f_store/harvest/tpu-v4-spot-2/eval/base_gram__gs_random__s42__reduced/eval.json",
+      "twin_rel_median_diff": 0.0,
+      "val_dir": "/home/agus/v2f_store/datasets/ds_v2f2_random_gs_psi0/val",
+      "val_precision": "highest",
+      "vm": "tpu-v4-spot-2"
+     }
+    ]
+   },
+   "base_gram__gs_random__s43__reduced": {
+    "primary": {
+     "Merr_median": 0.013712523081111424,
+     "config_copy": "base_gram__gs_random__s43__reduced@tpu-v4-spot-1.config.json",
+     "config_sha256": "1a7b52d3af345abf0b2e7b150489e9371259fc882f1b6920504fe6c136021010",
+     "config_source": "/workspace/explore_v2f_store/harvest/tpu-v4-spot-1/lanes/base_gram__gs_random__s43__reduced/config.json",
+     "copy": "base_gram__gs_random__s43__reduced@tpu-v4-spot-1.eval.json",
+     "deterministic": true,
+     "eval_sha256": "e84a8a9b2d165df07512d2def0343d8f4a32818de0bb5f5b3105e3419d9822bb",
+     "lane_field": "base_gram__gs_random__s43__reduced",
+     "n": 4096,
+     "n_params": 17756929,
+     "relS_median": 0.0951980011045192,
+     "rel_median": 0.12252179331800013,
+     "source": "/workspace/explore_v2f_store/harvest/tpu-v4-spot-1/eval/base_gram__gs_random__s43__reduced/eval.json",
+     "val_dir": "/home/agus/v2f_store/datasets/ds_v2f2_random_gs_psi0/val",
+     "val_precision": "highest",
+     "vm": "tpu-v4-spot-1"
+    },
+    "twins": [
+     {
+      "Merr_median": 0.013712523081111424,
+      "config_copy": "base_gram__gs_random__s43__reduced@tpu-v4-spot-2.config.json",
+      "config_sha256": "fef09f7846570425af8f17d119b8504809f11196064d602d4c3523e7f83fc1ea",
+      "config_source": "/workspace/explore_v2f_store/harvest/tpu-v4-spot-2/lanes/base_gram__gs_random__s43__reduced/config.json",
+      "copy": "base_gram__gs_random__s43__reduced@tpu-v4-spot-2.eval.json",
+      "deterministic": true,
+      "eval_sha256": "0c2322e1c3edc40b0c88079e8030acda465ac4acb64bb171921dcaee9ff69126",
+      "lane_field": "base_gram__gs_random__s43__reduced",
+      "n": 4096,
+      "n_params": 17756929,
+      "relS_median": 0.0951980011045192,
+      "rel_median": 0.12252179331800013,
+      "source": "/workspace/explore_v2f_store/harvest/tpu-v4-spot-2/eval/base_gram__gs_random__s43__reduced/eval.json",
+      "twin_rel_median_diff": 0.0,
+      "val_dir": "/home/agus/v2f_store/datasets/ds_v2f2_random_gs_psi0/val",
+      "val_precision": "highest",
+      "vm": "tpu-v4-spot-2"
+     }
+    ]
+   },
+   "base_gram__gs_random__s44__reduced": {
+    "primary": {
+     "Merr_median": 0.015960867023538973,
+     "config_copy": "base_gram__gs_random__s44__reduced@tpu-v4-spot-1.config.json",
+     "config_sha256": "60b93eaf135018a0a6a48cc44f3b27610ce6db34a1cd394c94338dad1b300427",
+     "config_source": "/workspace/explore_v2f_store/harvest/tpu-v4-spot-1/lanes/base_gram__gs_random__s44__reduced/config.json",
+     "copy": "base_gram__gs_random__s44__reduced@tpu-v4-spot-1.eval.json",
+     "deterministic": true,
+     "eval_sha256": "55e273de7c0e2c0e9ccc2eddc08df0440e399576a09650bb63219e79a807aa23",
+     "lane_field": "base_gram__gs_random__s44__reduced",
+     "n": 4096,
+     "n_params": 17756929,
+     "relS_median": 0.09527155013094611,
+     "rel_median": 0.1229584682850848,
+     "source": "/workspace/explore_v2f_store/harvest/tpu-v4-spot-1/eval/base_gram__gs_random__s44__reduced/eval.json",
+     "val_dir": "/home/agus/v2f_store/datasets/ds_v2f2_random_gs_psi0/val",
+     "val_precision": "highest",
+     "vm": "tpu-v4-spot-1"
+    },
+    "twins": [
+     {
+      "Merr_median": 0.015960867023538973,
+      "config_copy": "base_gram__gs_random__s44__reduced@tpu-v4-spot-2.config.json",
+      "config_sha256": "f0864683677400ca4b9ab3644ffedaf4b03ce251d5208d8e629af370fc6f3536",
+      "config_source": "/workspace/explore_v2f_store/harvest/tpu-v4-spot-2/lanes/base_gram__gs_random__s44__reduced/config.json",
+      "copy": "base_gram__gs_random__s44__reduced@tpu-v4-spot-2.eval.json",
+      "deterministic": true,
+      "eval_sha256": "5d0b26aea518b5534f5b19a5c0aac9438be2ccaec28beab9f26853a967e3b432",
+      "lane_field": "base_gram__gs_random__s44__reduced",
+      "n": 4096,
+      "n_params": 17756929,
+      "relS_median": 0.09527155013094611,
+      "rel_median": 0.1229584682850848,
+      "source": "/workspace/explore_v2f_store/harvest/tpu-v4-spot-2/eval/base_gram__gs_random__s44__reduced/eval.json",
+      "twin_rel_median_diff": 0.0,
+      "val_dir": "/home/agus/v2f_store/datasets/ds_v2f2_random_gs_psi0/val",
+      "val_precision": "highest",
+      "vm": "tpu-v4-spot-2"
+     }
+    ]
+   },
+   "base_gram__thermal_random__s42__prod": {
+    "primary": {
+     "Merr_median": 0.00041627881668079316,
+     "config_copy": "base_gram__thermal_random__s42__prod@tpu-v4-spot-1.config.json",
+     "config_sha256": "64199350a8bc5bf91c4d01f8e3e09f657390a34c58db06103a22b1b9f1aa747b",
+     "config_source": "/workspace/explore_v2f_store/harvest/tpu-v4-spot-1/lanes/base_gram__thermal_random__s42__prod/config.json",
+     "copy": "base_gram__thermal_random__s42__prod@tpu-v4-spot-1.eval.json",
+     "deterministic": true,
+     "eval_sha256": "80e345f3ad1e2260fdf3f98485c0e0aaf9a0e4c94b9947a677a701ed4232d4bf",
+     "lane_field": "base_gram__thermal_random__s42__prod",
+     "n": 4096,
+     "n_params": 17756929,
+     "relS_median": 0.00021322877240577154,
+     "rel_median": 0.0002605856183975323,
+     "source": "/workspace/explore_v2f_store/harvest/tpu-v4-spot-1/eval/base_gram__thermal_random__s42__prod/eval.json",
+     "val_dir": "/home/agus/v2f_store/datasets/ds_v2f2_random_thermal_prod_M/val",
+     "val_precision": "highest",
+     "vm": "tpu-v4-spot-1"
+    },
+    "twins": [
+     {
+      "Merr_median": 0.00041627881668079316,
+      "config_copy": "base_gram__thermal_random__s42__prod@tpu-v4-spot-2.config.json",
+      "config_sha256": "64199350a8bc5bf91c4d01f8e3e09f657390a34c58db06103a22b1b9f1aa747b",
+      "config_source": "/workspace/explore_v2f_store/harvest/tpu-v4-spot-2/lanes/base_gram__thermal_random__s42__prod/config.json",
+      "copy": "base_gram__thermal_random__s42__prod@tpu-v4-spot-2.eval.json",
+      "deterministic": true,
+      "eval_sha256": "99b2d0759ed0b55f711366d5e88f97fa4e0239bcfc6fad1885e1bd2710ccf191",
+      "lane_field": "base_gram__thermal_random__s42__prod",
+      "n": 4096,
+      "n_params": 17756929,
+      "relS_median": 0.00021322877240577154,
+      "rel_median": 0.0002605856183975323,
+      "source": "/workspace/explore_v2f_store/harvest/tpu-v4-spot-2/eval/base_gram__thermal_random__s42__prod/eval.json",
+      "twin_rel_median_diff": 0.0,
+      "val_dir": "/home/agus/v2f_store/datasets/ds_v2f2_random_thermal_prod_M/val",
+      "val_precision": "highest",
+      "vm": "tpu-v4-spot-2"
+     }
+    ]
+   },
+   "base_gram__thermal_random__s42__reduced": {
+    "primary": {
+     "Merr_median": 0.0014487992296729102,
+     "config_copy": "base_gram__thermal_random__s42__reduced@tpu-v4-spot-1.config.json",
+     "config_sha256": "627df0d6f8afe722251932f53389063eec8e8d6e0a822ccd412994c93f6db88d",
+     "config_source": "/workspace/explore_v2f_store/harvest/tpu-v4-spot-1/lanes/base_gram__thermal_random__s42__reduced/config.json",
+     "copy": "base_gram__thermal_random__s42__reduced@tpu-v4-spot-1.eval.json",
+     "deterministic": true,
+     "eval_sha256": "dc98bfd84276c7ac02203d03ec77d943bf23c96e974e4abfc263b10b5852c161",
+     "lane_field": "base_gram__thermal_random__s42__reduced",
+     "n": 4096,
+     "n_params": 17756929,
+     "relS_median": 0.0005874968474816774,
+     "rel_median": 0.0007302100514434479,
+     "source": "/workspace/explore_v2f_store/harvest/tpu-v4-spot-1/eval/base_gram__thermal_random__s42__reduced/eval.json",
+     "val_dir": "/home/agus/v2f_store/datasets/ds_v2f2_random_thermal_M/val",
+     "val_precision": "highest",
+     "vm": "tpu-v4-spot-1"
+    },
+    "twins": [
+     {
+      "Merr_median": 0.0014487992296729102,
+      "config_copy": "base_gram__thermal_random__s42__reduced@tpu-v4-spot-2.config.json",
+      "config_sha256": "a7494a5ca971cd8f36cf5ce8a0548f0f5c86982ca1604592c737fd0ee4ec7d20",
+      "config_source": "/workspace/explore_v2f_store/harvest/tpu-v4-spot-2/lanes/base_gram__thermal_random__s42__reduced/config.json",
+      "copy": "base_gram__thermal_random__s42__reduced@tpu-v4-spot-2.eval.json",
+      "deterministic": true,
+      "eval_sha256": "37c2dd1c746ac5efc33cb5823555653cfba8e1ad77e62ed410fad660a54796c0",
+      "lane_field": "base_gram__thermal_random__s42__reduced",
+      "n": 4096,
+      "n_params": 17756929,
+      "relS_median": 0.0005874968474816774,
+      "rel_median": 0.0007302100514434479,
+      "source": "/workspace/explore_v2f_store/harvest/tpu-v4-spot-2/eval/base_gram__thermal_random__s42__reduced/eval.json",
+      "twin_rel_median_diff": 0.0,
+      "val_dir": "/home/agus/v2f_store/datasets/ds_v2f2_random_thermal_M/val",
+      "val_precision": "highest",
+      "vm": "tpu-v4-spot-2"
+     }
+    ]
+   },
+   "base_gram__thermal_random__s42__reduced_val-default": {
+    "primary": {
+     "Merr_median": 0.007697764813670691,
+     "copy": "base_gram__thermal_random__s42__reduced_val-default@tpu-v4-spot-1.eval.json",
+     "deterministic": true,
+     "eval_sha256": "291cb606f94f4487c42c426472b301c7cc7ce964eb2e9a3e6a77dabe4579ed43",
+     "lane_field": "base_gram__thermal_random__s42__reduced",
+     "n": 4096,
+     "n_params": 17756929,
+     "relS_median": 0.0034077706072517503,
+     "rel_median": 0.004231346379691279,
+     "source": "/workspace/explore_v2f_store/harvest/tpu-v4-spot-1/eval/base_gram__thermal_random__s42__reduced_val-default/eval.json",
+     "val_dir": "/home/agus/v2f_store/datasets/ds_v2f1_random_thermal_M/val",
+     "val_precision": "default",
+     "vm": "tpu-v4-spot-1"
+    },
+    "twins": []
+   },
+   "base_gram__thermal_random__s43__prod": {
+    "primary": {
+     "Merr_median": 0.00040185579375600017,
+     "config_copy": "base_gram__thermal_random__s43__prod@tpu-v4-ondemand-2.config.json",
+     "config_sha256": "c971c1ab9f02efd7b25e43c5066e9463bb003a163e338bea5bb349f86741640b",
+     "config_source": "/workspace/explore_v2f_store/harvest/tpu-v4-ondemand-2/lanes/base_gram__thermal_random__s43__prod/config.json",
+     "copy": "base_gram__thermal_random__s43__prod@tpu-v4-ondemand-2.eval.json",
+     "deterministic": true,
+     "eval_sha256": "76ea783bff6fd79ff152a1bdfa11cea0bc22029890a977bc0551108315bc0ac8",
+     "lane_field": "base_gram__thermal_random__s43__prod",
+     "n": 4096,
+     "n_params": 17756929,
+     "relS_median": 0.00016689205528437,
+     "rel_median": 0.00020806552234089974,
+     "source": "/workspace/explore_v2f_store/harvest/tpu-v4-ondemand-2/eval/base_gram__thermal_random__s43__prod/eval.json",
+     "val_dir": "/home/agus/v2f_store/datasets/ds_v2f2_random_thermal_prod_M/val",
+     "val_precision": "highest",
+     "vm": "tpu-v4-ondemand-2"
+    },
+    "twins": [
+     {
+      "Merr_median": 0.00040185579375600017,
+      "config_copy": "base_gram__thermal_random__s43__prod@tpu-v4-spot-2.config.json",
+      "config_sha256": "c971c1ab9f02efd7b25e43c5066e9463bb003a163e338bea5bb349f86741640b",
+      "config_source": "/workspace/explore_v2f_store/harvest/tpu-v4-spot-2/lanes/base_gram__thermal_random__s43__prod/config.json",
+      "copy": "base_gram__thermal_random__s43__prod@tpu-v4-spot-2.eval.json",
+      "deterministic": true,
+      "eval_sha256": "d390e02946f6cd9472e9abb0f6af4ed6c74caedce8e35d7ee878fa8ec2b72047",
+      "lane_field": "base_gram__thermal_random__s43__prod",
+      "n": 4096,
+      "n_params": 17756929,
+      "relS_median": 0.00016689205528437,
+      "rel_median": 0.00020806552234089974,
+      "source": "/workspace/explore_v2f_store/harvest/tpu-v4-spot-2/eval/base_gram__thermal_random__s43__prod/eval.json",
+      "twin_rel_median_diff": 0.0,
+      "val_dir": "/home/agus/v2f_store/datasets/ds_v2f2_random_thermal_prod_M/val",
+      "val_precision": "highest",
+      "vm": "tpu-v4-spot-2"
+     }
+    ]
+   },
+   "base_gram__thermal_random__s43__reduced": {
+    "primary": {
+     "Merr_median": 0.001477898571822977,
+     "config_copy": "base_gram__thermal_random__s43__reduced@tpu-v4-spot-1.config.json",
+     "config_sha256": "d7ad4614417dda7974af76133e67621aa222158a316474f14a29b0afe557c9ed",
+     "config_source": "/workspace/explore_v2f_store/harvest/tpu-v4-spot-1/lanes/base_gram__thermal_random__s43__reduced/config.json",
+     "copy": "base_gram__thermal_random__s43__reduced@tpu-v4-spot-1.eval.json",
+     "deterministic": true,
+     "eval_sha256": "e05434caf5b049c3f46e1b5abf055fad3c441e5c09cec089f890e0bf0b1f00e2",
+     "lane_field": "base_gram__thermal_random__s43__reduced",
+     "n": 4096,
+     "n_params": 17756929,
+     "relS_median": 0.0006214198313271623,
+     "rel_median": 0.0007658686014201135,
+     "source": "/workspace/explore_v2f_store/harvest/tpu-v4-spot-1/eval/base_gram__thermal_random__s43__reduced/eval.json",
+     "val_dir": "/home/agus/v2f_store/datasets/ds_v2f2_random_thermal_M/val",
+     "val_precision": "highest",
+     "vm": "tpu-v4-spot-1"
+    },
+    "twins": [
+     {
+      "Merr_median": 0.001477898571822977,
+      "config_copy": "base_gram__thermal_random__s43__reduced@tpu-v4-spot-2.config.json",
+      "config_sha256": "82b6dc5fb5759a11a85d2a5fe387c3d688766ac0230f01fb5c8d69d07c19ef54",
+      "config_source": "/workspace/explore_v2f_store/harvest/tpu-v4-spot-2/lanes/base_gram__thermal_random__s43__reduced/config.json",
+      "copy": "base_gram__thermal_random__s43__reduced@tpu-v4-spot-2.eval.json",
+      "deterministic": true,
+      "eval_sha256": "2df37b91f7309c49a8edd1530b6d389503b5956c262a4582fb97567e2a6c5b59",
+      "lane_field": "base_gram__thermal_random__s43__reduced",
+      "n": 4096,
+      "n_params": 17756929,
+      "relS_median": 0.0006214198313271623,
+      "rel_median": 0.0007658686014201135,
+      "source": "/workspace/explore_v2f_store/harvest/tpu-v4-spot-2/eval/base_gram__thermal_random__s43__reduced/eval.json",
+      "twin_rel_median_diff": 0.0,
+      "val_dir": "/home/agus/v2f_store/datasets/ds_v2f2_random_thermal_M/val",
+      "val_precision": "highest",
+      "vm": "tpu-v4-spot-2"
+     }
+    ]
+   },
+   "base_gram__thermal_random__s44__prod": {
+    "primary": {
+     "Merr_median": 0.0004537407877451913,
+     "config_copy": "base_gram__thermal_random__s44__prod@tpu-v4-spot-2.config.json",
+     "config_sha256": "3010c352087cf2431e3499c80a41a5268b93cfff5af42b974bb562ba9ed3f0fd",
+     "config_source": "/workspace/explore_v2f_store/harvest/tpu-v4-spot-2/lanes/base_gram__thermal_random__s44__prod/config.json",
+     "copy": "base_gram__thermal_random__s44__prod@tpu-v4-spot-2.eval.json",
+     "deterministic": true,
+     "eval_sha256": "8613f4f68a0470c1f57086c9c80a0cd597a74ea5fca84738ae626f3397419070",
+     "lane_field": "base_gram__thermal_random__s44__prod",
+     "n": 4096,
+     "n_params": 17756929,
+     "relS_median": 0.00017831206999339684,
+     "rel_median": 0.00022318512332029108,
+     "source": "/workspace/explore_v2f_store/harvest/tpu-v4-spot-2/eval/base_gram__thermal_random__s44__prod/eval.json",
+     "val_dir": "/home/agus/v2f_store/datasets/ds_v2f2_random_thermal_prod_M/val",
+     "val_precision": "highest",
+     "vm": "tpu-v4-spot-2"
+    },
+    "twins": []
+   },
+   "base_gram__thermal_random__s44__reduced": {
+    "primary": {
+     "Merr_median": 0.001343036753657326,
+     "config_copy": "base_gram__thermal_random__s44__reduced@tpu-v4-spot-1.config.json",
+     "config_sha256": "5ff95e4c4248c0515ed5758e34c2ab61c9506db4437af40b500da1487b281254",
+     "config_source": "/workspace/explore_v2f_store/harvest/tpu-v4-spot-1/lanes/base_gram__thermal_random__s44__reduced/config.json",
+     "copy": "base_gram__thermal_random__s44__reduced@tpu-v4-spot-1.eval.json",
+     "deterministic": true,
+     "eval_sha256": "696e81ae32c7f0ab7ee9ce422d1a604533816c904ce09d890bc558b41366b50b",
+     "lane_field": "base_gram__thermal_random__s44__reduced",
+     "n": 4096,
+     "n_params": 17756929,
+     "relS_median": 0.0005588133439723259,
+     "rel_median": 0.0006932534575486104,
+     "source": "/workspace/explore_v2f_store/harvest/tpu-v4-spot-1/eval/base_gram__thermal_random__s44__reduced/eval.json",
+     "val_dir": "/home/agus/v2f_store/datasets/ds_v2f2_random_thermal_M/val",
+     "val_precision": "highest",
+     "vm": "tpu-v4-spot-1"
+    },
+    "twins": [
+     {
+      "Merr_median": 0.001343036753657326,
+      "config_copy": "base_gram__thermal_random__s44__reduced@tpu-v4-spot-2.config.json",
+      "config_sha256": "afad6f8d77587418f1c9284e878a95f2cd216027371f2220d63b62b7c8e6e250",
+      "config_source": "/workspace/explore_v2f_store/harvest/tpu-v4-spot-2/lanes/base_gram__thermal_random__s44__reduced/config.json",
+      "copy": "base_gram__thermal_random__s44__reduced@tpu-v4-spot-2.eval.json",
+      "deterministic": true,
+      "eval_sha256": "9e2cbee1280cb314c6962773cca926ac2a824c99b2a0e39ac5b6fe3e09760e30",
+      "lane_field": "base_gram__thermal_random__s44__reduced",
+      "n": 4096,
+      "n_params": 17756929,
+      "relS_median": 0.0005588133439723259,
+      "rel_median": 0.0006932534575486104,
+      "source": "/workspace/explore_v2f_store/harvest/tpu-v4-spot-2/eval/base_gram__thermal_random__s44__reduced/eval.json",
+      "twin_rel_median_diff": 0.0,
+      "val_dir": null,
+      "val_precision": null,
+      "vm": "tpu-v4-spot-2"
+     }
+    ]
+   },
+   "base_gram_bf16data__gs_random__s42__reduced": {
+    "primary": {
+     "Merr_median": 0.01811121187698978,
+     "config_copy": "base_gram_bf16data__gs_random__s42__reduced@tpu-v4-spot-1.config.json",
+     "config_sha256": "005967d2466f9969f6a353c22b7a20aee0168f4c4dee98325a1e56c50868b366",
+     "config_source": "/workspace/explore_v2f_store/harvest/tpu-v4-spot-1/lanes/base_gram_bf16data__gs_random__s42__reduced/config.json",
+     "copy": "base_gram_bf16data__gs_random__s42__reduced@tpu-v4-spot-1.eval.json",
+     "deterministic": true,
+     "eval_sha256": "92500445e97291a8ce9d53a993d768c10bc78b2b1be2328fffb246ffd5b44de6",
+     "lane_field": "base_gram_bf16data__gs_random__s42__reduced",
+     "n": 4096,
+     "n_params": 17756929,
+     "relS_median": 0.09550223706115024,
+     "rel_median": 0.12310970991034184,
+     "source": "/workspace/explore_v2f_store/harvest/tpu-v4-spot-1/eval/base_gram_bf16data__gs_random__s42__reduced/eval.json",
+     "val_dir": "/home/agus/v2f_store/datasets/ds_v2f1_random_gs_psi0/val",
+     "val_precision": "default",
+     "vm": "tpu-v4-spot-1"
+    },
+    "twins": [
+     {
+      "Merr_median": 0.01811121187698978,
+      "config_copy": "base_gram_bf16data__gs_random__s42__reduced@tpu-v4-spot-2.config.json",
+      "config_sha256": "c135871ca706d721e5b8425952dc98181137c5721b52aacd5e3b994e03a3490a",
+      "config_source": "/workspace/explore_v2f_store/harvest/tpu-v4-spot-2/lanes/base_gram_bf16data__gs_random__s42__reduced/config.json",
+      "copy": "base_gram_bf16data__gs_random__s42__reduced@tpu-v4-spot-2.eval.json",
+      "deterministic": true,
+      "eval_sha256": "751711d5b42ce4ae12ebda2a659d81fdbd20e01fc9ffbf24fb1adec887a28fec",
+      "lane_field": "base_gram_bf16data__gs_random__s42__reduced",
+      "n": 4096,
+      "n_params": 17756929,
+      "relS_median": 0.09550223706115024,
+      "rel_median": 0.12310970991034184,
+      "source": "/workspace/explore_v2f_store/harvest/tpu-v4-spot-2/eval/base_gram_bf16data__gs_random__s42__reduced/eval.json",
+      "twin_rel_median_diff": 0.0,
+      "val_dir": "/home/agus/v2f_store/datasets/ds_v2f1_random_gs_psi0/val",
+      "val_precision": "default",
+      "vm": "tpu-v4-spot-2"
+     }
+    ]
+   },
+   "base_gram_bf16data__gs_random__s43__reduced": {
+    "primary": {
+     "Merr_median": 0.01720373480740199,
+     "config_copy": "base_gram_bf16data__gs_random__s43__reduced@tpu-v4-spot-1.config.json",
+     "config_sha256": "222078ba85f310a60476893d5118cf66d6329b41a7ce89f872b0dd7c966ca9e5",
+     "config_source": "/workspace/explore_v2f_store/harvest/tpu-v4-spot-1/lanes/base_gram_bf16data__gs_random__s43__reduced/config.json",
+     "copy": "base_gram_bf16data__gs_random__s43__reduced@tpu-v4-spot-1.eval.json",
+     "deterministic": true,
+     "eval_sha256": "660b2d0484206cc70a24227b4151a0caa167cafbef1823ad9696f2a0627b1cf8",
+     "lane_field": "base_gram_bf16data__gs_random__s43__reduced",
+     "n": 4096,
+     "n_params": 17756929,
+     "relS_median": 0.09525151641588789,
+     "rel_median": 0.12282354203587634,
+     "source": "/workspace/explore_v2f_store/harvest/tpu-v4-spot-1/eval/base_gram_bf16data__gs_random__s43__reduced/eval.json",
+     "val_dir": "/home/agus/v2f_store/datasets/ds_v2f1_random_gs_psi0/val",
+     "val_precision": "default",
+     "vm": "tpu-v4-spot-1"
+    },
+    "twins": [
+     {
+      "Merr_median": 0.01720373480740199,
+      "config_copy": "base_gram_bf16data__gs_random__s43__reduced@tpu-v4-spot-2.config.json",
+      "config_sha256": "2f30c3d51f2f1b9081e1f310e45d445dee3c3ba124a930bd072355a61df4576f",
+      "config_source": "/workspace/explore_v2f_store/harvest/tpu-v4-spot-2/lanes/base_gram_bf16data__gs_random__s43__reduced/config.json",
+      "copy": "base_gram_bf16data__gs_random__s43__reduced@tpu-v4-spot-2.eval.json",
+      "deterministic": true,
+      "eval_sha256": "0dc6889119d2e1868c6b5850bb1ec9666d61ca5151d768f8b58bd630a9f5d62f",
+      "lane_field": "base_gram_bf16data__gs_random__s43__reduced",
+      "n": 4096,
+      "n_params": 17756929,
+      "relS_median": 0.09525151641588789,
+      "rel_median": 0.12282354203587634,
+      "source": "/workspace/explore_v2f_store/harvest/tpu-v4-spot-2/eval/base_gram_bf16data__gs_random__s43__reduced/eval.json",
+      "twin_rel_median_diff": 0.0,
+      "val_dir": "/home/agus/v2f_store/datasets/ds_v2f1_random_gs_psi0/val",
+      "val_precision": "default",
+      "vm": "tpu-v4-spot-2"
+     }
+    ]
+   },
+   "base_gram_bf16data__gs_random__s44__reduced": {
+    "primary": {
+     "Merr_median": 0.01649230942124244,
+     "config_copy": "base_gram_bf16data__gs_random__s44__reduced@tpu-v4-spot-1.config.json",
+     "config_sha256": "48b4c0500efdb0947ee2bfe79ce14d62e55e5757f94b1bb206d2b55d56542673",
+     "config_source": "/workspace/explore_v2f_store/harvest/tpu-v4-spot-1/lanes/base_gram_bf16data__gs_random__s44__reduced/config.json",
+     "copy": "base_gram_bf16data__gs_random__s44__reduced@tpu-v4-spot-1.eval.json",
+     "deterministic": true,
+     "eval_sha256": "f9ea6a83e1ec413d33bbfdb74255c8906bb207e2d580d73e599d13d60996926b",
+     "lane_field": "base_gram_bf16data__gs_random__s44__reduced",
+     "n": 4096,
+     "n_params": 17756929,
+     "relS_median": 0.09502751867917526,
+     "rel_median": 0.12267881175374495,
+     "source": "/workspace/explore_v2f_store/harvest/tpu-v4-spot-1/eval/base_gram_bf16data__gs_random__s44__reduced/eval.json",
+     "val_dir": "/home/agus/v2f_store/datasets/ds_v2f1_random_gs_psi0/val",
+     "val_precision": "default",
+     "vm": "tpu-v4-spot-1"
+    },
+    "twins": [
+     {
+      "Merr_median": 0.01649230942124244,
+      "config_copy": "base_gram_bf16data__gs_random__s44__reduced@tpu-v4-spot-2.config.json",
+      "config_sha256": "0a9197352ae820af2682c35f0c80f3c3d4077820dc5596b83eb66da958e2cd09",
+      "config_source": "/workspace/explore_v2f_store/harvest/tpu-v4-spot-2/lanes/base_gram_bf16data__gs_random__s44__reduced/config.json",
+      "copy": "base_gram_bf16data__gs_random__s44__reduced@tpu-v4-spot-2.eval.json",
+      "deterministic": true,
+      "eval_sha256": "71bd3470b319ba4154bb4c9c69b3baf94821b2f30c2dcb20ab6e4dd968a0667f",
+      "lane_field": "base_gram_bf16data__gs_random__s44__reduced",
+      "n": 4096,
+      "n_params": 17756929,
+      "relS_median": 0.09502751867917526,
+      "rel_median": 0.12267881175374495,
+      "source": "/workspace/explore_v2f_store/harvest/tpu-v4-spot-2/eval/base_gram_bf16data__gs_random__s44__reduced/eval.json",
+      "twin_rel_median_diff": 0.0,
+      "val_dir": "/home/agus/v2f_store/datasets/ds_v2f1_random_gs_psi0/val",
+      "val_precision": "default",
+      "vm": "tpu-v4-spot-2"
+     }
+    ]
+   },
+   "base_gram_bf16data__thermal_random__s42__reduced": {
+    "primary": {
+     "Merr_median": 0.007406317486653603,
+     "config_copy": "base_gram_bf16data__thermal_random__s42__reduced@tpu-v4-spot-1.config.json",
+     "config_sha256": "46afbf26eb3a167e85d6ab9780ceae772dab1766b68b6677a16627785da5f375",
+     "config_source": "/workspace/explore_v2f_store/harvest/tpu-v4-spot-1/lanes/base_gram_bf16data__thermal_random__s42__reduced/config.json",
+     "copy": "base_gram_bf16data__thermal_random__s42__reduced@tpu-v4-spot-1.eval.json",
+     "deterministic": true,
+     "eval_sha256": "444903139f074af5178ac0450a02564daf2cf6b5e1a0731f1163e041e85b6a92",
+     "lane_field": "base_gram_bf16data__thermal_random__s42__reduced",
+     "n": 4096,
+     "n_params": 17756929,
+     "relS_median": 0.002947739916286255,
+     "rel_median": 0.0037465933827240464,
+     "source": "/workspace/explore_v2f_store/harvest/tpu-v4-spot-1/eval/base_gram_bf16data__thermal_random__s42__reduced/eval.json",
+     "val_dir": "/home/agus/v2f_store/datasets/ds_v2f1_random_thermal_M/val",
+     "val_precision": "default",
+     "vm": "tpu-v4-spot-1"
+    },
+    "twins": [
+     {
+      "Merr_median": 0.007406317486653603,
+      "config_copy": "base_gram_bf16data__thermal_random__s42__reduced@tpu-v4-spot-2.config.json",
+      "config_sha256": "82fccd55799062b1d24c04bbe9baec7faeb31218e7f97dbf4040bb048f04ce68",
+      "config_source": "/workspace/explore_v2f_store/harvest/tpu-v4-spot-2/lanes/base_gram_bf16data__thermal_random__s42__reduced/config.json",
+      "copy": "base_gram_bf16data__thermal_random__s42__reduced@tpu-v4-spot-2.eval.json",
+      "deterministic": true,
+      "eval_sha256": "748abb4c742ffa3b1bd547e2e2ba1d5467519403c6f8dcca4c7ad260de864554",
+      "lane_field": "base_gram_bf16data__thermal_random__s42__reduced",
+      "n": 4096,
+      "n_params": 17756929,
+      "relS_median": 0.002947739916286255,
+      "rel_median": 0.0037465933827240464,
+      "source": "/workspace/explore_v2f_store/harvest/tpu-v4-spot-2/eval/base_gram_bf16data__thermal_random__s42__reduced/eval.json",
+      "twin_rel_median_diff": 0.0,
+      "val_dir": "/home/agus/v2f_store/datasets/ds_v2f1_random_thermal_M/val",
+      "val_precision": "default",
+      "vm": "tpu-v4-spot-2"
+     }
+    ]
+   },
+   "base_gram_bf16data__thermal_random__s42__reduced_val-highest": {
+    "primary": {
+     "Merr_median": 0.0023683786433026906,
+     "copy": "base_gram_bf16data__thermal_random__s42__reduced_val-highest@tpu-v4-spot-1.eval.json",
+     "deterministic": true,
+     "eval_sha256": "f8855223def9e982b8d363931c701ece1b83fd97e50de96335fc4140167b5765",
+     "lane_field": "base_gram_bf16data__thermal_random__s42__reduced",
+     "n": 4096,
+     "n_params": 17756929,
+     "relS_median": 0.0009517047860861093,
+     "rel_median": 0.0011882401208888256,
+     "source": "/workspace/explore_v2f_store/harvest/tpu-v4-spot-1/eval/base_gram_bf16data__thermal_random__s42__reduced_val-highest/eval.json",
+     "val_dir": "/home/agus/v2f_store/datasets/ds_v2f2_random_thermal_M/val",
+     "val_precision": "highest",
+     "vm": "tpu-v4-spot-1"
+    },
+    "twins": [
+     {
+      "Merr_median": 0.0023683786433026906,
+      "copy": "base_gram_bf16data__thermal_random__s42__reduced_val-highest@tpu-v4-spot-2.eval.json",
+      "deterministic": true,
+      "eval_sha256": "4430dfb05f518c46efbdb69b7e9fe8f53f251da54557b34dc6e4123daac75fe5",
+      "lane_field": "base_gram_bf16data__thermal_random__s42__reduced",
+      "n": 4096,
+      "n_params": 17756929,
+      "relS_median": 0.0009517047860861093,
+      "rel_median": 0.0011882401208888256,
+      "source": "/workspace/explore_v2f_store/harvest/tpu-v4-spot-2/eval/base_gram_bf16data__thermal_random__s42__reduced_val-highest/eval.json",
+      "twin_rel_median_diff": 0.0,
+      "val_dir": "/home/agus/v2f_store/datasets/ds_v2f2_random_thermal_M/val",
+      "val_precision": "highest",
+      "vm": "tpu-v4-spot-2"
+     }
+    ]
+   },
+   "base_gram_bf16data__thermal_random__s43__reduced": {
+    "primary": {
+     "Merr_median": 0.007469993965105403,
+     "config_copy": "base_gram_bf16data__thermal_random__s43__reduced@tpu-v4-spot-1.config.json",
+     "config_sha256": "210a9ef1568a97da0494e26b9f6e50a633b1417036ee7ebd8a4532158d6efd15",
+     "config_source": "/workspace/explore_v2f_store/harvest/tpu-v4-spot-1/lanes/base_gram_bf16data__thermal_random__s43__reduced/config.json",
+     "copy": "base_gram_bf16data__thermal_random__s43__reduced@tpu-v4-spot-1.eval.json",
+     "deterministic": true,
+     "eval_sha256": "4e11eb42f07d591b0845aa472c925b896ebc6cc7134764f53114119014aaf2df",
+     "lane_field": "base_gram_bf16data__thermal_random__s43__reduced",
+     "n": 4096,
+     "n_params": 17756929,
+     "relS_median": 0.0029537623471493036,
+     "rel_median": 0.0037458753762064554,
+     "source": "/workspace/explore_v2f_store/harvest/tpu-v4-spot-1/eval/base_gram_bf16data__thermal_random__s43__reduced/eval.json",
+     "val_dir": "/home/agus/v2f_store/datasets/ds_v2f1_random_thermal_M/val",
+     "val_precision": "default",
+     "vm": "tpu-v4-spot-1"
+    },
+    "twins": [
+     {
+      "Merr_median": 0.007469993965105403,
+      "config_copy": "base_gram_bf16data__thermal_random__s43__reduced@tpu-v4-spot-2.config.json",
+      "config_sha256": "5fa70e412d2c61bdfc92b7133f1163b7bd00ef15d68738fe0000e48370e992da",
+      "config_source": "/workspace/explore_v2f_store/harvest/tpu-v4-spot-2/lanes/base_gram_bf16data__thermal_random__s43__reduced/config.json",
+      "copy": "base_gram_bf16data__thermal_random__s43__reduced@tpu-v4-spot-2.eval.json",
+      "deterministic": true,
+      "eval_sha256": "64230b1179572babc5f2e2f8a18e3055e029bd0790a78088a620e1fb363fb3f0",
+      "lane_field": "base_gram_bf16data__thermal_random__s43__reduced",
+      "n": 4096,
+      "n_params": 17756929,
+      "relS_median": 0.0029537623471493036,
+      "rel_median": 0.0037458753762064554,
+      "source": "/workspace/explore_v2f_store/harvest/tpu-v4-spot-2/eval/base_gram_bf16data__thermal_random__s43__reduced/eval.json",
+      "twin_rel_median_diff": 0.0,
+      "val_dir": "/home/agus/v2f_store/datasets/ds_v2f1_random_thermal_M/val",
+      "val_precision": "default",
+      "vm": "tpu-v4-spot-2"
+     }
+    ]
+   },
+   "base_gram_bf16data__thermal_random__s43__reduced_val-highest": {
+    "primary": {
+     "Merr_median": 0.0025763705020016505,
+     "copy": "base_gram_bf16data__thermal_random__s43__reduced_val-highest@tpu-v4-spot-2.eval.json",
+     "deterministic": true,
+     "eval_sha256": "998c273ccf6962736d62d9fe474811ad5fae9e72089a37b002d1dd64b4f7e3b8",
+     "lane_field": "base_gram_bf16data__thermal_random__s43__reduced",
+     "n": 4096,
+     "n_params": 17756929,
+     "relS_median": 0.000938913954812505,
+     "rel_median": 0.0011722983507128,
+     "source": "/workspace/explore_v2f_store/harvest/tpu-v4-spot-2/eval/base_gram_bf16data__thermal_random__s43__reduced_val-highest/eval.json",
+     "val_dir": "/home/agus/v2f_store/datasets/ds_v2f2_random_thermal_M/val",
+     "val_precision": "highest",
+     "vm": "tpu-v4-spot-2"
+    },
+    "twins": []
+   },
+   "base_gram_bf16data__thermal_random__s44__reduced": {
+    "primary": {
+     "Merr_median": 0.007425654105047238,
+     "config_copy": "base_gram_bf16data__thermal_random__s44__reduced@tpu-v4-spot-1.config.json",
+     "config_sha256": "ee16d9ff31a7642a5115ea5da76147f49b7c9cb759234806f2f66d5c0a50000e",
+     "config_source": "/workspace/explore_v2f_store/harvest/tpu-v4-spot-1/lanes/base_gram_bf16data__thermal_random__s44__reduced/config.json",
+     "copy": "base_gram_bf16data__thermal_random__s44__reduced@tpu-v4-spot-1.eval.json",
+     "deterministic": true,
+     "eval_sha256": "299058004c7baa4972f5cdc97d07d2195117a3c0530b61b2a88fc635c9344718",
+     "lane_field": "base_gram_bf16data__thermal_random__s44__reduced",
+     "n": 4096,
+     "n_params": 17756929,
+     "relS_median": 0.0029606714754292947,
+     "rel_median": 0.003752089158040481,
+     "source": "/workspace/explore_v2f_store/harvest/tpu-v4-spot-1/eval/base_gram_bf16data__thermal_random__s44__reduced/eval.json",
+     "val_dir": "/home/agus/v2f_store/datasets/ds_v2f1_random_thermal_M/val",
+     "val_precision": "default",
+     "vm": "tpu-v4-spot-1"
+    },
+    "twins": [
+     {
+      "Merr_median": 0.007425654105047238,
+      "config_copy": "base_gram_bf16data__thermal_random__s44__reduced@tpu-v4-spot-2.config.json",
+      "config_sha256": "a048faac56b6eed850c82ac81614c992bdf73e0a04fa6c88fbc202a3cde1278e",
+      "config_source": "/workspace/explore_v2f_store/harvest/tpu-v4-spot-2/lanes/base_gram_bf16data__thermal_random__s44__reduced/config.json",
+      "copy": "base_gram_bf16data__thermal_random__s44__reduced@tpu-v4-spot-2.eval.json",
+      "deterministic": true,
+      "eval_sha256": "1dbe288c8cd62a817df54d36056d4af4ce15f9660c9b632101e45d38b6160bec",
+      "lane_field": "base_gram_bf16data__thermal_random__s44__reduced",
+      "n": 4096,
+      "n_params": 17756929,
+      "relS_median": 0.0029606714754292947,
+      "rel_median": 0.003752089158040481,
+      "source": "/workspace/explore_v2f_store/harvest/tpu-v4-spot-2/eval/base_gram_bf16data__thermal_random__s44__reduced/eval.json",
+      "twin_rel_median_diff": 0.0,
+      "val_dir": "/home/agus/v2f_store/datasets/ds_v2f1_random_thermal_M/val",
+      "val_precision": "default",
+      "vm": "tpu-v4-spot-2"
+     }
+    ]
+   },
+   "base_gram_bf16data__thermal_random__s44__reduced_val-highest": {
+    "primary": {
+     "Merr_median": 0.002481658126185668,
+     "copy": "base_gram_bf16data__thermal_random__s44__reduced_val-highest@tpu-v4-spot-2.eval.json",
+     "deterministic": true,
+     "eval_sha256": "e77146fb278d789d7c1bc5b3d9419de98d974da1264a07f7c5a5ac3feab43fc5",
+     "lane_field": "base_gram_bf16data__thermal_random__s44__reduced",
+     "n": 4096,
+     "n_params": 17756929,
+     "relS_median": 0.0009250751969327442,
+     "rel_median": 0.0011591263650951402,
+     "source": "/workspace/explore_v2f_store/harvest/tpu-v4-spot-2/eval/base_gram_bf16data__thermal_random__s44__reduced_val-highest/eval.json",
+     "val_dir": "/home/agus/v2f_store/datasets/ds_v2f2_random_thermal_M/val",
+     "val_precision": "highest",
+     "vm": "tpu-v4-spot-2"
+    },
+    "twins": []
+   },
+   "base_gram_feat__thermal_random__s42__reduced": {
+    "primary": {
+     "Merr_median": 0.003744694831872306,
+     "config_copy": "base_gram_feat__thermal_random__s42__reduced@tpu-v4-spot-2.config.json",
+     "config_sha256": "c3a767d4a5964a32808963e634b785db7762e013e03032040a06c19962b021d3",
+     "config_source": "/workspace/explore_v2f_store/harvest/tpu-v4-spot-2/lanes/base_gram_feat__thermal_random__s42__reduced/config.json",
+     "copy": "base_gram_feat__thermal_random__s42__reduced@tpu-v4-spot-2.eval.json",
+     "deterministic": true,
+     "eval_sha256": "6d3a8d9b1616dfb6a77cbff73431b508853856236786f7c1fccdc48cb891e67f",
+     "lane_field": "base_gram_feat__thermal_random__s42__reduced",
+     "n": 4096,
+     "n_params": 17756929,
+     "relS_median": 0.0013186943951520474,
+     "rel_median": 0.0016844098929659733,
+     "source": "/workspace/explore_v2f_store/harvest/tpu-v4-spot-2/eval/base_gram_feat__thermal_random__s42__reduced/eval.json",
+     "val_dir": "/home/agus/v2f_store/datasets/ds_v2f2f_random_thermal_M/val",
+     "val_precision": "feat_only",
+     "vm": "tpu-v4-spot-2"
+    },
+    "twins": []
+   },
+   "base_gram_feat__thermal_random__s43__reduced": {
+    "primary": {
+     "Merr_median": 0.0037984263838429146,
+     "config_copy": "base_gram_feat__thermal_random__s43__reduced@tpu-v4-spot-2.config.json",
+     "config_sha256": "637d444db797bd79cc59f24f74cd28308bedd85e1f6d3a69f7a3a9c0938dd9cc",
+     "config_source": "/workspace/explore_v2f_store/harvest/tpu-v4-spot-2/lanes/base_gram_feat__thermal_random__s43__reduced/config.json",
+     "copy": "base_gram_feat__thermal_random__s43__reduced@tpu-v4-spot-2.eval.json",
+     "deterministic": true,
+     "eval_sha256": "ba124eaa6b71fb5329e341f8863647adfb58861e229c0fd839d1e21707f8ba03",
+     "lane_field": "base_gram_feat__thermal_random__s43__reduced",
+     "n": 4096,
+     "n_params": 17756929,
+     "relS_median": 0.001342173259651882,
+     "rel_median": 0.001709330928084913,
+     "source": "/workspace/explore_v2f_store/harvest/tpu-v4-spot-2/eval/base_gram_feat__thermal_random__s43__reduced/eval.json",
+     "val_dir": "/home/agus/v2f_store/datasets/ds_v2f2f_random_thermal_M/val",
+     "val_precision": "feat_only",
+     "vm": "tpu-v4-spot-2"
+    },
+    "twins": []
+   },
+   "base_gram_feat__thermal_random__s44__reduced": {
+    "primary": {
+     "Merr_median": 0.0037711398387481896,
+     "config_copy": "base_gram_feat__thermal_random__s44__reduced@tpu-v4-spot-2.config.json",
+     "config_sha256": "0b4fb7c1850ffb675d228969ee9a1fa7bb6666fa7f8196b8b71be86e0b97a2bb",
+     "config_source": "/workspace/explore_v2f_store/harvest/tpu-v4-spot-2/lanes/base_gram_feat__thermal_random__s44__reduced/config.json",
+     "copy": "base_gram_feat__thermal_random__s44__reduced@tpu-v4-spot-2.eval.json",
+     "deterministic": true,
+     "eval_sha256": "461c466dd40e0d96467328039490ce096647bff6272e7576b90dead45bd3cdd9",
+     "lane_field": "base_gram_feat__thermal_random__s44__reduced",
+     "n": 4096,
+     "n_params": 17756929,
+     "relS_median": 0.0013197464901929783,
+     "rel_median": 0.0016880191125271382,
+     "source": "/workspace/explore_v2f_store/harvest/tpu-v4-spot-2/eval/base_gram_feat__thermal_random__s44__reduced/eval.json",
+     "val_dir": "/home/agus/v2f_store/datasets/ds_v2f2f_random_thermal_M/val",
+     "val_precision": "feat_only",
+     "vm": "tpu-v4-spot-2"
+    },
+    "twins": []
+   },
+   "base_gram_honly__thermal_random__s42__reduced": {
+    "primary": {
+     "Merr_median": 0.0065601096815663135,
+     "config_copy": "base_gram_honly__thermal_random__s42__reduced@tpu-v4-spot-2.config.json",
+     "config_sha256": "60209bc2b1a5e8171c89baa794589de0f93e7c4f81a1abc9b7f9e7a406d684d5",
+     "config_source": "/workspace/explore_v2f_store/harvest/tpu-v4-spot-2/lanes/base_gram_honly__thermal_random__s42__reduced/config.json",
+     "copy": "base_gram_honly__thermal_random__s42__reduced@tpu-v4-spot-2.eval.json",
+     "deterministic": true,
+     "eval_sha256": "952fecf4001591646fcb31d63b7a90611407d96bc87628a9dc1f6a9992fc2cee",
+     "lane_field": "base_gram_honly__thermal_random__s42__reduced",
+     "n": 4096,
+     "n_params": 17756929,
+     "relS_median": 0.0026889505763276478,
+     "rel_median": 0.003401498087676315,
+     "source": "/workspace/explore_v2f_store/harvest/tpu-v4-spot-2/eval/base_gram_honly__thermal_random__s42__reduced/eval.json",
+     "val_dir": "/home/agus/v2f_store/datasets/ds_v2f2h_random_thermal_M/val",
+     "val_precision": "h_only",
+     "vm": "tpu-v4-spot-2"
+    },
+    "twins": []
+   },
+   "base_gram_honly__thermal_random__s43__reduced": {
+    "primary": {
+     "Merr_median": 0.006596577846337011,
+     "config_copy": "base_gram_honly__thermal_random__s43__reduced@tpu-v4-spot-2.config.json",
+     "config_sha256": "7590ef3686c2a77a9e773124940aa2d9a7b096151b6851710c3c26f762c06260",
+     "config_source": "/workspace/explore_v2f_store/harvest/tpu-v4-spot-2/lanes/base_gram_honly__thermal_random__s43__reduced/config.json",
+     "copy": "base_gram_honly__thermal_random__s43__reduced@tpu-v4-spot-2.eval.json",
+     "deterministic": true,
+     "eval_sha256": "b5229599e6685afa8915fd638561fd046f73af417d371d98440eccb550d5c161",
+     "lane_field": "base_gram_honly__thermal_random__s43__reduced",
+     "n": 4096,
+     "n_params": 17756929,
+     "relS_median": 0.0027222429866236445,
+     "rel_median": 0.0034233246648867023,
+     "source": "/workspace/explore_v2f_store/harvest/tpu-v4-spot-2/eval/base_gram_honly__thermal_random__s43__reduced/eval.json",
+     "val_dir": "/home/agus/v2f_store/datasets/ds_v2f2h_random_thermal_M/val",
+     "val_precision": "h_only",
+     "vm": "tpu-v4-spot-2"
+    },
+    "twins": []
+   },
+   "base_gram_honly__thermal_random__s44__reduced": {
+    "primary": {
+     "Merr_median": 0.006609419034515474,
+     "config_copy": "base_gram_honly__thermal_random__s44__reduced@tpu-v4-spot-2.config.json",
+     "config_sha256": "24351b3b6ee14a609c519b955753eb6edc9a5a771ac3b3e88f50079bd5419b37",
+     "config_source": "/workspace/explore_v2f_store/harvest/tpu-v4-spot-2/lanes/base_gram_honly__thermal_random__s44__reduced/config.json",
+     "copy": "base_gram_honly__thermal_random__s44__reduced@tpu-v4-spot-2.eval.json",
+     "deterministic": true,
+     "eval_sha256": "8739bc5cc4c08b518892b980c7bcb54206167fb3927a62fac0ebf7fa153024c8",
+     "lane_field": "base_gram_honly__thermal_random__s44__reduced",
+     "n": 4096,
+     "n_params": 17756929,
+     "relS_median": 0.002715922303759473,
+     "rel_median": 0.003437849483655518,
+     "source": "/workspace/explore_v2f_store/harvest/tpu-v4-spot-2/eval/base_gram_honly__thermal_random__s44__reduced/eval.json",
+     "val_dir": "/home/agus/v2f_store/datasets/ds_v2f2h_random_thermal_M/val",
+     "val_precision": "h_only",
+     "vm": "tpu-v4-spot-2"
+    },
+    "twins": []
+   }
+  },
+  "disclosure": "Exploration-branch (explore_v2f, wave 2) lanes sealed BY COPY: every number here is read from the harvested eval.json of a wave-2 lane (CPU-f64 scoring on the lane's own exact validation features, n=4096) and cross-checked against WAVE2_REPORT.md at its printed precision; nothing is re-scored, no v2 production lane is involved. These rows back the manuscript's data-precision section only.",
+  "gates": {
+   "g_cross_evals_present": true,
+   "g_ladder_complete": true,
+   "g_no_missing": true,
+   "g_prod_reproduces_report": true,
+   "g_prod_summary_consistent": true,
+   "g_ratios_reproduce_report": true,
+   "g_report_present": true,
+   "g_t0_endpoints_reproduce_report": true,
+   "g_t0_nulls_reproduce_report": true,
+   "g_twins_agree": true
+  },
+  "harvest_root": "/workspace/explore_v2f_store/harvest",
+  "problems": [],
+  "report": {
+   "path": "explore_v2f/WAVE2_REPORT.md",
+   "sha256": "a9c31ccbe1f0d6edfe27e107fa2c1fa397263de22153c5c1f61549ee75c626c9"
+  },
+  "rows": {
+   "cross_evals": {
+    "base_gram__thermal_random__s42__reduced_val-default": {
+     "lane_field": "base_gram__thermal_random__s42__reduced",
+     "relS_median": 0.0034077706072517503,
+     "rel_median": 0.004231346379691279,
+     "val_precision": "default"
+    },
+    "base_gram_bf16data__thermal_random__s42__reduced_val-highest": {
+     "lane_field": "base_gram_bf16data__thermal_random__s42__reduced",
+     "relS_median": 0.0009517047860861093,
+     "rel_median": 0.0011882401208888256,
+     "val_precision": "highest"
+    },
+    "base_gram_bf16data__thermal_random__s43__reduced_val-highest": {
+     "lane_field": "base_gram_bf16data__thermal_random__s43__reduced",
+     "relS_median": 0.000938913954812505,
+     "rel_median": 0.0011722983507128,
+     "val_precision": "highest"
+    },
+    "base_gram_bf16data__thermal_random__s44__reduced_val-highest": {
+     "lane_field": "base_gram_bf16data__thermal_random__s44__reduced",
+     "relS_median": 0.0009250751969327442,
+     "rel_median": 0.0011591263650951402,
+     "val_precision": "highest"
+    }
+   },
+   "ladder_ratio_vs_exact_data": {
+    "base_gram_bf16data": {
+     "geo_mean": 5.140313892624607,
+     "max": 5.412290580285187,
+     "min": 4.891015729409272,
+     "note": "scored on its own default-precision val split (label inconsistency dominates); not the report's band",
+     "per_seed": {
+      "42": 5.1308433447580475,
+      "43": 4.891015729409272,
+      "44": 5.412290580285187
+     }
+    },
+    "base_gram_bf16data_on_exact_val": {
+     "geo_mean": 1.608889972103917,
+     "max": 1.6720094973545272,
+     "min": 1.5306781718679459,
+     "note": "the report's band (line 549): bf16-trained network on the exact val features",
+     "per_seed": {
+      "42": 1.6272579630203163,
+      "43": 1.5306781718679459,
+      "44": 1.6720094973545272
+     }
+    },
+    "base_gram_feat": {
+     "geo_mean": 2.323017024461517,
+     "max": 2.434923467235323,
+     "min": 2.231885371609937,
+     "per_seed": {
+      "42": 2.3067470649524804,
+      "43": 2.231885371609937,
+      "44": 2.434923467235323
+     }
+    },
+    "base_gram_honly": {
+     "geo_mean": 4.69141322276533,
+     "max": 4.959008060070813,
+     "min": 4.469859005237968,
+     "per_seed": {
+      "42": 4.65824604982139,
+      "43": 4.469859005237968,
+      "44": 4.959008060070813
+     }
+    }
+   },
+   "ladder_rel_median": {
+    "base_gram": {
+     "42": 0.0007302100514434479,
+     "43": 0.0007658686014201135,
+     "44": 0.0006932534575486104
+    },
+    "base_gram_bf16data": {
+     "42": 0.0037465933827240464,
+     "43": 0.0037458753762064554,
+     "44": 0.003752089158040481
+    },
+    "base_gram_feat": {
+     "42": 0.0016844098929659733,
+     "43": 0.001709330928084913,
+     "44": 0.0016880191125271382
+    },
+    "base_gram_honly": {
+     "42": 0.003401498087676315,
+     "43": 0.0034233246648867023,
+     "44": 0.003437849483655518
+    }
+   },
+   "ladder_roles": {
+    "base_gram": "HIGHEST on the Hamiltonian build AND the pair-block contraction (the v2 data convention)",
+    "base_gram_bf16data": "wave-1 fully default-precision cache (the published data convention)",
+    "base_gram_feat": "HIGHEST on features only, H at default (label-side rounding alone)",
+    "base_gram_honly": "HIGHEST on H only, features at default (input-side rounding alone)"
+   },
+   "production_exact_data": {
+    "published_prod_floor": 0.00099,
+    "ratio_published_over_v2data": 4.435779523616632,
+    "rel_median": {
+     "42": 0.0002605856183975323,
+     "43": 0.00020806552234089974,
+     "44": 0.00022318512332029108
+    },
+    "three_seed_median": 0.00022318512332029108
+   },
+   "report_last_digit_deviations": [
+    {
+     "computed": [
+      1.5306781718679459,
+      1.6720094973545272,
+      1.608889972103917
+     ],
+     "report": [
+      1.53,
+      1.67,
+      1.6
+     ],
+     "var": "base_gram_bf16data"
+    },
+    {
+     "computed": [
+      2.231885371609937,
+      2.434923467235323,
+      2.323017024461517
+     ],
+     "report": [
+      2.23,
+      2.44,
+      2.32
+     ],
+     "var": "base_gram_feat"
+    }
+   ],
+   "t0_endpoints_wave2": {
+    "base_gram__gs_random__s42__reduced|ogn": {
+     "infid": 4.664606447768449e-06,
+     "n": 512,
+     "rho_err": 0.0007362887898074372,
+     "stiff_k10": 0.0011883254111310238,
+     "total": 0.09161657847339828
+    },
+    "base_gram__gs_random__s43__reduced|ogn": {
+     "infid": 3.6722675370581825e-06,
+     "n": 512,
+     "rho_err": 0.0006389628705362639,
+     "stiff_k10": 0.0010198553266282098,
+     "total": 0.09303236722808679
+    },
+    "base_gram__gs_random__s44__reduced|ogn": {
+     "infid": 4.89434679989964e-06,
+     "n": 512,
+     "rho_err": 0.0007444796874553428,
+     "stiff_k10": 0.00121396509393931,
+     "total": 0.09259634275375113
+    },
+    "base_gram_bf16data__gs_random__s42__reduced|ogn": {
+     "infid": 5.58674436074158e-06,
+     "n": 512,
+     "rho_err": 0.0007694401743516218,
+     "stiff_k10": 0.0012129745483140716,
+     "total": 0.0928592416290462
+    }
+   },
+   "t0_nulls": {
+    "base_gram__gs_random__s42__reduced": {
+     "quick_val_rel_median_device_f32": 0.12225323395193244,
+     "relS_median": 0.09521214286520543,
+     "rel_median": 0.12269318980896625
+    },
+    "base_gram__gs_random__s43__reduced": {
+     "quick_val_rel_median_device_f32": 0.12223804012185524,
+     "relS_median": 0.0951980011045192,
+     "rel_median": 0.12252179331800013
+    },
+    "base_gram__gs_random__s44__reduced": {
+     "quick_val_rel_median_device_f32": 0.12239556018217812,
+     "relS_median": 0.09527155013094611,
+     "rel_median": 0.1229584682850848
+    },
+    "base_gram_bf16data__gs_random__s42__reduced": {
+     "quick_val_rel_median_device_f32": 0.12257647352406653,
+     "relS_median": 0.09550223706115024,
+     "rel_median": 0.12310970991034184
+    },
+    "base_gram_bf16data__gs_random__s43__reduced": {
+     "quick_val_rel_median_device_f32": 0.12233192491585218,
+     "relS_median": 0.09525151641588789,
+     "rel_median": 0.12282354203587634
+    },
+    "base_gram_bf16data__gs_random__s44__reduced": {
+     "quick_val_rel_median_device_f32": 0.12197594802904377,
+     "relS_median": 0.09502751867917526,
+     "rel_median": 0.12267881175374495
+    }
+   },
+   "t0_nulls_note": "the report's line 51 (a status snapshot labelled quick-val) mixes sources: per seed it matches either the cpu64 clean median or the device-f32 quick-val at 4 decimals (see t0_nulls_report_match_source); the sealed value of record is the cpu64 clean median (n=4096) copied from eval.json, the quick-val is carried alongside",
+   "t0_nulls_report_match_source": {
+    "42": "cpu64_clean_median",
+    "43": "quick_val_device_f32",
+    "44": "cpu64_clean_median"
+   },
+   "wave2_identifiable_sha256": "1f3babb9bbd0aad029fb5c16c058f9975d5dbd669060476e87a86873eb28a0ea",
+   "wave2_prod_results_sha256": "0a50f06d94c89e9b66936b07cd88a0ac2e6b57a2394b799585010a4f47027edb"
+  },
+  "schema": "v2-precision-wave2-v1",
+  "stage": "v2_precision_wave2",
+  "twin_rel_median_max_diff": 0.0,
+  "wall_s": 0.0
+ },
+ "schema": "fermionicml-notebooks-v2-values-1"
+}

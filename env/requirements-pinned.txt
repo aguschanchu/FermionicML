@@ -1,0 +1,34 @@
+# FermionicML notebook release -- PINNED environment (env of record).
+#
+# Python 3.10.12 (the campaign env-of-record CPython; build the venv/conda
+# env at exactly this version -- conda-forge:
+#   conda create -n ognrepro-pinned -c conda-forge --override-channels \
+#         python=3.10.12
+# then `pip install -r requirements-pinned.txt` inside it).
+#
+# These are the exact versions the retraining and CPU-f64 verification
+# paths were validated against (see ENVNOTES / RETRAIN.md).
+
+jax==0.6.2
+jaxlib==0.6.2
+flax==0.10.7
+optax==0.2.8
+ml_dtypes==0.5.4
+numpy==2.2.6
+scipy==1.15.3
+
+numba
+openfermion
+sparse
+tqdm
+matplotlib
+jupyter
+nbconvert
+
+# fermionic-mbody is NOT on PyPI -- the wheel is vendored in this bundle,
+# built from GitHub at the manuscript-pinned commit
+# b31b76082a0b573b0ad11904868286b8f083d424 (see the bundle attestation).
+./wheels/fermionic_mbody-0.1.0-py3-none-any.whl
+
+# --- TPU ONLY (uncomment on a TPU VM; never install on CPU/GPU hosts) ---
+# libtpu==0.0.17

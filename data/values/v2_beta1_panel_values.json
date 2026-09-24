@@ -1,0 +1,2685 @@
+{
+ "built_utc": "2026-09-11T18:44:59Z",
+ "note": "Sealed v2 beta=1 panel (V2-BETA1-PANEL).",
+ "provenance": [
+  {
+   "file": "v2_beta1_panel_result.json",
+   "file_sha256": "b5365d64d8d6af47fc8798da1ecbd3700d8b2886a47fa67501d06e0d5c5f9d62",
+   "record": "V2-BETA1-PANEL-s42",
+   "record_manifest_sha256": "863be03020c65ee70aa9593d9641f7b8993f9ce83439dc7ffc38cd0dca1b9265",
+   "sealed_utc": "2026-09-10T17:54:39Z"
+  },
+  {
+   "file": "v2_beta1_panel_result.json",
+   "file_sha256": "e0ec70e5f84126ca3ecc415f274bf4b7e089f6fc6de08f423589032ccdedf320",
+   "record": "V2-BETA1-PANEL-s43",
+   "record_manifest_sha256": "43989a7a97269dc77b7e0fde607f0482e99428aa0b8807d2aba06fd19e327dc0",
+   "sealed_utc": "2026-09-10T17:54:41Z"
+  },
+  {
+   "file": "v2_beta1_panel_result.json",
+   "file_sha256": "16de2603a887cccb8c47f00c2eedcd24f1b5e7ca73fce5feba12a4e35c0f5d9f",
+   "record": "V2-BETA1-PANEL-s44",
+   "record_manifest_sha256": "59d762d14e330d65e99284138045e9ea0c378e680f9cffe542320c7faee6a9c1",
+   "sealed_utc": "2026-09-10T17:54:41Z"
+  }
+ ],
+ "schema": "fermionicml-notebooks-v2-values-1",
+ "seeds": {
+  "s42": {
+   "all_gates_pass": true,
+   "arm": "v2:v2std_thermal_random_s42",
+   "authority": "campaign11/results/roundK/RK-C1/rk_c1.py (gate G30, PLAN_K Sec. 3.4)",
+   "cell": "exact64_cpu_highest",
+   "convention": {
+    "backend": "cpu",
+    "jax_version": "0.6.2",
+    "matmul_precision": "highest",
+    "x64": true
+   },
+   "gates": {
+    "G30_anchor_reproduction_v2form": {
+     "checks": [
+      {
+       "measured": 0.02476595740480579,
+       "name": "lam_min_pos_median",
+       "pass_": true,
+       "rel": 7.004467655428492e-15,
+       "target": 0.024765957404805618
+      },
+      {
+       "measured": 54.23419152283249,
+       "name": "kappa_MS_median",
+       "pass_": true,
+       "rel": 3.1181283681478775e-14,
+       "target": 54.2341915228308
+      },
+      {
+       "measured": 9.245780926517043e-06,
+       "name": "f_err_mean_first512",
+       "pass_": true,
+       "rel": 1.8245261810459392e-11,
+       "target": 9.245780926348351e-06
+      },
+      {
+       "measured": 9.18120322564836e-06,
+       "name": "f_err_full_panel",
+       "pass_": true,
+       "rel": 1.3378783462447397e-11,
+       "target": 9.181203225525527e-06
+      },
+      {
+       "measured": 0.00892660320663137,
+       "name": "eps_I_median",
+       "pass_": true,
+       "rel": 0.0,
+       "target": 0.00892660320663137
+      },
+      {
+       "measured": 0.009424739620059096,
+       "name": "eps_I_mean_first512",
+       "pass_": true,
+       "rel": 0.0,
+       "target": 0.009424739620059096
+      }
+     ],
+     "control_arm": "published_prod_thermal_random",
+     "lam_criterion": {
+      "form": "v2form",
+      "max_abs_dev": 3.7192471324942744e-14,
+      "max_abs_tol": 1e-12,
+      "max_rel_positive_modes": 2.735542156052102e-05,
+      "max_rel_positive_tol": 0.0001,
+      "pass_": true
+     },
+     "max_rel": 1.8245261810459392e-11,
+     "n_kept_all_55": true,
+     "note": "ratified 2026-09-10: the parent's max-relative-over-all-55-modes criterion is bit-identity grade (RK-C1 recorded exactly 0.0 on instance-cc) and is dominated by the ~1e-16..1e-18 null mode, so it does not survive a different BLAS kernel path. Binding form: max ABSOLUTE eigenvalue deviation <= 1e-12 AND max relative deviation on the POSITIVE modes <= 1e-4. The verbatim form is recorded, non-gating, as G30_anchor_reproduction_verbatim.",
+     "null_structure": {
+      "exact_match": true,
+      "frac_eq1": 0.99609375,
+      "max": 1,
+      "median": 1.0,
+      "min": 0,
+      "targets": {
+       "frac_eq1": 0.99609375,
+       "max": 1,
+       "median": 1.0,
+       "min": 0
+      }
+     },
+     "pass_": true,
+     "persample_lam_diagnostics": {
+      "bit_identical": false,
+      "max_abs_dev": 3.7192471324942744e-14,
+      "max_rel_null_modes": 2426.628571495999,
+      "max_rel_positive_modes": 2.735542156052102e-05,
+      "n_null_modes": 4080
+     },
+     "tolerance": 1e-06
+    },
+    "G30_anchor_reproduction_verbatim": {
+     "gating": false,
+     "note": "the parent's criterion carried verbatim (max relative eigenvalue deviation over all 55 modes <= 1e-6); RK-C1 recorded 0.0 on instance-cc. Recorded here, NOT gating -- the binding form is G30_anchor_reproduction_v2form.",
+     "persample_lam_diagnostics": {
+      "bit_identical": false,
+      "max_abs_dev": 3.7192471324942744e-14,
+      "max_rel_null_modes": 2426.628571495999,
+      "max_rel_positive_modes": 2.735542156052102e-05,
+      "n_null_modes": 4080
+     },
+     "persample_lam_max_rel_vs_registered": 2426.628571495999,
+     "tolerance": 1e-06,
+     "verbatim_pass": false
+    },
+    "G30_band_rotation_invariance": {
+     "pass_": true,
+     "per_arm": {
+      "published_prod_thermal_random": {
+       "max_F_ordinate_change": 8.881784197001252e-16,
+       "max_band_share_change": 6.661338147750939e-16
+      },
+      "v2:v2std_thermal_random_s42": {
+       "max_F_ordinate_change": 8.881784197001252e-16,
+       "max_band_share_change": 7.771561172376096e-16
+      }
+     },
+     "rot_seed": 20260724,
+     "tolerance": 1e-10
+    },
+    "G30_bootstrap_pins": {
+     "B": 1000,
+     "boot_seed": 20260703,
+     "order_stat_indices": [
+      25,
+      975
+     ],
+     "pass_": true,
+     "row_index_digest_sha256": "024e7ae1f4e9a6dd93c69f03c23967b13ea02b4ab18d2b91e149370023057971"
+    },
+    "G30_closure_identities": {
+     "note": "closure2 evaluates (1-f_null) as sum_pos r_k (completeness-sensitive); p_c7 = r_k/(1-f_null) vs exact positive normalization recorded",
+     "pass_": true,
+     "per_arm": {
+      "published_prod_thermal_random": {
+       "max_closure1": 6.661338147750939e-16,
+       "max_closure2": 1.3322676295501878e-15,
+       "max_p_c7_vs_normalized": 6.661338147750939e-16
+      },
+      "v2:v2std_thermal_random_s42": {
+       "max_closure1": 6.661338147750939e-16,
+       "max_closure2": 1.6653345369377348e-15,
+       "max_p_c7_vs_normalized": 1.1102230246251565e-15
+      }
+     },
+     "tolerance": 1e-10
+    },
+    "G30_stability_sweep": {
+     "grids": {
+      "cutoff": [
+       1e-09,
+       1e-08,
+       1e-07,
+       1e-06,
+       1e-05
+      ],
+      "pos_threshold": [
+       1e-13,
+       1e-12,
+       1e-11,
+       1e-10,
+       1e-09
+      ],
+      "ridge": [
+       1e-11,
+       1e-10,
+       1e-09,
+       1e-08,
+       1e-07
+      ]
+     },
+     "outcome": {
+      "published_prod_thermal_random": {
+       "f_null": {
+        "ci95": [
+         0.0009494580981827878,
+         0.0011038363384852051
+        ],
+        "primary": 0.0010309599508029927,
+        "sweep_max": 0.0010369882586883658,
+        "sweep_min": 0.001030959950802884,
+        "within_primary_ci": true
+       },
+       "lam_eff": {
+        "ci95": [
+         0.39405950122679795,
+         0.4026458215523324
+        ],
+        "primary": 0.398847957344056,
+        "sweep_max": 0.398847957344056,
+        "sweep_min": 0.3988479573440558,
+        "within_primary_ci": true
+       },
+       "p_soft": {
+        "ci95": [
+         0.35246434471176136,
+         0.36709724740743616
+        ],
+        "primary": 0.359975393283371,
+        "sweep_max": 0.35997539328337114,
+        "sweep_min": 0.3599753932833709,
+        "within_primary_ci": true
+       },
+       "ratio": {
+        "ci95": [
+         0.6886480579606489,
+         0.7020531815320834
+        ],
+        "primary": 0.695236634675068,
+        "sweep_max": 0.6952366346750687,
+        "sweep_min": 0.6952366346750678,
+        "within_primary_ci": true
+       }
+      },
+      "v2:v2std_thermal_random_s42": {
+       "f_null": {
+        "ci95": [
+         1.6298580543958518e-08,
+         1.921661203413864e-08
+        ],
+        "primary": 1.774295466194997e-08,
+        "sweep_max": 1.7838227143915517e-08,
+        "sweep_min": 1.774295466190264e-08,
+        "within_primary_ci": true
+       },
+       "lam_eff": {
+        "ci95": [
+         0.2512249555559162,
+         0.26167833480594993
+        ],
+        "primary": 0.2562335296164754,
+        "sweep_max": 0.2562335296164754,
+        "sweep_min": 0.25623352961647505,
+        "within_primary_ci": true
+       },
+       "p_soft": {
+        "ci95": [
+         0.6564876882922752,
+         0.6709694320738191
+        ],
+        "primary": 0.6639367530348919,
+        "sweep_max": 0.6639986092175221,
+        "sweep_min": 0.6639367530348915,
+        "within_primary_ci": true
+       },
+       "ratio": {
+        "ci95": [
+         0.4377699738014752,
+         0.4565379818207915
+        ],
+        "primary": 0.4466600071222209,
+        "sweep_max": 0.44666000712222087,
+        "sweep_min": 0.44666000712222065,
+        "within_primary_ci": true
+       }
+      }
+     },
+     "pass_": true,
+     "points": [
+      {
+       "cutoff": 1e-07,
+       "pos_thr": 1e-12,
+       "published_prod_thermal_random::f_null_median": 0.0010309599508029374,
+       "published_prod_thermal_random::lam_eff_median": 0.3988479573440558,
+       "published_prod_thermal_random::p_soft_median": 0.3599753932833709,
+       "published_prod_thermal_random::ratio_median": 0.6952366346750685,
+       "ridge": 1e-11,
+       "sweep": "ridge",
+       "v2:v2std_thermal_random_s42::f_null_median": 1.774295466206768e-08,
+       "v2:v2std_thermal_random_s42::lam_eff_median": 0.25623352961647533,
+       "v2:v2std_thermal_random_s42::p_soft_median": 0.6639367530348921,
+       "v2:v2std_thermal_random_s42::ratio_median": 0.44666000712222065
+      },
+      {
+       "cutoff": 1e-07,
+       "pos_thr": 1e-12,
+       "published_prod_thermal_random::f_null_median": 0.0010309599508029797,
+       "published_prod_thermal_random::lam_eff_median": 0.39884795734405587,
+       "published_prod_thermal_random::p_soft_median": 0.35997539328337114,
+       "published_prod_thermal_random::ratio_median": 0.6952366346750687,
+       "ridge": 1e-10,
+       "sweep": "ridge",
+       "v2:v2std_thermal_random_s42::f_null_median": 1.774295466196421e-08,
+       "v2:v2std_thermal_random_s42::lam_eff_median": 0.25623352961647516,
+       "v2:v2std_thermal_random_s42::p_soft_median": 0.6639367530348922,
+       "v2:v2std_thermal_random_s42::ratio_median": 0.4466600071222208
+      },
+      {
+       "cutoff": 1e-07,
+       "pos_thr": 1e-12,
+       "published_prod_thermal_random::f_null_median": 0.0010309599508029938,
+       "published_prod_thermal_random::lam_eff_median": 0.398847957344056,
+       "published_prod_thermal_random::p_soft_median": 0.35997539328337097,
+       "published_prod_thermal_random::ratio_median": 0.6952366346750678,
+       "ridge": 1e-09,
+       "sweep": "ridge",
+       "v2:v2std_thermal_random_s42::f_null_median": 1.7742954661948368e-08,
+       "v2:v2std_thermal_random_s42::lam_eff_median": 0.2562335296164754,
+       "v2:v2std_thermal_random_s42::p_soft_median": 0.6639367530348919,
+       "v2:v2std_thermal_random_s42::ratio_median": 0.44666000712222087
+      },
+      {
+       "cutoff": 1e-07,
+       "pos_thr": 1e-12,
+       "published_prod_thermal_random::f_null_median": 0.0010309599508029326,
+       "published_prod_thermal_random::lam_eff_median": 0.39884795734405587,
+       "published_prod_thermal_random::p_soft_median": 0.3599753932833709,
+       "published_prod_thermal_random::ratio_median": 0.6952366346750682,
+       "ridge": 1e-08,
+       "sweep": "ridge",
+       "v2:v2std_thermal_random_s42::f_null_median": 1.774295466190264e-08,
+       "v2:v2std_thermal_random_s42::lam_eff_median": 0.25623352961647516,
+       "v2:v2std_thermal_random_s42::p_soft_median": 0.6639367530348915,
+       "v2:v2std_thermal_random_s42::ratio_median": 0.44666000712222065
+      },
+      {
+       "cutoff": 1e-07,
+       "pos_thr": 1e-12,
+       "published_prod_thermal_random::f_null_median": 0.001030959950802884,
+       "published_prod_thermal_random::lam_eff_median": 0.39884795734405587,
+       "published_prod_thermal_random::p_soft_median": 0.35997539328337114,
+       "published_prod_thermal_random::ratio_median": 0.6952366346750687,
+       "ridge": 1e-07,
+       "sweep": "ridge",
+       "v2:v2std_thermal_random_s42::f_null_median": 1.7742954662137488e-08,
+       "v2:v2std_thermal_random_s42::lam_eff_median": 0.25623352961647505,
+       "v2:v2std_thermal_random_s42::p_soft_median": 0.6639367530348921,
+       "v2:v2std_thermal_random_s42::ratio_median": 0.44666000712222065
+      },
+      {
+       "cutoff": 1e-09,
+       "pos_thr": 1e-12,
+       "published_prod_thermal_random::f_null_median": 0.0010309599508029938,
+       "published_prod_thermal_random::lam_eff_median": 0.398847957344056,
+       "published_prod_thermal_random::p_soft_median": 0.35997539328337097,
+       "published_prod_thermal_random::ratio_median": 0.6952366346750678,
+       "ridge": 1e-09,
+       "sweep": "cutoff",
+       "v2:v2std_thermal_random_s42::f_null_median": 1.7742954661948368e-08,
+       "v2:v2std_thermal_random_s42::lam_eff_median": 0.2562335296164754,
+       "v2:v2std_thermal_random_s42::p_soft_median": 0.6639367530348919,
+       "v2:v2std_thermal_random_s42::ratio_median": 0.44666000712222087
+      },
+      {
+       "cutoff": 1e-08,
+       "pos_thr": 1e-12,
+       "published_prod_thermal_random::f_null_median": 0.0010309599508029938,
+       "published_prod_thermal_random::lam_eff_median": 0.398847957344056,
+       "published_prod_thermal_random::p_soft_median": 0.35997539328337097,
+       "published_prod_thermal_random::ratio_median": 0.6952366346750678,
+       "ridge": 1e-09,
+       "sweep": "cutoff",
+       "v2:v2std_thermal_random_s42::f_null_median": 1.7742954661948368e-08,
+       "v2:v2std_thermal_random_s42::lam_eff_median": 0.2562335296164754,
+       "v2:v2std_thermal_random_s42::p_soft_median": 0.6639367530348919,
+       "v2:v2std_thermal_random_s42::ratio_median": 0.44666000712222087
+      },
+      {
+       "cutoff": 1e-07,
+       "pos_thr": 1e-12,
+       "published_prod_thermal_random::f_null_median": 0.0010309599508029938,
+       "published_prod_thermal_random::lam_eff_median": 0.398847957344056,
+       "published_prod_thermal_random::p_soft_median": 0.35997539328337097,
+       "published_prod_thermal_random::ratio_median": 0.6952366346750678,
+       "ridge": 1e-09,
+       "sweep": "cutoff",
+       "v2:v2std_thermal_random_s42::f_null_median": 1.7742954661948368e-08,
+       "v2:v2std_thermal_random_s42::lam_eff_median": 0.2562335296164754,
+       "v2:v2std_thermal_random_s42::p_soft_median": 0.6639367530348919,
+       "v2:v2std_thermal_random_s42::ratio_median": 0.44666000712222087
+      },
+      {
+       "cutoff": 1e-06,
+       "pos_thr": 1e-12,
+       "published_prod_thermal_random::f_null_median": 0.0010309599508029938,
+       "published_prod_thermal_random::lam_eff_median": 0.398847957344056,
+       "published_prod_thermal_random::p_soft_median": 0.35997539328337097,
+       "published_prod_thermal_random::ratio_median": 0.6952366346750678,
+       "ridge": 1e-09,
+       "sweep": "cutoff",
+       "v2:v2std_thermal_random_s42::f_null_median": 1.7742954661948368e-08,
+       "v2:v2std_thermal_random_s42::lam_eff_median": 0.2562335296164754,
+       "v2:v2std_thermal_random_s42::p_soft_median": 0.6639367530348919,
+       "v2:v2std_thermal_random_s42::ratio_median": 0.44666000712222087
+      },
+      {
+       "cutoff": 1e-05,
+       "pos_thr": 1e-12,
+       "published_prod_thermal_random::f_null_median": 0.0010309599508029938,
+       "published_prod_thermal_random::lam_eff_median": 0.398847957344056,
+       "published_prod_thermal_random::p_soft_median": 0.35997539328337097,
+       "published_prod_thermal_random::ratio_median": 0.6952366346750678,
+       "ridge": 1e-09,
+       "sweep": "cutoff",
+       "v2:v2std_thermal_random_s42::f_null_median": 1.7742954661948368e-08,
+       "v2:v2std_thermal_random_s42::lam_eff_median": 0.2562335296164754,
+       "v2:v2std_thermal_random_s42::p_soft_median": 0.6639367530348919,
+       "v2:v2std_thermal_random_s42::ratio_median": 0.44666000712222087
+      },
+      {
+       "cutoff": 1e-07,
+       "pos_thr": 1e-13,
+       "published_prod_thermal_random::f_null_median": 0.0010309599508029938,
+       "published_prod_thermal_random::lam_eff_median": 0.398847957344056,
+       "published_prod_thermal_random::p_soft_median": 0.35997539328337097,
+       "published_prod_thermal_random::ratio_median": 0.6952366346750678,
+       "ridge": 1e-09,
+       "sweep": "pos_threshold",
+       "v2:v2std_thermal_random_s42::f_null_median": 1.7742954661948368e-08,
+       "v2:v2std_thermal_random_s42::lam_eff_median": 0.2562335296164754,
+       "v2:v2std_thermal_random_s42::p_soft_median": 0.6639367530348919,
+       "v2:v2std_thermal_random_s42::ratio_median": 0.44666000712222087
+      },
+      {
+       "cutoff": 1e-07,
+       "pos_thr": 1e-12,
+       "published_prod_thermal_random::f_null_median": 0.0010309599508029938,
+       "published_prod_thermal_random::lam_eff_median": 0.398847957344056,
+       "published_prod_thermal_random::p_soft_median": 0.35997539328337097,
+       "published_prod_thermal_random::ratio_median": 0.6952366346750678,
+       "ridge": 1e-09,
+       "sweep": "pos_threshold",
+       "v2:v2std_thermal_random_s42::f_null_median": 1.7742954661948368e-08,
+       "v2:v2std_thermal_random_s42::lam_eff_median": 0.2562335296164754,
+       "v2:v2std_thermal_random_s42::p_soft_median": 0.6639367530348919,
+       "v2:v2std_thermal_random_s42::ratio_median": 0.44666000712222087
+      },
+      {
+       "cutoff": 1e-07,
+       "pos_thr": 1e-11,
+       "published_prod_thermal_random::f_null_median": 0.0010309599508029938,
+       "published_prod_thermal_random::lam_eff_median": 0.398847957344056,
+       "published_prod_thermal_random::p_soft_median": 0.35997539328337097,
+       "published_prod_thermal_random::ratio_median": 0.6952366346750678,
+       "ridge": 1e-09,
+       "sweep": "pos_threshold",
+       "v2:v2std_thermal_random_s42::f_null_median": 1.7742954661948368e-08,
+       "v2:v2std_thermal_random_s42::lam_eff_median": 0.2562335296164754,
+       "v2:v2std_thermal_random_s42::p_soft_median": 0.6639367530348919,
+       "v2:v2std_thermal_random_s42::ratio_median": 0.44666000712222087
+      },
+      {
+       "cutoff": 1e-07,
+       "pos_thr": 1e-10,
+       "published_prod_thermal_random::f_null_median": 0.0010322509137865974,
+       "published_prod_thermal_random::lam_eff_median": 0.398847957344056,
+       "published_prod_thermal_random::p_soft_median": 0.35997539328337097,
+       "published_prod_thermal_random::ratio_median": 0.6952366346750678,
+       "ridge": 1e-09,
+       "sweep": "pos_threshold",
+       "v2:v2std_thermal_random_s42::f_null_median": 1.7771481974982732e-08,
+       "v2:v2std_thermal_random_s42::lam_eff_median": 0.2562335296164754,
+       "v2:v2std_thermal_random_s42::p_soft_median": 0.6639986092175221,
+       "v2:v2std_thermal_random_s42::ratio_median": 0.44666000712222087
+      },
+      {
+       "cutoff": 1e-07,
+       "pos_thr": 1e-09,
+       "published_prod_thermal_random::f_null_median": 0.0010369882586883658,
+       "published_prod_thermal_random::lam_eff_median": 0.398847957344056,
+       "published_prod_thermal_random::p_soft_median": 0.35997539328337097,
+       "published_prod_thermal_random::ratio_median": 0.6952366346750678,
+       "ridge": 1e-09,
+       "sweep": "pos_threshold",
+       "v2:v2std_thermal_random_s42::f_null_median": 1.7838227143915517e-08,
+       "v2:v2std_thermal_random_s42::lam_eff_median": 0.2562335296164754,
+       "v2:v2std_thermal_random_s42::p_soft_median": 0.6639986092175221,
+       "v2:v2std_thermal_random_s42::ratio_median": 0.44666000712222087
+      }
+     ]
+    },
+    "G30_stream_equality": {
+     "own_panel_gtrue_equals_campaign9_stream": true,
+     "own_panel_gtrue_equals_gs_panel": true,
+     "pass_": true,
+     "structural_B_and_S_identities": true
+    },
+    "V2_control_arm_reproduces_RKC1": {
+     "checks": [
+      {
+       "measured": 0.0010309599508029927,
+       "name": "f_null",
+       "pass_": true,
+       "rel": 2.075943965445965e-13,
+       "target": 0.0010309599508032067
+      },
+      {
+       "measured": 0.359975393283371,
+       "name": "p_soft",
+       "pass_": true,
+       "rel": 4.317829116868769e-15,
+       "target": 0.35997539328336947
+      },
+      {
+       "measured": 0.398847957344056,
+       "name": "lam_eff",
+       "pass_": true,
+       "rel": 8.350723659347605e-16,
+       "target": 0.39884795734405565
+      },
+      {
+       "measured": 0.695236634675068,
+       "name": "ratio",
+       "pass_": true,
+       "rel": 2.2356592805292155e-15,
+       "target": 0.6952366346750696
+      },
+      {
+       "measured": 0.0028502811915470825,
+       "name": "eps_S",
+       "pass_": true,
+       "rel": 0.0,
+       "target": 0.0028502811915470825
+      },
+      {
+       "measured": 0.6962032917943689,
+       "name": "ratio_of_medians",
+       "pass_": true,
+       "rel": 1.5946822396712726e-16,
+       "target": 0.6962032917943688
+      }
+     ],
+     "control_arm": "published_prod_thermal_random",
+     "max_rel": 2.075943965445965e-13,
+     "pass_": true,
+     "smoke_note": null,
+     "tolerance": 1e-06
+    },
+    "V2_panel_row_binding_1ulp": {
+     "bit_identical": false,
+     "columns_differing": [
+      0,
+      10,
+      19,
+      27,
+      34,
+      40,
+      45,
+      49,
+      52,
+      54
+     ],
+     "contamination": {
+      "max_fraction_of_dwS": {
+       "published_prod_thermal_random": 7.656263836966325e-05,
+       "v2:v2std_thermal_random_s42": 0.001802537990363588
+      },
+      "max_stream_S": 5.960464477539057e-07,
+      "median_fraction_of_dwS": {
+       "published_prod_thermal_random": 0.0,
+       "v2:v2std_thermal_random_s42": 0.0
+      },
+      "median_stream_S": 0.0,
+      "note": "S-metric size of (v2 labels - registered panel g_true) against the residual it sits inside; > 0 means the two label streams are not bit-identical (ID-0 1-ULP replay)"
+     },
+     "criterion": {
+      "diagonal_band": 1.1920928955078125e-07,
+      "diagonal_within_1ulp": true,
+      "id0_release_stream_band": 2.5e-07,
+      "offdiagonal_bit_identical": true,
+      "row_count_and_order": true
+     },
+     "diag_gauge_mean_panel": 0.5500000015148544,
+     "diag_gauge_mean_v2": 0.5500000019448634,
+     "diagonal_bit_identical": false,
+     "diagonal_max_abs_dev": 1.1920928955078125e-07,
+     "diagonal_max_abs_dev_in_ulp": 1.0,
+     "labels_rows_sha_pin": "94f616fb7c5d6b725fc0ba6bf91da346ca4498d901925ff854a090e1620ac011",
+     "max_abs_dev": 1.1920928955078125e-07,
+     "n_entries_differing": 14400,
+     "n_rows": 4096,
+     "n_rows_differing": 1544,
+     "note": "ID-0 amendment 2026-09-10, results_v2/tolerances.json identity_leg ID-0: the campaign-8/9 panel g_true is the RELEASE-STREAM replay, a cross-host-class replay of the same seed-1007 rows admitted inside a 1-ULP band with the A2 rows pin (94f616fb..) as authority. PASS iff (a) the 45 off-diagonal triu55 columns are bit-identical, (b) every diagonal difference is <= 2^-23 in absolute value, (c) row count and order match. Strict bit-identity is recorded, never gating; the contamination block bounds the S-metric size of the difference.",
+     "offdiagonal_bit_identical": true,
+     "offdiagonal_max_abs_dev": 0.0,
+     "panel_gtrue_matches_pin": false,
+     "panel_gtrue_rows_sha256_f32": "18832d2846b09e00bc1698ba84e425396650af238a34f79b66808e7b8d0fc53a",
+     "pass_": true,
+     "strict_bit_identical": false,
+     "triu55_diagonal_columns": [
+      0,
+      10,
+      19,
+      27,
+      34,
+      40,
+      45,
+      49,
+      52,
+      54
+     ],
+     "v2_labels_match_pin": true,
+     "v2_labels_rows_sha256_f32": "94f616fb7c5d6b725fc0ba6bf91da346ca4498d901925ff854a090e1620ac011"
+    }
+   },
+   "inputs": [
+    {
+     "path": "campaign8/inputs/prod_thermal_random_predictions_val_first4096.npz",
+     "sha256": "fbbb4ce2dde3e584152dfaf82a1eea58a5cafee35fbea88445a36e963e92136a",
+     "tag": "prod_thermal_random_predictions(control arm)"
+    },
+    {
+     "path": "campaign5/data/prod_gs_random_predictions_val.npz",
+     "sha256": "6769f12975335bd37ff9bf4ffd82cce80c03da2ffbb17f4580ef70e96b621dcc",
+     "tag": "campaign9_valnpz_stream"
+    },
+    {
+     "path": "campaign8/inputs/prod_gs_random_predictions_val_first4096.npz",
+     "sha256": "b087d66409b7544405ebcce9e7bef6eac7cbdcdf45b5a7ed1f32087f2bada3cd",
+     "tag": "prod_gs_random_predictions(stream witness)"
+    },
+    {
+     "path": "campaign9/stages/s9_thermal_panel_gibbs.py",
+     "sha256": "e7f8c8d06be3d8e1d8cdc6ecb9cbd7781b64bf3fa8895fd00807aa5b96bc9ab5",
+     "tag": "worker_s9_thermal_panel_gibbs"
+    },
+    {
+     "path": "campaign5/stages/s_canonical_cond.py",
+     "sha256": "6105490bdd2fd344c9f68d7d9b5b2fdef1521982ecbbf9a70a921d44a2df3dcf",
+     "tag": "s_canonical_cond"
+    },
+    {
+     "path": "campaign6/stages/s6_jacobian_energy.py",
+     "sha256": "4ea41327e51d6d90b8ea24ae2a9b13f05dce8feed60cc6556122396b9deac740",
+     "tag": "s6_jacobian_energy"
+    },
+    {
+     "path": "campaign4/compute.py",
+     "sha256": "0cec7b396133112d1ca466f1aa15656cb41fcc3bc6abda309af66ba8c4a4fa5b",
+     "tag": "compute_c4"
+    },
+    {
+     "path": "campaign8/stages/s8_sym_panels.py",
+     "sha256": "6d0ecf9123185a504f56970c128519a9f839cf372b4548b352b4f851102f5e46",
+     "tag": "s8_sym_panels(pure statistic fns)"
+    },
+    {
+     "path": "campaign9/results/thermal_panel_gibbs/thermal_panel_gibbs.json",
+     "sha256": "e7f86e42f43d0487f4c6f46a82009a0c6a6aee69e97f8b850e3fe563f80a88d9",
+     "tag": "reg_thermal_panel_gibbs"
+    },
+    {
+     "path": "campaign9/results/thermal_panel_gibbs/thermal_panel_gibbs_persample.npz",
+     "sha256": "ad4c2a8f6bdf2aa5d641136d214be432d588adbf9a343eacc5dba7cf3fe2e33d",
+     "tag": "reg_thermal_persample"
+    },
+    {
+     "path": "campaign9/results/E8/e8_extractions.json",
+     "sha256": "71e0c3bc6c4071b1c55c84ad0c0a4f7a12acac0152fd4c9c1f8f586b1ceef630",
+     "tag": "reg_e8_extractions"
+    },
+    {
+     "path": "campaign8/results/sym_panels/s8_panel_thermal.json",
+     "sha256": "ec5c07f69278fa5d4a9f147accd949830b90e6bdf6a2836645c7d17b4d622027",
+     "tag": "reg_s8_panel_thermal"
+    },
+    {
+     "path": "campaign11/results/roundK/RK-C1/rk_c1_result.json",
+     "sha256": "e5029a2a6ae7ba3e191f37c176930178c26d4d2656eda5c49d3f1f69caa9dfcd",
+     "tag": "reg_rk_c1_result"
+    },
+    {
+     "path": "campaign11/results/roundK/RK-C1/rk_c1.py",
+     "sha256": "45411af229cd0bb8463ab9c6e2cd59622627f72bad15cd476edd57122bc14d74",
+     "tag": "parent_runner_rk_c1"
+    },
+    {
+     "eval_record": {
+      "all_gates_pass": true,
+      "checkpoint_sha256": "f5b7e4cc6d2f0bff6be996a9584310074784ef1405081ef65b6b560acc68c5ce",
+      "lane": "v2std_thermal_random_s42",
+      "median_err_q": 0.00021029365937723685,
+      "schema": "v2-eval-cpu64-v1",
+      "val_cache": "/home/agus/v2_store/caches/datasets_v2/dsv2_d20_random_thermal__phi_aM_f16/val"
+     },
+     "logits_key": "logits__v2std_thermal_random_s42",
+     "path": "/workspace/Insync/agusc@agusc.com.ar/Google Drive/UNLP/FermionicML-satelite2-max/results_v2/records/V2-CLEAN-v2std_thermal_random_s42/v2_eval_cpu64_persample.npz",
+     "sha256": "bd25b6559d543e0f16926d150e8ed02131194ab72035c89eb137aa02e4fc2861",
+     "tag": "v2_predictions(v2:v2std_thermal_random_s42)"
+    }
+   ],
+   "lane": "v2std_thermal_random_s42",
+   "n_panel": 4096,
+   "protocol": {
+    "bootstrap": {
+     "B": 1000,
+     "order_stat_indices": [
+      25,
+      975
+     ],
+     "seed": 20260703
+    },
+    "gevp_knobs": {
+     "ridge": 1e-09,
+     "snorm_cutoff": 1e-07,
+     "tau_pos": 1e-12
+    },
+    "grid": {
+     "dhi": 1,
+     "dlo": -10,
+     "n_points": 111,
+     "observed_max": 3.578172745231546,
+     "observed_min": 1.3956790595861528e-10,
+     "rule": "endpoints from the thermal geometry alone (min/max lam_pos/lam_bar over samples), rounded OUTWARD to decades; np.logspace(dlo, dhi, 10*(dhi-dlo)+1); frozen BEFORE any g_pred load"
+    },
+    "lineage": "campaign9/results/thermal_panel_gibbs ONLY; cc.thermal_R_s0(E,U,1.0) -> cc.m_mixed_R -> s6.gevp on B_SYM^T .5(M+M^T) B_SYM with S_SYM55 (byte-identical imports); campaign8 s8_panel_thermal geometry NEVER used (T=0 mislabeled beta=1 per s9 header 11-16); its GEVP-independent S-metric scalars are anchors only",
+    "own_band": "thermal panel OWN nine smallest positive modes expanded over complete 5%-gap blocks (PHY-06 block rule); the PHY-06 overlap-ranked T=0 companion band is NOT imported",
+    "presentation_caps": "own-ensemble companion sentences in IV.B step 6 only; no causal thermal-training comparison; no pooled T=0/beta=1 statistic; graphic SM-only",
+    "residual_weights": "r_k = |v_k^T S dw|^2 / ||dw||_S^2 (NOT raw q_k); FIX-1 full-H0 coordinates w = -G + diag(E_PAIR)",
+    "v2_rebinding": "ONLY the predictions are re-bound (v2 clean-eval logits); every geometry input, pin and anchor is the parent's"
+   },
+   "request_id": "RK-C1(v2 fork)",
+   "results": {
+    "anchors_reproduced": {
+     "eps_I_mean_first512": 0.009424739620059096,
+     "eps_I_median": 0.00892660320663137,
+     "f_err_full_panel": 9.18120322564836e-06,
+     "f_err_mean_first512": 9.245780926517043e-06,
+     "kappa_MS_median": 54.23419152283249,
+     "lam_min_pos_median": 0.02476595740480579
+    },
+    "arms": {
+     "published_prod_thermal_random": {
+      "band_size": {
+       "max": 45,
+       "median": 9.0,
+       "min": 9
+      },
+      "eps_I_median": 0.00892660320663137,
+      "f_err_mean": 9.18120322564836e-06,
+      "f_err_median": 7.946392931605227e-06,
+      "sens_bins_median": {
+       "below_1e1": 0.319106312725325,
+       "below_1e4": 0.0
+      },
+      "stats": {
+       "eps_S": {
+        "ci95": [
+         0.0028325023146482243,
+         0.0028725696601839663
+        ],
+        "point": 0.0028502811915470825
+       },
+       "f_null": {
+        "ci95": [
+         0.0009494580981827878,
+         0.0011038363384852051
+        ],
+        "point": 0.0010309599508029927
+       },
+       "lam_eff": {
+        "ci95": [
+         0.39405950122679795,
+         0.4026458215523324
+        ],
+        "point": 0.398847957344056
+       },
+       "p_soft": {
+        "ci95": [
+         0.35246434471176136,
+         0.36709724740743616
+        ],
+        "point": 0.359975393283371
+       },
+       "ratio": {
+        "ci95": [
+         0.6886480579606489,
+         0.7020531815320834
+        ],
+        "point": 0.695236634675068
+       },
+       "ratio_of_medians": {
+        "ci95": [
+         0.6879017296723998,
+         0.7027419242124806
+        ],
+        "point": 0.6962032917943689
+       }
+      }
+     },
+     "v2:v2std_thermal_random_s42": {
+      "band_size": {
+       "max": 45,
+       "median": 9.0,
+       "min": 9
+      },
+      "eps_I_median": 0.0004930088238462972,
+      "f_err_mean": 3.227673003069071e-08,
+      "f_err_median": 2.4831825340054937e-08,
+      "sens_bins_median": {
+       "below_1e1": 0.6037714205170899,
+       "below_1e4": 0.0
+      },
+      "stats": {
+       "eps_S": {
+        "ci95": [
+         0.00015728829124039465,
+         0.00016027456865718055
+        ],
+        "point": 0.0001588977291860323
+       },
+       "f_null": {
+        "ci95": [
+         1.6298580543958518e-08,
+         1.921661203413864e-08
+        ],
+        "point": 1.774295466194997e-08
+       },
+       "lam_eff": {
+        "ci95": [
+         0.2512249555559162,
+         0.26167833480594993
+        ],
+        "point": 0.2562335296164754
+       },
+       "p_soft": {
+        "ci95": [
+         0.6564876882922752,
+         0.6709694320738191
+        ],
+        "point": 0.6639367530348919
+       },
+       "ratio": {
+        "ci95": [
+         0.4377699738014752,
+         0.4565379818207915
+        ],
+        "point": 0.4466600071222209
+       },
+       "ratio_of_medians": {
+        "ci95": [
+         0.4387188122456703,
+         0.4565649342902294
+        ],
+        "point": 0.4472647371068168
+       }
+      }
+     }
+    },
+    "control_arm": "published_prod_thermal_random",
+    "grid": {
+     "dhi": 1,
+     "dlo": -10,
+     "n_points": 111,
+     "observed_max": 3.578172745231546,
+     "observed_min": 1.3956790595861528e-10,
+     "rule": "endpoints from the thermal geometry alone (min/max lam_pos/lam_bar over samples), rounded OUTWARD to decades; np.logspace(dlo, dhi, 10*(dhi-dlo)+1); frozen BEFORE any g_pred load"
+    },
+    "label_stream_deviation": {
+     "max_fraction_of_dwS": {
+      "published_prod_thermal_random": 7.656263836966325e-05,
+      "v2:v2std_thermal_random_s42": 0.001802537990363588
+     },
+     "max_stream_S": 5.960464477539057e-07,
+     "median_fraction_of_dwS": {
+      "published_prod_thermal_random": 0.0,
+      "v2:v2std_thermal_random_s42": 0.0
+     },
+     "median_stream_S": 0.0,
+     "note": "S-metric size of (v2 labels - registered panel g_true) against the residual it sits inside; > 0 means the two label streams are not bit-identical (ID-0 1-ULP replay)"
+    },
+    "null_structure": {
+     "frac_eq1": 0.99609375,
+     "max": 1,
+     "median": 1.0,
+     "min": 0
+    },
+    "registered_rk_c1_points": {
+     "eps_S": 0.0028502811915470825,
+     "f_null": 0.0010309599508032067,
+     "lam_eff": 0.39884795734405565,
+     "p_soft": 0.35997539328336947,
+     "ratio": 0.6952366346750696,
+     "ratio_of_medians": 0.6962032917943688
+    },
+    "reported_arm": "v2:v2std_thermal_random_s42"
+   },
+   "schema": "v2-beta1-panel-v1",
+   "smoke": false,
+   "stage": "v2_beta1_panel",
+   "status": "OK",
+   "task": "v2 fork of round-K RK-C1: residual projection spectra of a v2 beta=1 lane on the 4096-sample thermal panel in the campaign-9 thermal (M,S) 55-dim pullback geometry (projected-Gibbs lineage, K-D2)",
+   "wall_s": 1181.2
+  },
+  "s43": {
+   "all_gates_pass": true,
+   "arm": "v2:v2std_thermal_random_s43",
+   "authority": "campaign11/results/roundK/RK-C1/rk_c1.py (gate G30, PLAN_K Sec. 3.4)",
+   "cell": "exact64_cpu_highest",
+   "convention": {
+    "backend": "cpu",
+    "jax_version": "0.6.2",
+    "matmul_precision": "highest",
+    "x64": true
+   },
+   "gates": {
+    "G30_anchor_reproduction_v2form": {
+     "checks": [
+      {
+       "measured": 0.02476595740480579,
+       "name": "lam_min_pos_median",
+       "pass_": true,
+       "rel": 7.004467655428492e-15,
+       "target": 0.024765957404805618
+      },
+      {
+       "measured": 54.23419152283249,
+       "name": "kappa_MS_median",
+       "pass_": true,
+       "rel": 3.1181283681478775e-14,
+       "target": 54.2341915228308
+      },
+      {
+       "measured": 9.245780926517043e-06,
+       "name": "f_err_mean_first512",
+       "pass_": true,
+       "rel": 1.8245261810459392e-11,
+       "target": 9.245780926348351e-06
+      },
+      {
+       "measured": 9.18120322564836e-06,
+       "name": "f_err_full_panel",
+       "pass_": true,
+       "rel": 1.3378783462447397e-11,
+       "target": 9.181203225525527e-06
+      },
+      {
+       "measured": 0.00892660320663137,
+       "name": "eps_I_median",
+       "pass_": true,
+       "rel": 0.0,
+       "target": 0.00892660320663137
+      },
+      {
+       "measured": 0.009424739620059096,
+       "name": "eps_I_mean_first512",
+       "pass_": true,
+       "rel": 0.0,
+       "target": 0.009424739620059096
+      }
+     ],
+     "control_arm": "published_prod_thermal_random",
+     "lam_criterion": {
+      "form": "v2form",
+      "max_abs_dev": 3.7192471324942744e-14,
+      "max_abs_tol": 1e-12,
+      "max_rel_positive_modes": 2.735542156052102e-05,
+      "max_rel_positive_tol": 0.0001,
+      "pass_": true
+     },
+     "max_rel": 1.8245261810459392e-11,
+     "n_kept_all_55": true,
+     "note": "ratified 2026-09-10: the parent's max-relative-over-all-55-modes criterion is bit-identity grade (RK-C1 recorded exactly 0.0 on instance-cc) and is dominated by the ~1e-16..1e-18 null mode, so it does not survive a different BLAS kernel path. Binding form: max ABSOLUTE eigenvalue deviation <= 1e-12 AND max relative deviation on the POSITIVE modes <= 1e-4. The verbatim form is recorded, non-gating, as G30_anchor_reproduction_verbatim.",
+     "null_structure": {
+      "exact_match": true,
+      "frac_eq1": 0.99609375,
+      "max": 1,
+      "median": 1.0,
+      "min": 0,
+      "targets": {
+       "frac_eq1": 0.99609375,
+       "max": 1,
+       "median": 1.0,
+       "min": 0
+      }
+     },
+     "pass_": true,
+     "persample_lam_diagnostics": {
+      "bit_identical": false,
+      "max_abs_dev": 3.7192471324942744e-14,
+      "max_rel_null_modes": 2426.628571495999,
+      "max_rel_positive_modes": 2.735542156052102e-05,
+      "n_null_modes": 4080
+     },
+     "tolerance": 1e-06
+    },
+    "G30_anchor_reproduction_verbatim": {
+     "gating": false,
+     "note": "the parent's criterion carried verbatim (max relative eigenvalue deviation over all 55 modes <= 1e-6); RK-C1 recorded 0.0 on instance-cc. Recorded here, NOT gating -- the binding form is G30_anchor_reproduction_v2form.",
+     "persample_lam_diagnostics": {
+      "bit_identical": false,
+      "max_abs_dev": 3.7192471324942744e-14,
+      "max_rel_null_modes": 2426.628571495999,
+      "max_rel_positive_modes": 2.735542156052102e-05,
+      "n_null_modes": 4080
+     },
+     "persample_lam_max_rel_vs_registered": 2426.628571495999,
+     "tolerance": 1e-06,
+     "verbatim_pass": false
+    },
+    "G30_band_rotation_invariance": {
+     "pass_": true,
+     "per_arm": {
+      "published_prod_thermal_random": {
+       "max_F_ordinate_change": 8.881784197001252e-16,
+       "max_band_share_change": 6.661338147750939e-16
+      },
+      "v2:v2std_thermal_random_s43": {
+       "max_F_ordinate_change": 8.881784197001252e-16,
+       "max_band_share_change": 7.771561172376096e-16
+      }
+     },
+     "rot_seed": 20260724,
+     "tolerance": 1e-10
+    },
+    "G30_bootstrap_pins": {
+     "B": 1000,
+     "boot_seed": 20260703,
+     "order_stat_indices": [
+      25,
+      975
+     ],
+     "pass_": true,
+     "row_index_digest_sha256": "024e7ae1f4e9a6dd93c69f03c23967b13ea02b4ab18d2b91e149370023057971"
+    },
+    "G30_closure_identities": {
+     "note": "closure2 evaluates (1-f_null) as sum_pos r_k (completeness-sensitive); p_c7 = r_k/(1-f_null) vs exact positive normalization recorded",
+     "pass_": true,
+     "per_arm": {
+      "published_prod_thermal_random": {
+       "max_closure1": 6.661338147750939e-16,
+       "max_closure2": 1.3322676295501878e-15,
+       "max_p_c7_vs_normalized": 6.661338147750939e-16
+      },
+      "v2:v2std_thermal_random_s43": {
+       "max_closure1": 6.661338147750939e-16,
+       "max_closure2": 1.5543122344752192e-15,
+       "max_p_c7_vs_normalized": 7.771561172376096e-16
+      }
+     },
+     "tolerance": 1e-10
+    },
+    "G30_stability_sweep": {
+     "grids": {
+      "cutoff": [
+       1e-09,
+       1e-08,
+       1e-07,
+       1e-06,
+       1e-05
+      ],
+      "pos_threshold": [
+       1e-13,
+       1e-12,
+       1e-11,
+       1e-10,
+       1e-09
+      ],
+      "ridge": [
+       1e-11,
+       1e-10,
+       1e-09,
+       1e-08,
+       1e-07
+      ]
+     },
+     "outcome": {
+      "published_prod_thermal_random": {
+       "f_null": {
+        "ci95": [
+         0.0009494580981827878,
+         0.0011038363384852051
+        ],
+        "primary": 0.0010309599508029927,
+        "sweep_max": 0.0010369882586883658,
+        "sweep_min": 0.001030959950802884,
+        "within_primary_ci": true
+       },
+       "lam_eff": {
+        "ci95": [
+         0.39405950122679795,
+         0.4026458215523324
+        ],
+        "primary": 0.398847957344056,
+        "sweep_max": 0.398847957344056,
+        "sweep_min": 0.3988479573440558,
+        "within_primary_ci": true
+       },
+       "p_soft": {
+        "ci95": [
+         0.35246434471176136,
+         0.36709724740743616
+        ],
+        "primary": 0.359975393283371,
+        "sweep_max": 0.35997539328337114,
+        "sweep_min": 0.3599753932833709,
+        "within_primary_ci": true
+       },
+       "ratio": {
+        "ci95": [
+         0.6886480579606489,
+         0.7020531815320834
+        ],
+        "primary": 0.695236634675068,
+        "sweep_max": 0.6952366346750687,
+        "sweep_min": 0.6952366346750678,
+        "within_primary_ci": true
+       }
+      },
+      "v2:v2std_thermal_random_s43": {
+       "f_null": {
+        "ci95": [
+         1.9568469119203103e-08,
+         2.3176924223442794e-08
+        ],
+        "primary": 2.1578698071296153e-08,
+        "sweep_max": 2.1629689764811988e-08,
+        "sweep_min": 2.1578698071171944e-08,
+        "within_primary_ci": true
+       },
+       "lam_eff": {
+        "ci95": [
+         0.33085272910128527,
+         0.34177032075415076
+        ],
+        "primary": 0.3371698757544553,
+        "sweep_max": 0.33716987575445534,
+        "sweep_min": 0.3371698757544551,
+        "within_primary_ci": true
+       },
+       "p_soft": {
+        "ci95": [
+         0.5142054827208444,
+         0.5273481912509009
+        ],
+        "primary": 0.5202619262008492,
+        "sweep_max": 0.5202619262008493,
+        "sweep_min": 0.520261926200849,
+        "within_primary_ci": true
+       },
+       "ratio": {
+        "ci95": [
+         0.577964004547428,
+         0.5947397158287225
+        ],
+        "primary": 0.5859641327569339,
+        "sweep_max": 0.5859641327569343,
+        "sweep_min": 0.5859641327569338,
+        "within_primary_ci": true
+       }
+      }
+     },
+     "pass_": true,
+     "points": [
+      {
+       "cutoff": 1e-07,
+       "pos_thr": 1e-12,
+       "published_prod_thermal_random::f_null_median": 0.0010309599508029374,
+       "published_prod_thermal_random::lam_eff_median": 0.3988479573440558,
+       "published_prod_thermal_random::p_soft_median": 0.3599753932833709,
+       "published_prod_thermal_random::ratio_median": 0.6952366346750685,
+       "ridge": 1e-11,
+       "sweep": "ridge",
+       "v2:v2std_thermal_random_s43::f_null_median": 2.1578698071356528e-08,
+       "v2:v2std_thermal_random_s43::lam_eff_median": 0.33716987575445534,
+       "v2:v2std_thermal_random_s43::p_soft_median": 0.5202619262008491,
+       "v2:v2std_thermal_random_s43::ratio_median": 0.5859641327569338
+      },
+      {
+       "cutoff": 1e-07,
+       "pos_thr": 1e-12,
+       "published_prod_thermal_random::f_null_median": 0.0010309599508029797,
+       "published_prod_thermal_random::lam_eff_median": 0.39884795734405587,
+       "published_prod_thermal_random::p_soft_median": 0.35997539328337114,
+       "published_prod_thermal_random::ratio_median": 0.6952366346750687,
+       "ridge": 1e-10,
+       "sweep": "ridge",
+       "v2:v2std_thermal_random_s43::f_null_median": 2.1578698071171944e-08,
+       "v2:v2std_thermal_random_s43::lam_eff_median": 0.3371698757544551,
+       "v2:v2std_thermal_random_s43::p_soft_median": 0.520261926200849,
+       "v2:v2std_thermal_random_s43::ratio_median": 0.5859641327569343
+      },
+      {
+       "cutoff": 1e-07,
+       "pos_thr": 1e-12,
+       "published_prod_thermal_random::f_null_median": 0.0010309599508029938,
+       "published_prod_thermal_random::lam_eff_median": 0.398847957344056,
+       "published_prod_thermal_random::p_soft_median": 0.35997539328337097,
+       "published_prod_thermal_random::ratio_median": 0.6952366346750678,
+       "ridge": 1e-09,
+       "sweep": "ridge",
+       "v2:v2std_thermal_random_s43::f_null_median": 2.157869807129036e-08,
+       "v2:v2std_thermal_random_s43::lam_eff_median": 0.3371698757544553,
+       "v2:v2std_thermal_random_s43::p_soft_median": 0.5202619262008492,
+       "v2:v2std_thermal_random_s43::ratio_median": 0.5859641327569339
+      },
+      {
+       "cutoff": 1e-07,
+       "pos_thr": 1e-12,
+       "published_prod_thermal_random::f_null_median": 0.0010309599508029326,
+       "published_prod_thermal_random::lam_eff_median": 0.39884795734405587,
+       "published_prod_thermal_random::p_soft_median": 0.3599753932833709,
+       "published_prod_thermal_random::ratio_median": 0.6952366346750682,
+       "ridge": 1e-08,
+       "sweep": "ridge",
+       "v2:v2std_thermal_random_s43::f_null_median": 2.1578698071716705e-08,
+       "v2:v2std_thermal_random_s43::lam_eff_median": 0.3371698757544553,
+       "v2:v2std_thermal_random_s43::p_soft_median": 0.5202619262008491,
+       "v2:v2std_thermal_random_s43::ratio_median": 0.5859641327569338
+      },
+      {
+       "cutoff": 1e-07,
+       "pos_thr": 1e-12,
+       "published_prod_thermal_random::f_null_median": 0.001030959950802884,
+       "published_prod_thermal_random::lam_eff_median": 0.39884795734405587,
+       "published_prod_thermal_random::p_soft_median": 0.35997539328337114,
+       "published_prod_thermal_random::ratio_median": 0.6952366346750687,
+       "ridge": 1e-07,
+       "sweep": "ridge",
+       "v2:v2std_thermal_random_s43::f_null_median": 2.1578698071398677e-08,
+       "v2:v2std_thermal_random_s43::lam_eff_median": 0.33716987575445523,
+       "v2:v2std_thermal_random_s43::p_soft_median": 0.5202619262008493,
+       "v2:v2std_thermal_random_s43::ratio_median": 0.585964132756934
+      },
+      {
+       "cutoff": 1e-09,
+       "pos_thr": 1e-12,
+       "published_prod_thermal_random::f_null_median": 0.0010309599508029938,
+       "published_prod_thermal_random::lam_eff_median": 0.398847957344056,
+       "published_prod_thermal_random::p_soft_median": 0.35997539328337097,
+       "published_prod_thermal_random::ratio_median": 0.6952366346750678,
+       "ridge": 1e-09,
+       "sweep": "cutoff",
+       "v2:v2std_thermal_random_s43::f_null_median": 2.157869807129036e-08,
+       "v2:v2std_thermal_random_s43::lam_eff_median": 0.3371698757544553,
+       "v2:v2std_thermal_random_s43::p_soft_median": 0.5202619262008492,
+       "v2:v2std_thermal_random_s43::ratio_median": 0.5859641327569339
+      },
+      {
+       "cutoff": 1e-08,
+       "pos_thr": 1e-12,
+       "published_prod_thermal_random::f_null_median": 0.0010309599508029938,
+       "published_prod_thermal_random::lam_eff_median": 0.398847957344056,
+       "published_prod_thermal_random::p_soft_median": 0.35997539328337097,
+       "published_prod_thermal_random::ratio_median": 0.6952366346750678,
+       "ridge": 1e-09,
+       "sweep": "cutoff",
+       "v2:v2std_thermal_random_s43::f_null_median": 2.157869807129036e-08,
+       "v2:v2std_thermal_random_s43::lam_eff_median": 0.3371698757544553,
+       "v2:v2std_thermal_random_s43::p_soft_median": 0.5202619262008492,
+       "v2:v2std_thermal_random_s43::ratio_median": 0.5859641327569339
+      },
+      {
+       "cutoff": 1e-07,
+       "pos_thr": 1e-12,
+       "published_prod_thermal_random::f_null_median": 0.0010309599508029938,
+       "published_prod_thermal_random::lam_eff_median": 0.398847957344056,
+       "published_prod_thermal_random::p_soft_median": 0.35997539328337097,
+       "published_prod_thermal_random::ratio_median": 0.6952366346750678,
+       "ridge": 1e-09,
+       "sweep": "cutoff",
+       "v2:v2std_thermal_random_s43::f_null_median": 2.157869807129036e-08,
+       "v2:v2std_thermal_random_s43::lam_eff_median": 0.3371698757544553,
+       "v2:v2std_thermal_random_s43::p_soft_median": 0.5202619262008492,
+       "v2:v2std_thermal_random_s43::ratio_median": 0.5859641327569339
+      },
+      {
+       "cutoff": 1e-06,
+       "pos_thr": 1e-12,
+       "published_prod_thermal_random::f_null_median": 0.0010309599508029938,
+       "published_prod_thermal_random::lam_eff_median": 0.398847957344056,
+       "published_prod_thermal_random::p_soft_median": 0.35997539328337097,
+       "published_prod_thermal_random::ratio_median": 0.6952366346750678,
+       "ridge": 1e-09,
+       "sweep": "cutoff",
+       "v2:v2std_thermal_random_s43::f_null_median": 2.157869807129036e-08,
+       "v2:v2std_thermal_random_s43::lam_eff_median": 0.3371698757544553,
+       "v2:v2std_thermal_random_s43::p_soft_median": 0.5202619262008492,
+       "v2:v2std_thermal_random_s43::ratio_median": 0.5859641327569339
+      },
+      {
+       "cutoff": 1e-05,
+       "pos_thr": 1e-12,
+       "published_prod_thermal_random::f_null_median": 0.0010309599508029938,
+       "published_prod_thermal_random::lam_eff_median": 0.398847957344056,
+       "published_prod_thermal_random::p_soft_median": 0.35997539328337097,
+       "published_prod_thermal_random::ratio_median": 0.6952366346750678,
+       "ridge": 1e-09,
+       "sweep": "cutoff",
+       "v2:v2std_thermal_random_s43::f_null_median": 2.157869807129036e-08,
+       "v2:v2std_thermal_random_s43::lam_eff_median": 0.3371698757544553,
+       "v2:v2std_thermal_random_s43::p_soft_median": 0.5202619262008492,
+       "v2:v2std_thermal_random_s43::ratio_median": 0.5859641327569339
+      },
+      {
+       "cutoff": 1e-07,
+       "pos_thr": 1e-13,
+       "published_prod_thermal_random::f_null_median": 0.0010309599508029938,
+       "published_prod_thermal_random::lam_eff_median": 0.398847957344056,
+       "published_prod_thermal_random::p_soft_median": 0.35997539328337097,
+       "published_prod_thermal_random::ratio_median": 0.6952366346750678,
+       "ridge": 1e-09,
+       "sweep": "pos_threshold",
+       "v2:v2std_thermal_random_s43::f_null_median": 2.157869807129036e-08,
+       "v2:v2std_thermal_random_s43::lam_eff_median": 0.3371698757544553,
+       "v2:v2std_thermal_random_s43::p_soft_median": 0.5202619262008492,
+       "v2:v2std_thermal_random_s43::ratio_median": 0.5859641327569339
+      },
+      {
+       "cutoff": 1e-07,
+       "pos_thr": 1e-12,
+       "published_prod_thermal_random::f_null_median": 0.0010309599508029938,
+       "published_prod_thermal_random::lam_eff_median": 0.398847957344056,
+       "published_prod_thermal_random::p_soft_median": 0.35997539328337097,
+       "published_prod_thermal_random::ratio_median": 0.6952366346750678,
+       "ridge": 1e-09,
+       "sweep": "pos_threshold",
+       "v2:v2std_thermal_random_s43::f_null_median": 2.157869807129036e-08,
+       "v2:v2std_thermal_random_s43::lam_eff_median": 0.3371698757544553,
+       "v2:v2std_thermal_random_s43::p_soft_median": 0.5202619262008492,
+       "v2:v2std_thermal_random_s43::ratio_median": 0.5859641327569339
+      },
+      {
+       "cutoff": 1e-07,
+       "pos_thr": 1e-11,
+       "published_prod_thermal_random::f_null_median": 0.0010309599508029938,
+       "published_prod_thermal_random::lam_eff_median": 0.398847957344056,
+       "published_prod_thermal_random::p_soft_median": 0.35997539328337097,
+       "published_prod_thermal_random::ratio_median": 0.6952366346750678,
+       "ridge": 1e-09,
+       "sweep": "pos_threshold",
+       "v2:v2std_thermal_random_s43::f_null_median": 2.157869807129036e-08,
+       "v2:v2std_thermal_random_s43::lam_eff_median": 0.3371698757544553,
+       "v2:v2std_thermal_random_s43::p_soft_median": 0.5202619262008492,
+       "v2:v2std_thermal_random_s43::ratio_median": 0.5859641327569339
+      },
+      {
+       "cutoff": 1e-07,
+       "pos_thr": 1e-10,
+       "published_prod_thermal_random::f_null_median": 0.0010322509137865974,
+       "published_prod_thermal_random::lam_eff_median": 0.398847957344056,
+       "published_prod_thermal_random::p_soft_median": 0.35997539328337097,
+       "published_prod_thermal_random::ratio_median": 0.6952366346750678,
+       "ridge": 1e-09,
+       "sweep": "pos_threshold",
+       "v2:v2std_thermal_random_s43::f_null_median": 2.1629689764811988e-08,
+       "v2:v2std_thermal_random_s43::lam_eff_median": 0.3371698757544553,
+       "v2:v2std_thermal_random_s43::p_soft_median": 0.5202619262008492,
+       "v2:v2std_thermal_random_s43::ratio_median": 0.5859641327569339
+      },
+      {
+       "cutoff": 1e-07,
+       "pos_thr": 1e-09,
+       "published_prod_thermal_random::f_null_median": 0.0010369882586883658,
+       "published_prod_thermal_random::lam_eff_median": 0.398847957344056,
+       "published_prod_thermal_random::p_soft_median": 0.35997539328337097,
+       "published_prod_thermal_random::ratio_median": 0.6952366346750678,
+       "ridge": 1e-09,
+       "sweep": "pos_threshold",
+       "v2:v2std_thermal_random_s43::f_null_median": 2.1629689764811988e-08,
+       "v2:v2std_thermal_random_s43::lam_eff_median": 0.3371698757544553,
+       "v2:v2std_thermal_random_s43::p_soft_median": 0.5202619262008492,
+       "v2:v2std_thermal_random_s43::ratio_median": 0.5859641327569339
+      }
+     ]
+    },
+    "G30_stream_equality": {
+     "own_panel_gtrue_equals_campaign9_stream": true,
+     "own_panel_gtrue_equals_gs_panel": true,
+     "pass_": true,
+     "structural_B_and_S_identities": true
+    },
+    "V2_control_arm_reproduces_RKC1": {
+     "checks": [
+      {
+       "measured": 0.0010309599508029927,
+       "name": "f_null",
+       "pass_": true,
+       "rel": 2.075943965445965e-13,
+       "target": 0.0010309599508032067
+      },
+      {
+       "measured": 0.359975393283371,
+       "name": "p_soft",
+       "pass_": true,
+       "rel": 4.317829116868769e-15,
+       "target": 0.35997539328336947
+      },
+      {
+       "measured": 0.398847957344056,
+       "name": "lam_eff",
+       "pass_": true,
+       "rel": 8.350723659347605e-16,
+       "target": 0.39884795734405565
+      },
+      {
+       "measured": 0.695236634675068,
+       "name": "ratio",
+       "pass_": true,
+       "rel": 2.2356592805292155e-15,
+       "target": 0.6952366346750696
+      },
+      {
+       "measured": 0.0028502811915470825,
+       "name": "eps_S",
+       "pass_": true,
+       "rel": 0.0,
+       "target": 0.0028502811915470825
+      },
+      {
+       "measured": 0.6962032917943689,
+       "name": "ratio_of_medians",
+       "pass_": true,
+       "rel": 1.5946822396712726e-16,
+       "target": 0.6962032917943688
+      }
+     ],
+     "control_arm": "published_prod_thermal_random",
+     "max_rel": 2.075943965445965e-13,
+     "pass_": true,
+     "smoke_note": null,
+     "tolerance": 1e-06
+    },
+    "V2_panel_row_binding_1ulp": {
+     "bit_identical": false,
+     "columns_differing": [
+      0,
+      10,
+      19,
+      27,
+      34,
+      40,
+      45,
+      49,
+      52,
+      54
+     ],
+     "contamination": {
+      "max_fraction_of_dwS": {
+       "published_prod_thermal_random": 7.656263836966325e-05,
+       "v2:v2std_thermal_random_s43": 0.001738474904759146
+      },
+      "max_stream_S": 5.960464477539057e-07,
+      "median_fraction_of_dwS": {
+       "published_prod_thermal_random": 0.0,
+       "v2:v2std_thermal_random_s43": 0.0
+      },
+      "median_stream_S": 0.0,
+      "note": "S-metric size of (v2 labels - registered panel g_true) against the residual it sits inside; > 0 means the two label streams are not bit-identical (ID-0 1-ULP replay)"
+     },
+     "criterion": {
+      "diagonal_band": 1.1920928955078125e-07,
+      "diagonal_within_1ulp": true,
+      "id0_release_stream_band": 2.5e-07,
+      "offdiagonal_bit_identical": true,
+      "row_count_and_order": true
+     },
+     "diag_gauge_mean_panel": 0.5500000015148544,
+     "diag_gauge_mean_v2": 0.5500000019448634,
+     "diagonal_bit_identical": false,
+     "diagonal_max_abs_dev": 1.1920928955078125e-07,
+     "diagonal_max_abs_dev_in_ulp": 1.0,
+     "labels_rows_sha_pin": "94f616fb7c5d6b725fc0ba6bf91da346ca4498d901925ff854a090e1620ac011",
+     "max_abs_dev": 1.1920928955078125e-07,
+     "n_entries_differing": 14400,
+     "n_rows": 4096,
+     "n_rows_differing": 1544,
+     "note": "ID-0 amendment 2026-09-10, results_v2/tolerances.json identity_leg ID-0: the campaign-8/9 panel g_true is the RELEASE-STREAM replay, a cross-host-class replay of the same seed-1007 rows admitted inside a 1-ULP band with the A2 rows pin (94f616fb..) as authority. PASS iff (a) the 45 off-diagonal triu55 columns are bit-identical, (b) every diagonal difference is <= 2^-23 in absolute value, (c) row count and order match. Strict bit-identity is recorded, never gating; the contamination block bounds the S-metric size of the difference.",
+     "offdiagonal_bit_identical": true,
+     "offdiagonal_max_abs_dev": 0.0,
+     "panel_gtrue_matches_pin": false,
+     "panel_gtrue_rows_sha256_f32": "18832d2846b09e00bc1698ba84e425396650af238a34f79b66808e7b8d0fc53a",
+     "pass_": true,
+     "strict_bit_identical": false,
+     "triu55_diagonal_columns": [
+      0,
+      10,
+      19,
+      27,
+      34,
+      40,
+      45,
+      49,
+      52,
+      54
+     ],
+     "v2_labels_match_pin": true,
+     "v2_labels_rows_sha256_f32": "94f616fb7c5d6b725fc0ba6bf91da346ca4498d901925ff854a090e1620ac011"
+    }
+   },
+   "inputs": [
+    {
+     "path": "campaign8/inputs/prod_thermal_random_predictions_val_first4096.npz",
+     "sha256": "fbbb4ce2dde3e584152dfaf82a1eea58a5cafee35fbea88445a36e963e92136a",
+     "tag": "prod_thermal_random_predictions(control arm)"
+    },
+    {
+     "path": "campaign5/data/prod_gs_random_predictions_val.npz",
+     "sha256": "6769f12975335bd37ff9bf4ffd82cce80c03da2ffbb17f4580ef70e96b621dcc",
+     "tag": "campaign9_valnpz_stream"
+    },
+    {
+     "path": "campaign8/inputs/prod_gs_random_predictions_val_first4096.npz",
+     "sha256": "b087d66409b7544405ebcce9e7bef6eac7cbdcdf45b5a7ed1f32087f2bada3cd",
+     "tag": "prod_gs_random_predictions(stream witness)"
+    },
+    {
+     "path": "campaign9/stages/s9_thermal_panel_gibbs.py",
+     "sha256": "e7f8c8d06be3d8e1d8cdc6ecb9cbd7781b64bf3fa8895fd00807aa5b96bc9ab5",
+     "tag": "worker_s9_thermal_panel_gibbs"
+    },
+    {
+     "path": "campaign5/stages/s_canonical_cond.py",
+     "sha256": "6105490bdd2fd344c9f68d7d9b5b2fdef1521982ecbbf9a70a921d44a2df3dcf",
+     "tag": "s_canonical_cond"
+    },
+    {
+     "path": "campaign6/stages/s6_jacobian_energy.py",
+     "sha256": "4ea41327e51d6d90b8ea24ae2a9b13f05dce8feed60cc6556122396b9deac740",
+     "tag": "s6_jacobian_energy"
+    },
+    {
+     "path": "campaign4/compute.py",
+     "sha256": "0cec7b396133112d1ca466f1aa15656cb41fcc3bc6abda309af66ba8c4a4fa5b",
+     "tag": "compute_c4"
+    },
+    {
+     "path": "campaign8/stages/s8_sym_panels.py",
+     "sha256": "6d0ecf9123185a504f56970c128519a9f839cf372b4548b352b4f851102f5e46",
+     "tag": "s8_sym_panels(pure statistic fns)"
+    },
+    {
+     "path": "campaign9/results/thermal_panel_gibbs/thermal_panel_gibbs.json",
+     "sha256": "e7f86e42f43d0487f4c6f46a82009a0c6a6aee69e97f8b850e3fe563f80a88d9",
+     "tag": "reg_thermal_panel_gibbs"
+    },
+    {
+     "path": "campaign9/results/thermal_panel_gibbs/thermal_panel_gibbs_persample.npz",
+     "sha256": "ad4c2a8f6bdf2aa5d641136d214be432d588adbf9a343eacc5dba7cf3fe2e33d",
+     "tag": "reg_thermal_persample"
+    },
+    {
+     "path": "campaign9/results/E8/e8_extractions.json",
+     "sha256": "71e0c3bc6c4071b1c55c84ad0c0a4f7a12acac0152fd4c9c1f8f586b1ceef630",
+     "tag": "reg_e8_extractions"
+    },
+    {
+     "path": "campaign8/results/sym_panels/s8_panel_thermal.json",
+     "sha256": "ec5c07f69278fa5d4a9f147accd949830b90e6bdf6a2836645c7d17b4d622027",
+     "tag": "reg_s8_panel_thermal"
+    },
+    {
+     "path": "campaign11/results/roundK/RK-C1/rk_c1_result.json",
+     "sha256": "e5029a2a6ae7ba3e191f37c176930178c26d4d2656eda5c49d3f1f69caa9dfcd",
+     "tag": "reg_rk_c1_result"
+    },
+    {
+     "path": "campaign11/results/roundK/RK-C1/rk_c1.py",
+     "sha256": "45411af229cd0bb8463ab9c6e2cd59622627f72bad15cd476edd57122bc14d74",
+     "tag": "parent_runner_rk_c1"
+    },
+    {
+     "eval_record": {
+      "all_gates_pass": true,
+      "checkpoint_sha256": "64dbdb91bf87a445d80e098f0ef4b92debd13e06f470041ab9994cf4d128f0b0",
+      "lane": "v2std_thermal_random_s43",
+      "median_err_q": 0.00018886336250397895,
+      "schema": "v2-eval-cpu64-v1",
+      "val_cache": "/home/agus/v2_store/caches/datasets_v2/dsv2_d20_random_thermal__phi_aM_f16/val"
+     },
+     "logits_key": "logits__v2std_thermal_random_s43",
+     "path": "/workspace/Insync/agusc@agusc.com.ar/Google Drive/UNLP/FermionicML-satelite2-max/results_v2/records/V2-CLEAN-v2std_thermal_random_s43/v2_eval_cpu64_persample.npz",
+     "sha256": "44f258f325713f1a490d0a9c6770d7cef4956f87c94d365382cf689cb77d0d20",
+     "tag": "v2_predictions(v2:v2std_thermal_random_s43)"
+    }
+   ],
+   "lane": "v2std_thermal_random_s43",
+   "n_panel": 4096,
+   "protocol": {
+    "bootstrap": {
+     "B": 1000,
+     "order_stat_indices": [
+      25,
+      975
+     ],
+     "seed": 20260703
+    },
+    "gevp_knobs": {
+     "ridge": 1e-09,
+     "snorm_cutoff": 1e-07,
+     "tau_pos": 1e-12
+    },
+    "grid": {
+     "dhi": 1,
+     "dlo": -10,
+     "n_points": 111,
+     "observed_max": 3.578172745231546,
+     "observed_min": 1.3956790595861528e-10,
+     "rule": "endpoints from the thermal geometry alone (min/max lam_pos/lam_bar over samples), rounded OUTWARD to decades; np.logspace(dlo, dhi, 10*(dhi-dlo)+1); frozen BEFORE any g_pred load"
+    },
+    "lineage": "campaign9/results/thermal_panel_gibbs ONLY; cc.thermal_R_s0(E,U,1.0) -> cc.m_mixed_R -> s6.gevp on B_SYM^T .5(M+M^T) B_SYM with S_SYM55 (byte-identical imports); campaign8 s8_panel_thermal geometry NEVER used (T=0 mislabeled beta=1 per s9 header 11-16); its GEVP-independent S-metric scalars are anchors only",
+    "own_band": "thermal panel OWN nine smallest positive modes expanded over complete 5%-gap blocks (PHY-06 block rule); the PHY-06 overlap-ranked T=0 companion band is NOT imported",
+    "presentation_caps": "own-ensemble companion sentences in IV.B step 6 only; no causal thermal-training comparison; no pooled T=0/beta=1 statistic; graphic SM-only",
+    "residual_weights": "r_k = |v_k^T S dw|^2 / ||dw||_S^2 (NOT raw q_k); FIX-1 full-H0 coordinates w = -G + diag(E_PAIR)",
+    "v2_rebinding": "ONLY the predictions are re-bound (v2 clean-eval logits); every geometry input, pin and anchor is the parent's"
+   },
+   "request_id": "RK-C1(v2 fork)",
+   "results": {
+    "anchors_reproduced": {
+     "eps_I_mean_first512": 0.009424739620059096,
+     "eps_I_median": 0.00892660320663137,
+     "f_err_full_panel": 9.18120322564836e-06,
+     "f_err_mean_first512": 9.245780926517043e-06,
+     "kappa_MS_median": 54.23419152283249,
+     "lam_min_pos_median": 0.02476595740480579
+    },
+    "arms": {
+     "published_prod_thermal_random": {
+      "band_size": {
+       "max": 45,
+       "median": 9.0,
+       "min": 9
+      },
+      "eps_I_median": 0.00892660320663137,
+      "f_err_mean": 9.18120322564836e-06,
+      "f_err_median": 7.946392931605227e-06,
+      "sens_bins_median": {
+       "below_1e1": 0.319106312725325,
+       "below_1e4": 0.0
+      },
+      "stats": {
+       "eps_S": {
+        "ci95": [
+         0.0028325023146482243,
+         0.0028725696601839663
+        ],
+        "point": 0.0028502811915470825
+       },
+       "f_null": {
+        "ci95": [
+         0.0009494580981827878,
+         0.0011038363384852051
+        ],
+        "point": 0.0010309599508029927
+       },
+       "lam_eff": {
+        "ci95": [
+         0.39405950122679795,
+         0.4026458215523324
+        ],
+        "point": 0.398847957344056
+       },
+       "p_soft": {
+        "ci95": [
+         0.35246434471176136,
+         0.36709724740743616
+        ],
+        "point": 0.359975393283371
+       },
+       "ratio": {
+        "ci95": [
+         0.6886480579606489,
+         0.7020531815320834
+        ],
+        "point": 0.695236634675068
+       },
+       "ratio_of_medians": {
+        "ci95": [
+         0.6879017296723998,
+         0.7027419242124806
+        ],
+        "point": 0.6962032917943689
+       }
+      }
+     },
+     "v2:v2std_thermal_random_s43": {
+      "band_size": {
+       "max": 45,
+       "median": 9.0,
+       "min": 9
+      },
+      "eps_I_median": 0.00044813286050590455,
+      "f_err_mean": 2.5991644183163848e-08,
+      "f_err_median": 1.9758910147900343e-08,
+      "sens_bins_median": {
+       "below_1e1": 0.44797517065106734,
+       "below_1e4": 0.0
+      },
+      "stats": {
+       "eps_S": {
+        "ci95": [
+         0.00014155863315453094,
+         0.00014410252358803126
+        ],
+        "point": 0.00014290640548565026
+       },
+       "f_null": {
+        "ci95": [
+         1.9568469119203103e-08,
+         2.3176924223442794e-08
+        ],
+        "point": 2.1578698071296153e-08
+       },
+       "lam_eff": {
+        "ci95": [
+         0.33085272910128527,
+         0.34177032075415076
+        ],
+        "point": 0.3371698757544553
+       },
+       "p_soft": {
+        "ci95": [
+         0.5142054827208444,
+         0.5273481912509009
+        ],
+        "point": 0.5202619262008492
+       },
+       "ratio": {
+        "ci95": [
+         0.577964004547428,
+         0.5947397158287225
+        ],
+        "point": 0.5859641327569339
+       },
+       "ratio_of_medians": {
+        "ci95": [
+         0.5775879430007332,
+         0.59661278101886
+        ],
+        "point": 0.5885420072282299
+       }
+      }
+     }
+    },
+    "control_arm": "published_prod_thermal_random",
+    "grid": {
+     "dhi": 1,
+     "dlo": -10,
+     "n_points": 111,
+     "observed_max": 3.578172745231546,
+     "observed_min": 1.3956790595861528e-10,
+     "rule": "endpoints from the thermal geometry alone (min/max lam_pos/lam_bar over samples), rounded OUTWARD to decades; np.logspace(dlo, dhi, 10*(dhi-dlo)+1); frozen BEFORE any g_pred load"
+    },
+    "label_stream_deviation": {
+     "max_fraction_of_dwS": {
+      "published_prod_thermal_random": 7.656263836966325e-05,
+      "v2:v2std_thermal_random_s43": 0.001738474904759146
+     },
+     "max_stream_S": 5.960464477539057e-07,
+     "median_fraction_of_dwS": {
+      "published_prod_thermal_random": 0.0,
+      "v2:v2std_thermal_random_s43": 0.0
+     },
+     "median_stream_S": 0.0,
+     "note": "S-metric size of (v2 labels - registered panel g_true) against the residual it sits inside; > 0 means the two label streams are not bit-identical (ID-0 1-ULP replay)"
+    },
+    "null_structure": {
+     "frac_eq1": 0.99609375,
+     "max": 1,
+     "median": 1.0,
+     "min": 0
+    },
+    "registered_rk_c1_points": {
+     "eps_S": 0.0028502811915470825,
+     "f_null": 0.0010309599508032067,
+     "lam_eff": 0.39884795734405565,
+     "p_soft": 0.35997539328336947,
+     "ratio": 0.6952366346750696,
+     "ratio_of_medians": 0.6962032917943688
+    },
+    "reported_arm": "v2:v2std_thermal_random_s43"
+   },
+   "schema": "v2-beta1-panel-v1",
+   "smoke": false,
+   "stage": "v2_beta1_panel",
+   "status": "OK",
+   "task": "v2 fork of round-K RK-C1: residual projection spectra of a v2 beta=1 lane on the 4096-sample thermal panel in the campaign-9 thermal (M,S) 55-dim pullback geometry (projected-Gibbs lineage, K-D2)",
+   "wall_s": 1337.7
+  },
+  "s44": {
+   "all_gates_pass": true,
+   "arm": "v2:v2std_thermal_random_s44",
+   "authority": "campaign11/results/roundK/RK-C1/rk_c1.py (gate G30, PLAN_K Sec. 3.4)",
+   "cell": "exact64_cpu_highest",
+   "convention": {
+    "backend": "cpu",
+    "jax_version": "0.6.2",
+    "matmul_precision": "highest",
+    "x64": true
+   },
+   "gates": {
+    "G30_anchor_reproduction_v2form": {
+     "checks": [
+      {
+       "measured": 0.02476595740480579,
+       "name": "lam_min_pos_median",
+       "pass_": true,
+       "rel": 7.004467655428492e-15,
+       "target": 0.024765957404805618
+      },
+      {
+       "measured": 54.23419152283249,
+       "name": "kappa_MS_median",
+       "pass_": true,
+       "rel": 3.1181283681478775e-14,
+       "target": 54.2341915228308
+      },
+      {
+       "measured": 9.245780926517043e-06,
+       "name": "f_err_mean_first512",
+       "pass_": true,
+       "rel": 1.8245261810459392e-11,
+       "target": 9.245780926348351e-06
+      },
+      {
+       "measured": 9.18120322564836e-06,
+       "name": "f_err_full_panel",
+       "pass_": true,
+       "rel": 1.3378783462447397e-11,
+       "target": 9.181203225525527e-06
+      },
+      {
+       "measured": 0.00892660320663137,
+       "name": "eps_I_median",
+       "pass_": true,
+       "rel": 0.0,
+       "target": 0.00892660320663137
+      },
+      {
+       "measured": 0.009424739620059096,
+       "name": "eps_I_mean_first512",
+       "pass_": true,
+       "rel": 0.0,
+       "target": 0.009424739620059096
+      }
+     ],
+     "control_arm": "published_prod_thermal_random",
+     "lam_criterion": {
+      "form": "v2form",
+      "max_abs_dev": 3.7192471324942744e-14,
+      "max_abs_tol": 1e-12,
+      "max_rel_positive_modes": 2.735542156052102e-05,
+      "max_rel_positive_tol": 0.0001,
+      "pass_": true
+     },
+     "max_rel": 1.8245261810459392e-11,
+     "n_kept_all_55": true,
+     "note": "ratified 2026-09-10: the parent's max-relative-over-all-55-modes criterion is bit-identity grade (RK-C1 recorded exactly 0.0 on instance-cc) and is dominated by the ~1e-16..1e-18 null mode, so it does not survive a different BLAS kernel path. Binding form: max ABSOLUTE eigenvalue deviation <= 1e-12 AND max relative deviation on the POSITIVE modes <= 1e-4. The verbatim form is recorded, non-gating, as G30_anchor_reproduction_verbatim.",
+     "null_structure": {
+      "exact_match": true,
+      "frac_eq1": 0.99609375,
+      "max": 1,
+      "median": 1.0,
+      "min": 0,
+      "targets": {
+       "frac_eq1": 0.99609375,
+       "max": 1,
+       "median": 1.0,
+       "min": 0
+      }
+     },
+     "pass_": true,
+     "persample_lam_diagnostics": {
+      "bit_identical": false,
+      "max_abs_dev": 3.7192471324942744e-14,
+      "max_rel_null_modes": 2426.628571495999,
+      "max_rel_positive_modes": 2.735542156052102e-05,
+      "n_null_modes": 4080
+     },
+     "tolerance": 1e-06
+    },
+    "G30_anchor_reproduction_verbatim": {
+     "gating": false,
+     "note": "the parent's criterion carried verbatim (max relative eigenvalue deviation over all 55 modes <= 1e-6); RK-C1 recorded 0.0 on instance-cc. Recorded here, NOT gating -- the binding form is G30_anchor_reproduction_v2form.",
+     "persample_lam_diagnostics": {
+      "bit_identical": false,
+      "max_abs_dev": 3.7192471324942744e-14,
+      "max_rel_null_modes": 2426.628571495999,
+      "max_rel_positive_modes": 2.735542156052102e-05,
+      "n_null_modes": 4080
+     },
+     "persample_lam_max_rel_vs_registered": 2426.628571495999,
+     "tolerance": 1e-06,
+     "verbatim_pass": false
+    },
+    "G30_band_rotation_invariance": {
+     "pass_": true,
+     "per_arm": {
+      "published_prod_thermal_random": {
+       "max_F_ordinate_change": 8.881784197001252e-16,
+       "max_band_share_change": 6.661338147750939e-16
+      },
+      "v2:v2std_thermal_random_s44": {
+       "max_F_ordinate_change": 8.881784197001252e-16,
+       "max_band_share_change": 5.551115123125783e-16
+      }
+     },
+     "rot_seed": 20260724,
+     "tolerance": 1e-10
+    },
+    "G30_bootstrap_pins": {
+     "B": 1000,
+     "boot_seed": 20260703,
+     "order_stat_indices": [
+      25,
+      975
+     ],
+     "pass_": true,
+     "row_index_digest_sha256": "024e7ae1f4e9a6dd93c69f03c23967b13ea02b4ab18d2b91e149370023057971"
+    },
+    "G30_closure_identities": {
+     "note": "closure2 evaluates (1-f_null) as sum_pos r_k (completeness-sensitive); p_c7 = r_k/(1-f_null) vs exact positive normalization recorded",
+     "pass_": true,
+     "per_arm": {
+      "published_prod_thermal_random": {
+       "max_closure1": 6.661338147750939e-16,
+       "max_closure2": 1.3322676295501878e-15,
+       "max_p_c7_vs_normalized": 6.661338147750939e-16
+      },
+      "v2:v2std_thermal_random_s44": {
+       "max_closure1": 5.551115123125783e-16,
+       "max_closure2": 1.7763568394002505e-15,
+       "max_p_c7_vs_normalized": 1.5543122344752192e-15
+      }
+     },
+     "tolerance": 1e-10
+    },
+    "G30_stability_sweep": {
+     "grids": {
+      "cutoff": [
+       1e-09,
+       1e-08,
+       1e-07,
+       1e-06,
+       1e-05
+      ],
+      "pos_threshold": [
+       1e-13,
+       1e-12,
+       1e-11,
+       1e-10,
+       1e-09
+      ],
+      "ridge": [
+       1e-11,
+       1e-10,
+       1e-09,
+       1e-08,
+       1e-07
+      ]
+     },
+     "outcome": {
+      "published_prod_thermal_random": {
+       "f_null": {
+        "ci95": [
+         0.0009494580981827878,
+         0.0011038363384852051
+        ],
+        "primary": 0.0010309599508029927,
+        "sweep_max": 0.0010369882586883658,
+        "sweep_min": 0.001030959950802884,
+        "within_primary_ci": true
+       },
+       "lam_eff": {
+        "ci95": [
+         0.39405950122679795,
+         0.4026458215523324
+        ],
+        "primary": 0.398847957344056,
+        "sweep_max": 0.398847957344056,
+        "sweep_min": 0.3988479573440558,
+        "within_primary_ci": true
+       },
+       "p_soft": {
+        "ci95": [
+         0.35246434471176136,
+         0.36709724740743616
+        ],
+        "primary": 0.359975393283371,
+        "sweep_max": 0.35997539328337114,
+        "sweep_min": 0.3599753932833709,
+        "within_primary_ci": true
+       },
+       "ratio": {
+        "ci95": [
+         0.6886480579606489,
+         0.7020531815320834
+        ],
+        "primary": 0.695236634675068,
+        "sweep_max": 0.6952366346750687,
+        "sweep_min": 0.6952366346750678,
+        "within_primary_ci": true
+       }
+      },
+      "v2:v2std_thermal_random_s44": {
+       "f_null": {
+        "ci95": [
+         1.666807486801051e-08,
+         1.996845608653891e-08
+        ],
+        "primary": 1.8105487490667378e-08,
+        "sweep_max": 1.819095592575827e-08,
+        "sweep_min": 1.8105487490546488e-08,
+        "within_primary_ci": true
+       },
+       "lam_eff": {
+        "ci95": [
+         0.2562930007455385,
+         0.2664561297625667
+        ],
+        "primary": 0.26161561391676674,
+        "sweep_max": 0.2616156139167669,
+        "sweep_min": 0.2616156139167666,
+        "within_primary_ci": true
+       },
+       "p_soft": {
+        "ci95": [
+         0.6543302112971356,
+         0.6686821418780557
+        ],
+        "primary": 0.6603740034379902,
+        "sweep_max": 0.6603740034379904,
+        "sweep_min": 0.6603740034379899,
+        "within_primary_ci": true
+       },
+       "ratio": {
+        "ci95": [
+         0.44558536572062923,
+         0.46408575995896084
+        ],
+        "primary": 0.4553065738905814,
+        "sweep_max": 0.4553065738905815,
+        "sweep_min": 0.45530657389058127,
+        "within_primary_ci": true
+       }
+      }
+     },
+     "pass_": true,
+     "points": [
+      {
+       "cutoff": 1e-07,
+       "pos_thr": 1e-12,
+       "published_prod_thermal_random::f_null_median": 0.0010309599508029374,
+       "published_prod_thermal_random::lam_eff_median": 0.3988479573440558,
+       "published_prod_thermal_random::p_soft_median": 0.3599753932833709,
+       "published_prod_thermal_random::ratio_median": 0.6952366346750685,
+       "ridge": 1e-11,
+       "sweep": "ridge",
+       "v2:v2std_thermal_random_s44::f_null_median": 1.8105487490546488e-08,
+       "v2:v2std_thermal_random_s44::lam_eff_median": 0.2616156139167666,
+       "v2:v2std_thermal_random_s44::p_soft_median": 0.6603740034379904,
+       "v2:v2std_thermal_random_s44::ratio_median": 0.45530657389058127
+      },
+      {
+       "cutoff": 1e-07,
+       "pos_thr": 1e-12,
+       "published_prod_thermal_random::f_null_median": 0.0010309599508029797,
+       "published_prod_thermal_random::lam_eff_median": 0.39884795734405587,
+       "published_prod_thermal_random::p_soft_median": 0.35997539328337114,
+       "published_prod_thermal_random::ratio_median": 0.6952366346750687,
+       "ridge": 1e-10,
+       "sweep": "ridge",
+       "v2:v2std_thermal_random_s44::f_null_median": 1.810548749054986e-08,
+       "v2:v2std_thermal_random_s44::lam_eff_median": 0.2616156139167669,
+       "v2:v2std_thermal_random_s44::p_soft_median": 0.6603740034379904,
+       "v2:v2std_thermal_random_s44::ratio_median": 0.4553065738905815
+      },
+      {
+       "cutoff": 1e-07,
+       "pos_thr": 1e-12,
+       "published_prod_thermal_random::f_null_median": 0.0010309599508029938,
+       "published_prod_thermal_random::lam_eff_median": 0.398847957344056,
+       "published_prod_thermal_random::p_soft_median": 0.35997539328337097,
+       "published_prod_thermal_random::ratio_median": 0.6952366346750678,
+       "ridge": 1e-09,
+       "sweep": "ridge",
+       "v2:v2std_thermal_random_s44::f_null_median": 1.8105487490660784e-08,
+       "v2:v2std_thermal_random_s44::lam_eff_median": 0.26161561391676674,
+       "v2:v2std_thermal_random_s44::p_soft_median": 0.6603740034379904,
+       "v2:v2std_thermal_random_s44::ratio_median": 0.4553065738905814
+      },
+      {
+       "cutoff": 1e-07,
+       "pos_thr": 1e-12,
+       "published_prod_thermal_random::f_null_median": 0.0010309599508029326,
+       "published_prod_thermal_random::lam_eff_median": 0.39884795734405587,
+       "published_prod_thermal_random::p_soft_median": 0.3599753932833709,
+       "published_prod_thermal_random::ratio_median": 0.6952366346750682,
+       "ridge": 1e-08,
+       "sweep": "ridge",
+       "v2:v2std_thermal_random_s44::f_null_median": 1.810548749057606e-08,
+       "v2:v2std_thermal_random_s44::lam_eff_median": 0.2616156139167667,
+       "v2:v2std_thermal_random_s44::p_soft_median": 0.6603740034379904,
+       "v2:v2std_thermal_random_s44::ratio_median": 0.4553065738905813
+      },
+      {
+       "cutoff": 1e-07,
+       "pos_thr": 1e-12,
+       "published_prod_thermal_random::f_null_median": 0.001030959950802884,
+       "published_prod_thermal_random::lam_eff_median": 0.39884795734405587,
+       "published_prod_thermal_random::p_soft_median": 0.35997539328337114,
+       "published_prod_thermal_random::ratio_median": 0.6952366346750687,
+       "ridge": 1e-07,
+       "sweep": "ridge",
+       "v2:v2std_thermal_random_s44::f_null_median": 1.8105487490658673e-08,
+       "v2:v2std_thermal_random_s44::lam_eff_median": 0.2616156139167668,
+       "v2:v2std_thermal_random_s44::p_soft_median": 0.6603740034379899,
+       "v2:v2std_thermal_random_s44::ratio_median": 0.4553065738905814
+      },
+      {
+       "cutoff": 1e-09,
+       "pos_thr": 1e-12,
+       "published_prod_thermal_random::f_null_median": 0.0010309599508029938,
+       "published_prod_thermal_random::lam_eff_median": 0.398847957344056,
+       "published_prod_thermal_random::p_soft_median": 0.35997539328337097,
+       "published_prod_thermal_random::ratio_median": 0.6952366346750678,
+       "ridge": 1e-09,
+       "sweep": "cutoff",
+       "v2:v2std_thermal_random_s44::f_null_median": 1.8105487490660784e-08,
+       "v2:v2std_thermal_random_s44::lam_eff_median": 0.26161561391676674,
+       "v2:v2std_thermal_random_s44::p_soft_median": 0.6603740034379904,
+       "v2:v2std_thermal_random_s44::ratio_median": 0.4553065738905814
+      },
+      {
+       "cutoff": 1e-08,
+       "pos_thr": 1e-12,
+       "published_prod_thermal_random::f_null_median": 0.0010309599508029938,
+       "published_prod_thermal_random::lam_eff_median": 0.398847957344056,
+       "published_prod_thermal_random::p_soft_median": 0.35997539328337097,
+       "published_prod_thermal_random::ratio_median": 0.6952366346750678,
+       "ridge": 1e-09,
+       "sweep": "cutoff",
+       "v2:v2std_thermal_random_s44::f_null_median": 1.8105487490660784e-08,
+       "v2:v2std_thermal_random_s44::lam_eff_median": 0.26161561391676674,
+       "v2:v2std_thermal_random_s44::p_soft_median": 0.6603740034379904,
+       "v2:v2std_thermal_random_s44::ratio_median": 0.4553065738905814
+      },
+      {
+       "cutoff": 1e-07,
+       "pos_thr": 1e-12,
+       "published_prod_thermal_random::f_null_median": 0.0010309599508029938,
+       "published_prod_thermal_random::lam_eff_median": 0.398847957344056,
+       "published_prod_thermal_random::p_soft_median": 0.35997539328337097,
+       "published_prod_thermal_random::ratio_median": 0.6952366346750678,
+       "ridge": 1e-09,
+       "sweep": "cutoff",
+       "v2:v2std_thermal_random_s44::f_null_median": 1.8105487490660784e-08,
+       "v2:v2std_thermal_random_s44::lam_eff_median": 0.26161561391676674,
+       "v2:v2std_thermal_random_s44::p_soft_median": 0.6603740034379904,
+       "v2:v2std_thermal_random_s44::ratio_median": 0.4553065738905814
+      },
+      {
+       "cutoff": 1e-06,
+       "pos_thr": 1e-12,
+       "published_prod_thermal_random::f_null_median": 0.0010309599508029938,
+       "published_prod_thermal_random::lam_eff_median": 0.398847957344056,
+       "published_prod_thermal_random::p_soft_median": 0.35997539328337097,
+       "published_prod_thermal_random::ratio_median": 0.6952366346750678,
+       "ridge": 1e-09,
+       "sweep": "cutoff",
+       "v2:v2std_thermal_random_s44::f_null_median": 1.8105487490660784e-08,
+       "v2:v2std_thermal_random_s44::lam_eff_median": 0.26161561391676674,
+       "v2:v2std_thermal_random_s44::p_soft_median": 0.6603740034379904,
+       "v2:v2std_thermal_random_s44::ratio_median": 0.4553065738905814
+      },
+      {
+       "cutoff": 1e-05,
+       "pos_thr": 1e-12,
+       "published_prod_thermal_random::f_null_median": 0.0010309599508029938,
+       "published_prod_thermal_random::lam_eff_median": 0.398847957344056,
+       "published_prod_thermal_random::p_soft_median": 0.35997539328337097,
+       "published_prod_thermal_random::ratio_median": 0.6952366346750678,
+       "ridge": 1e-09,
+       "sweep": "cutoff",
+       "v2:v2std_thermal_random_s44::f_null_median": 1.8105487490660784e-08,
+       "v2:v2std_thermal_random_s44::lam_eff_median": 0.26161561391676674,
+       "v2:v2std_thermal_random_s44::p_soft_median": 0.6603740034379904,
+       "v2:v2std_thermal_random_s44::ratio_median": 0.4553065738905814
+      },
+      {
+       "cutoff": 1e-07,
+       "pos_thr": 1e-13,
+       "published_prod_thermal_random::f_null_median": 0.0010309599508029938,
+       "published_prod_thermal_random::lam_eff_median": 0.398847957344056,
+       "published_prod_thermal_random::p_soft_median": 0.35997539328337097,
+       "published_prod_thermal_random::ratio_median": 0.6952366346750678,
+       "ridge": 1e-09,
+       "sweep": "pos_threshold",
+       "v2:v2std_thermal_random_s44::f_null_median": 1.8105487490660784e-08,
+       "v2:v2std_thermal_random_s44::lam_eff_median": 0.26161561391676674,
+       "v2:v2std_thermal_random_s44::p_soft_median": 0.6603740034379904,
+       "v2:v2std_thermal_random_s44::ratio_median": 0.4553065738905814
+      },
+      {
+       "cutoff": 1e-07,
+       "pos_thr": 1e-12,
+       "published_prod_thermal_random::f_null_median": 0.0010309599508029938,
+       "published_prod_thermal_random::lam_eff_median": 0.398847957344056,
+       "published_prod_thermal_random::p_soft_median": 0.35997539328337097,
+       "published_prod_thermal_random::ratio_median": 0.6952366346750678,
+       "ridge": 1e-09,
+       "sweep": "pos_threshold",
+       "v2:v2std_thermal_random_s44::f_null_median": 1.8105487490660784e-08,
+       "v2:v2std_thermal_random_s44::lam_eff_median": 0.26161561391676674,
+       "v2:v2std_thermal_random_s44::p_soft_median": 0.6603740034379904,
+       "v2:v2std_thermal_random_s44::ratio_median": 0.4553065738905814
+      },
+      {
+       "cutoff": 1e-07,
+       "pos_thr": 1e-11,
+       "published_prod_thermal_random::f_null_median": 0.0010309599508029938,
+       "published_prod_thermal_random::lam_eff_median": 0.398847957344056,
+       "published_prod_thermal_random::p_soft_median": 0.35997539328337097,
+       "published_prod_thermal_random::ratio_median": 0.6952366346750678,
+       "ridge": 1e-09,
+       "sweep": "pos_threshold",
+       "v2:v2std_thermal_random_s44::f_null_median": 1.8105487490660784e-08,
+       "v2:v2std_thermal_random_s44::lam_eff_median": 0.26161561391676674,
+       "v2:v2std_thermal_random_s44::p_soft_median": 0.6603740034379904,
+       "v2:v2std_thermal_random_s44::ratio_median": 0.4553065738905814
+      },
+      {
+       "cutoff": 1e-07,
+       "pos_thr": 1e-10,
+       "published_prod_thermal_random::f_null_median": 0.0010322509137865974,
+       "published_prod_thermal_random::lam_eff_median": 0.398847957344056,
+       "published_prod_thermal_random::p_soft_median": 0.35997539328337097,
+       "published_prod_thermal_random::ratio_median": 0.6952366346750678,
+       "ridge": 1e-09,
+       "sweep": "pos_threshold",
+       "v2:v2std_thermal_random_s44::f_null_median": 1.819095592575827e-08,
+       "v2:v2std_thermal_random_s44::lam_eff_median": 0.26161561391676674,
+       "v2:v2std_thermal_random_s44::p_soft_median": 0.6603740034379904,
+       "v2:v2std_thermal_random_s44::ratio_median": 0.4553065738905814
+      },
+      {
+       "cutoff": 1e-07,
+       "pos_thr": 1e-09,
+       "published_prod_thermal_random::f_null_median": 0.0010369882586883658,
+       "published_prod_thermal_random::lam_eff_median": 0.398847957344056,
+       "published_prod_thermal_random::p_soft_median": 0.35997539328337097,
+       "published_prod_thermal_random::ratio_median": 0.6952366346750678,
+       "ridge": 1e-09,
+       "sweep": "pos_threshold",
+       "v2:v2std_thermal_random_s44::f_null_median": 1.819095592575827e-08,
+       "v2:v2std_thermal_random_s44::lam_eff_median": 0.26161561391676674,
+       "v2:v2std_thermal_random_s44::p_soft_median": 0.6603740034379904,
+       "v2:v2std_thermal_random_s44::ratio_median": 0.4553065738905814
+      }
+     ]
+    },
+    "G30_stream_equality": {
+     "own_panel_gtrue_equals_campaign9_stream": true,
+     "own_panel_gtrue_equals_gs_panel": true,
+     "pass_": true,
+     "structural_B_and_S_identities": true
+    },
+    "V2_control_arm_reproduces_RKC1": {
+     "checks": [
+      {
+       "measured": 0.0010309599508029927,
+       "name": "f_null",
+       "pass_": true,
+       "rel": 2.075943965445965e-13,
+       "target": 0.0010309599508032067
+      },
+      {
+       "measured": 0.359975393283371,
+       "name": "p_soft",
+       "pass_": true,
+       "rel": 4.317829116868769e-15,
+       "target": 0.35997539328336947
+      },
+      {
+       "measured": 0.398847957344056,
+       "name": "lam_eff",
+       "pass_": true,
+       "rel": 8.350723659347605e-16,
+       "target": 0.39884795734405565
+      },
+      {
+       "measured": 0.695236634675068,
+       "name": "ratio",
+       "pass_": true,
+       "rel": 2.2356592805292155e-15,
+       "target": 0.6952366346750696
+      },
+      {
+       "measured": 0.0028502811915470825,
+       "name": "eps_S",
+       "pass_": true,
+       "rel": 0.0,
+       "target": 0.0028502811915470825
+      },
+      {
+       "measured": 0.6962032917943689,
+       "name": "ratio_of_medians",
+       "pass_": true,
+       "rel": 1.5946822396712726e-16,
+       "target": 0.6962032917943688
+      }
+     ],
+     "control_arm": "published_prod_thermal_random",
+     "max_rel": 2.075943965445965e-13,
+     "pass_": true,
+     "smoke_note": null,
+     "tolerance": 1e-06
+    },
+    "V2_panel_row_binding_1ulp": {
+     "bit_identical": false,
+     "columns_differing": [
+      0,
+      10,
+      19,
+      27,
+      34,
+      40,
+      45,
+      49,
+      52,
+      54
+     ],
+     "contamination": {
+      "max_fraction_of_dwS": {
+       "published_prod_thermal_random": 7.656263836966325e-05,
+       "v2:v2std_thermal_random_s44": 0.0015988200321176548
+      },
+      "max_stream_S": 5.960464477539057e-07,
+      "median_fraction_of_dwS": {
+       "published_prod_thermal_random": 0.0,
+       "v2:v2std_thermal_random_s44": 0.0
+      },
+      "median_stream_S": 0.0,
+      "note": "S-metric size of (v2 labels - registered panel g_true) against the residual it sits inside; > 0 means the two label streams are not bit-identical (ID-0 1-ULP replay)"
+     },
+     "criterion": {
+      "diagonal_band": 1.1920928955078125e-07,
+      "diagonal_within_1ulp": true,
+      "id0_release_stream_band": 2.5e-07,
+      "offdiagonal_bit_identical": true,
+      "row_count_and_order": true
+     },
+     "diag_gauge_mean_panel": 0.5500000015148544,
+     "diag_gauge_mean_v2": 0.5500000019448634,
+     "diagonal_bit_identical": false,
+     "diagonal_max_abs_dev": 1.1920928955078125e-07,
+     "diagonal_max_abs_dev_in_ulp": 1.0,
+     "labels_rows_sha_pin": "94f616fb7c5d6b725fc0ba6bf91da346ca4498d901925ff854a090e1620ac011",
+     "max_abs_dev": 1.1920928955078125e-07,
+     "n_entries_differing": 14400,
+     "n_rows": 4096,
+     "n_rows_differing": 1544,
+     "note": "ID-0 amendment 2026-09-10, results_v2/tolerances.json identity_leg ID-0: the campaign-8/9 panel g_true is the RELEASE-STREAM replay, a cross-host-class replay of the same seed-1007 rows admitted inside a 1-ULP band with the A2 rows pin (94f616fb..) as authority. PASS iff (a) the 45 off-diagonal triu55 columns are bit-identical, (b) every diagonal difference is <= 2^-23 in absolute value, (c) row count and order match. Strict bit-identity is recorded, never gating; the contamination block bounds the S-metric size of the difference.",
+     "offdiagonal_bit_identical": true,
+     "offdiagonal_max_abs_dev": 0.0,
+     "panel_gtrue_matches_pin": false,
+     "panel_gtrue_rows_sha256_f32": "18832d2846b09e00bc1698ba84e425396650af238a34f79b66808e7b8d0fc53a",
+     "pass_": true,
+     "strict_bit_identical": false,
+     "triu55_diagonal_columns": [
+      0,
+      10,
+      19,
+      27,
+      34,
+      40,
+      45,
+      49,
+      52,
+      54
+     ],
+     "v2_labels_match_pin": true,
+     "v2_labels_rows_sha256_f32": "94f616fb7c5d6b725fc0ba6bf91da346ca4498d901925ff854a090e1620ac011"
+    }
+   },
+   "inputs": [
+    {
+     "path": "campaign8/inputs/prod_thermal_random_predictions_val_first4096.npz",
+     "sha256": "fbbb4ce2dde3e584152dfaf82a1eea58a5cafee35fbea88445a36e963e92136a",
+     "tag": "prod_thermal_random_predictions(control arm)"
+    },
+    {
+     "path": "campaign5/data/prod_gs_random_predictions_val.npz",
+     "sha256": "6769f12975335bd37ff9bf4ffd82cce80c03da2ffbb17f4580ef70e96b621dcc",
+     "tag": "campaign9_valnpz_stream"
+    },
+    {
+     "path": "campaign8/inputs/prod_gs_random_predictions_val_first4096.npz",
+     "sha256": "b087d66409b7544405ebcce9e7bef6eac7cbdcdf45b5a7ed1f32087f2bada3cd",
+     "tag": "prod_gs_random_predictions(stream witness)"
+    },
+    {
+     "path": "campaign9/stages/s9_thermal_panel_gibbs.py",
+     "sha256": "e7f8c8d06be3d8e1d8cdc6ecb9cbd7781b64bf3fa8895fd00807aa5b96bc9ab5",
+     "tag": "worker_s9_thermal_panel_gibbs"
+    },
+    {
+     "path": "campaign5/stages/s_canonical_cond.py",
+     "sha256": "6105490bdd2fd344c9f68d7d9b5b2fdef1521982ecbbf9a70a921d44a2df3dcf",
+     "tag": "s_canonical_cond"
+    },
+    {
+     "path": "campaign6/stages/s6_jacobian_energy.py",
+     "sha256": "4ea41327e51d6d90b8ea24ae2a9b13f05dce8feed60cc6556122396b9deac740",
+     "tag": "s6_jacobian_energy"
+    },
+    {
+     "path": "campaign4/compute.py",
+     "sha256": "0cec7b396133112d1ca466f1aa15656cb41fcc3bc6abda309af66ba8c4a4fa5b",
+     "tag": "compute_c4"
+    },
+    {
+     "path": "campaign8/stages/s8_sym_panels.py",
+     "sha256": "6d0ecf9123185a504f56970c128519a9f839cf372b4548b352b4f851102f5e46",
+     "tag": "s8_sym_panels(pure statistic fns)"
+    },
+    {
+     "path": "campaign9/results/thermal_panel_gibbs/thermal_panel_gibbs.json",
+     "sha256": "e7f86e42f43d0487f4c6f46a82009a0c6a6aee69e97f8b850e3fe563f80a88d9",
+     "tag": "reg_thermal_panel_gibbs"
+    },
+    {
+     "path": "campaign9/results/thermal_panel_gibbs/thermal_panel_gibbs_persample.npz",
+     "sha256": "ad4c2a8f6bdf2aa5d641136d214be432d588adbf9a343eacc5dba7cf3fe2e33d",
+     "tag": "reg_thermal_persample"
+    },
+    {
+     "path": "campaign9/results/E8/e8_extractions.json",
+     "sha256": "71e0c3bc6c4071b1c55c84ad0c0a4f7a12acac0152fd4c9c1f8f586b1ceef630",
+     "tag": "reg_e8_extractions"
+    },
+    {
+     "path": "campaign8/results/sym_panels/s8_panel_thermal.json",
+     "sha256": "ec5c07f69278fa5d4a9f147accd949830b90e6bdf6a2836645c7d17b4d622027",
+     "tag": "reg_s8_panel_thermal"
+    },
+    {
+     "path": "campaign11/results/roundK/RK-C1/rk_c1_result.json",
+     "sha256": "e5029a2a6ae7ba3e191f37c176930178c26d4d2656eda5c49d3f1f69caa9dfcd",
+     "tag": "reg_rk_c1_result"
+    },
+    {
+     "path": "campaign11/results/roundK/RK-C1/rk_c1.py",
+     "sha256": "45411af229cd0bb8463ab9c6e2cd59622627f72bad15cd476edd57122bc14d74",
+     "tag": "parent_runner_rk_c1"
+    },
+    {
+     "eval_record": {
+      "all_gates_pass": true,
+      "checkpoint_sha256": "75a4e760b1b0eafe721982353d809f9a45eed27a27e6e9e7a72901a4f080c8c7",
+      "lane": "v2std_thermal_random_s44",
+      "median_err_q": 0.00020597183262352313,
+      "schema": "v2-eval-cpu64-v1",
+      "val_cache": "/home/agus/v2_store/caches/datasets_v2/dsv2_d20_random_thermal__phi_aM_f16/val"
+     },
+     "logits_key": "logits__v2std_thermal_random_s44",
+     "path": "/workspace/Insync/agusc@agusc.com.ar/Google Drive/UNLP/FermionicML-satelite2-max/results_v2/records/V2-CLEAN-v2std_thermal_random_s44/v2_eval_cpu64_persample.npz",
+     "sha256": "596edee040b88e8d24d568b84c335d0147eb09c88130eac5a33764ef3cd02c80",
+     "tag": "v2_predictions(v2:v2std_thermal_random_s44)"
+    }
+   ],
+   "lane": "v2std_thermal_random_s44",
+   "n_panel": 4096,
+   "protocol": {
+    "bootstrap": {
+     "B": 1000,
+     "order_stat_indices": [
+      25,
+      975
+     ],
+     "seed": 20260703
+    },
+    "gevp_knobs": {
+     "ridge": 1e-09,
+     "snorm_cutoff": 1e-07,
+     "tau_pos": 1e-12
+    },
+    "grid": {
+     "dhi": 1,
+     "dlo": -10,
+     "n_points": 111,
+     "observed_max": 3.578172745231546,
+     "observed_min": 1.3956790595861528e-10,
+     "rule": "endpoints from the thermal geometry alone (min/max lam_pos/lam_bar over samples), rounded OUTWARD to decades; np.logspace(dlo, dhi, 10*(dhi-dlo)+1); frozen BEFORE any g_pred load"
+    },
+    "lineage": "campaign9/results/thermal_panel_gibbs ONLY; cc.thermal_R_s0(E,U,1.0) -> cc.m_mixed_R -> s6.gevp on B_SYM^T .5(M+M^T) B_SYM with S_SYM55 (byte-identical imports); campaign8 s8_panel_thermal geometry NEVER used (T=0 mislabeled beta=1 per s9 header 11-16); its GEVP-independent S-metric scalars are anchors only",
+    "own_band": "thermal panel OWN nine smallest positive modes expanded over complete 5%-gap blocks (PHY-06 block rule); the PHY-06 overlap-ranked T=0 companion band is NOT imported",
+    "presentation_caps": "own-ensemble companion sentences in IV.B step 6 only; no causal thermal-training comparison; no pooled T=0/beta=1 statistic; graphic SM-only",
+    "residual_weights": "r_k = |v_k^T S dw|^2 / ||dw||_S^2 (NOT raw q_k); FIX-1 full-H0 coordinates w = -G + diag(E_PAIR)",
+    "v2_rebinding": "ONLY the predictions are re-bound (v2 clean-eval logits); every geometry input, pin and anchor is the parent's"
+   },
+   "request_id": "RK-C1(v2 fork)",
+   "results": {
+    "anchors_reproduced": {
+     "eps_I_mean_first512": 0.009424739620059096,
+     "eps_I_median": 0.00892660320663137,
+     "f_err_full_panel": 9.18120322564836e-06,
+     "f_err_mean_first512": 9.245780926517043e-06,
+     "kappa_MS_median": 54.23419152283249,
+     "lam_min_pos_median": 0.02476595740480579
+    },
+    "arms": {
+     "published_prod_thermal_random": {
+      "band_size": {
+       "max": 45,
+       "median": 9.0,
+       "min": 9
+      },
+      "eps_I_median": 0.00892660320663137,
+      "f_err_mean": 9.18120322564836e-06,
+      "f_err_median": 7.946392931605227e-06,
+      "sens_bins_median": {
+       "below_1e1": 0.319106312725325,
+       "below_1e4": 0.0
+      },
+      "stats": {
+       "eps_S": {
+        "ci95": [
+         0.0028325023146482243,
+         0.0028725696601839663
+        ],
+        "point": 0.0028502811915470825
+       },
+       "f_null": {
+        "ci95": [
+         0.0009494580981827878,
+         0.0011038363384852051
+        ],
+        "point": 0.0010309599508029927
+       },
+       "lam_eff": {
+        "ci95": [
+         0.39405950122679795,
+         0.4026458215523324
+        ],
+        "point": 0.398847957344056
+       },
+       "p_soft": {
+        "ci95": [
+         0.35246434471176136,
+         0.36709724740743616
+        ],
+        "point": 0.359975393283371
+       },
+       "ratio": {
+        "ci95": [
+         0.6886480579606489,
+         0.7020531815320834
+        ],
+        "point": 0.695236634675068
+       },
+       "ratio_of_medians": {
+        "ci95": [
+         0.6879017296723998,
+         0.7027419242124806
+        ],
+        "point": 0.6962032917943689
+       }
+      }
+     },
+     "v2:v2std_thermal_random_s44": {
+      "band_size": {
+       "max": 45,
+       "median": 9.0,
+       "min": 9
+      },
+      "eps_I_median": 0.0004849633127721923,
+      "f_err_mean": 3.232600305425187e-08,
+      "f_err_median": 2.3822630018235265e-08,
+      "sens_bins_median": {
+       "below_1e1": 0.603045007831233,
+       "below_1e4": 0.0
+      },
+      "stats": {
+       "eps_S": {
+        "ci95": [
+         0.0001535229916983633,
+         0.00015741161969024263
+        ],
+        "point": 0.000155625126951578
+       },
+       "f_null": {
+        "ci95": [
+         1.666807486801051e-08,
+         1.996845608653891e-08
+        ],
+        "point": 1.8105487490667378e-08
+       },
+       "lam_eff": {
+        "ci95": [
+         0.2562930007455385,
+         0.2664561297625667
+        ],
+        "point": 0.26161561391676674
+       },
+       "p_soft": {
+        "ci95": [
+         0.6543302112971356,
+         0.6686821418780557
+        ],
+        "point": 0.6603740034379902
+       },
+       "ratio": {
+        "ci95": [
+         0.44558536572062923,
+         0.46408575995896084
+        ],
+        "point": 0.4553065738905814
+       },
+       "ratio_of_medians": {
+        "ci95": [
+         0.4473177912114285,
+         0.4649434270916179
+        ],
+        "point": 0.4566593566293266
+       }
+      }
+     }
+    },
+    "control_arm": "published_prod_thermal_random",
+    "grid": {
+     "dhi": 1,
+     "dlo": -10,
+     "n_points": 111,
+     "observed_max": 3.578172745231546,
+     "observed_min": 1.3956790595861528e-10,
+     "rule": "endpoints from the thermal geometry alone (min/max lam_pos/lam_bar over samples), rounded OUTWARD to decades; np.logspace(dlo, dhi, 10*(dhi-dlo)+1); frozen BEFORE any g_pred load"
+    },
+    "label_stream_deviation": {
+     "max_fraction_of_dwS": {
+      "published_prod_thermal_random": 7.656263836966325e-05,
+      "v2:v2std_thermal_random_s44": 0.0015988200321176548
+     },
+     "max_stream_S": 5.960464477539057e-07,
+     "median_fraction_of_dwS": {
+      "published_prod_thermal_random": 0.0,
+      "v2:v2std_thermal_random_s44": 0.0
+     },
+     "median_stream_S": 0.0,
+     "note": "S-metric size of (v2 labels - registered panel g_true) against the residual it sits inside; > 0 means the two label streams are not bit-identical (ID-0 1-ULP replay)"
+    },
+    "null_structure": {
+     "frac_eq1": 0.99609375,
+     "max": 1,
+     "median": 1.0,
+     "min": 0
+    },
+    "registered_rk_c1_points": {
+     "eps_S": 0.0028502811915470825,
+     "f_null": 0.0010309599508032067,
+     "lam_eff": 0.39884795734405565,
+     "p_soft": 0.35997539328336947,
+     "ratio": 0.6952366346750696,
+     "ratio_of_medians": 0.6962032917943688
+    },
+    "reported_arm": "v2:v2std_thermal_random_s44"
+   },
+   "schema": "v2-beta1-panel-v1",
+   "smoke": false,
+   "stage": "v2_beta1_panel",
+   "status": "OK",
+   "task": "v2 fork of round-K RK-C1: residual projection spectra of a v2 beta=1 lane on the 4096-sample thermal panel in the campaign-9 thermal (M,S) 55-dim pullback geometry (projected-Gibbs lineage, K-D2)",
+   "wall_s": 1167.0
+  }
+ }
+}
